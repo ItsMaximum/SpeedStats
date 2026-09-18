@@ -36,6 +36,7 @@ class Settings(BaseSettings):
 
     # publish
     min_leaderboards: int = 600_000
+    min_crawl_interval_days: float = 3.0  # `all` skips a new crawl when the live data is younger than this
     api_health_url: str = "http://localhost:8000/health"  # "" to skip waiting for the API
     cloudflare_zone_id: str = ""
     cloudflare_api_token: str = ""

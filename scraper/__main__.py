@@ -195,12 +195,34 @@ def cmd_publish(args: argparse.Namespace) -> int:
     return 0
 
 
+def _live_data_age_days(data_dir: Path) -> float | None:
+    current = paths.read_current(data_dir)
+    if current is None:
+        return None
+    con = duckdb.connect(str(current), read_only=True)
+    try:
+        scraped_at = con.execute("SELECT scraped_at FROM meta").fetchone()[0]
+    finally:
+        con.close()
+    return (datetime.now(UTC) - scraped_at.replace(tzinfo=UTC)).total_seconds() / 86400
+
+
 def cmd_all(args: argparse.Namespace) -> int:
     """crawl -> score -> validate -> publish, the weekly job."""
     from scraper.publish import publish
 
     data_dir = Path(args.data_dir)
     args.only_series = args.only_game = None
+    # Do not start a new crawl if the live data is fresh (e.g. a manual run a few days before the Sunday schedule);
+    # an unfinished crawl is still resumed, and --force overrides.
+    age = _live_data_age_days(data_dir)
+    resuming = args.resume and _unfinished_crawl(data_dir) is not None
+    if not args.force and not args.version and not resuming and age is not None:
+        if age < settings.min_crawl_interval_days:
+            msg = f"live data is {age:.1f} days old (< {settings.min_crawl_interval_days:g}); not crawling again"
+            logging.info(msg)
+            _append_job_summary(f"## Scrape skipped\n\n{msg}. Use *Run workflow* with **force** to crawl anyway.\n")
+            return 0
     if cmd_crawl(args):
         return 1
     crawl = _latest_crawl(data_dir)
@@ -215,13 +237,17 @@ def cmd_all(args: argparse.Namespace) -> int:
     return 0
 
 
-def _write_job_summary(report) -> None:
+def _append_job_summary(text: str) -> None:
     """GitHub Actions shows $GITHUB_STEP_SUMMARY on the run page."""
     import os
 
     path = os.environ.get("GITHUB_STEP_SUMMARY")
-    if not path:
-        return
+    if path:
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(text)
+
+
+def _write_job_summary(report) -> None:
     s = report.stats
     lines = [
         f"## Scrape {report.version}: {'PASS' if report.ok else 'FAIL'}",
@@ -235,8 +261,7 @@ def _write_job_summary(report) -> None:
         "|---|---|---|",
     ]
     lines += [f"| {c.name} | {'ok' if c.ok else 'FAIL'} | {c.detail} |" for c in report.checks]
-    with open(path, "a", encoding="utf-8") as f:
-        f.write("\n".join(lines) + "\n")
+    _append_job_summary("\n".join(lines) + "\n")
 
 
 def cmd_bootstrap(args: argparse.Namespace) -> int:
@@ -295,6 +320,9 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("all", help="crawl, score, validate and publish (the weekly job)")
     p.add_argument("--resume", action="store_true", help="continue the latest crawl file if one exists")
     p.add_argument("--version", help="crawl version to create or resume")
+    p.add_argument(
+        "--force", action="store_true", help="crawl even if the live data is younger than the minimum interval"
+    )
     p.set_defaults(func=cmd_all)
 
     p = sub.add_parser("bootstrap", help="download the latest published database from R2")

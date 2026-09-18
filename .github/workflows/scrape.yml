@@ -10,6 +10,10 @@ on:
         description: "Resume the latest unfinished crawl instead of starting a new one"
         type: boolean
         default: true
+      force:
+        description: "Crawl even if the live data is younger than MIN_CRAWL_INTERVAL_DAYS (3)"
+        type: boolean
+        default: true
 
 concurrency:
   group: scrape
@@ -24,10 +28,13 @@ jobs:
       - name: Crawl, score, validate, publish
         env:
           RESUME: ${{ github.event_name == 'schedule' || inputs.resume }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force }}
         run: |
           docker compose pull scraper
           rm -f /opt/speedstats/data/step-summary.md
-          if [ "$RESUME" = "true" ]; then FLAGS="--resume"; else FLAGS=""; fi
+          FLAGS=""
+          [ "$RESUME" = "true" ] && FLAGS="$FLAGS --resume"
+          [ "$FORCE" = "true" ] && FLAGS="$FLAGS --force"
           docker compose run --rm scraper all $FLAGS
       - name: Job summary
         if: always()
