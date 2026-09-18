@@ -21,13 +21,22 @@ CREATE OR REPLACE TABLE areas_d AS
 SELECT id, name, full_name, lb_name, lb_flag, parent_id
 FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY id ORDER BY seen_at DESC) AS rn FROM raw_areas) WHERE rn = 1;
 
+CREATE OR REPLACE TEMP TABLE colors_d AS
+SELECT id, dark
+FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY id ORDER BY seen_at DESC) AS rn FROM raw_colors) WHERE rn = 1;
+
+-- name colours as speedrun.com shows them in dark mode; two colours mean a gradient
 CREATE OR REPLACE TABLE players_d AS
 SELECT p.id, p.name, p.url, p.area_id,
        nullif(split_part(p.area_id, '/', 1), '') AS country,
        a.lb_flag                                  AS flag,
+       c1.dark                                    AS color1,
+       c2.dark                                    AS color2,
        length(p.id) = 38                          AS is_guest
 FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY id ORDER BY seen_at DESC) AS rn FROM raw_players) p
 LEFT JOIN areas_d a ON a.id = p.area_id
+LEFT JOIN colors_d c1 ON c1.id = p.color1_id
+LEFT JOIN colors_d c2 ON c2.id = p.color2_id
 WHERE rn = 1;
 
 -- categories / levels / subcategory values, latest per id

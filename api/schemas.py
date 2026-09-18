@@ -23,6 +23,15 @@ class HealthOut(BaseModel):
     stale: bool | None = None
 
 
+class PlayerStyle(BaseModel):
+    """How speedrun.com shows the player: leaderboard flag and dark-mode name colour(s)."""
+
+    flag: str | None = None
+    flag_name: str | None = None
+    color1: str | None = None
+    color2: str | None = None
+
+
 class QueryOut(BaseModel):
     request_type: str
     title: str
@@ -30,7 +39,7 @@ class QueryOut(BaseModel):
     rows: list[list[str | int | float | None]]
     truncated: bool
     warnings: list[str]
-    flags: dict[str, str]  # flag id (e.g. "gb/eng") -> area name, for the flags present in `rows`
+    players: dict[str, PlayerStyle]  # by player name, for the players present in `rows`
     meta: MetaOut
 
 

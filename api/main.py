@@ -31,7 +31,7 @@ from fastapi.staticfiles import StaticFiles
 from api.db import DbHolder, Meta, NoDatabase, on_reload
 from api.queries import REQUEST_TYPE_NAMES, QueryResult, run_query
 from api.resolve import ResolvedFilter, resolve
-from api.schemas import HealthOut, MetaOut, QueryOut, Suggestion, SuggestOut
+from api.schemas import HealthOut, MetaOut, PlayerStyle, QueryOut, Suggestion, SuggestOut
 from speedstats.config import settings
 from speedstats.filters import BOXES, FilterSpec, parse_query, to_params
 
@@ -155,7 +155,7 @@ def _execute(spec: FilterSpec) -> tuple[QueryOut, Meta]:
     try:
         filt = resolve(con, spec)
         result: QueryResult = run_query(con, spec.request_type, filt, spec.limit)
-        flags = _flag_names(con, result)
+        players = _player_styles(con, result)
     finally:
         con.close()
 
@@ -166,22 +166,35 @@ def _execute(spec: FilterSpec) -> tuple[QueryOut, Meta]:
         rows=[[_serialize_cell(c) for c in row] for row in result.rows],
         truncated=result.truncated,
         warnings=filt.warnings,
-        flags=flags,
+        players=players,
         meta=meta_out(meta),
     )
     cache.put(key, out)
     return out, meta
 
 
-def _flag_names(con, result: QueryResult) -> dict[str, str]:
-    if "Flag" not in result.columns:
+def _player_styles(con, result: QueryResult) -> dict[str, PlayerStyle]:
+    if "Player" not in result.columns:
         return {}
-    i = result.columns.index("Flag")
-    ids = sorted({row[i] for row in result.rows if row[i]})
-    if not ids:
+    i = result.columns.index("Player")
+    names = sorted({row[i] for row in result.rows if row[i]})
+    if not names:
         return {}
-    rows = con.execute("SELECT id, lb_name FROM areas WHERE id IN (SELECT unnest($ids::VARCHAR[]))", {"ids": ids})
-    return dict(rows.fetchall())
+    rows = con.execute(
+        """
+        SELECT p.name, p.flag, a.lb_name, p.color1, p.color2
+        FROM players p LEFT JOIN areas a ON a.id = p.flag
+        WHERE p.name_lower IN (SELECT lower(unnest($names::VARCHAR[])))
+          AND (p.flag IS NOT NULL OR p.color1 IS NOT NULL)
+        """,
+        {"names": names},
+    ).fetchall()
+    wanted = set(names)
+    return {
+        name: PlayerStyle(flag=flag, flag_name=flag_name, color1=c1, color2=c2)
+        for name, flag, flag_name, c1, c2 in rows
+        if name in wanted
+    }
 
 
 # -- routes ----------------------------------------------------------------------------------------------------------

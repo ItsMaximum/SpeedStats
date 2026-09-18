@@ -6,6 +6,7 @@ export type QueryOut = components["schemas"]["QueryOut"];
 export type MetaOut = components["schemas"]["MetaOut"];
 export type SuggestOut = components["schemas"]["SuggestOut"];
 export type Suggestion = components["schemas"]["Suggestion"];
+export type PlayerStyle = components["schemas"]["PlayerStyle"];
 export type Cell = QueryOut["rows"][number][number];
 
 export class ApiError extends Error {

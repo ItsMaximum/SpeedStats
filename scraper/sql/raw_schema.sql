@@ -17,7 +17,9 @@ CREATE TABLE IF NOT EXISTS raw_values      (id VARCHAR, variable_id VARCHAR, gam
 CREATE TABLE IF NOT EXISTS raw_platforms   (id VARCHAR, name VARCHAR, url VARCHAR, seen_at TIMESTAMP);
 CREATE TABLE IF NOT EXISTS raw_areas       (id VARCHAR, name VARCHAR, full_name VARCHAR, lb_name VARCHAR,
                                             lb_flag VARCHAR, parent_id VARCHAR, seen_at TIMESTAMP);
-CREATE TABLE IF NOT EXISTS raw_players     (id VARCHAR, name VARCHAR, url VARCHAR, area_id VARCHAR, seen_at TIMESTAMP);
+CREATE TABLE IF NOT EXISTS raw_colors      (id VARCHAR, name VARCHAR, dark VARCHAR, light VARCHAR, seen_at TIMESTAMP);
+CREATE TABLE IF NOT EXISTS raw_players     (id VARCHAR, name VARCHAR, url VARCHAR, area_id VARCHAR, color1_id VARCHAR,
+                                            color2_id VARCHAR, seen_at TIMESTAMP);
 
 CREATE TABLE IF NOT EXISTS raw_runs (
     ord             BIGINT,          -- insertion order

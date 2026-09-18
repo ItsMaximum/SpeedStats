@@ -86,7 +86,7 @@ a {
 
 .query-form {
   background: var(--panel);
-  max-width: 760px;
+  max-width: 900px;
   width: 100%;
   padding: 20px;
   box-shadow: 0 0 10px var(--accent-glow);
@@ -273,7 +273,7 @@ select {
 /* ---------- results ---------- */
 
 .results {
-  max-width: 760px;
+  max-width: 900px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -351,11 +351,18 @@ td {
   padding: 10px 14px;
   border: 1px solid var(--border);
   text-align: left;
+  vertical-align: top;
+}
+th,
+td.num {
   white-space: nowrap;
 }
 td.num {
   text-align: right;
   font-variant-numeric: tabular-nums;
+}
+td.player {
+  white-space: nowrap;
 }
 
 th {
@@ -386,11 +393,24 @@ td a:hover {
 }
 
 .flag {
-  width: 20px;
-  height: 15px;
-  vertical-align: -2px;
-  margin-right: 8px;
+  height: 12px;
+  width: auto;
+  vertical-align: -1px;
+  margin-right: 6px;
   border-radius: 2px;
+}
+
+/* Player names as speedrun.com renders them: Inter bold, the user's dark-mode colour or a two-colour gradient. */
+.username {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.username-gradient {
+  background: linear-gradient(to right, var(--c1), var(--c2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 @media (max-width: 600px) {

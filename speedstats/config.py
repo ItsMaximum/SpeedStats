@@ -34,6 +34,7 @@ class Settings(BaseSettings):
 
     # publish
     min_leaderboards: int = 600_000
+    api_health_url: str = "http://localhost:8000/health"  # "" to skip waiting for the API
     cloudflare_zone_id: str = ""
     cloudflare_api_token: str = ""
     r2_account_id: str = ""

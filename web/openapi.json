@@ -245,6 +245,57 @@
     ],
     "title": "MetaOut"
    },
+   "PlayerStyle": {
+    "properties": {
+     "flag": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Flag"
+     },
+     "flag_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Flag Name"
+     },
+     "color1": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Color1"
+     },
+     "color2": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Color2"
+     }
+    },
+    "type": "object",
+    "title": "PlayerStyle",
+    "description": "How speedrun.com shows the player: leaderboard flag and dark-mode name colour(s)."
+   },
    "QueryOut": {
     "properties": {
      "request_type": {
@@ -296,12 +347,12 @@
       "type": "array",
       "title": "Warnings"
      },
-     "flags": {
+     "players": {
       "additionalProperties": {
-       "type": "string"
+       "$ref": "#/components/schemas/PlayerStyle"
       },
       "type": "object",
-      "title": "Flags"
+      "title": "Players"
      },
      "meta": {
       "$ref": "#/components/schemas/MetaOut"
@@ -315,7 +366,7 @@
      "rows",
      "truncated",
      "warnings",
-     "flags",
+     "players",
      "meta"
     ],
     "title": "QueryOut"

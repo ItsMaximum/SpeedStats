@@ -3,7 +3,7 @@
 -- Input (regular tables in the work database, produced by normalize.sql or legacy.py):
 --   games_d(id, name, url, default_timer)      series_d(id, name, url)       game_series_d(game_id, series_id)
 --   platforms_d(id, name, url)                 areas_d(id, name, full_name, lb_name, lb_flag, parent_id)
---   players_d(id, name, url, area_id, country, flag, is_guest)
+--   players_d(id, name, url, area_id, country, flag, color1, color2, is_guest)
 --   scored_input(ord, run_id, leaderboard_name, game_id, platform_id, player_ids, is_reverse, t, date,
 --                date_submitted, is_level_run)
 --   excluded_players(name)                     score_params(key, value)   -- data_version, scraped_at, errored_games
@@ -152,7 +152,8 @@ SELECT id, name, full_name, lb_name, lb_flag, parent_id, lb_flag = id AS is_coun
 FROM areas_d ORDER BY id_lower;
 
 CREATE TABLE pub.players AS
-SELECT id, name, url AS slug, area_id, country, flag, lower(name) AS name_lower, lower(url) AS slug_lower
+SELECT id, name, url AS slug, area_id, country, flag, color1, color2, lower(name) AS name_lower,
+       lower(url) AS slug_lower
 FROM players_d WHERE id IN (SELECT DISTINCT player_id FROM pub.runs) ORDER BY name_lower;
 CREATE INDEX players_name_lower_idx ON pub.players(name_lower);
 CREATE INDEX players_slug_lower_idx ON pub.players(slug_lower);

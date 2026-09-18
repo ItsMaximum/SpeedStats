@@ -108,7 +108,20 @@ class Crawler:
                 for a in data["areas"]
             ],
         )
-        log.info("static data: %d areas", len(data["areas"]))
+        await self.writer.put(
+            "raw_colors",
+            [
+                {
+                    "id": c["id"],
+                    "name": c["name"],
+                    "dark": c.get("darkColor"),
+                    "light": c.get("lightColor"),
+                    "seen_at": seen,
+                }
+                for c in data.get("colors", [])
+            ],
+        )
+        log.info("static data: %d areas, %d colors", len(data["areas"]), len(data.get("colors", [])))
 
     async def stage_series(self) -> None:
         first = await self.client.get_series_list(1)
@@ -357,6 +370,8 @@ class Crawler:
                     "name": p["name"].strip(),
                     "url": p.get("url"),
                     "area_id": p.get("areaId") or None,
+                    "color1_id": p.get("color1Id"),
+                    "color2_id": p.get("color2Id"),
                     "seen_at": seen,
                 }
                 for p in page.players

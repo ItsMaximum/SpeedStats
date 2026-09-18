@@ -117,6 +117,20 @@ export interface components {
             /** Stale */
             stale: boolean;
         };
+        /**
+         * PlayerStyle
+         * @description How speedrun.com shows the player: leaderboard flag and dark-mode name colour(s).
+         */
+        PlayerStyle: {
+            /** Flag */
+            flag?: string | null;
+            /** Flag Name */
+            flag_name?: string | null;
+            /** Color1 */
+            color1?: string | null;
+            /** Color2 */
+            color2?: string | null;
+        };
         /** QueryOut */
         QueryOut: {
             /** Request Type */
@@ -131,9 +145,9 @@ export interface components {
             truncated: boolean;
             /** Warnings */
             warnings: string[];
-            /** Flags */
-            flags: {
-                [key: string]: string;
+            /** Players */
+            players: {
+                [key: string]: components["schemas"]["PlayerStyle"];
             };
             meta: components["schemas"]["MetaOut"];
         };

@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { Cell, QueryOut } from "../api";
+import type { Cell, PlayerStyle, QueryOut } from "../api";
 import { linkTo, type BoxName, type RequestType } from "../query";
 
 interface Props {
@@ -14,9 +14,6 @@ const CELL_LINKS: Record<string, [BoxName, RequestType]> = {
   Game: ["games", "pr"],
   Series: ["series", "pr"],
 };
-
-/** The Flag column is not shown as a column; it is drawn next to the player name. */
-const HIDDEN = new Set(["Flag"]);
 
 function compare(a: Cell, b: Cell): number {
   if (a === b) return 0;
@@ -35,12 +32,29 @@ function formatCell(column: string, value: Cell): string {
 }
 
 function Flag({ id, name }: { id: string; name: string }) {
-  return <img className="flag" src={`/api/flags/${id}.png`} alt={name} title={name} loading="lazy" width={20} height={15} />;
+  return <img className="flag" src={`/api/flags/${id}.png`} alt={name} title={name} loading="lazy" height={12} />;
+}
+
+/** A player name as speedrun.com shows it: flag, Inter bold, their colour or a two-colour gradient. */
+function PlayerName({ name, style, href }: { name: string; style?: PlayerStyle; href: string }) {
+  const gradient = style?.color1 && style.color2;
+  const css = gradient
+    ? ({ "--c1": style.color1, "--c2": style.color2 } as React.CSSProperties)
+    : style?.color1
+      ? { color: style.color1 }
+      : undefined;
+  return (
+    <>
+      {style?.flag && <Flag id={style.flag} name={style.flag_name ?? style.flag} />}
+      <a href={href} className={"username" + (gradient ? " username-gradient" : "")} style={css}>
+        {name}
+      </a>
+    </>
+  );
 }
 
 export function ResultsTable({ result }: Props) {
   const [sort, setSort] = useState<Sort>(null);
-  const flagIndex = result.columns.indexOf("Flag");
 
   const rows = useMemo(() => {
     if (!sort) return result.rows;
@@ -65,14 +79,12 @@ export function ResultsTable({ result }: Props) {
       <table>
         <thead>
           <tr>
-            {result.columns.map((col, i) =>
-              HIDDEN.has(col) ? null : (
-                <th key={col} onClick={() => toggle(i)} aria-sort={sort?.column === i ? (sort.dir === 1 ? "ascending" : "descending") : "none"}>
-                  {col}
-                  {sort?.column === i && <span className="sort-indicator">{sort.dir === 1 ? " ▲" : " ▼"}</span>}
-                </th>
-              ),
-            )}
+            {result.columns.map((col, i) => (
+              <th key={col} onClick={() => toggle(i)} aria-sort={sort?.column === i ? (sort.dir === 1 ? "ascending" : "descending") : "none"}>
+                {col}
+                {sort?.column === i && <span className="sort-indicator">{sort.dir === 1 ? " ▲" : " ▼"}</span>}
+              </th>
+            ))}
           </tr>
         </thead>
         <tbody>
@@ -80,13 +92,17 @@ export function ResultsTable({ result }: Props) {
             <tr key={r}>
               {row.map((cell, c) => {
                 const col = result.columns[c];
-                if (HIDDEN.has(col)) return null;
                 const link = CELL_LINKS[col];
                 const text = formatCell(col, cell);
-                const flag = col === "Player" && flagIndex >= 0 ? row[flagIndex] : null;
+                if (col === "Player" && cell !== null && cell !== undefined) {
+                  return (
+                    <td key={c} className="player">
+                      <PlayerName name={String(cell)} style={result.players[String(cell)]} href={linkTo("players", String(cell), "runs")} />
+                    </td>
+                  );
+                }
                 return (
                   <td key={c} className={typeof cell === "number" ? "num" : undefined}>
-                    {flag ? <Flag id={String(flag)} name={result.flags[String(flag)] ?? String(flag)} /> : null}
                     {link && cell !== null && cell !== undefined ? <a href={linkTo(link[0], String(cell), link[1])}>{text}</a> : text}
                   </td>
                 );

@@ -86,12 +86,23 @@ SCHEMAS: dict[str, pa.Schema] = {
             ("seen_at", pa.timestamp("us")),
         ]
     ),
+    "raw_colors": pa.schema(
+        [
+            ("id", pa.string()),
+            ("name", pa.string()),
+            ("dark", pa.string()),
+            ("light", pa.string()),
+            ("seen_at", pa.timestamp("us")),
+        ]
+    ),
     "raw_players": pa.schema(
         [
             ("id", pa.string()),
             ("name", pa.string()),
             ("url", pa.string()),
             ("area_id", pa.string()),
+            ("color1_id", pa.string()),
+            ("color2_id", pa.string()),
             ("seen_at", pa.timestamp("us")),
         ]
     ),

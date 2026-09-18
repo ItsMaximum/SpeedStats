@@ -147,6 +147,93 @@ def cmd_score(args: argparse.Namespace) -> int:
     return 0
 
 
+def _validate(new: Path, data_dir: Path):
+    from scraper.validate import validate
+
+    previous = paths.read_current(data_dir)
+    if previous is not None and previous.resolve() == new.resolve():
+        previous = None
+    report = validate(new, previous, settings.min_leaderboards, settings.excluded_players)
+    report.write(data_dir / f"validation-{report.version}.json")
+    print(report.summary())
+    return report
+
+
+def cmd_validate(args: argparse.Namespace) -> int:
+    data_dir = Path(args.data_dir)
+    new = Path(args.db) if args.db else (paths.list_published(data_dir) or [None])[-1]
+    if new is None:
+        logging.error("no published database to validate")
+        return 2
+    return 0 if _validate(new, data_dir).ok else 1
+
+
+def cmd_publish(args: argparse.Namespace) -> int:
+    from scraper.publish import publish
+
+    data_dir = Path(args.data_dir)
+    new = Path(args.db) if args.db else (paths.list_published(data_dir) or [None])[-1]
+    if new is None:
+        logging.error("no published database")
+        return 2
+    if not args.skip_validation and not _validate(new, data_dir).ok:
+        logging.error("validation failed; not publishing %s", new.name)
+        return 1
+    publish(new, settings)
+    return 0
+
+
+def cmd_all(args: argparse.Namespace) -> int:
+    """crawl -> score -> validate -> publish, the weekly job."""
+    from scraper.publish import publish
+
+    data_dir = Path(args.data_dir)
+    args.only_series = args.only_game = None
+    if cmd_crawl(args):
+        return 1
+    crawl = _latest_crawl(data_dir)
+    assert crawl is not None
+    new = _score_crawl(crawl, data_dir, set_current=False)
+    report = _validate(new, data_dir)
+    _write_job_summary(report)
+    if not report.ok:
+        logging.error("validation failed; %s stays unpublished", new.name)
+        return 1
+    publish(new, settings)
+    return 0
+
+
+def _write_job_summary(report) -> None:
+    """GitHub Actions shows $GITHUB_STEP_SUMMARY on the run page."""
+    import os
+
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not path:
+        return
+    s = report.stats
+    lines = [
+        f"## Scrape {report.version}: {'PASS' if report.ok else 'FAIL'}",
+        "",
+        f"- rows: {s.get('row_count')} (delta {s.get('row_delta', 'n/a')})",
+        f"- leaderboards: {s.get('leaderboard_count')}, players: {s.get('player_count')}, games: {s.get('game_count')}",
+        f"- errored games: {s.get('errored_games')}",
+        f"- total value vs previous: {s.get('value_ratio', 'n/a')}, top-100 overlap: {s.get('top100_overlap', 'n/a')}",
+        "",
+        "| check | result | detail |",
+        "|---|---|---|",
+    ]
+    lines += [f"| {c.name} | {'ok' if c.ok else 'FAIL'} | {c.detail} |" for c in report.checks]
+    with open(path, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
+def cmd_bootstrap(args: argparse.Namespace) -> int:
+    from scraper.publish import bootstrap_from_r2
+
+    bootstrap_from_r2(settings)
+    return 0
+
+
 def cmd_fixture_db(args: argparse.Namespace) -> int:
     _score_from_json(FIXTURE_JSON, Path(args.data_dir), "fixture", True)
     return 0
@@ -183,6 +270,23 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--version", help="data version for --from-json (default: now)")
     p.add_argument("--no-current", action="store_true", help="do not point CURRENT at the result")
     p.set_defaults(func=cmd_score)
+
+    p = sub.add_parser("validate", help="run the sanity gates on a scored database")
+    p.add_argument("--db", help="database file (default: newest published)")
+    p.set_defaults(func=cmd_validate)
+
+    p = sub.add_parser("publish", help="make a scored database live (CURRENT, cache purge, R2 snapshot)")
+    p.add_argument("--db", help="database file (default: newest published)")
+    p.add_argument("--skip-validation", action="store_true")
+    p.set_defaults(func=cmd_publish)
+
+    p = sub.add_parser("all", help="crawl, score, validate and publish (the weekly job)")
+    p.add_argument("--resume", action="store_true", help="continue the latest crawl file if one exists")
+    p.add_argument("--version", help="crawl version to create or resume")
+    p.set_defaults(func=cmd_all)
+
+    p = sub.add_parser("bootstrap", help="download the latest published database from R2")
+    p.set_defaults(func=cmd_bootstrap)
 
     p = sub.add_parser("fixture-db", help="build a small database from tests/fixtures for local development")
     p.set_defaults(func=cmd_fixture_db)

@@ -29,7 +29,7 @@ WITH scope AS (
 # Player Rankings over all games come straight from the precomputed table. Global rank is kept when only
 # players are named (a "where do these players stand" lookup); a country filter re-numbers ("US rankings").
 PR_PRECOMPUTED = """
-SELECT {rank} AS "Rank", player AS "Player", flag AS "Flag", round(points, 2) AS "Points"
+SELECT {rank} AS "Rank", player AS "Player", round(points, 2) AS "Points"
 FROM player_ranks p
 WHERE ($all_players OR p.player_id IN (SELECT unnest($inc_players::VARCHAR[])))
   AND p.player_id NOT IN (SELECT unnest($exc_players::VARCHAR[]))
@@ -44,16 +44,16 @@ PR_SCOPED = (
     SCOPE_CTE
     + """,
 ranked AS (
-    SELECT player_id, player, flag, value,
+    SELECT player_id, player, value,
            ROW_NUMBER() OVER (PARTITION BY player_id ORDER BY value DESC) AS pr
     FROM scope
 ),
 pts AS (
-    SELECT player_id, any_value(player) AS player, any_value(flag) AS flag,
+    SELECT player_id, any_value(player) AS player,
            SUM(GREATEST(value * POWER(0.99, pr - 1), value * 0.25)) AS points
     FROM ranked GROUP BY player_id
 )
-SELECT ROW_NUMBER() OVER (ORDER BY points DESC, player) AS "Rank", player AS "Player", flag AS "Flag",
+SELECT ROW_NUMBER() OVER (ORDER BY points DESC, player) AS "Rank", player AS "Player",
        round(points, 2) AS "Points"
 FROM pts ORDER BY points DESC, player LIMIT $limit
 """
@@ -124,7 +124,7 @@ class QueryResult:
 
 
 def build_sql(request_type: str, filt: ResolvedFilter) -> str:
-    player_cols = "" if filt.single_player else 'player AS "Player", flag AS "Flag",'
+    player_cols = "" if filt.single_player else 'player AS "Player",'
     match request_type:
         case "pr":
             if filt.unfiltered_ranking:

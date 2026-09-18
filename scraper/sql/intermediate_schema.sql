@@ -8,7 +8,8 @@ CREATE OR REPLACE TABLE platforms_d   (id VARCHAR, name VARCHAR, url VARCHAR);
 CREATE OR REPLACE TABLE areas_d       (id VARCHAR, name VARCHAR, full_name VARCHAR, lb_name VARCHAR, lb_flag VARCHAR,
                                        parent_id VARCHAR);  -- lb_flag: area id whose flag speedrun.com shows on boards
 CREATE OR REPLACE TABLE players_d     (id VARCHAR, name VARCHAR, url VARCHAR, area_id VARCHAR, country VARCHAR,
-                                       flag VARCHAR, is_guest BOOLEAN);  -- country: ISO top level; flag: lb_flag of area
+                                       flag VARCHAR, color1 VARCHAR, color2 VARCHAR, is_guest BOOLEAN);
+                                       -- country: ISO top level; flag: lb_flag of the area; colors: dark-mode hex
 CREATE OR REPLACE TABLE scored_input (
     ord              BIGINT,        -- insertion order (Python's stable-sort tiebreak)
     run_id           VARCHAR,

@@ -126,5 +126,5 @@ def load_legacy_json(con: duckdb.DuckDBPyConnection, path: Path) -> datetime:
     _insert(con, "game_series_d", ["game_id", "series_id"], [(g, s) for g, ns in games.items() for s in sorted(ns)])
     _insert(con, "platforms_d", ["id", "name"], [(p, p) for p in sorted(platforms)])
     _insert(con, "players_d", ["id", "name", "is_guest"], [(p, p, p.startswith(GUEST_PREFIX)) for p in players])
-    # no area data in the legacy format: country / flag stay NULL
+    # no area or colour data in the legacy format: country / flag / colors stay NULL
     return datetime.fromtimestamp(path.stat().st_mtime, tz=UTC)
