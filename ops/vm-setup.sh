@@ -50,8 +50,7 @@ sudo mkdir -p "$BASE/data"
 sudo chown -R "$USER:$USER" "$BASE"
 if [ ! -f "$BASE/.env" ]; then
   # placeholder so docker compose can start; the Deploy workflow overwrites it from GitHub secrets
-  printf '# written by the Deploy workflow (GitHub -> Settings -> Secrets and variables -> Actions)
-' > "$BASE/.env"
+  echo '# written by the Deploy workflow (GitHub -> Settings -> Secrets and variables -> Actions)' > "$BASE/.env"
   chmod 600 "$BASE/.env"
 fi
 
