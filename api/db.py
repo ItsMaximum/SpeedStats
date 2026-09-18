@@ -39,6 +39,19 @@ class NoDatabase(RuntimeError):
     pass
 
 
+_on_reload: list = []
+
+
+def on_reload(callback) -> None:
+    """Register a callback run after a new database file is opened (e.g. to drop cached results)."""
+    _on_reload.append(callback)
+
+
+def cache_clear() -> None:
+    for cb in _on_reload:
+        cb()
+
+
 class DbHolder:
     def __init__(self, data_dir: Path, threads: int = 4):
         self.data_dir = data_dir
@@ -46,6 +59,7 @@ class DbHolder:
         self._lock = threading.Lock()
         self._con: duckdb.DuckDBPyConnection | None = None
         self._path: Path | None = None
+        self._stamp: tuple[float, int] | None = None  # (mtime, size) of the open file
         self._meta: Meta | None = None
 
     # -- lifecycle -----------------------------------------------------------------------------------------------
@@ -56,14 +70,17 @@ class DbHolder:
         if path is None:
             log.warning("no published database in %s", self.data_dir)
             return False
-        if path == self._path:
+        stat = path.stat()
+        stamp = (stat.st_mtime, stat.st_size)
+        if path == self._path and stamp == self._stamp:
             return True
         con = duckdb.connect(str(path), read_only=True)
         con.execute("SET TimeZone = 'UTC'")
         con.execute(f"SET threads = {self.threads}")
         meta = _read_meta(con)
         with self._lock:
-            old, self._con, self._path, self._meta = self._con, con, path, meta
+            old, self._con, self._path, self._stamp, self._meta = self._con, con, path, stamp, meta
+        cache_clear()
         log.info("opened %s (data version %s, %s rows)", path.name, meta.data_version, meta.row_count)
         if old is not None:
             threading.Timer(CLOSE_OLD_AFTER, old.close).start()
@@ -73,7 +90,7 @@ class DbHolder:
         with self._lock:
             if self._con is not None:
                 self._con.close()
-            self._con = self._path = self._meta = None
+            self._con = self._path = self._stamp = self._meta = None
 
     async def watch(self) -> None:
         """Poll CURRENT and reopen on change. Runs for the life of the app."""

@@ -1,0 +1,93 @@
+"""Round-robin pool of cors-anywhere proxies (https://<app>.herokuapp.com/<url>) with per-proxy concurrency
+and backoff. speedrun.com rate-limits per IP, so a 429 takes one proxy out of rotation for a while instead of
+slowing the whole crawl. With no proxies configured, a single direct "proxy" is used."""
+
+from __future__ import annotations
+
+import asyncio
+import logging
+import random
+import time
+from dataclasses import dataclass, field
+
+log = logging.getLogger("speedstats.proxies")
+
+RATE_LIMIT_BASE = 60.0
+RATE_LIMIT_CAP = 1800.0
+
+
+@dataclass
+class ProxyState:
+    app: str  # Heroku app name, or "" for direct
+    limit: int
+    inflight: int = 0
+    available_at: float = 0.0
+    strikes: int = 0
+    requests: int = 0
+    rate_limited: int = 0
+    failures: int = 0
+
+    @property
+    def base_url(self) -> str:
+        return f"https://{self.app}.herokuapp.com/" if self.app else ""
+
+    def ready(self, now: float) -> bool:
+        return self.inflight < self.limit and self.available_at <= now
+
+
+@dataclass
+class ProxyPool:
+    proxies: list[ProxyState]
+    _cond: asyncio.Condition = field(default_factory=asyncio.Condition)
+
+    @classmethod
+    def build(cls, apps: list[str], per_proxy: int, direct_limit: int = 4) -> ProxyPool:
+        if not apps:
+            return cls([ProxyState("", direct_limit)])
+        return cls([ProxyState(app, per_proxy) for app in apps])
+
+    @property
+    def capacity(self) -> int:
+        return sum(p.limit for p in self.proxies)
+
+    async def acquire(self) -> ProxyState:
+        """The least-loaded proxy that is not backing off; waits until one frees up."""
+        async with self._cond:
+            while True:
+                now = time.monotonic()
+                ready = [p for p in self.proxies if p.ready(now)]
+                if ready:
+                    chosen = min(ready, key=lambda p: (p.inflight, p.requests))
+                    chosen.inflight += 1
+                    chosen.requests += 1
+                    return chosen
+                waits = [p.available_at - now for p in self.proxies if p.available_at > now and p.inflight < p.limit]
+                timeout = min(waits) if waits else None
+                try:
+                    await asyncio.wait_for(self._cond.wait(), timeout)
+                except TimeoutError:
+                    pass
+
+    async def release(self, proxy: ProxyState) -> None:
+        async with self._cond:
+            proxy.inflight -= 1
+            self._cond.notify_all()
+
+    async def success(self, proxy: ProxyState) -> None:
+        proxy.strikes = 0
+
+    async def rate_limited(self, proxy: ProxyState, retry_after: float | None = None) -> None:
+        """Take the proxy out of rotation, exponentially longer for consecutive 429s."""
+        delay = retry_after if retry_after else min(RATE_LIMIT_CAP, RATE_LIMIT_BASE * 2**proxy.strikes)
+        delay *= random.uniform(1.0, 1.25)
+        proxy.strikes += 1
+        proxy.rate_limited += 1
+        proxy.available_at = time.monotonic() + delay
+        log.warning("proxy %s rate limited; backing off %.0fs (strike %d)", proxy.app or "direct", delay, proxy.strikes)
+
+    async def penalize(self, proxy: ProxyState, seconds: float) -> None:
+        proxy.failures += 1
+        proxy.available_at = max(proxy.available_at, time.monotonic() + seconds)
+
+    def stats(self) -> str:
+        return ", ".join(f"{p.app or 'direct'}:{p.requests}r/{p.rate_limited}rl/{p.failures}f" for p in self.proxies)

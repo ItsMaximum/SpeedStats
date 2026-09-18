@@ -34,6 +34,15 @@ def configure(
         con.execute(f"SET temp_directory = '{tmp.as_posix()}'")
 
 
+def _unused_path(path: Path) -> Path:
+    if not path.exists():
+        return path
+    n = 1
+    while (candidate := path.with_name(f"{path.stem}.{n}{path.suffix}")).exists():
+        n += 1
+    return candidate
+
+
 def build_published(
     con: duckdb.DuckDBPyConnection,
     out_path: Path,
@@ -47,6 +56,7 @@ def build_published(
 
     `con` must already hold games_d, series_d, game_series_d, platforms_d, areas_d, players_d and scored_input.
     """
+    out_path = _unused_path(out_path)  # never overwrite: the API may be serving the old file (locked on Windows)
     partial = out_path.with_name(out_path.name + ".partial")
     if partial.exists():
         partial.unlink()

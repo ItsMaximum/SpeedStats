@@ -28,7 +28,7 @@ from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
-from api.db import DbHolder, Meta, NoDatabase
+from api.db import DbHolder, Meta, NoDatabase, on_reload
 from api.queries import REQUEST_TYPE_NAMES, QueryResult, run_query
 from api.resolve import ResolvedFilter, resolve
 from api.schemas import HealthOut, MetaOut, QueryOut, Suggestion, SuggestOut
@@ -62,6 +62,10 @@ class ResultCache:
                 return self._items[key]
             return None
 
+    def clear(self) -> None:
+        with self._lock:
+            self._items.clear()
+
     def put(self, key: tuple[str, str], value: object) -> None:
         with self._lock:
             self._items[key] = value
@@ -71,6 +75,7 @@ class ResultCache:
 
 
 cache = ResultCache(CACHE_ENTRIES)
+on_reload(cache.clear)
 
 
 @asynccontextmanager

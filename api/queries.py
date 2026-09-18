@@ -71,12 +71,14 @@ FROM scope ORDER BY value DESC, leaderboard, player LIMIT $limit
 # Most Valuable Records: the best credited row of each leaderboard.
 RECORDS = (
     SCOPE_CTE
-    + """
+    + """,
+best AS (
+    SELECT * FROM scope
+    QUALIFY ROW_NUMBER() OVER (PARTITION BY leaderboard_id ORDER BY value DESC, place, player) = 1
+)
 SELECT ROW_NUMBER() OVER (ORDER BY value DESC, leaderboard) AS "Rank", leaderboard AS "Leaderboard", {player_cols}
        value AS "Value"
-FROM scope
-QUALIFY ROW_NUMBER() OVER (PARTITION BY leaderboard_id ORDER BY value DESC, place, player) = 1
-ORDER BY value DESC, leaderboard LIMIT $limit
+FROM best ORDER BY value DESC, leaderboard LIMIT $limit
 """
 )
 

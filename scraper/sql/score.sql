@@ -133,7 +133,9 @@ FROM games_d WHERE id IN (SELECT DISTINCT game_id FROM pub.runs) ORDER BY name_l
 
 CREATE TABLE pub.series AS
 SELECT id, name, url AS slug, lower(name) AS name_lower, lower(url) AS slug_lower
-FROM series_d ORDER BY name_lower;
+FROM series_d
+WHERE id IN (SELECT series_id FROM game_series_d WHERE game_id IN (SELECT id FROM pub.games))
+ORDER BY name_lower;
 
 CREATE TABLE pub.game_series AS
 SELECT DISTINCT game_id, series_id FROM game_series_d

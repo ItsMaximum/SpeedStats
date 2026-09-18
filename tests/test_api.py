@@ -87,6 +87,7 @@ def test_records_one_row_per_leaderboard(client):
     out = query(client, "request-type=records&limit=5000")
     boards = [r[1] for r in out["rows"]]
     assert len(boards) == len(set(boards))
+    assert [r[0] for r in out["rows"]] == list(range(1, len(boards) + 1))
 
 
 def test_platform_scope_and_limit(client):
