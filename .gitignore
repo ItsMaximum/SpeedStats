@@ -1,0 +1,19 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# node
+node_modules/
+web/dist/
+
+# local data & secrets
+data/
+.env
+
+# editors
+.vscode/
+.idea/
