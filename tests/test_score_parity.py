@@ -5,34 +5,20 @@ processruns.py produced from it. The same harness runs locally against the
 full runs.json/runs.csv pair via `python -m scraper parity`.
 """
 
-from datetime import UTC, datetime
 from pathlib import Path
 
 import duckdb
 import pytest
 
-from scraper.legacy import load_legacy_json
 from scraper.parity import compare_to_csv, format_report
-from scraper.score import build_published, configure
+from speedstats import paths
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
 
 @pytest.fixture(scope="module")
-def published(tmp_path_factory) -> Path:
-    tmp = tmp_path_factory.mktemp("parity")
-    con = duckdb.connect(str(tmp / "work.duckdb"))
-    configure(con, memory_limit="1GB", threads=2)
-    load_legacy_json(con, FIXTURES / "test-runs.json")
-    out = build_published(
-        con,
-        tmp / "speedstats-test.duckdb",
-        data_version="test",
-        scraped_at=datetime(2025, 9, 4, tzinfo=UTC),
-        excluded_players=[],
-    )
-    con.close()
-    return out
+def published(fixture_data_dir: Path) -> Path:
+    return paths.read_current(fixture_data_dir)
 
 
 def test_parity_with_old_pipeline(published: Path):

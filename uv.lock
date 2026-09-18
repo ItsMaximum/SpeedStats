@@ -677,6 +677,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "httpx" },
     { name = "ijson" },
     { name = "mysql-connector-python" },
     { name = "pytest" },
@@ -697,6 +698,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "httpx", specifier = ">=0.28.1" },
     { name = "ijson", specifier = ">=3.5.1" },
     { name = "mysql-connector-python", specifier = ">=9" },
     { name = "pytest", specifier = ">=8" },
