@@ -20,8 +20,10 @@ RATE_LIMIT_CAP = 1800.0
 class ProxyState:
     app: str  # Heroku app name, or "" for direct
     limit: int
+    min_interval: float = 0.0  # seconds between request starts (per-IP rate cap)
     inflight: int = 0
     available_at: float = 0.0
+    next_at: float = 0.0
     strikes: int = 0
     requests: int = 0
     rate_limited: int = 0
@@ -32,7 +34,7 @@ class ProxyState:
         return f"https://{self.app}.herokuapp.com/" if self.app else ""
 
     def ready(self, now: float) -> bool:
-        return self.inflight < self.limit and self.available_at <= now
+        return self.inflight < self.limit and self.available_at <= now and self.next_at <= now
 
 
 @dataclass
@@ -41,10 +43,12 @@ class ProxyPool:
     _cond: asyncio.Condition = field(default_factory=asyncio.Condition)
 
     @classmethod
-    def build(cls, apps: list[str], per_proxy: int, direct_limit: int = 4) -> ProxyPool:
+    def build(cls, apps: list[str], per_proxy: int, rpm: float = 100.0, direct_limit: int = 4) -> ProxyPool:
+        """`rpm` caps request starts per proxy (speedrun.com limits per IP, ~100/min)."""
+        interval = 60.0 / rpm if rpm > 0 else 0.0
         if not apps:
-            return cls([ProxyState("", direct_limit)])
-        return cls([ProxyState(app, per_proxy) for app in apps])
+            return cls([ProxyState("", direct_limit, interval)])
+        return cls([ProxyState(app, per_proxy, interval) for app in apps])
 
     @property
     def capacity(self) -> int:
@@ -60,8 +64,13 @@ class ProxyPool:
                     chosen = min(ready, key=lambda p: (p.inflight, p.requests))
                     chosen.inflight += 1
                     chosen.requests += 1
+                    chosen.next_at = now + chosen.min_interval
                     return chosen
-                waits = [p.available_at - now for p in self.proxies if p.available_at > now and p.inflight < p.limit]
+                waits = [
+                    max(p.available_at, p.next_at) - now
+                    for p in self.proxies
+                    if max(p.available_at, p.next_at) > now and p.inflight < p.limit
+                ]
                 timeout = min(waits) if waits else None
                 try:
                     await asyncio.wait_for(self._cond.wait(), timeout)

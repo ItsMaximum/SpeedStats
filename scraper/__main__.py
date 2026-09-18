@@ -62,7 +62,7 @@ async def _run_crawl(path: Path, cfg, resume: bool) -> None:
     from scraper.writer import DbWriter
 
     apps = await dedupe_proxies_by_ip(settings.src_proxies) if settings.use_proxy else []
-    pool = ProxyPool.build(apps, settings.src_per_proxy_concurrency)
+    pool = ProxyPool.build(apps, settings.src_per_proxy_concurrency, settings.src_per_proxy_rpm)
     logging.info("crawling via %s (%d concurrent requests)", "proxies" if apps else "direct requests", pool.capacity)
     client = SrcClient(pool, settings.src_max_attempts, settings.src_timeout)
     writer = DbWriter(path)
@@ -302,7 +302,9 @@ def main(argv: list[str] | None = None) -> int:
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
         stream=sys.stdout,
     )
-    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("httpx").setLevel(logging.DEBUG if args.verbose else logging.WARNING)
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(line_buffering=True)  # logs show up promptly when redirected to a file
     started = time.time()
     code = args.func(args)
     logging.info("finished in %.1fs", time.time() - started)

@@ -26,6 +26,7 @@ class Settings(BaseSettings):
     # scraper
     src_proxies: CsvList = []
     src_per_proxy_concurrency: int = 2
+    src_per_proxy_rpm: float = 100.0  # speedrun.com allows ~100 requests/minute per IP
     src_max_attempts: int = 20
     src_timeout: float = 60.0
     games_in_flight: int = 48

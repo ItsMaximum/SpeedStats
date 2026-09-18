@@ -10,7 +10,7 @@ from scraper.writer import DbWriter
 
 
 def make_client(handler, apps, per_proxy=1, max_attempts=6):
-    pool = ProxyPool.build(apps, per_proxy)
+    pool = ProxyPool.build(apps, per_proxy, rpm=0)
     client = SrcClient(pool, max_attempts=max_attempts, timeout=5, transient_delay=0.01)
     client._client = httpx.AsyncClient(transport=httpx.MockTransport(handler), base_url="")
     return client, pool
@@ -181,15 +181,24 @@ async def test_writer_commits_in_fifo_order_and_resumes_ord(tmp_path):
 
 
 async def test_burst_of_429s_is_one_strike():
-    pool = ProxyPool.build(["p"], per_proxy=4)
+    pool = ProxyPool.build(["p"], per_proxy=4, rpm=0)
     p = pool.proxies[0]
     for _ in range(4):
         await pool.rate_limited(p)
     assert p.strikes == 1 and p.rate_limited == 4
 
 
+async def test_rate_cap_spaces_requests():
+    pool = ProxyPool.build([], per_proxy=1, rpm=6000, direct_limit=4)  # 10ms apart
+    t0 = asyncio.get_running_loop().time()
+    for _ in range(4):
+        p = await pool.acquire()
+        await pool.release(p)
+    assert asyncio.get_running_loop().time() - t0 >= 0.025
+
+
 async def test_pool_waits_for_capacity():
-    pool = ProxyPool.build([], per_proxy=1, direct_limit=1)
+    pool = ProxyPool.build([], per_proxy=1, rpm=0, direct_limit=1)
     p = await pool.acquire()
     waiter = asyncio.create_task(pool.acquire())
     await asyncio.sleep(0.05)
