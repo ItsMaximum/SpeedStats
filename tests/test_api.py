@@ -20,7 +20,7 @@ def query(client, qs):
 def test_health_and_meta(client):
     assert client.get("/health").json()["data_version"] == "test"
     meta = client.get("/api/meta").json()
-    assert meta["row_count"] == 8992 and meta["stale"] is True  # fixture scrape is from 2025
+    assert meta["row_count"] == 8994 and meta["stale"] is True  # fixture scrape is from 2025
 
 
 def test_legacy_link_player_rankings(client):
