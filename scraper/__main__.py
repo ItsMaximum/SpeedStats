@@ -51,6 +51,19 @@ def _latest_crawl(data_dir: Path) -> Path | None:
     return crawls[-1] if crawls else None
 
 
+def _unfinished_crawl(data_dir: Path) -> Path | None:
+    """The latest crawl file that has not reached the final stage (a finished crawl is never resumed)."""
+    latest = _latest_crawl(data_dir)
+    if latest is None:
+        return None
+    con = duckdb.connect(str(latest), read_only=True)
+    try:
+        row = con.execute("SELECT value FROM crawl_meta WHERE key = 'stage'").fetchone()
+    finally:
+        con.close()
+    return None if row and row[0] == "games_crawled" else latest
+
+
 def _crawl_version(path: Path) -> str:
     return path.stem.removeprefix("crawl-")
 
@@ -79,18 +92,17 @@ async def _run_crawl(path: Path, cfg, resume: bool) -> None:
 
 def cmd_crawl(args: argparse.Namespace) -> int:
     from scraper.crawl import CrawlConfig
+    from scraper.score import new_version
 
     data_dir = Path(args.data_dir)
-    if args.resume and not args.version:
-        latest = _latest_crawl(data_dir)
-        if latest is None:
-            logging.error("nothing to resume in %s", paths.work_dir(data_dir))
-            return 2
-        path = latest
+    resume = False
+    if args.version:
+        path = paths.crawl_path(data_dir, args.version)
+        resume = args.resume and path.exists()
+    elif args.resume and (unfinished := _unfinished_crawl(data_dir)) is not None:
+        path, resume = unfinished, True  # continue the unfinished crawl
     else:
-        from scraper.score import new_version
-
-        path = paths.crawl_path(data_dir, args.version or new_version())
+        path = paths.crawl_path(data_dir, new_version())  # nothing to resume: start fresh
     cfg = CrawlConfig(
         excluded_games=set(settings.excluded_games),
         excluded_categories=set(settings.excluded_categories),
@@ -98,8 +110,8 @@ def cmd_crawl(args: argparse.Namespace) -> int:
         only_series=args.only_series,
         only_game=args.only_game,
     )
-    logging.info("crawl file: %s (resume=%s)", path, args.resume)
-    asyncio.run(_run_crawl(path, cfg, args.resume))
+    logging.info("crawl file: %s (resume=%s)", path, resume)
+    asyncio.run(_run_crawl(path, cfg, resume))
     return 0
 
 
