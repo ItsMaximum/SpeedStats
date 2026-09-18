@@ -85,10 +85,10 @@ jobs:
           docker compose pull api dozzle
           docker compose up -d api dozzle
           docker image prune -f
-      - name: Wait for health
+      - name: Wait for the API to come up
         run: |
           for i in $(seq 1 30); do
-            curl -fsS http://localhost:8000/health && exit 0
+            curl -fsS http://localhost:8000/healthz && exit 0
             sleep 2
           done
           echo "API did not become healthy" >&2

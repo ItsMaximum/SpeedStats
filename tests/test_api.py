@@ -17,6 +17,10 @@ def query(client, qs):
     return r.json()
 
 
+def test_healthz_is_liveness_only(client):
+    assert client.get("/healthz").json() == {"ok": True, "data": True}
+
+
 def test_health_and_meta(client):
     assert client.get("/health").json()["data_version"] == "test"
     meta = client.get("/api/meta").json()

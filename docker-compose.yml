@@ -16,7 +16,7 @@ services:
       DATA_DIR: /data
       FLAG_CACHE_DIR: /flags
     healthcheck:
-      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/healthz')"]
       interval: 30s
       timeout: 5s
       retries: 3

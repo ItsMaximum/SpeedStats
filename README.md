@@ -87,7 +87,7 @@ existing Cloudflare Tunnel. Nothing needs ssh after the one-time `ops/vm-setup.s
 | weekly scrape | `scrape.yml`, Sundays 2 AM Eastern (or *Run workflow*); logs, re-run and a summary in the Actions tab |
 | container logs | `logs.speedstats.app` (Dozzle, behind Cloudflare Access) |
 | traffic, cache, tunnel | Cloudflare dashboard |
-| is the data fresh? | `/health` reports `data_version`, `scraped_at` and `stale` (older than 9 days) |
+| is the data fresh? | `/health` reports `data_version`, `scraped_at` and `stale` (older than 9 days); 503 until the first publish. `/healthz` is plain liveness |
 
 Secrets (proxy names, excluded players, Cloudflare and R2 tokens) are GitHub Actions secrets; the Deploy
 workflow writes them to `/opt/speedstats/.env` on the VM. Non-secret settings (`PUBLIC_URL`, `R2_BUCKET`, ...) are

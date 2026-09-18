@@ -3,7 +3,8 @@
 /api/query    the seven request types (JSON, or CSV with format=csv)
 /api/suggest  autocomplete for the filter boxes
 /api/meta     data version / last update
-/health       liveness + staleness for monitoring
+/health       readiness (503 until data is published) + staleness, for uptime monitoring
+/healthz      liveness (200 whenever the process runs), for docker and deploys
 /*            the built React app (web/dist), with per-query <title>/og: tags injected for link previews
 """
 
@@ -291,6 +292,12 @@ def api_meta():
         return meta_out(holder.meta)
     except NoDatabase as e:
         raise HTTPException(503, "no data published yet") from e
+
+
+@app.get("/healthz", include_in_schema=False)
+def healthz():
+    """Liveness only: 200 whenever the process is up. /health additionally requires published data."""
+    return {"ok": True, "data": holder.ready}
 
 
 @app.get("/health", response_model=HealthOut)
