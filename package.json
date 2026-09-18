@@ -5,6 +5,7 @@
     "dev": "concurrently -k -n api,web -c blue,green \"npm:dev:api\" \"npm:dev:web\"",
     "dev:api": "uv run uvicorn api.main:app --reload --port 8000",
     "dev:web": "npm --prefix web run dev",
+    "dev:live": "npm --prefix web run dev:live",
     "build": "npm --prefix web run build",
     "test": "uv run pytest -q && npm --prefix web test -- --run",
     "check": "uv run ruff check . && uv run ruff format --check . && npm --prefix web run typecheck && npm test",

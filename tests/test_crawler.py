@@ -180,6 +180,14 @@ async def test_writer_commits_in_fifo_order_and_resumes_ord(tmp_path):
     reopened.con.close()
 
 
+async def test_burst_of_429s_is_one_strike():
+    pool = ProxyPool.build(["p"], per_proxy=4)
+    p = pool.proxies[0]
+    for _ in range(4):
+        await pool.rate_limited(p)
+    assert p.strikes == 1 and p.rate_limited == 4
+
+
 async def test_pool_waits_for_capacity():
     pool = ProxyPool.build([], per_proxy=1, direct_limit=1)
     p = await pool.acquire()

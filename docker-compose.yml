@@ -1,0 +1,55 @@
+# Production layout on the VM. Everything lives under /opt/speedstats: data/ (databases), .env (secrets).
+# The cloudflared tunnel runs on the host (systemd) and routes new.speedstats.app -> localhost:8000 (later
+# speedstats.app itself) and logs.speedstats.app -> localhost:9999 (behind Cloudflare Access).
+
+services:
+  api:
+    image: ${SPEEDSTATS_IMAGE:-ghcr.io/itsmaximum/speedstats:latest}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - /opt/speedstats/data:/data:ro
+      - flags:/flags
+    env_file: /opt/speedstats/.env
+    environment:
+      DATA_DIR: /data
+      FLAG_CACHE_DIR: /flags
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: json-file
+      options: { max-size: "20m", max-file: "5" }
+
+  # live container logs in the browser (logs.speedstats.app, behind Cloudflare Access)
+  dozzle:
+    image: amir20/dozzle:latest
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9999:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      DOZZLE_NO_ANALYTICS: "true"
+
+  # run on demand by the scrape workflow: docker compose run --rm scraper all --resume
+  scraper:
+    image: ${SPEEDSTATS_IMAGE:-ghcr.io/itsmaximum/speedstats:latest}
+    profiles: ["manual"]
+    volumes:
+      - /opt/speedstats/data:/data
+    env_file: /opt/speedstats/.env
+    environment:
+      DATA_DIR: /data
+      API_HEALTH_URL: http://api:8000/health
+      GITHUB_STEP_SUMMARY: /data/step-summary.md
+    entrypoint: ["python", "-m", "scraper"]
+    logging:
+      driver: json-file
+      options: { max-size: "50m", max-file: "5" }
+
+volumes:
+  flags:

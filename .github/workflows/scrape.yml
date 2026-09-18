@@ -1,0 +1,37 @@
+name: Weekly scrape
+
+on:
+  schedule:
+    # Sundays 2 AM Eastern. GitHub cron is UTC only: 06:00 UTC during EDT (Mar-Nov), so 1 AM ET during EST.
+    - cron: "0 6 * * 0"
+  workflow_dispatch:
+    inputs:
+      resume:
+        description: "Resume the latest unfinished crawl instead of starting a new one"
+        type: boolean
+        default: true
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: [self-hosted, speedstats]
+    timeout-minutes: 1440
+    steps:
+      - uses: actions/checkout@v4
+      - name: Crawl, score, validate, publish
+        env:
+          RESUME: ${{ github.event_name == 'schedule' || inputs.resume }}
+        run: |
+          docker compose pull scraper
+          rm -f /opt/speedstats/data/step-summary.md
+          if [ "$RESUME" = "true" ]; then FLAGS="--resume"; else FLAGS=""; fi
+          docker compose run --rm scraper all $FLAGS
+      - name: Job summary
+        if: always()
+        run: |
+          if [ -f /opt/speedstats/data/step-summary.md ]; then
+            cat /opt/speedstats/data/step-summary.md >> "$GITHUB_STEP_SUMMARY"
+          fi

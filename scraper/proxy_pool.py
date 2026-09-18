@@ -78,11 +78,14 @@ class ProxyPool:
 
     async def rate_limited(self, proxy: ProxyState, retry_after: float | None = None) -> None:
         """Take the proxy out of rotation, exponentially longer for consecutive 429s."""
+        now = time.monotonic()
+        proxy.rate_limited += 1
+        if proxy.available_at > now:
+            return  # a burst of 429s from requests already in flight is one strike, not several
         delay = retry_after if retry_after else min(RATE_LIMIT_CAP, RATE_LIMIT_BASE * 2**proxy.strikes)
         delay *= random.uniform(1.0, 1.25)
         proxy.strikes += 1
-        proxy.rate_limited += 1
-        proxy.available_at = time.monotonic() + delay
+        proxy.available_at = now + delay
         log.warning("proxy %s rate limited; backing off %.0fs (strike %d)", proxy.app or "direct", delay, proxy.strikes)
 
     async def penalize(self, proxy: ProxyState, seconds: float) -> None:

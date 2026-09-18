@@ -21,6 +21,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     data_dir: Path = Path("./data")
+    flag_cache_dir: Path | None = None  # default: DATA_DIR/flags (the API container mounts DATA_DIR read-only)
 
     # scraper
     src_proxies: CsvList = []
@@ -47,6 +48,10 @@ class Settings(BaseSettings):
     @classmethod
     def _split_csv(cls, value: object) -> list[str]:
         return _csv(value)
+
+    @property
+    def flag_cache(self) -> Path:
+        return self.flag_cache_dir or self.data_dir / "flags"
 
     @property
     def use_proxy(self) -> bool:

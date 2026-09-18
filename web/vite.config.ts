@@ -17,12 +17,16 @@ function devPlaceholders(): Plugin {
   };
 }
 
+// `npm run dev` proxies API calls to the local FastAPI; `npm run dev:live` (VITE_API_TARGET) to the deployed one.
+const apiTarget = process.env.VITE_API_TARGET ?? "http://localhost:8000";
+const proxy = { target: apiTarget, changeOrigin: true, secure: true };
+
 export default defineConfig({
   plugins: [react(), devPlaceholders()],
   server: {
     proxy: {
-      "/api": "http://localhost:8000",
-      "/health": "http://localhost:8000",
+      "/api": proxy,
+      "/health": proxy,
     },
   },
   build: { sourcemap: true },

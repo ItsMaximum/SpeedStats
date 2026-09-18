@@ -272,7 +272,7 @@ def api_flag(flag: str):
     """Flag images as shown on speedrun.com leaderboards, fetched once and cached on disk."""
     if not FLAG_ID.match(flag):
         raise HTTPException(404)
-    cached = settings.data_dir / "flags" / f"{flag}.png"
+    cached = settings.flag_cache / f"{flag}.png"
     if not cached.exists():
         try:
             r = httpx.get(FLAG_SOURCE + flag + ".png", timeout=15, follow_redirects=True)
