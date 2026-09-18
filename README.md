@@ -100,3 +100,7 @@ repository variables. Change one, re-run Deploy. See `.env.example` for the full
 3. When happy: change the tunnel route for `speedstats.app` to `http://localhost:8000` and set
    `PUBLIC_URL=https://speedstats.app`. Rollback is switching the route back.
 4. After a clean week: stop Apache/PHP and MariaDB, retire the old repos.
+
+## License
+
+[GPL-3.0-or-later](LICENSE), like the previous SpeedStats repositories.
