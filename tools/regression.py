@@ -1,7 +1,7 @@
 """Regression check of the new API against the live PHP site, for real production URLs.
 
-    uv run python tools/regression.py capture              # fetch each URL in tests/regression/urls.txt from speedstats.app
-    uv run python tools/regression.py check --db <file>    # compare snapshots with the new API over a full-data database
+    uv run python tools/regression.py capture            # fetch each URL in tests/regression/urls.txt from prod
+    uv run python tools/regression.py check --db <file>  # compare snapshots with the new API over a full-data database
 
 Only columns present in both are compared (the new API adds Country). Differences in data (the live site may be on
 an older crawl than the runs.json used locally) show up as row differences; differences in logic show up as

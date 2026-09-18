@@ -1,7 +1,8 @@
 """Turn the free-text terms of a FilterSpec into sets of ids, using the published lookup tables.
 
-Every term matches a full name or a speedrun.com slug, case-insensitively. Countries match the ISO code or name of
-any area that has its own leaderboard flag on speedrun.com (countries, plus e.g. England). Unmatched terms become warnings and are never silently dropped.
+Every term matches a full name or a speedrun.com slug, case-insensitively. Countries match the ISO code or name
+of any area that has its own leaderboard flag on speedrun.com (countries, plus e.g. England). Unmatched terms
+become warnings and are never silently dropped.
 """
 
 from __future__ import annotations
