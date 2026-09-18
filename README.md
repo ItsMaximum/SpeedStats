@@ -89,7 +89,9 @@ existing Cloudflare Tunnel. Nothing needs ssh after the one-time `ops/vm-setup.s
 | traffic, cache, tunnel | Cloudflare dashboard |
 | is the data fresh? | `/health` reports `data_version`, `scraped_at` and `stale` (older than 9 days) |
 
-Secrets live only in `/opt/speedstats/.env` on the VM (see `.env.example` for the list).
+Secrets (proxy names, excluded players, Cloudflare and R2 tokens) are GitHub Actions secrets; the Deploy
+workflow writes them to `/opt/speedstats/.env` on the VM. Non-secret settings (`PUBLIC_URL`, `R2_BUCKET`, ...) are
+repository variables. Change one, re-run Deploy. See `.env.example` for the full list.
 
 ### Cut-over plan
 

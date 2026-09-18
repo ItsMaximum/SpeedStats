@@ -47,6 +47,27 @@ jobs:
     runs-on: [self-hosted, speedstats]
     steps:
       - uses: actions/checkout@v4
+      - name: Write /opt/speedstats/.env from repository secrets and variables
+        # Secrets: Settings -> Secrets and variables -> Actions. Editing one and re-running Deploy updates the VM;
+        # the file never lives in the repo. Non-secret settings are repository *variables*.
+        run: |
+          umask 077
+          cat > /opt/speedstats/.env <<'EOF'
+          SRC_PROXIES=${{ secrets.SRC_PROXIES }}
+          EXCLUDED_PLAYERS=${{ secrets.EXCLUDED_PLAYERS }}
+          CLOUDFLARE_ZONE_ID=${{ secrets.CLOUDFLARE_ZONE_ID }}
+          CLOUDFLARE_API_TOKEN=${{ secrets.CLOUDFLARE_API_TOKEN }}
+          R2_ACCOUNT_ID=${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID=${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY=${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET=${{ vars.R2_BUCKET || 'speedstats' }}
+          PUBLIC_URL=${{ vars.PUBLIC_URL || 'https://new.speedstats.app' }}
+          SRC_PER_PROXY_CONCURRENCY=${{ vars.SRC_PER_PROXY_CONCURRENCY || '2' }}
+          SRC_PER_PROXY_RPM=${{ vars.SRC_PER_PROXY_RPM || '100' }}
+          EXCLUDED_GAMES=${{ vars.EXCLUDED_GAMES || 'w6jrzxdj' }}
+          EXCLUDED_CATEGORIES=${{ vars.EXCLUDED_CATEGORIES || 'n2y350ed,5dw43j0k' }}
+          MIN_LEADERBOARDS=${{ vars.MIN_LEADERBOARDS || '600000' }}
+          EOF
       - name: Pull and restart the API
         env:
           SPEEDSTATS_IMAGE: ${{ needs.build.outputs.image }}:${{ github.sha }}

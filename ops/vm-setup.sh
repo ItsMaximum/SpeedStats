@@ -9,7 +9,7 @@
 #
 # What it does:
 #   1. installs Docker (if missing) and lets this user run it
-#   2. creates /opt/speedstats with data/ and an .env you fill in once
+#   2. creates /opt/speedstats with data/ (the .env is written by the Deploy workflow from GitHub secrets)
 #   3. installs the GitHub Actions self-hosted runner as a systemd service (label: speedstats)
 #   4. starts the api + dozzle containers
 # The existing cloudflared systemd service is left alone; add tunnel routes in the Zero Trust dashboard:
@@ -49,26 +49,10 @@ log "creating $BASE"
 sudo mkdir -p "$BASE/data"
 sudo chown -R "$USER:$USER" "$BASE"
 if [ ! -f "$BASE/.env" ]; then
-  cat > "$BASE/.env" <<'EOF'
-# Production secrets for SpeedStats. Fill these in once; docker compose passes them to the api and scraper.
-SRC_PROXIES=<heroku-app-1>,<heroku-app-2>,...
-SRC_PER_PROXY_CONCURRENCY=2
-EXCLUDED_GAMES=w6jrzxdj
-EXCLUDED_CATEGORIES=n2y350ed,5dw43j0k
-EXCLUDED_PLAYERS=
-MIN_LEADERBOARDS=600000
-PUBLIC_URL=https://new.speedstats.app
-# Cloudflare: zone id of speedstats.app and an API token with "Zone.Cache Purge" permission
-CLOUDFLARE_ZONE_ID=
-CLOUDFLARE_API_TOKEN=
-# R2 (weekly snapshots): bucket + an API token with object read/write
-R2_ACCOUNT_ID=
-R2_ACCESS_KEY_ID=
-R2_SECRET_ACCESS_KEY=
-R2_BUCKET=speedstats
-EOF
+  # placeholder so docker compose can start; the Deploy workflow overwrites it from GitHub secrets
+  printf '# written by the Deploy workflow (GitHub -> Settings -> Secrets and variables -> Actions)
+' > "$BASE/.env"
   chmod 600 "$BASE/.env"
-  log "wrote $BASE/.env template - edit it (nano $BASE/.env) and fill in the proxies and tokens"
 fi
 
 # 3. GitHub Actions runner ---------------------------------------------------------------------------------------
@@ -104,7 +88,7 @@ log "done"
 cat <<EOF
 
 Next steps:
-  1. edit $BASE/.env (proxies, Cloudflare + R2 tokens), then: cd $BASE && docker compose up -d api
+  1. GitHub -> Actions -> Deploy -> Run workflow: writes $BASE/.env from the repository secrets and starts the API
   2. Cloudflare Zero Trust -> Tunnels -> your tunnel -> add public hostnames:
        new.speedstats.app  -> http://localhost:8000
        logs.speedstats.app -> http://localhost:9999  (+ an Access policy)
