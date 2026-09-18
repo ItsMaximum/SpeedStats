@@ -1,0 +1,5052 @@
+{
+ "query": "series=&games=&platforms=&players=Maximum%2C+NorXor&request-type=runs",
+ "columns": [
+  "Rank",
+  "Player",
+  "Leaderboard",
+  "Place",
+  "Value"
+ ],
+ "rows": [
+  [
+   "1",
+   "NorXor",
+   "Geometry Dash: 1-8 - Any%, Platformer/PC, No Major Glitches",
+   "1",
+   "614.704"
+  ],
+  [
+   "2",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%",
+   "3",
+   "545.178"
+  ],
+  [
+   "3",
+   "NorXor",
+   "Red Ball: 12 Levels",
+   "7",
+   "461.699"
+  ],
+  [
+   "4",
+   "NorXor",
+   "The Fancy Pants Adventures: World 1: Any%",
+   "2",
+   "457.391"
+  ],
+  [
+   "5",
+   "NorXor",
+   "Red Ball: 12 Levels (Glitchless)",
+   "1",
+   "350.313"
+  ],
+  [
+   "6",
+   "NorXor",
+   "Red Ball 2: 20 Levels",
+   "3",
+   "325.78"
+  ],
+  [
+   "7",
+   "Maximum",
+   "Red Ball: 12 Levels",
+   "12",
+   "308.665"
+  ],
+  [
+   "8",
+   "Maximum",
+   "Run 2: Skater Level Set - Skater No DJ, Fast, Any%",
+   "1",
+   "301.693"
+  ],
+  [
+   "9",
+   "NorXor",
+   "Red Ball 3: Any%",
+   "5",
+   "275.91"
+  ],
+  [
+   "10",
+   "NorXor",
+   "Achievement Unlocked: Any%",
+   "1",
+   "256.791"
+  ],
+  [
+   "11",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless",
+   "1",
+   "244.506"
+  ],
+  [
+   "12",
+   "Maximum",
+   "This Is The Only Level: Any%, P+Gless",
+   "1",
+   "244.506"
+  ],
+  [
+   "13",
+   "NorXor",
+   "Cat Mario: Warpless No OoB",
+   "2",
+   "226.753"
+  ],
+  [
+   "14",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any%",
+   "2",
+   "226.218"
+  ],
+  [
+   "15",
+   "NorXor",
+   "Multiple Red Ball Games: Red Ball 4 - Any%",
+   "1",
+   "221.976"
+  ],
+  [
+   "16",
+   "NorXor",
+   "The Fancy Pants Adventures: World 2: Any% - No Major Glitches",
+   "1",
+   "220.384"
+  ],
+  [
+   "17",
+   "NorXor",
+   "Red Ball 2: 25 Levels",
+   "2",
+   "217.342"
+  ],
+  [
+   "18",
+   "Maximum",
+   "Run 2: Skater Level Set - Skater No DJ, Normal, Any%",
+   "1",
+   "201.127"
+  ],
+  [
+   "19",
+   "Maximum",
+   "Minecraft (Classic): Reach Bedrock",
+   "2",
+   "191.832"
+  ],
+  [
+   "20",
+   "NorXor",
+   "Multiple Red Ball Games: Full Series - Any%",
+   "1",
+   "185.292"
+  ],
+  [
+   "21",
+   "NorXor",
+   "Cat Mario: Any% - No Menu Warp",
+   "1",
+   "175.616"
+  ],
+  [
+   "22",
+   "NorXor",
+   "Ooh, Aah & You: Fetch-A-Fruit: Easy - No VS/FS",
+   "4",
+   "147.586"
+  ],
+  [
+   "23",
+   "Maximum",
+   "Run 2: Runner Level Set - Any%, Runner No DJ, Fast",
+   "5",
+   "147.067"
+  ],
+  [
+   "24",
+   "Maximum",
+   "Toxic 2: Any%",
+   "5",
+   "137.738"
+  ],
+  [
+   "25",
+   "NorXor",
+   "Red Remover: Any%",
+   "1",
+   "132.646"
+  ],
+  [
+   "26",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%",
+   "4",
+   "126.408"
+  ],
+  [
+   "27",
+   "NorXor",
+   "Red Ball: 17 Levels",
+   "7",
+   "123.121"
+  ],
+  [
+   "28",
+   "NorXor",
+   "Red Ball 4 (Mobile): Any% - Glitchless, Original",
+   "1",
+   "118.78"
+  ],
+  [
+   "29",
+   "Maximum",
+   "Red Ball 3: Any%",
+   "13",
+   "115.897"
+  ],
+  [
+   "30",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any%",
+   "21",
+   "114.372"
+  ],
+  [
+   "31",
+   "NorXor",
+   "Cat Mario: Warpless",
+   "1",
+   "110.625"
+  ],
+  [
+   "32",
+   "Maximum",
+   "Red Ball: 17 Levels",
+   "8",
+   "109.371"
+  ],
+  [
+   "33",
+   "Maximum",
+   "Ooh, Aah & You: Fetch-A-Fruit: Easy - No VS/FS",
+   "6",
+   "106.767"
+  ],
+  [
+   "34",
+   "NorXor",
+   "Multiple Red Ball Games: Red Ball 1-3 - Any%",
+   "2",
+   "99.547"
+  ],
+  [
+   "35",
+   "Maximum",
+   "Geometry Dash: 1-8 - Any%, Platformer/PC, No Major Glitches",
+   "17",
+   "91.449"
+  ],
+  [
+   "36",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any% Glitchless",
+   "8",
+   "90.532"
+  ],
+  [
+   "37",
+   "Maximum",
+   "Run 2: Runner Level Set - Any%, Runner No DJ, Normal",
+   "4",
+   "89.482"
+  ],
+  [
+   "38",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any% Glitchless",
+   "7",
+   "84.599"
+  ],
+  [
+   "39",
+   "Maximum",
+   "Super Mario Bros.: Any% - NTSC",
+   "64",
+   "83.66"
+  ],
+  [
+   "40",
+   "Maximum",
+   "Run: Adventure Mode - Fast, Runner, Flash",
+   "4",
+   "83.184"
+  ],
+  [
+   "41",
+   "NorXor",
+   "Red Ball 4 Vol.1: 100%",
+   "2",
+   "82.474"
+  ],
+  [
+   "42",
+   "NorXor",
+   "Red and Blue Balls: 15 Levels",
+   "8",
+   "80.46"
+  ],
+  [
+   "43",
+   "NorXor",
+   "Red Ball 4 (Mobile): Green Hills - Glitchless, Any%, Original",
+   "5",
+   "74.446"
+  ],
+  [
+   "44",
+   "Maximum",
+   "Run 2: Runner Level Set - Any%, Skater DJ, Fast",
+   "1",
+   "73.74"
+  ],
+  [
+   "45",
+   "Maximum",
+   "Run 2: Skater Level Set - Skater DJ, Intense, Any%",
+   "1",
+   "73.651"
+  ],
+  [
+   "46",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any% Glitchless",
+   "8",
+   "73.45"
+  ],
+  [
+   "47",
+   "NorXor",
+   "Red and Blue Balls 3: Any%",
+   "3",
+   "72.049"
+  ],
+  [
+   "48",
+   "Maximum",
+   "Run 3: Any%",
+   "7",
+   "68.194"
+  ],
+  [
+   "49",
+   "Maximum",
+   "Red Ball 2: 20 Levels",
+   "16",
+   "65.84"
+  ],
+  [
+   "50",
+   "NorXor",
+   "Red Ball: Raise the Flag, 8 - No Lag Abuse",
+   "4",
+   "59.154"
+  ],
+  [
+   "51",
+   "Maximum",
+   "Multiple Red Ball Games: Full Series - Any%",
+   "4",
+   "57.42"
+  ],
+  [
+   "52",
+   "Maximum",
+   "Run 2: Runner Level Set - Any%, Runner No DJ, Intense",
+   "1",
+   "56.699"
+  ],
+  [
+   "53",
+   "NorXor",
+   "Red Ball: Raise the Flag, 3",
+   "1",
+   "56.422"
+  ],
+  [
+   "54",
+   "NorXor",
+   "Red Ball: Raise the Flag, 6",
+   "1",
+   "52.852"
+  ],
+  [
+   "55",
+   "NorXor",
+   "Red Ball 2: Raise the Flag, 15",
+   "1",
+   "52.122"
+  ],
+  [
+   "56",
+   "Maximum",
+   "Super Mario 63: Any% - Normal",
+   "46",
+   "49.731"
+  ],
+  [
+   "57",
+   "NorXor",
+   "Red Ball 4 (Mobile): Deep Forest - Glitchless, Any%, Original",
+   "1",
+   "48.607"
+  ],
+  [
+   "58",
+   "Maximum",
+   "Red Ball 2: 25 Levels",
+   "9",
+   "47.965"
+  ],
+  [
+   "59",
+   "NorXor",
+   "Red Ball: Raise the Flag, 10",
+   "5",
+   "47.816"
+  ],
+  [
+   "60",
+   "NorXor",
+   "Red Ball 5: Any% No Level Skip - Download",
+   "5",
+   "47.366"
+  ],
+  [
+   "61",
+   "Maximum",
+   "Multiple Red Ball Games: Red Ball 4 - Any%",
+   "6",
+   "46.655"
+  ],
+  [
+   "62",
+   "Maximum",
+   "Run 2: Runner Level Set - Any%, Skater DJ, Normal",
+   "1",
+   "45.49"
+  ],
+  [
+   "63",
+   "NorXor",
+   "Red Ball: Raise the Flag, 4",
+   "1",
+   "45.224"
+  ],
+  [
+   "64",
+   "Maximum",
+   "Run 2: Skater Level Set - Skater No DJ, Intense, Any%",
+   "1",
+   "44.661"
+  ],
+  [
+   "65",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 15",
+   "2",
+   "44.471"
+  ],
+  [
+   "66",
+   "Maximum",
+   "Run: Adventure Mode - Intense, Runner, Flash",
+   "1",
+   "43.608"
+  ],
+  [
+   "67",
+   "Maximum",
+   "Red Ball: 12 Levels (Glitchless)",
+   "14",
+   "42.386"
+  ],
+  [
+   "68",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%",
+   "13",
+   "41.846"
+  ],
+  [
+   "69",
+   "NorXor",
+   "Red Ball 2: Raise the Flag, 23",
+   "2",
+   "41.787"
+  ],
+  [
+   "70",
+   "NorXor",
+   "Slender: The Eight Pages: Modded%",
+   "1",
+   "41.767"
+  ],
+  [
+   "71",
+   "Maximum",
+   "Ooh, Aah & You: Fetch-A-Fruit: Medium - No VS/FS",
+   "3",
+   "40.96"
+  ],
+  [
+   "72",
+   "NorXor",
+   "Red Ball: 17 Levels (Glitchless)",
+   "3",
+   "38.998"
+  ],
+  [
+   "73",
+   "Maximum",
+   "Multiple Run Games: Any%",
+   "1",
+   "38.192"
+  ],
+  [
+   "74",
+   "Maximum",
+   "Pixel Quest: 16 Levels - Glitchless, All Levels",
+   "8",
+   "37.775"
+  ],
+  [
+   "75",
+   "NorXor",
+   "Geometry Dash: Tower - Platformer/PC, Floor 1, Any%, No Major Glitches",
+   "13",
+   "37.152"
+  ],
+  [
+   "76",
+   "Maximum",
+   "Run 2: Skater Level Set - Skater DJ, Fast, Any%",
+   "1",
+   "36.981"
+  ],
+  [
+   "77",
+   "Maximum",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: Any% - 1-18 (Glitchless)",
+   "3",
+   "36.849"
+  ],
+  [
+   "78",
+   "NorXor",
+   "Red Ball: Raise the Flag, 11",
+   "12",
+   "36.132"
+  ],
+  [
+   "79",
+   "NorXor",
+   "Run 2: Runner Level Set - Any%, Runner No DJ, Fast",
+   "19",
+   "35.506"
+  ],
+  [
+   "80",
+   "NorXor",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitchless, Any%, Original",
+   "1",
+   "34.871"
+  ],
+  [
+   "81",
+   "NorXor",
+   "Red Ball: Raise the Flag, 17",
+   "3",
+   "34.396"
+  ],
+  [
+   "82",
+   "Maximum",
+   "Run 2: Both Level Sets - Any%",
+   "2",
+   "34.336"
+  ],
+  [
+   "83",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P) - Flash",
+   "5",
+   "34.167"
+  ],
+  [
+   "84",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%",
+   "15",
+   "32.757"
+  ],
+  [
+   "85",
+   "Maximum",
+   "Run 2: Runner Level Set - Any%, Skater DJ, Intense",
+   "1",
+   "32.11"
+  ],
+  [
+   "86",
+   "Maximum",
+   "Multiple Red Ball Games: Red Ball 1-3 - Any%",
+   "6",
+   "32.063"
+  ],
+  [
+   "87",
+   "NorXor",
+   "Red Ball: Raise the Flag, 9",
+   "7",
+   "31.762"
+  ],
+  [
+   "88",
+   "NorXor",
+   "Red and Blue Balls 2: Any%",
+   "6",
+   "31.629"
+  ],
+  [
+   "89",
+   "NorXor",
+   "Red Ball: Raise the Flag, 2",
+   "1",
+   "31.597"
+  ],
+  [
+   "90",
+   "NorXor",
+   "Wii Sports Resort: Golf - 18 Holes",
+   "50",
+   "30.832"
+  ],
+  [
+   "91",
+   "Maximum",
+   "Run 2: Skater Level Set - Skater DJ, Normal, Any%",
+   "1",
+   "28.903"
+  ],
+  [
+   "92",
+   "Maximum",
+   "Multiple Red Ball Games: Red Ball 1-3 - 100%",
+   "1",
+   "27.845"
+  ],
+  [
+   "93",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball 2 - Bonus Levels",
+   "2",
+   "27.568"
+  ],
+  [
+   "94",
+   "NorXor",
+   "Red Ball: Raise the Flag, 12",
+   "6",
+   "27.081"
+  ],
+  [
+   "95",
+   "Maximum",
+   "Geometry Dash: 1-8 - Any%, Mobile, No Major Glitches",
+   "12",
+   "26.953"
+  ],
+  [
+   "96",
+   "NorXor",
+   "Red Ball: Raise the Flag, 14",
+   "5",
+   "26.772"
+  ],
+  [
+   "97",
+   "NorXor",
+   "Multiple Red Ball Games: Full Series Any% Relay - 2 Players",
+   "1",
+   "25.983"
+  ],
+  [
+   "98",
+   "Maximum",
+   "Red Ball Category Extensions: Hacks - Red Ball 4 Vol.Nice",
+   "3",
+   "25.233"
+  ],
+  [
+   "99",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any% Glitchless",
+   "7",
+   "23.903"
+  ],
+  [
+   "100",
+   "NorXor",
+   "Red Ball: Raise the Flag, 13",
+   "5",
+   "23.786"
+  ],
+  [
+   "101",
+   "Maximum",
+   "Red Ball 4 Vol.1: 100%",
+   "7",
+   "23.73"
+  ],
+  [
+   "102",
+   "Maximum",
+   "Ooh, Aah & You: Fetch-A-Fruit: All Dungeons - No VS/FS",
+   "3",
+   "23.592"
+  ],
+  [
+   "103",
+   "NorXor",
+   "Red Ball 3: 100%",
+   "5",
+   "22.787"
+  ],
+  [
+   "104",
+   "Maximum",
+   "Super Mario Bros. Category Extensions: Coop - Any%",
+   "4",
+   "21.41"
+  ],
+  [
+   "105",
+   "NorXor",
+   "Slender: The Eight Pages: Any% - 0.9.1",
+   "3",
+   "21.369"
+  ],
+  [
+   "106",
+   "NorXor",
+   "Red and Blue Balls: 20 Levels",
+   "6",
+   "20.659"
+  ],
+  [
+   "107",
+   "NorXor",
+   "Geometry Dash: Beat The Level, The Secret Hollow - Any%",
+   "20",
+   "20.21"
+  ],
+  [
+   "108",
+   "NorXor",
+   "Cat Mario: Any% - No Restrictions",
+   "1",
+   "20.208"
+  ],
+  [
+   "109",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball - Bonus Levels",
+   "4",
+   "20.152"
+  ],
+  [
+   "110",
+   "Maximum",
+   "Red Ball 4 (Mobile): Green Hills - Glitchless, Any%, Original",
+   "18",
+   "19.37"
+  ],
+  [
+   "111",
+   "Maximum",
+   "Fracuum: Any% - Glitchless",
+   "1",
+   "19.276"
+  ],
+  [
+   "112",
+   "Maximum",
+   "Run: Infinite Mode - Fast, Runner",
+   "1",
+   "19.006"
+  ],
+  [
+   "113",
+   "NorXor",
+   "Cat Mario: All Checkpoints",
+   "1",
+   "18.994"
+  ],
+  [
+   "114",
+   "NorXor",
+   "Red Ball: Raise the Flag, 5",
+   "1",
+   "18.513"
+  ],
+  [
+   "115",
+   "Maximum",
+   "Geometry Dash: 1-14 - Any%, Platformer/PC, No Major Glitches",
+   "4",
+   "18.277"
+  ],
+  [
+   "116",
+   "NorXor",
+   "Multiple Fancy Pants Games: Any% Flash Trilogy",
+   "1",
+   "17.954"
+  ],
+  [
+   "117",
+   "Maximum",
+   "Run: Infinite Mode - Normal, Runner",
+   "2",
+   "17.838"
+  ],
+  [
+   "118",
+   "Maximum",
+   "Red Ball 3: 100%",
+   "6",
+   "17.786"
+  ],
+  [
+   "119",
+   "Maximum",
+   "Run 2: Skater Level Set - Normal, Any%, Runner DJ",
+   "2",
+   "17.752"
+  ],
+  [
+   "120",
+   "NorXor",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: Any% - 1-18 (Glitchless)",
+   "6",
+   "17.076"
+  ],
+  [
+   "121",
+   "NorXor",
+   "Red Ball: Raise the Flag, 16 - Wrong Way",
+   "3",
+   "16.779"
+  ],
+  [
+   "122",
+   "Maximum",
+   "Run: Both Modes - Any%",
+   "1",
+   "15.822"
+  ],
+  [
+   "123",
+   "NorXor",
+   "Red Ball 4 (Mobile): Green Hills - Glitchless, 100%, Original",
+   "3",
+   "15.758"
+  ],
+  [
+   "124",
+   "NorXor",
+   "Cat Mario: Individual Level, Level 3",
+   "1",
+   "15.423"
+  ],
+  [
+   "125",
+   "Maximum",
+   "Club Penguin: Aqua Grabber - Amethyst, Normal",
+   "1",
+   "15.164"
+  ],
+  [
+   "126",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any% Glitchless",
+   "10",
+   "14.731"
+  ],
+  [
+   "127",
+   "Maximum",
+   "Run 2: Both Level Sets - 100%",
+   "2",
+   "14.68"
+  ],
+  [
+   "128",
+   "NorXor",
+   "Red Ball 3: Any%, 1",
+   "1",
+   "14.676"
+  ],
+  [
+   "129",
+   "NorXor",
+   "Cat Mario: Individual Level, Level 2 - Inbounds",
+   "1",
+   "14.61"
+  ],
+  [
+   "130",
+   "Maximum",
+   "Fastone Pyramid: Glitchless",
+   "3",
+   "14.306"
+  ],
+  [
+   "131",
+   "Maximum",
+   "SpongeBob SquarePants: Battle for Bikini Bottom \u2013 Rehydrated: PC - 2 Spatulas, No Lag Abuse",
+   "26",
+   "14.295"
+  ],
+  [
+   "132",
+   "NorXor",
+   "Multiple Red Ball Games: All Flash Games - Any%",
+   "1",
+   "14.268"
+  ],
+  [
+   "133",
+   "NorXor",
+   "Red Ball Category Extensions: Hacks - Red Ball 4 Vol.Nice",
+   "5",
+   "14.243"
+  ],
+  [
+   "134",
+   "NorXor",
+   "Stick RPG: Any%",
+   "6",
+   "14.137"
+  ],
+  [
+   "135",
+   "Maximum",
+   "Red Ball: 17 Levels (Glitchless)",
+   "7",
+   "14.017"
+  ],
+  [
+   "136",
+   "Maximum",
+   "Run 2: Skater Level Set - Skater No DJ, Fast, 100%",
+   "1",
+   "13.91"
+  ],
+  [
+   "137",
+   "NorXor",
+   "Red Ball 4 Vol.3: 100%",
+   "4",
+   "13.894"
+  ],
+  [
+   "138",
+   "NorXor",
+   "Cat Mario: Individual Level, Level 4 - OoB",
+   "1",
+   "13.71"
+  ],
+  [
+   "139",
+   "Maximum",
+   "Ooh, Aah & You: Fetch-A-Fruit: Medium - Unrestricted",
+   "1",
+   "13.273"
+  ],
+  [
+   "140",
+   "Maximum",
+   "Ooh, Aah & You: Fetch-A-Fruit: Easy - No Fruit Skip",
+   "2",
+   "13.266"
+  ],
+  [
+   "141",
+   "Maximum",
+   "Club Penguin: Aqua Grabber - Pearl, Normal",
+   "2",
+   "13.209"
+  ],
+  [
+   "142",
+   "NorXor",
+   "Red Ball: Raise the Flag, 7",
+   "11",
+   "13.153"
+  ],
+  [
+   "143",
+   "NorXor",
+   "Geometry Dash: Beat The Level, The Tower - Any%",
+   "86",
+   "13.093"
+  ],
+  [
+   "144",
+   "Maximum",
+   "Red Ball 4 (Mobile): Green Hills - Glitched, Any%, Original",
+   "6",
+   "12.678"
+  ],
+  [
+   "145",
+   "NorXor",
+   "Red Ball 4 (Mobile): 100% - Glitchless, Original",
+   "2",
+   "12.394"
+  ],
+  [
+   "146",
+   "Maximum",
+   "Zero Deaths: Full Game - Current Patch",
+   "6",
+   "12.343"
+  ],
+  [
+   "147",
+   "NorXor",
+   "Red Ball 4 Vol.2: 100%",
+   "4",
+   "12.336"
+  ],
+  [
+   "148",
+   "NorXor",
+   "Red Ball 4 (Mobile): Any% - Glitched, Original",
+   "2",
+   "12.283"
+  ],
+  [
+   "149",
+   "Maximum",
+   "Geometry Dash: 1-18 - Any%, Platformer/PC, No Major Glitches",
+   "2",
+   "12.269"
+  ],
+  [
+   "150",
+   "Maximum",
+   "Red Ball 2: Raise the Flag, 24",
+   "1",
+   "12.261"
+  ],
+  [
+   "151",
+   "Maximum",
+   "Pixel Quest: 16 Levels - Glitched, All Levels",
+   "6",
+   "12.2"
+  ],
+  [
+   "152",
+   "NorXor",
+   "Wii Sports Resort: Golf - Classic",
+   "26",
+   "12.172"
+  ],
+  [
+   "153",
+   "Maximum",
+   "Fastone Pyramid: Unrestricted",
+   "2",
+   "11.9"
+  ],
+  [
+   "154",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 9",
+   "2",
+   "11.853"
+  ],
+  [
+   "155",
+   "Maximum",
+   "Red Ball Category Extensions: Red Ball - 120 Levels",
+   "6",
+   "11.842"
+  ],
+  [
+   "156",
+   "Maximum",
+   "Toxic 2: Beat Bigfoot - No Restrictions",
+   "4",
+   "11.7"
+  ],
+  [
+   "157",
+   "NorXor",
+   "Red Ball: Raise the Flag, 15 - Normal",
+   "1",
+   "11.108"
+  ],
+  [
+   "158",
+   "NorXor",
+   "Red Ball 4 (Mobile): Box Factory - Glitchless, Any%, Original",
+   "4",
+   "11.003"
+  ],
+  [
+   "159",
+   "NorXor",
+   "Multiple Red Ball Games: Red Ball 1-3 - 100%",
+   "2",
+   "10.981"
+  ],
+  [
+   "160",
+   "Maximum",
+   "Run 2: Skater Level Set - Fast, Any%, Runner DJ",
+   "2",
+   "10.48"
+  ],
+  [
+   "161",
+   "Maximum",
+   "Happy Wheels: Android, 3-2",
+   "3",
+   "10.445"
+  ],
+  [
+   "162",
+   "NorXor",
+   "Red Ball: Raise the Flag, 16 - Normal",
+   "6",
+   "10.12"
+  ],
+  [
+   "163",
+   "Maximum",
+   "Red Ball 4 Vol.3: 100%",
+   "5",
+   "9.924"
+  ],
+  [
+   "164",
+   "NorXor",
+   "Red Ball 2: Raise the Flag, 3",
+   "2",
+   "9.787"
+  ],
+  [
+   "165",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 1",
+   "1",
+   "9.747"
+  ],
+  [
+   "166",
+   "Maximum",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 1-3",
+   "2",
+   "9.705"
+  ],
+  [
+   "167",
+   "NorXor",
+   "Multiple Red Ball Games: Red & Blue Balls 1-3 - Any%",
+   "2",
+   "9.627"
+  ],
+  [
+   "168",
+   "Maximum",
+   "Red Ball 4 (Mobile): Any% - Glitchless, Original",
+   "12",
+   "9.557"
+  ],
+  [
+   "169",
+   "NorXor",
+   "Red Ball 2: Raise the Flag, 4",
+   "2",
+   "9.525"
+  ],
+  [
+   "170",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 56 - Original",
+   "1",
+   "9.479"
+  ],
+  [
+   "171",
+   "NorXor",
+   "JellyCar Worlds: Any% - NG, 6 Worlds",
+   "4",
+   "9.35"
+  ],
+  [
+   "172",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball 4 Vol.1 - 150 Levels",
+   "1",
+   "9.288"
+  ],
+  [
+   "173",
+   "Maximum",
+   "Red Ball Category Extensions: Red Ball - Bonus Levels",
+   "8",
+   "9.019"
+  ],
+  [
+   "174",
+   "Maximum",
+   "Red Ball 4 Vol.2: 100%",
+   "5",
+   "8.937"
+  ],
+  [
+   "175",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 2",
+   "3",
+   "8.926"
+  ],
+  [
+   "176",
+   "NorXor",
+   "The Death Trap: Beat the Game - No Tab + Enter",
+   "1",
+   "8.655"
+  ],
+  [
+   "177",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 11",
+   "2",
+   "8.625"
+  ],
+  [
+   "178",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball - OCBall - 12 Levels",
+   "3",
+   "8.518"
+  ],
+  [
+   "179",
+   "NorXor",
+   "Red Ball: Raise the Flag, 15 - Shop Heist",
+   "5",
+   "8.183"
+  ],
+  [
+   "180",
+   "Maximum",
+   "Super Mario Bros. Category Extensions: 8-4 IL",
+   "77",
+   "8.168"
+  ],
+  [
+   "181",
+   "NorXor",
+   "Red Ball 4 (Mobile): Green Hills - Glitched, Any%, Original",
+   "8",
+   "8.003"
+  ],
+  [
+   "182",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 13",
+   "3",
+   "7.941"
+  ],
+  [
+   "183",
+   "Maximum",
+   "Red Ball: Raise the Flag, 10",
+   "27",
+   "7.916"
+  ],
+  [
+   "184",
+   "NorXor",
+   "JellyCar Worlds: (Legacy Demo) Any%",
+   "1",
+   "7.73"
+  ],
+  [
+   "185",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 1",
+   "1",
+   "7.476"
+  ],
+  [
+   "186",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball 2 - NG+ - 25 Levels",
+   "4",
+   "7.441"
+  ],
+  [
+   "187",
+   "Maximum",
+   "Geometry Dash: Beat The Level, The Tower - Any%",
+   "143",
+   "7.329"
+  ],
+  [
+   "188",
+   "NorXor",
+   "The Elephant Collection: IL Categories, Achievement Unlocked - Any%",
+   "1",
+   "7.225"
+  ],
+  [
+   "189",
+   "Maximum",
+   "Toxic 2: Beat Bigfoot - Glitchless",
+   "3",
+   "7.188"
+  ],
+  [
+   "190",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 4 - Original",
+   "2",
+   "7.049"
+  ],
+  [
+   "191",
+   "NorXor",
+   "Red Ball 4 (Mobile): Into the Caves - Glitchless, Any%, Original",
+   "3",
+   "7.031"
+  ],
+  [
+   "192",
+   "NorXor",
+   "Red Ball 4 (Mobile): Any% - Glitchless, Unity",
+   "4",
+   "6.987"
+  ],
+  [
+   "193",
+   "Maximum",
+   "Red Ball: Raise the Flag, 6",
+   "22",
+   "6.81"
+  ],
+  [
+   "194",
+   "NorXor",
+   "Fastone Pyramid: Glitchless",
+   "5",
+   "6.722"
+  ],
+  [
+   "195",
+   "Maximum",
+   "Red Ball: Raise the Flag, 9",
+   "37",
+   "6.497"
+  ],
+  [
+   "196",
+   "Maximum",
+   "Run 2: Skater Level Set - Intense, Any%, Runner DJ",
+   "2",
+   "6.493"
+  ],
+  [
+   "197",
+   "Maximum",
+   "Happy Wheels: Demo - Any%",
+   "27",
+   "6.478"
+  ],
+  [
+   "198",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 10",
+   "2",
+   "6.471"
+  ],
+  [
+   "199",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 46 - Original",
+   "1",
+   "6.411"
+  ],
+  [
+   "200",
+   "Maximum",
+   "Super Mario 64: 16 Star - N64",
+   "713",
+   "6.404"
+  ],
+  [
+   "201",
+   "NorXor",
+   "Fastone Pyramid: Glitchless / No Wall",
+   "5",
+   "6.376"
+  ],
+  [
+   "202",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 66 - Original",
+   "1",
+   "6.248"
+  ],
+  [
+   "203",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 10 - Original",
+   "2",
+   "6.236"
+  ],
+  [
+   "204",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 6",
+   "2",
+   "6.196"
+  ],
+  [
+   "205",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 12",
+   "2",
+   "6.193"
+  ],
+  [
+   "206",
+   "Maximum",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: Boss Edition DLC - 19-40 (Glitchless)",
+   "1",
+   "6.152"
+  ],
+  [
+   "207",
+   "Maximum",
+   "Red Ball 2: Raise the Flag, 21",
+   "4",
+   "6.129"
+  ],
+  [
+   "208",
+   "Maximum",
+   "Run: Infinite Mode - Intense, Runner",
+   "2",
+   "6.123"
+  ],
+  [
+   "209",
+   "NorXor",
+   "Red Ball 4 (Mobile): Deep Forest - Glitched, 100%, Original",
+   "1",
+   "6.016"
+  ],
+  [
+   "210",
+   "Maximum",
+   "Happy Wheels: Demo - Any% NMG",
+   "24",
+   "5.928"
+  ],
+  [
+   "211",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any%, 7",
+   "2",
+   "5.914"
+  ],
+  [
+   "212",
+   "NorXor",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 1-3",
+   "3",
+   "5.873"
+  ],
+  [
+   "213",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 49 - Original",
+   "1",
+   "5.834"
+  ],
+  [
+   "214",
+   "NorXor",
+   "Multiple Red Ball Games: Full Series Any% Relay - 3 Players",
+   "1",
+   "5.779"
+  ],
+  [
+   "215",
+   "NorXor",
+   "Red Ball 2: Raise the Flag, 9",
+   "2",
+   "5.774"
+  ],
+  [
+   "216",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 14",
+   "2",
+   "5.737"
+  ],
+  [
+   "217",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 15",
+   "3",
+   "5.703"
+  ],
+  [
+   "218",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 54 - Original",
+   "1",
+   "5.665"
+  ],
+  [
+   "219",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any%, 3",
+   "2",
+   "5.602"
+  ],
+  [
+   "220",
+   "Maximum",
+   "Multiple Red Ball Games: Full Series - 100%",
+   "1",
+   "5.6"
+  ],
+  [
+   "221",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-1",
+   "23",
+   "5.586"
+  ],
+  [
+   "222",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball 2 - NG+ - 20 Levels",
+   "6",
+   "5.573"
+  ],
+  [
+   "223",
+   "Maximum",
+   "Red Ball 2: Raise the Flag, 23",
+   "8",
+   "5.468"
+  ],
+  [
+   "224",
+   "NorXor",
+   "Red Ball 2: Raise the Flag, 2",
+   "3",
+   "5.462"
+  ],
+  [
+   "225",
+   "NorXor",
+   "Where's Waldo?: Easy",
+   "56",
+   "5.346"
+  ],
+  [
+   "226",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 9",
+   "3",
+   "5.267"
+  ],
+  [
+   "227",
+   "NorXor",
+   "Justin Smith's Realistic Summer Sports Simulator: Any% - PC",
+   "1",
+   "5.255"
+  ],
+  [
+   "228",
+   "Maximum",
+   "Multiple Red Ball Games: Full Series Any% Relay - 2 Players",
+   "5",
+   "5.16"
+  ],
+  [
+   "229",
+   "Maximum",
+   "Pixel Quest: 16 Levels - Glitchless, 100%",
+   "6",
+   "5.104"
+  ],
+  [
+   "230",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 71 - Original",
+   "2",
+   "5.041"
+  ],
+  [
+   "231",
+   "NorXor",
+   "Geometry Dash: Beat The Level, The Cellar - Any%",
+   "70",
+   "4.936"
+  ],
+  [
+   "232",
+   "NorXor",
+   "Red Ball 5: Any% - Download",
+   "5",
+   "4.933"
+  ],
+  [
+   "233",
+   "Maximum",
+   "Battle For Dream Island Again 5b: Finish%, 041. Liquify",
+   "5",
+   "4.916"
+  ],
+  [
+   "234",
+   "NorXor",
+   "Red Ball 2: Raise the Flag, 5",
+   "2",
+   "4.903"
+  ],
+  [
+   "235",
+   "Maximum",
+   "Red Ball 2: Raise the Flag, 12",
+   "3",
+   "4.853"
+  ],
+  [
+   "236",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any%, 2",
+   "3",
+   "4.812"
+  ],
+  [
+   "237",
+   "NorXor",
+   "The Elephant Collection: IL Categories, This Is The Only Level - Any% P+Gless",
+   "1",
+   "4.808"
+  ],
+  [
+   "238",
+   "Maximum",
+   "Pixel Quest: Any% Glitchless, Level 4",
+   "6",
+   "4.735"
+  ],
+  [
+   "239",
+   "Maximum",
+   "Battle For Dream Island Again 5b: Finish%, 024. Strange discovery",
+   "5",
+   "4.654"
+  ],
+  [
+   "240",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any%, 4",
+   "2",
+   "4.523"
+  ],
+  [
+   "241",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 17 - Original",
+   "2",
+   "4.508"
+  ],
+  [
+   "242",
+   "NorXor",
+   "My Cat is Challenged: Any%",
+   "6",
+   "4.493"
+  ],
+  [
+   "243",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 3",
+   "2",
+   "4.426"
+  ],
+  [
+   "244",
+   "Maximum",
+   "Minecraft: Java Edition Category Extensions: Obtain Item - Diamond, Structures, SSG",
+   "117",
+   "4.409"
+  ],
+  [
+   "245",
+   "Maximum",
+   "Red Ball: Raise the Flag, 14",
+   "17",
+   "4.349"
+  ],
+  [
+   "246",
+   "Maximum",
+   "Red Ball: Raise the Flag, 1 - Normal",
+   "1",
+   "4.313"
+  ],
+  [
+   "247",
+   "NorXor",
+   "Red Ball: Raise the Flag, 1 - Normal",
+   "1",
+   "4.313"
+  ],
+  [
+   "248",
+   "Maximum",
+   "Toxic 2: Complete The Level, 1.0 - Hacking the System",
+   "6",
+   "4.298"
+  ],
+  [
+   "249",
+   "Maximum",
+   "Red Ball 4 (Mobile): Any% - Glitched, Original",
+   "4",
+   "4.287"
+  ],
+  [
+   "250",
+   "Maximum",
+   "Red Ball 2: Raise the Flag, 18",
+   "3",
+   "4.284"
+  ],
+  [
+   "251",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, 5-1",
+   "3",
+   "4.201"
+  ],
+  [
+   "252",
+   "NorXor",
+   "JellyCar Worlds: Any% - NG, 8 Worlds",
+   "5",
+   "4.164"
+  ],
+  [
+   "253",
+   "Maximum",
+   "Red Ball Category Extensions: Red Ball 4 Vol.1 - Low%",
+   "4",
+   "4.153"
+  ],
+  [
+   "254",
+   "Maximum",
+   "Red Ball: Raise the Flag, 16 - Normal",
+   "12",
+   "4.145"
+  ],
+  [
+   "255",
+   "Maximum",
+   "Red Ball 3: Any%, 13",
+   "3",
+   "4.091"
+  ],
+  [
+   "256",
+   "NorXor",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitchless, 100%, Original",
+   "3",
+   "4.052"
+  ],
+  [
+   "257",
+   "NorXor",
+   "Cat Mario: Individual Level, Level 5",
+   "3",
+   "4.043"
+  ],
+  [
+   "258",
+   "NorXor",
+   "Red Ball 4 (Mobile): Green Hills - Glitched, 100%, Original",
+   "2",
+   "4.038"
+  ],
+  [
+   "259",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 4",
+   "3",
+   "3.999"
+  ],
+  [
+   "260",
+   "Maximum",
+   "Battle For Dream Island Again 5b: Finish%, 025. Would you die for me?",
+   "6",
+   "3.965"
+  ],
+  [
+   "261",
+   "NorXor",
+   "Red and Blue Balls 2: Any%, 21",
+   "2",
+   "3.951"
+  ],
+  [
+   "262",
+   "Maximum",
+   "Battle For Dream Island Again 5b: Finish%, 023. Ground level",
+   "6",
+   "3.863"
+  ],
+  [
+   "263",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any%, 8",
+   "2",
+   "3.785"
+  ],
+  [
+   "264",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 54 - Original",
+   "1",
+   "3.742"
+  ],
+  [
+   "265",
+   "NorXor",
+   "Red Ball 4 (Mobile): 100% - Glitched, Original",
+   "2",
+   "3.68"
+  ],
+  [
+   "266",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, (Legacy Demo) 1-1",
+   "2",
+   "3.588"
+  ],
+  [
+   "267",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 10",
+   "5",
+   "3.551"
+  ],
+  [
+   "268",
+   "Maximum",
+   "60 Seconds Burger Run: Beat the Game - Flash",
+   "57",
+   "3.549"
+  ],
+  [
+   "269",
+   "NorXor",
+   "Red Ball 4 (Mobile): Box Factory - Glitchless, 100%, Original",
+   "2",
+   "3.533"
+  ],
+  [
+   "270",
+   "Maximum",
+   "Run: Infinite Mode - Normal, Skater",
+   "1",
+   "3.46"
+  ],
+  [
+   "271",
+   "NorXor",
+   "Geometry Dash: Beat The Level, The Sewers - Any%",
+   "182",
+   "3.458"
+  ],
+  [
+   "272",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 4",
+   "3",
+   "3.446"
+  ],
+  [
+   "273",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 8",
+   "4",
+   "3.443"
+  ],
+  [
+   "274",
+   "Maximum",
+   "Red Ball: Raise the Flag, 3",
+   "40",
+   "3.435"
+  ],
+  [
+   "275",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any%, 5",
+   "2",
+   "3.43"
+  ],
+  [
+   "276",
+   "Maximum",
+   "Pixel Quest: Any% Glitchless, Level 3",
+   "5",
+   "3.417"
+  ],
+  [
+   "277",
+   "Maximum",
+   "Ooh, Aah & You: Fetch-A-Fruit: Medium - No Fruit Skip",
+   "3",
+   "3.417"
+  ],
+  [
+   "278",
+   "Maximum",
+   "Club Penguin: Aqua Grabber - Pearl, Compressed",
+   "1",
+   "3.308"
+  ],
+  [
+   "279",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any%, 9",
+   "2",
+   "3.269"
+  ],
+  [
+   "280",
+   "NorXor",
+   "Multiple Red Ball Games: Trifecta",
+   "1",
+   "3.269"
+  ],
+  [
+   "281",
+   "Maximum",
+   "Geometry Dash: Beat The Level, The Secret Hollow - Any%",
+   "72",
+   "3.236"
+  ],
+  [
+   "282",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 70 - Original",
+   "1",
+   "3.112"
+  ],
+  [
+   "283",
+   "Maximum",
+   "Red Ball 4 (Mobile): Deep Forest - Glitchless, Any%, Original",
+   "8",
+   "3.111"
+  ],
+  [
+   "284",
+   "NorXor",
+   "Red Ball 4 (Mobile): Deep Forest - Glitchless, 100%, Original",
+   "2",
+   "3.1"
+  ],
+  [
+   "285",
+   "NorXor",
+   "Internet Avenger: Beat the Game - Regular",
+   "8",
+   "3.072"
+  ],
+  [
+   "286",
+   "Maximum",
+   "Red Ball Category Extensions: Red Ball 4 Vol.1 - 150 Levels",
+   "2",
+   "3.07"
+  ],
+  [
+   "287",
+   "NorXor",
+   "Red Ball 3: Any%, 12",
+   "4",
+   "3.061"
+  ],
+  [
+   "288",
+   "Maximum",
+   "Red Ball 2: Raise the Flag, 3",
+   "4",
+   "3.028"
+  ],
+  [
+   "289",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 57 - Original",
+   "1",
+   "3.022"
+  ],
+  [
+   "290",
+   "Maximum",
+   "Ooh, Aah & You: Fetch-A-Fruit: Easy - Unrestricted",
+   "4",
+   "3.019"
+  ],
+  [
+   "291",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 5",
+   "2",
+   "3.001"
+  ],
+  [
+   "292",
+   "Maximum",
+   "Red Ball 4 (Mobile): Into the Caves - Glitchless, Any%, Original",
+   "5",
+   "2.998"
+  ],
+  [
+   "293",
+   "Maximum",
+   "Pixel Quest: Any% - Glitchless",
+   "3",
+   "2.949"
+  ],
+  [
+   "294",
+   "Maximum",
+   "Pixel Quest: Any% Glitchless, Level 1",
+   "7",
+   "2.93"
+  ],
+  [
+   "295",
+   "Maximum",
+   "Red Ball 4 (Mobile): Box Factory - Glitchless, Any%, Original",
+   "9",
+   "2.927"
+  ],
+  [
+   "296",
+   "Maximum",
+   "Toxic 2: Complete The Level, 10.0 - Bigfoot",
+   "5",
+   "2.917"
+  ],
+  [
+   "297",
+   "Maximum",
+   "Geometry Dash: Rated Levels - 5 Rated Levels, Platformer/PC, Platformer, No Major Glitches",
+   "16",
+   "2.91"
+  ],
+  [
+   "298",
+   "Maximum",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 100% - 1-40 (Glitchless)",
+   "1",
+   "2.832"
+  ],
+  [
+   "299",
+   "Maximum",
+   "Red Ball 2: Raise the Flag, 13",
+   "3",
+   "2.79"
+  ],
+  [
+   "300",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 5",
+   "5",
+   "2.789"
+  ],
+  [
+   "301",
+   "NorXor",
+   "Red Ball 4 (Mobile): Into the Caves - Glitchless, 100%, Original",
+   "2",
+   "2.789"
+  ],
+  [
+   "302",
+   "Maximum",
+   "Red Ball: Raise the Flag, 11",
+   "80",
+   "2.787"
+  ],
+  [
+   "303",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any%, 7",
+   "4",
+   "2.785"
+  ],
+  [
+   "304",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, 1-1",
+   "5",
+   "2.765"
+  ],
+  [
+   "305",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball 4 Vol.1 - Low%",
+   "5",
+   "2.764"
+  ],
+  [
+   "306",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 32 - Flash",
+   "1",
+   "2.728"
+  ],
+  [
+   "307",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any%, 15",
+   "20",
+   "2.719"
+  ],
+  [
+   "308",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 43 - Original",
+   "2",
+   "2.712"
+  ],
+  [
+   "309",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 1 - Flash",
+   "1",
+   "2.666"
+  ],
+  [
+   "310",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 67 - Original",
+   "2",
+   "2.661"
+  ],
+  [
+   "311",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 7",
+   "5",
+   "2.617"
+  ],
+  [
+   "312",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 3-2",
+   "7",
+   "2.613"
+  ],
+  [
+   "313",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 11",
+   "5",
+   "2.593"
+  ],
+  [
+   "314",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 6",
+   "5",
+   "2.583"
+  ],
+  [
+   "315",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 15",
+   "5",
+   "2.57"
+  ],
+  [
+   "316",
+   "Maximum",
+   "Toxic 2: Complete The Level, 3.0 - Laser Phaser",
+   "3",
+   "2.566"
+  ],
+  [
+   "317",
+   "Maximum",
+   "Battle For Dream Island Again 5b: Finish%, 029. Don't look back",
+   "6",
+   "2.565"
+  ],
+  [
+   "318",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 13 - Original",
+   "2",
+   "2.563"
+  ],
+  [
+   "319",
+   "Maximum",
+   "Red Ball: Raise the Flag, 2",
+   "34",
+   "2.54"
+  ],
+  [
+   "320",
+   "Maximum",
+   "Red Ball 3: Any%, 1",
+   "13",
+   "2.508"
+  ],
+  [
+   "321",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 2",
+   "3",
+   "2.468"
+  ],
+  [
+   "322",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 65 - Original",
+   "2",
+   "2.428"
+  ],
+  [
+   "323",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball - OCBall - 17 Levels",
+   "2",
+   "2.389"
+  ],
+  [
+   "324",
+   "Maximum",
+   "Run 2: Runner Level Set - Any%, Runner DJ, Fast",
+   "10",
+   "2.381"
+  ],
+  [
+   "325",
+   "NorXor",
+   "Red Ball 2: Raise the Flag, 7",
+   "4",
+   "2.37"
+  ],
+  [
+   "326",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 15 - Flash",
+   "1",
+   "2.344"
+  ],
+  [
+   "327",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any% - No Transition, 4",
+   "1",
+   "2.331"
+  ],
+  [
+   "328",
+   "Maximum",
+   "40 Winks: Any% - PS1",
+   "20",
+   "2.322"
+  ],
+  [
+   "329",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball - 100%",
+   "12",
+   "2.305"
+  ],
+  [
+   "330",
+   "Maximum",
+   "Toxic 2: Complete The Level, 4.0 - Digg it",
+   "5",
+   "2.253"
+  ],
+  [
+   "331",
+   "NorXor",
+   "Multiple Red Ball Games: Extended Series - Any%, Unrestricted",
+   "1",
+   "2.235"
+  ],
+  [
+   "332",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 44 - Original",
+   "2",
+   "2.227"
+  ],
+  [
+   "333",
+   "Maximum",
+   "Red Ball: Raise the Flag, 13",
+   "21",
+   "2.188"
+  ],
+  [
+   "334",
+   "Maximum",
+   "Red Ball Category Extensions: Red Ball 3 - NG+",
+   "7",
+   "2.156"
+  ],
+  [
+   "335",
+   "NorXor",
+   "Red Ball Category Extensions: Red and Blue Balls - Bonus Levels",
+   "4",
+   "2.156"
+  ],
+  [
+   "336",
+   "Maximum",
+   "Red Ball: Raise the Flag, 7",
+   "42",
+   "2.154"
+  ],
+  [
+   "337",
+   "NorXor",
+   "Red and Blue Balls 2: Any%, 19",
+   "3",
+   "2.148"
+  ],
+  [
+   "338",
+   "NorXor",
+   "Cat Mario: Individual Level, Level 6",
+   "3",
+   "2.14"
+  ],
+  [
+   "339",
+   "Maximum",
+   "Red Ball 4 (Mobile): Deep Forest - Glitched, Any%, Original",
+   "3",
+   "2.135"
+  ],
+  [
+   "340",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 60 - Original",
+   "4",
+   "2.129"
+  ],
+  [
+   "341",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 7-1",
+   "7",
+   "2.099"
+  ],
+  [
+   "342",
+   "NorXor",
+   "Red Ball 2: Raise the Flag, 22",
+   "4",
+   "2.086"
+  ],
+  [
+   "343",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any% - No Transition, 2",
+   "2",
+   "2.082"
+  ],
+  [
+   "344",
+   "NorXor",
+   "Red Ball 4 (Mobile): Box Factory - Glitched, 100%, Original",
+   "1",
+   "2.071"
+  ],
+  [
+   "345",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any%, 3",
+   "4",
+   "2.066"
+  ],
+  [
+   "346",
+   "Maximum",
+   "Ooh, Aah & You: Fetch-A-Fruit: All Dungeons - No Fruit Skip",
+   "3",
+   "1.999"
+  ],
+  [
+   "347",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 53 - Original",
+   "2",
+   "1.996"
+  ],
+  [
+   "348",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 66 - Original",
+   "1",
+   "1.978"
+  ],
+  [
+   "349",
+   "NorXor",
+   "Red Ball: Raise the Flag, 8 - Lag Abuse",
+   "3",
+   "1.963"
+  ],
+  [
+   "350",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 61 - Original",
+   "2",
+   "1.927"
+  ],
+  [
+   "351",
+   "Maximum",
+   "Red and Blue Balls: 15 Levels",
+   "44",
+   "1.915"
+  ],
+  [
+   "352",
+   "NorXor",
+   "Red Ball 4 (Mobile): Into the Caves - Glitched, Any%, Original",
+   "3",
+   "1.907"
+  ],
+  [
+   "353",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 10",
+   "3",
+   "1.891"
+  ],
+  [
+   "354",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 56 - Original",
+   "1",
+   "1.883"
+  ],
+  [
+   "355",
+   "NorXor",
+   "Cat Mario: Individual Level, Level 4 - Inbounds",
+   "2",
+   "1.836"
+  ],
+  [
+   "356",
+   "Maximum",
+   "Red Ball 3: Any%, 17",
+   "4",
+   "1.828"
+  ],
+  [
+   "357",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 62 - Original",
+   "2",
+   "1.827"
+  ],
+  [
+   "358",
+   "NorXor",
+   "Red and Blue Balls 2: Any%, 24",
+   "2",
+   "1.816"
+  ],
+  [
+   "359",
+   "Maximum",
+   "Minecraft: Java Edition Category Extensions: Obtain Item - Diamond, No Structures, SSG",
+   "78",
+   "1.809"
+  ],
+  [
+   "360",
+   "Maximum",
+   "Multiple Red Ball Games: Red Ball 4 - 100%",
+   "4",
+   "1.785"
+  ],
+  [
+   "361",
+   "NorXor",
+   "Sanatorium: All 8 Pages (Unity)",
+   "3",
+   "1.776"
+  ],
+  [
+   "362",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 7 - Flash",
+   "1",
+   "1.759"
+  ],
+  [
+   "363",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 8",
+   "5",
+   "1.733"
+  ],
+  [
+   "364",
+   "Maximum",
+   "Red Ball: Raise the Flag, 12",
+   "51",
+   "1.732"
+  ],
+  [
+   "365",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any%, 4",
+   "5",
+   "1.731"
+  ],
+  [
+   "366",
+   "Maximum",
+   "Red Ball: Raise the Flag, 17",
+   "23",
+   "1.723"
+  ],
+  [
+   "367",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any%, 6",
+   "2",
+   "1.722"
+  ],
+  [
+   "368",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 16 - Original",
+   "4",
+   "1.71"
+  ],
+  [
+   "369",
+   "Maximum",
+   "Toxic 2: Complete The Level, 15.0 - Regeneration",
+   "5",
+   "1.67"
+  ],
+  [
+   "370",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 51 - Original",
+   "2",
+   "1.653"
+  ],
+  [
+   "371",
+   "Maximum",
+   "Pixel Quest: Any% Glitchless, Level 2",
+   "8",
+   "1.653"
+  ],
+  [
+   "372",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 46 - Original",
+   "1",
+   "1.653"
+  ],
+  [
+   "373",
+   "Maximum",
+   "Battle For Dream Island Again 5b: Finish%, 038. Gimme my boxes",
+   "8",
+   "1.643"
+  ],
+  [
+   "374",
+   "Maximum",
+   "Toxic 2: Complete The Level, 12.0 - Ankle Biters - Pink Teleporter",
+   "4",
+   "1.635"
+  ],
+  [
+   "375",
+   "Maximum",
+   "Toxic 2: Complete The Level, 20.0 - Mother - Pink Teleporter",
+   "3",
+   "1.624"
+  ],
+  [
+   "376",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any%, 3",
+   "6",
+   "1.609"
+  ],
+  [
+   "377",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 15",
+   "3",
+   "1.596"
+  ],
+  [
+   "378",
+   "Maximum",
+   "Super Mario 64: 16 Star - VC",
+   "452",
+   "1.576"
+  ],
+  [
+   "379",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 16 - Flash",
+   "1",
+   "1.569"
+  ],
+  [
+   "380",
+   "NorXor",
+   "Red Ball 3: Any%, 20",
+   "7",
+   "1.565"
+  ],
+  [
+   "381",
+   "NorXor",
+   "JellyCar Worlds: Secret Exit NG, (Legacy Demo) 1-3",
+   "1",
+   "1.564"
+  ],
+  [
+   "382",
+   "Maximum",
+   "Toxic 2: Complete The Level, 2.0 - Aerosol - Pink Teleporter",
+   "5",
+   "1.564"
+  ],
+  [
+   "383",
+   "NorXor",
+   "JellyCar Worlds: Any% - NG, 7 Worlds",
+   "4",
+   "1.56"
+  ],
+  [
+   "384",
+   "Maximum",
+   "Red Ball 3: Any%, 11",
+   "5",
+   "1.555"
+  ],
+  [
+   "385",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 64 - Original",
+   "2",
+   "1.554"
+  ],
+  [
+   "386",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any% - No Transition, 9",
+   "4",
+   "1.544"
+  ],
+  [
+   "387",
+   "Maximum",
+   "Toxic 2: Complete The Level, 6.0 - Arachnophobia - Pink Teleporter",
+   "4",
+   "1.543"
+  ],
+  [
+   "388",
+   "NorXor",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 7",
+   "2",
+   "1.523"
+  ],
+  [
+   "389",
+   "Maximum",
+   "Super Mario 64: 70 Star - N64",
+   "930",
+   "1.514"
+  ],
+  [
+   "390",
+   "NorXor",
+   "JellyCar Worlds: Secret Exit NG, 1-1",
+   "3",
+   "1.498"
+  ],
+  [
+   "391",
+   "Maximum",
+   "Pixel Quest: 16 Levels - Glitched, 100%",
+   "4",
+   "1.485"
+  ],
+  [
+   "392",
+   "Maximum",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 4-6",
+   "2",
+   "1.466"
+  ],
+  [
+   "393",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any% - No Transition, 9",
+   "4",
+   "1.466"
+  ],
+  [
+   "394",
+   "Maximum",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 16-18",
+   "2",
+   "1.46"
+  ],
+  [
+   "395",
+   "NorXor",
+   "Toxic 2: Complete The Level, 1.0 - Hacking the System",
+   "11",
+   "1.458"
+  ],
+  [
+   "396",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 4 - Flash",
+   "1",
+   "1.454"
+  ],
+  [
+   "397",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any%, 8",
+   "7",
+   "1.453"
+  ],
+  [
+   "398",
+   "Maximum",
+   "Toxic 2: Complete The Level, 18.0 - Vertigo - Pink Teleporter",
+   "3",
+   "1.449"
+  ],
+  [
+   "399",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 8 - Flash",
+   "1",
+   "1.44"
+  ],
+  [
+   "400",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 9 - Flash",
+   "1",
+   "1.436"
+  ],
+  [
+   "401",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 68 - Original",
+   "3",
+   "1.412"
+  ],
+  [
+   "402",
+   "Maximum",
+   "Toxic 2: Complete The Level, 5.0 - Steady Platform",
+   "6",
+   "1.405"
+  ],
+  [
+   "403",
+   "Maximum",
+   "Toxic 2: Complete The Level, 14.0 - Close Proximity",
+   "4",
+   "1.404"
+  ],
+  [
+   "404",
+   "Maximum",
+   "Red Ball 5: Any% No Level Skip - Kizi",
+   "3",
+   "1.391"
+  ],
+  [
+   "405",
+   "NorXor",
+   "Claustrophobia: All 10 Keys (FPSC) - Normal",
+   "3",
+   "1.384"
+  ],
+  [
+   "406",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, (JC1) Easy - Easy Start",
+   "2",
+   "1.372"
+  ],
+  [
+   "407",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 19 - Original",
+   "2",
+   "1.37"
+  ],
+  [
+   "408",
+   "Maximum",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitchless, Any%, Original",
+   "8",
+   "1.319"
+  ],
+  [
+   "409",
+   "Maximum",
+   "Pixel Quest: Any% Glitchless, Level 5",
+   "6",
+   "1.316"
+  ],
+  [
+   "410",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball 4 Vol.3 - 150 Levels",
+   "1",
+   "1.274"
+  ],
+  [
+   "411",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 69 - Original",
+   "2",
+   "1.272"
+  ],
+  [
+   "412",
+   "Maximum",
+   "Red Ball 2: Raise the Flag, 20",
+   "7",
+   "1.266"
+  ],
+  [
+   "413",
+   "Maximum",
+   "Happy Wheels: Android, 3-15",
+   "6",
+   "1.262"
+  ],
+  [
+   "414",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any%, 11",
+   "7",
+   "1.254"
+  ],
+  [
+   "415",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any%, 5",
+   "4",
+   "1.248"
+  ],
+  [
+   "416",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 6 - Flash",
+   "1",
+   "1.242"
+  ],
+  [
+   "417",
+   "Maximum",
+   "Santa Run 2: Any% - Flash",
+   "4",
+   "1.231"
+  ],
+  [
+   "418",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 74 - Original",
+   "2",
+   "1.212"
+  ],
+  [
+   "419",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 72 - Original",
+   "2",
+   "1.207"
+  ],
+  [
+   "420",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 18 - Original",
+   "3",
+   "1.175"
+  ],
+  [
+   "421",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-2",
+   "13",
+   "1.169"
+  ],
+  [
+   "422",
+   "Maximum",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 7-9",
+   "2",
+   "1.164"
+  ],
+  [
+   "423",
+   "Maximum",
+   "Run 2: Runner Level Set - 100%, Runner No DJ, Fast",
+   "7",
+   "1.156"
+  ],
+  [
+   "424",
+   "Maximum",
+   "Run 2: Runner Level Set - 100%, Runner No DJ, Intense",
+   "4",
+   "1.147"
+  ],
+  [
+   "425",
+   "Maximum",
+   "Red Ball Category Extensions: Hacks - Rick Astley - 17 Levels",
+   "8",
+   "1.126"
+  ],
+  [
+   "426",
+   "NorXor",
+   "Red Ball 3: Any%, 2",
+   "11",
+   "1.125"
+  ],
+  [
+   "427",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 30 - Original",
+   "1",
+   "1.118"
+  ],
+  [
+   "428",
+   "Maximum",
+   "Red Ball: Raise the Flag, 8 - No Lag Abuse",
+   "55",
+   "1.117"
+  ],
+  [
+   "429",
+   "Maximum",
+   "Happy Wheels: Character Set (Mobile) - Wheelchair Guy, iOS",
+   "2",
+   "1.114"
+  ],
+  [
+   "430",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 62 - Original",
+   "2",
+   "1.111"
+  ],
+  [
+   "431",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 26 - Flash",
+   "1",
+   "1.103"
+  ],
+  [
+   "432",
+   "Maximum",
+   "Toxic 2: All Levels",
+   "3",
+   "1.099"
+  ],
+  [
+   "433",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 8 - Original",
+   "6",
+   "1.09"
+  ],
+  [
+   "434",
+   "Maximum",
+   "Toxic 2: Complete The Level, 9.0 - Ready Aim Fire - Pink Teleporter",
+   "5",
+   "1.09"
+  ],
+  [
+   "435",
+   "Maximum",
+   "Run: Infinite Mode - Fast, Skater",
+   "1",
+   "1.078"
+  ],
+  [
+   "436",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any% - No Transition, 12",
+   "4",
+   "1.059"
+  ],
+  [
+   "437",
+   "NorXor",
+   "Hospice: All 8 Pages (Unity)",
+   "2",
+   "1.057"
+  ],
+  [
+   "438",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 59 - Original",
+   "2",
+   "1.054"
+  ],
+  [
+   "439",
+   "Maximum",
+   "Run: Infinite Mode - Intense, Skater",
+   "1",
+   "1.05"
+  ],
+  [
+   "440",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-15",
+   "8",
+   "1.047"
+  ],
+  [
+   "441",
+   "Maximum",
+   "Toxic 2: Complete The Level, 8.0 - Take Cover",
+   "7",
+   "1.043"
+  ],
+  [
+   "442",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 56 - Unity",
+   "4",
+   "1.039"
+  ],
+  [
+   "443",
+   "NorXor",
+   "Red Ball 4 (Mobile): Deep Forest - Glitched, Any%, Original",
+   "4",
+   "1.039"
+  ],
+  [
+   "444",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 16 (Keep hitting it)",
+   "1",
+   "1.02"
+  ],
+  [
+   "445",
+   "Maximum",
+   "Let's See What You Got: Normal Mode",
+   "3",
+   "1.016"
+  ],
+  [
+   "446",
+   "Maximum",
+   "Red Ball Category Extensions: Hacks - Rick Astley - 12 Levels",
+   "20",
+   "1.016"
+  ],
+  [
+   "447",
+   "Maximum",
+   "Red and Blue Balls: 20 Levels",
+   "18",
+   "1.016"
+  ],
+  [
+   "448",
+   "NorXor",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 13",
+   "2",
+   "1.015"
+  ],
+  [
+   "449",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 14 - Unity",
+   "3",
+   "1.012"
+  ],
+  [
+   "450",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, (Legacy Demo) 1-3",
+   "1",
+   "1.01"
+  ],
+  [
+   "451",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 9",
+   "9",
+   "0.992"
+  ],
+  [
+   "452",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any% - No Transition, 5",
+   "2",
+   "0.99"
+  ],
+  [
+   "453",
+   "Maximum",
+   "Toxic 2: Complete The Level, 16.0 - Blast from the Past - Pink Teleporter",
+   "5",
+   "0.988"
+  ],
+  [
+   "454",
+   "Maximum",
+   "SpongeBob SquarePants: Battle for Bikini Bottom \u2013 Rehydrated: PC - 77 Spatulas, No Lag Abuse",
+   "125",
+   "0.987"
+  ],
+  [
+   "455",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 3 - Flash",
+   "1",
+   "0.969"
+  ],
+  [
+   "456",
+   "NorXor",
+   "Red Ball Category Extensions: Red and Blue Balls - 2P - 15 Levels (2P)",
+   "2",
+   "0.944"
+  ],
+  [
+   "457",
+   "Maximum",
+   "Toxic 2: Complete The Level, 13.0 - Loose Ground - Pink Teleporter",
+   "4",
+   "0.939"
+  ],
+  [
+   "458",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 1",
+   "18",
+   "0.926"
+  ],
+  [
+   "459",
+   "Maximum",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 13-15",
+   "3",
+   "0.924"
+  ],
+  [
+   "460",
+   "Maximum",
+   "Toxic 2: Complete The Level, 7.0 - The Highs and Lows - Pink Teleporter",
+   "6",
+   "0.918"
+  ],
+  [
+   "461",
+   "Maximum",
+   "Happy Wheels: Android, 7-3",
+   "3",
+   "0.913"
+  ],
+  [
+   "462",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 14 - Flash",
+   "1",
+   "0.898"
+  ],
+  [
+   "463",
+   "Maximum",
+   "Zero Deaths: Any%, UK - Current Patch",
+   "7",
+   "0.889"
+  ],
+  [
+   "464",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-9",
+   "6",
+   "0.886"
+  ],
+  [
+   "465",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 3-1",
+   "7",
+   "0.875"
+  ],
+  [
+   "466",
+   "NorXor",
+   "Multiple Red Ball Games: Full Series Any% Relay - 6 Players",
+   "2",
+   "0.867"
+  ],
+  [
+   "467",
+   "Maximum",
+   "Toxic 2: Complete The Level, 19.0 - Remote Control",
+   "5",
+   "0.867"
+  ],
+  [
+   "468",
+   "NorXor",
+   "Super Mario 64 FPS: 70 Star",
+   "43",
+   "0.865"
+  ],
+  [
+   "469",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, 2-3",
+   "3",
+   "0.847"
+  ],
+  [
+   "470",
+   "Maximum",
+   "Zero Deaths: Any%, Mars - Current Patch",
+   "5",
+   "0.833"
+  ],
+  [
+   "471",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any%, 7",
+   "8",
+   "0.824"
+  ],
+  [
+   "472",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 25 - Flash",
+   "1",
+   "0.82"
+  ],
+  [
+   "473",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-5",
+   "10",
+   "0.818"
+  ],
+  [
+   "474",
+   "Maximum",
+   "Minecraft: Java Edition Category Extensions: Enter Nether - SSG, Structures (Pre 1.16)",
+   "111",
+   "0.802"
+  ],
+  [
+   "475",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any% - No Transition, 13",
+   "2",
+   "0.797"
+  ],
+  [
+   "476",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 28 - Original",
+   "3",
+   "0.796"
+  ],
+  [
+   "477",
+   "Maximum",
+   "Red Ball Category Extensions: Hacks - Kaizo Red Ball",
+   "9",
+   "0.785"
+  ],
+  [
+   "478",
+   "NorXor",
+   "Red Ball 2: Raise the Flag, 1",
+   "22",
+   "0.769"
+  ],
+  [
+   "479",
+   "Maximum",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 10-12",
+   "2",
+   "0.767"
+  ],
+  [
+   "480",
+   "Maximum",
+   "Toxic 2: Complete The Level, 11.0 - Wheel Deal",
+   "7",
+   "0.764"
+  ],
+  [
+   "481",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 18 - Flash",
+   "1",
+   "0.763"
+  ],
+  [
+   "482",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball - Reverse - 12 Levels",
+   "12",
+   "0.747"
+  ],
+  [
+   "483",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, 4-5",
+   "3",
+   "0.744"
+  ],
+  [
+   "484",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 44 - Original",
+   "2",
+   "0.739"
+  ],
+  [
+   "485",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 13",
+   "7",
+   "0.738"
+  ],
+  [
+   "486",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any% - No Transition, 2",
+   "4",
+   "0.736"
+  ],
+  [
+   "487",
+   "NorXor",
+   "Red and Blue Balls 2: Any%, 7",
+   "3",
+   "0.735"
+  ],
+  [
+   "488",
+   "Maximum",
+   "Red Ball 4 Vol.1: Any%, 13",
+   "11",
+   "0.721"
+  ],
+  [
+   "489",
+   "Maximum",
+   "Happy Wheels: PC / iOS, Ultimate Payback!",
+   "16",
+   "0.705"
+  ],
+  [
+   "490",
+   "NorXor",
+   "Toxic 2: Complete The Level, 4.0 - Digg it",
+   "8",
+   "0.705"
+  ],
+  [
+   "491",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, (JC1) Average - Kerplunk!",
+   "2",
+   "0.7"
+  ],
+  [
+   "492",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 10",
+   "3",
+   "0.7"
+  ],
+  [
+   "493",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, (Legacy Demo) 1-6",
+   "1",
+   "0.689"
+  ],
+  [
+   "494",
+   "NorXor",
+   "Multiple Red Ball Games: Red Ball 4 Any% Relay",
+   "3",
+   "0.669"
+  ],
+  [
+   "495",
+   "Maximum",
+   "Toxic 2: Glitchless - Any%",
+   "3",
+   "0.665"
+  ],
+  [
+   "496",
+   "Maximum",
+   "Run: Both Modes - 100%",
+   "1",
+   "0.657"
+  ],
+  [
+   "497",
+   "NorXor",
+   "Red Ball 4 (Mobile): Into the Caves - Glitched, 100%, Original",
+   "1",
+   "0.655"
+  ],
+  [
+   "498",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any% - No Transition, 6",
+   "3",
+   "0.654"
+  ],
+  [
+   "499",
+   "NorXor",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitched, Any%, Original",
+   "1",
+   "0.652"
+  ],
+  [
+   "500",
+   "Maximum",
+   "Red Ball 3: Any%, 8",
+   "5",
+   "0.645"
+  ],
+  [
+   "501",
+   "NorXor",
+   "Toxic 2: Complete The Level, 10.0 - Bigfoot",
+   "10",
+   "0.637"
+  ],
+  [
+   "502",
+   "Maximum",
+   "Red Ball: Raise the Flag, 4",
+   "69",
+   "0.636"
+  ],
+  [
+   "503",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 22 - Flash",
+   "1",
+   "0.636"
+  ],
+  [
+   "504",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 5 - Flash",
+   "1",
+   "0.633"
+  ],
+  [
+   "505",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-13",
+   "5",
+   "0.618"
+  ],
+  [
+   "506",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 12 (Stay low)",
+   "1",
+   "0.615"
+  ],
+  [
+   "507",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 15",
+   "7",
+   "0.613"
+  ],
+  [
+   "508",
+   "Maximum",
+   "Toxic 2: Complete The Level, 17.0 - Chain Reaction - Pink Teleporter",
+   "4",
+   "0.61"
+  ],
+  [
+   "509",
+   "NorXor",
+   "JellyCar Worlds: Secret Exit NG, (Legacy Demo) 1-1",
+   "2",
+   "0.605"
+  ],
+  [
+   "510",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 51 - Unity",
+   "3",
+   "0.605"
+  ],
+  [
+   "511",
+   "Maximum",
+   "Happy Wheels: Android, 3-14",
+   "2",
+   "0.604"
+  ],
+  [
+   "512",
+   "Maximum",
+   "Run 2: Runner Level Set - 100%, Runner No DJ, Normal",
+   "5",
+   "0.603"
+  ],
+  [
+   "513",
+   "NorXor",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 4-6",
+   "3",
+   "0.602"
+  ],
+  [
+   "514",
+   "NorXor",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 16-18",
+   "3",
+   "0.6"
+  ],
+  [
+   "515",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 57 - Original",
+   "1",
+   "0.597"
+  ],
+  [
+   "516",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 12 - Unity",
+   "7",
+   "0.595"
+  ],
+  [
+   "517",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 3",
+   "6",
+   "0.591"
+  ],
+  [
+   "518",
+   "Maximum",
+   "Club Penguin: Aqua Grabber - Amethyst, Compressed",
+   "1",
+   "0.589"
+  ],
+  [
+   "519",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 47 - Original",
+   "2",
+   "0.582"
+  ],
+  [
+   "520",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, (Legacy Demo) 1-4",
+   "2",
+   "0.582"
+  ],
+  [
+   "521",
+   "NorXor",
+   "JellyCar Worlds: Secret Exit NG, 1-3",
+   "5",
+   "0.579"
+  ],
+  [
+   "522",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball - 12 Levels w/ Savestates",
+   "7",
+   "0.572"
+  ],
+  [
+   "523",
+   "Maximum",
+   "Happy Wheels: Android, 7-4",
+   "5",
+   "0.554"
+  ],
+  [
+   "524",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-13",
+   "4",
+   "0.553"
+  ],
+  [
+   "525",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 3-15",
+   "24",
+   "0.54"
+  ],
+  [
+   "526",
+   "NorXor",
+   "Toxic 2: Complete The Level, 3.0 - Laser Phaser",
+   "7",
+   "0.536"
+  ],
+  [
+   "527",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 12 - Flash",
+   "1",
+   "0.521"
+  ],
+  [
+   "528",
+   "Maximum",
+   "Red Ball 3: Any%, 6",
+   "5",
+   "0.52"
+  ],
+  [
+   "529",
+   "NorXor",
+   "Super Mario 32: Single Stars, Green Hills - Fight vs. The King",
+   "2",
+   "0.51"
+  ],
+  [
+   "530",
+   "NorXor",
+   "JellyCar Worlds: Secret Exit NG, 1-4",
+   "3",
+   "0.507"
+  ],
+  [
+   "531",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, 4-6",
+   "5",
+   "0.507"
+  ],
+  [
+   "532",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 13 - Unity",
+   "7",
+   "0.503"
+  ],
+  [
+   "533",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any% - No Transition, 3",
+   "2",
+   "0.499"
+  ],
+  [
+   "534",
+   "NorXor",
+   "Toxic 2: Complete The Level, 8.0 - Take Cover",
+   "10",
+   "0.488"
+  ],
+  [
+   "535",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 20 - Unity",
+   "4",
+   "0.488"
+  ],
+  [
+   "536",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 22 - Unity",
+   "2",
+   "0.485"
+  ],
+  [
+   "537",
+   "Maximum",
+   "Flipside: Solo, Level 1",
+   "15",
+   "0.482"
+  ],
+  [
+   "538",
+   "Maximum",
+   "Happy Wheels: Android, 7-2",
+   "5",
+   "0.477"
+  ],
+  [
+   "539",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitchless, 9 - Original",
+   "6",
+   "0.477"
+  ],
+  [
+   "540",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 31 - Flash",
+   "1",
+   "0.476"
+  ],
+  [
+   "541",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 3-4",
+   "6",
+   "0.458"
+  ],
+  [
+   "542",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 6 (A bit bouncy here)",
+   "1",
+   "0.456"
+  ],
+  [
+   "543",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 1 (Arrow keys required)",
+   "1",
+   "0.454"
+  ],
+  [
+   "544",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 30 - Flash",
+   "1",
+   "0.453"
+  ],
+  [
+   "545",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-1",
+   "10",
+   "0.451"
+  ],
+  [
+   "546",
+   "NorXor",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitched, 100%, Original",
+   "2",
+   "0.449"
+  ],
+  [
+   "547",
+   "NorXor",
+   "Multiple Red Ball Games: Red Ball 1-3 Any% Relay",
+   "6",
+   "0.442"
+  ],
+  [
+   "548",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-7",
+   "12",
+   "0.438"
+  ],
+  [
+   "549",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 48 - Unity",
+   "6",
+   "0.437"
+  ],
+  [
+   "550",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 3-9",
+   "6",
+   "0.436"
+  ],
+  [
+   "551",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-11",
+   "4",
+   "0.412"
+  ],
+  [
+   "552",
+   "NorXor",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: Rapid Jump Glitch - 1-3",
+   "3",
+   "0.407"
+  ],
+  [
+   "553",
+   "Maximum",
+   "Ooh, Aah & You: Fetch-A-Fruit: All Dungeons - Unrestricted",
+   "3",
+   "0.405"
+  ],
+  [
+   "554",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any% - No Transition, 7",
+   "3",
+   "0.397"
+  ],
+  [
+   "555",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, 4-2",
+   "4",
+   "0.387"
+  ],
+  [
+   "556",
+   "NorXor",
+   "JellyCar Worlds: Secret Exit NG, 5-6",
+   "5",
+   "0.386"
+  ],
+  [
+   "557",
+   "Maximum",
+   "Toxic 2: 100%",
+   "2",
+   "0.382"
+  ],
+  [
+   "558",
+   "NorXor",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 9",
+   "5",
+   "0.378"
+  ],
+  [
+   "559",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 51 - Original",
+   "3",
+   "0.377"
+  ],
+  [
+   "560",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 2 - Flash",
+   "1",
+   "0.373"
+  ],
+  [
+   "561",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 6",
+   "10",
+   "0.371"
+  ],
+  [
+   "562",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 53 - Original",
+   "2",
+   "0.369"
+  ],
+  [
+   "563",
+   "Maximum",
+   "Red Ball: Raise the Flag, 16 - Wrong Way",
+   "18",
+   "0.356"
+  ],
+  [
+   "564",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-3",
+   "3",
+   "0.354"
+  ],
+  [
+   "565",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 55 - Unity",
+   "5",
+   "0.354"
+  ],
+  [
+   "566",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 13 - Flash",
+   "1",
+   "0.352"
+  ],
+  [
+   "567",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 24 - Flash",
+   "1",
+   "0.349"
+  ],
+  [
+   "568",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-3",
+   "10",
+   "0.348"
+  ],
+  [
+   "569",
+   "NorXor",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: Rapid Jump Glitch - 1-18",
+   "5",
+   "0.348"
+  ],
+  [
+   "570",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-10",
+   "5",
+   "0.34"
+  ],
+  [
+   "571",
+   "Maximum",
+   "Red Ball 4 (Mobile): 100% - Glitchless, Original",
+   "9",
+   "0.339"
+  ],
+  [
+   "572",
+   "Maximum",
+   "Run: 25 Levels - Fast, Skater, Flash",
+   "4",
+   "0.338"
+  ],
+  [
+   "573",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 21 - Flash",
+   "1",
+   "0.336"
+  ],
+  [
+   "574",
+   "NorXor",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 13-15",
+   "4",
+   "0.334"
+  ],
+  [
+   "575",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 61 - Original",
+   "2",
+   "0.331"
+  ],
+  [
+   "576",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 10 - Flash",
+   "1",
+   "0.33"
+  ],
+  [
+   "577",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 8",
+   "9",
+   "0.321"
+  ],
+  [
+   "578",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 7-3",
+   "8",
+   "0.319"
+  ],
+  [
+   "579",
+   "Maximum",
+   "Toxic 2: Complete The Level, 2.1 - Fish and Drips",
+   "6",
+   "0.312"
+  ],
+  [
+   "580",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 11 - Flash",
+   "2",
+   "0.311"
+  ],
+  [
+   "581",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any% - No Transition, 11",
+   "6",
+   "0.308"
+  ],
+  [
+   "582",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 4",
+   "11",
+   "0.305"
+  ],
+  [
+   "583",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 28 - Flash",
+   "2",
+   "0.298"
+  ],
+  [
+   "584",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 18 (Collapse)",
+   "1",
+   "0.294"
+  ],
+  [
+   "585",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 11 (No returns, no refunds)",
+   "1",
+   "0.292"
+  ],
+  [
+   "586",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 2 (Not always straight forward)",
+   "1",
+   "0.292"
+  ],
+  [
+   "587",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 28 (Oh ho, so close)",
+   "1",
+   "0.292"
+  ],
+  [
+   "588",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 17 (Worried about nothing)",
+   "1",
+   "0.292"
+  ],
+  [
+   "589",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 30 (No sweat.)",
+   "1",
+   "0.292"
+  ],
+  [
+   "590",
+   "Maximum",
+   "Happy Wheels: PC / iOS, Haunted Mansion 2",
+   "11",
+   "0.292"
+  ],
+  [
+   "591",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 19 (Stuttering)",
+   "1",
+   "0.292"
+  ],
+  [
+   "592",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 29 (Closing shop)",
+   "1",
+   "0.292"
+  ],
+  [
+   "593",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 20 (Do you remember?)",
+   "1",
+   "0.292"
+  ],
+  [
+   "594",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 4 (Alternate control scheme)",
+   "1",
+   "0.287"
+  ],
+  [
+   "595",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 7-2",
+   "5",
+   "0.277"
+  ],
+  [
+   "596",
+   "Maximum",
+   "Red Ball 3: Any%, 15",
+   "7",
+   "0.276"
+  ],
+  [
+   "597",
+   "Maximum",
+   "Toxic 2: Complete The Level, 16.1 - Marathon Man",
+   "4",
+   "0.267"
+  ],
+  [
+   "598",
+   "Maximum",
+   "Toxic 2: Complete The Level, 6.1 - Maximum Security",
+   "3",
+   "0.266"
+  ],
+  [
+   "599",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 7-4",
+   "3",
+   "0.261"
+  ],
+  [
+   "600",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-2",
+   "3",
+   "0.253"
+  ],
+  [
+   "601",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 5",
+   "7",
+   "0.249"
+  ],
+  [
+   "602",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 12",
+   "6",
+   "0.249"
+  ],
+  [
+   "603",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 54 - Unity",
+   "3",
+   "0.249"
+  ],
+  [
+   "604",
+   "Maximum",
+   "Toxic 2: Complete The Level, 13.1 - Dead Space",
+   "3",
+   "0.248"
+  ],
+  [
+   "605",
+   "Maximum",
+   "Happy Wheels: Android, 3-11",
+   "5",
+   "0.247"
+  ],
+  [
+   "606",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 3-7",
+   "5",
+   "0.242"
+  ],
+  [
+   "607",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG+, 4-1",
+   "2",
+   "0.24"
+  ],
+  [
+   "608",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 8",
+   "6",
+   "0.234"
+  ],
+  [
+   "609",
+   "NorXor",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 10-12",
+   "3",
+   "0.229"
+  ],
+  [
+   "610",
+   "Maximum",
+   "Red Ball: Raise the Flag, 5",
+   "82",
+   "0.227"
+  ],
+  [
+   "611",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 7",
+   "10",
+   "0.218"
+  ],
+  [
+   "612",
+   "Maximum",
+   "Run: Adventure Mode - Fast, Skater, Flash",
+   "3",
+   "0.216"
+  ],
+  [
+   "613",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball - Low%",
+   "10",
+   "0.216"
+  ],
+  [
+   "614",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-8",
+   "3",
+   "0.216"
+  ],
+  [
+   "615",
+   "Maximum",
+   "Red Ball 2: Raise the Flag, 22",
+   "8",
+   "0.206"
+  ],
+  [
+   "616",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 7",
+   "9",
+   "0.205"
+  ],
+  [
+   "617",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 4",
+   "7",
+   "0.204"
+  ],
+  [
+   "618",
+   "Maximum",
+   "Red Ball: Raise the Flag, 15 - Normal",
+   "46",
+   "0.2"
+  ],
+  [
+   "619",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any% - No Transition, 10",
+   "4",
+   "0.199"
+  ],
+  [
+   "620",
+   "NorXor",
+   "Red Ball 4 (Mobile): 100% - Glitchless, Unity",
+   "3",
+   "0.198"
+  ],
+  [
+   "621",
+   "NorXor",
+   "JellyCar Worlds: Main Exit NG, 2-5",
+   "3",
+   "0.198"
+  ],
+  [
+   "622",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 25 (When it feels like it)",
+   "1",
+   "0.197"
+  ],
+  [
+   "623",
+   "NorXor",
+   "Red Ball 4 Vol.1: Any% - No Transition, 10",
+   "4",
+   "0.196"
+  ],
+  [
+   "624",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 20 - Flash",
+   "1",
+   "0.193"
+  ],
+  [
+   "625",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 10 (Heavy headwind, here)",
+   "1",
+   "0.193"
+  ],
+  [
+   "626",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 13",
+   "3",
+   "0.193"
+  ],
+  [
+   "627",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any% - No Transition, 13",
+   "2",
+   "0.192"
+  ],
+  [
+   "628",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-8",
+   "4",
+   "0.189"
+  ],
+  [
+   "629",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-14",
+   "6",
+   "0.188"
+  ],
+  [
+   "630",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 5 (Freefloating)",
+   "1",
+   "0.186"
+  ],
+  [
+   "631",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 23 (Center keyboarder)",
+   "1",
+   "0.186"
+  ],
+  [
+   "632",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 21 (Inbetween gravitii)",
+   "1",
+   "0.186"
+  ],
+  [
+   "633",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 19 - Flash",
+   "1",
+   "0.186"
+  ],
+  [
+   "634",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 7 (Dull appearances)",
+   "1",
+   "0.186"
+  ],
+  [
+   "635",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 8 (Candy stripes of doom)",
+   "1",
+   "0.186"
+  ],
+  [
+   "636",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 22 (Mime's folly)",
+   "1",
+   "0.186"
+  ],
+  [
+   "637",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 14 (One Leap of Faith)",
+   "1",
+   "0.186"
+  ],
+  [
+   "638",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 26 (Or is it)",
+   "1",
+   "0.185"
+  ],
+  [
+   "639",
+   "Maximum",
+   "Toxic 2: Complete The Level, 20.1 - Quickstep",
+   "5",
+   "0.185"
+  ],
+  [
+   "640",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 27 (Credit page)",
+   "1",
+   "0.185"
+  ],
+  [
+   "641",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 15 (Time to refresh)",
+   "1",
+   "0.185"
+  ],
+  [
+   "642",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 3 (Think before doing)",
+   "1",
+   "0.185"
+  ],
+  [
+   "643",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 24 (UPPERCASE)",
+   "1",
+   "0.185"
+  ],
+  [
+   "644",
+   "NorXor",
+   "This Is The Only Level: Any%, P+Gless, Stage 9 (Arrow control)",
+   "1",
+   "0.184"
+  ],
+  [
+   "645",
+   "NorXor",
+   "Red Ball 4 (Mobile): 100% - Glitched, Unity",
+   "2",
+   "0.183"
+  ],
+  [
+   "646",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 17 - Flash",
+   "2",
+   "0.18"
+  ],
+  [
+   "647",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 14",
+   "6",
+   "0.18"
+  ],
+  [
+   "648",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 3-13",
+   "4",
+   "0.176"
+  ],
+  [
+   "649",
+   "NorXor",
+   "Super Mario 32: Single Stars, Green Hills - The Star of the Sky",
+   "4",
+   "0.173"
+  ],
+  [
+   "650",
+   "NorXor",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: 3 Levels (Glitchless) - 7-9",
+   "4",
+   "0.173"
+  ],
+  [
+   "651",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 3",
+   "11",
+   "0.171"
+  ],
+  [
+   "652",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 11",
+   "11",
+   "0.169"
+  ],
+  [
+   "653",
+   "NorXor",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 7",
+   "4",
+   "0.169"
+  ],
+  [
+   "654",
+   "NorXor",
+   "JellyCar Worlds: Level Rush - W1",
+   "2",
+   "0.169"
+  ],
+  [
+   "655",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-6",
+   "12",
+   "0.169"
+  ],
+  [
+   "656",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 60 - Original",
+   "4",
+   "0.168"
+  ],
+  [
+   "657",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 14",
+   "9",
+   "0.165"
+  ],
+  [
+   "658",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-9",
+   "5",
+   "0.165"
+  ],
+  [
+   "659",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 3-11",
+   "4",
+   "0.162"
+  ],
+  [
+   "660",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 12",
+   "7",
+   "0.161"
+  ],
+  [
+   "661",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 13",
+   "6",
+   "0.158"
+  ],
+  [
+   "662",
+   "NorXor",
+   "JellyCar Worlds: Secret Exit NG, 2-1",
+   "5",
+   "0.156"
+  ],
+  [
+   "663",
+   "Maximum",
+   "Toxic 2: Complete The Level, 18.1 - Laser Quest",
+   "4",
+   "0.155"
+  ],
+  [
+   "664",
+   "Maximum",
+   "Red Ball 4 Vol.2: Any%, 9",
+   "7",
+   "0.147"
+  ],
+  [
+   "665",
+   "Maximum",
+   "Red Ball 3: 100%, 5",
+   "4",
+   "0.147"
+  ],
+  [
+   "666",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-4",
+   "4",
+   "0.143"
+  ],
+  [
+   "667",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 2",
+   "11",
+   "0.139"
+  ],
+  [
+   "668",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-5",
+   "5",
+   "0.138"
+  ],
+  [
+   "669",
+   "Maximum",
+   "Red Ball 3: 100%, 12",
+   "7",
+   "0.136"
+  ],
+  [
+   "670",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-7",
+   "3",
+   "0.133"
+  ],
+  [
+   "671",
+   "NorXor",
+   "Red Ball 4 (Mobile): Box Factory - Glitched, Any%, Original",
+   "3",
+   "0.133"
+  ],
+  [
+   "672",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 72 - Original",
+   "2",
+   "0.132"
+  ],
+  [
+   "673",
+   "NorXor",
+   "Red and Blue Balls: Complete the Level, 7",
+   "7",
+   "0.132"
+  ],
+  [
+   "674",
+   "Maximum",
+   "Red Ball 4 Vol.3: Any%, 10",
+   "14",
+   "0.129"
+  ],
+  [
+   "675",
+   "NorXor",
+   "LittleBigPlanet: 1P, Roller Run - Hard",
+   "7",
+   "0.128"
+  ],
+  [
+   "676",
+   "NorXor",
+   "JellyCar Worlds: Secret Exit NG, 2-5",
+   "4",
+   "0.127"
+  ],
+  [
+   "677",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-15",
+   "3",
+   "0.127"
+  ],
+  [
+   "678",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-12",
+   "5",
+   "0.111"
+  ],
+  [
+   "679",
+   "Maximum",
+   "Red Ball 3: 100%, 11",
+   "3",
+   "0.107"
+  ],
+  [
+   "680",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 27 - Flash",
+   "1",
+   "0.107"
+  ],
+  [
+   "681",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 29 - Flash",
+   "1",
+   "0.105"
+  ],
+  [
+   "682",
+   "Maximum",
+   "Happy Wheels: PC / iOS, The Ghost Train",
+   "10",
+   "0.104"
+  ],
+  [
+   "683",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 1-4",
+   "15",
+   "0.103"
+  ],
+  [
+   "684",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 65 - Original",
+   "2",
+   "0.101"
+  ],
+  [
+   "685",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 4-6",
+   "5",
+   "0.099"
+  ],
+  [
+   "686",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 67 - Original",
+   "2",
+   "0.095"
+  ],
+  [
+   "687",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 74 - Original",
+   "2",
+   "0.095"
+  ],
+  [
+   "688",
+   "Maximum",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitched, Any%, Original",
+   "2",
+   "0.093"
+  ],
+  [
+   "689",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 64 - Original",
+   "2",
+   "0.091"
+  ],
+  [
+   "690",
+   "Maximum",
+   "Red Ball 3: 100%, 6",
+   "4",
+   "0.09"
+  ],
+  [
+   "691",
+   "NorXor",
+   "Red Ball 4 (Mobile): Glitched, 70 - Original",
+   "2",
+   "0.089"
+  ],
+  [
+   "692",
+   "Maximum",
+   "Toxic 2: Complete The Level, 12.1 - A Bug's Life",
+   "4",
+   "0.086"
+  ],
+  [
+   "693",
+   "Maximum",
+   "Red Ball 3: 100%, 4",
+   "4",
+   "0.085"
+  ],
+  [
+   "694",
+   "Maximum",
+   "Red Ball 2: Raise the Flag, 25",
+   "10",
+   "0.083"
+  ],
+  [
+   "695",
+   "Maximum",
+   "Toxic 2: Complete The Level, 7.1 - Sleepy Holo",
+   "4",
+   "0.081"
+  ],
+  [
+   "696",
+   "Maximum",
+   "Toxic 2: Complete The Level, 17.1 - Swarm",
+   "3",
+   "0.078"
+  ],
+  [
+   "697",
+   "Maximum",
+   "Toxic 2: Complete The Level, 9.1 - Grow up",
+   "3",
+   "0.078"
+  ],
+  [
+   "698",
+   "NorXor",
+   "Ball at Work: A Fun and Unique Game of Skill and Patience!: Rapid Jump Glitch - 7-9",
+   "2",
+   "0.072"
+  ],
+  [
+   "699",
+   "NorXor",
+   "JellyCar Worlds: Secret Exit NG, (Legacy Demo) 1-4",
+   "2",
+   "0.054"
+  ],
+  [
+   "700",
+   "Maximum",
+   "Happy Wheels: PC / iOS, 3-14",
+   "2",
+   "0.052"
+  ],
+  [
+   "701",
+   "Maximum",
+   "Multiple Red Ball Games: Full Series Any% Relay - 6 Players",
+   "8",
+   "0.03"
+  ],
+  [
+   "702",
+   "Maximum",
+   "Fireboy and Watergirl 1 - The Forest Temple: Any% (2P), Level 23 - Flash",
+   "2",
+   "0.027"
+  ],
+  [
+   "703",
+   "NorXor",
+   "Multiple Red Ball Games: Extended Series - 100%, Main Categories",
+   "1",
+   "0"
+  ],
+  [
+   "704",
+   "Maximum",
+   "Running Fred: High Stakes, Level 5 - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ],
+  [
+   "705",
+   "Maximum",
+   "Running Fred: High Stakes, Level 6 - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ],
+  [
+   "706",
+   "NorXor",
+   "Toontown: Corporate Clash: Golfing - Co-Op, 1.3+, Walk In The Par",
+   "1",
+   "0"
+  ],
+  [
+   "707",
+   "Maximum",
+   "Running Fred: High Stakes, Level 1 - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ],
+  [
+   "708",
+   "NorXor",
+   "Multiple Red Ball Games: Extended Series - Any%, Main Categories",
+   "1",
+   "0"
+  ],
+  [
+   "709",
+   "Maximum",
+   "Running Fred: High Stakes - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ],
+  [
+   "710",
+   "Maximum",
+   "Running Fred: High Stakes, Level 9 - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ],
+  [
+   "711",
+   "NorXor",
+   "Red Ball Category Extensions: Red Ball 4 Vol.2 - 150 Levels",
+   "1",
+   "0"
+  ],
+  [
+   "712",
+   "Maximum",
+   "Running Fred: High Stakes, Level 3 - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ],
+  [
+   "713",
+   "Maximum",
+   "Running Fred: High Stakes, Level 10 - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ],
+  [
+   "714",
+   "NorXor",
+   "Justin Smith's Realistic Summer Sports Simulator: Any% (Turbo) - PC",
+   "1",
+   "0"
+  ],
+  [
+   "715",
+   "Maximum",
+   "Running Fred: High Stakes, Level 8 - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ],
+  [
+   "716",
+   "NorXor",
+   "Multiple Red Ball Games: Extended Series Any% Relay - Main Categories",
+   "1",
+   "0"
+  ],
+  [
+   "717",
+   "Maximum",
+   "Running Fred: High Stakes, Level 2 - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ],
+  [
+   "718",
+   "Maximum",
+   "Running Fred: High Stakes, Level 7 - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ],
+  [
+   "719",
+   "NorXor",
+   "JellyCar Worlds: (Legacy Demo) All Exits",
+   "1",
+   "0"
+  ],
+  [
+   "720",
+   "Maximum",
+   "Running Fred: High Stakes, Level 4 - No Gadgets, Jetpack",
+   "1",
+   "0"
+  ]
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "query": "series=Red+Ball&games=&platforms=&players=&request-type=games",
+ "columns": [
+  "Rank",
+  "Game",
+  "Points"
+ ],
+ "rows": [
+  [
+   "1",
+   "Red Ball",
+   "40761.85"
+  ],
+  [
+   "2",
+   "Red Ball 4 Vol.1",
+   "16042.79"
+  ],
+  [
+   "3",
+   "Red Ball 4 (Mobile)",
+   "8551.06"
+  ],
+  [
+   "4",
+   "Red Ball 3",
+   "7306.45"
+  ],
+  [
+   "5",
+   "Red Ball 2",
+   "7019.36"
+  ],
+  [
+   "6",
+   "Red Ball 4 Vol.3",
+   "5380.91"
+  ],
+  [
+   "7",
+   "Red Ball 4 Vol.2",
+   "3332.89"
+  ],
+  [
+   "8",
+   "Red and Blue Balls",
+   "3126.09"
+  ],
+  [
+   "9",
+   "Red Ball Category Extensions",
+   "2841.08"
+  ],
+  [
+   "10",
+   "Multiple Red Ball Games",
+   "2511.21"
+  ],
+  [
+   "11",
+   "Red Ball 5",
+   "1640.04"
+  ],
+  [
+   "12",
+   "Red Ball (Mobile)",
+   "1290.19"
+  ],
+  [
+   "13",
+   "Red and Blue Balls 2",
+   "878.38"
+  ],
+  [
+   "14",
+   "Red and Blue Balls 3",
+   "834.75"
+  ],
+  [
+   "15",
+   "Red Ball 3 (Mobile)",
+   "93.21"
+  ],
+  [
+   "16",
+   "Red Ball 5 (Beta)",
+   "40.34"
+  ]
+ ]
+}

@@ -106,7 +106,8 @@ class DbHolder:
 
 def _read_meta(con: duckdb.DuckDBPyConnection) -> Meta:
     row = con.execute(
-        "SELECT data_version, scraped_at, published_at, row_count, leaderboard_count, player_count, game_count FROM meta"
+        "SELECT data_version, scraped_at, published_at, row_count, leaderboard_count, player_count, game_count "
+        "FROM meta"
     ).fetchone()
     return Meta(
         data_version=row[0],

@@ -1,0 +1,161 @@
+{
+ "query": "series=&games=Red+Ball&platforms=&players=&request-type=records",
+ "columns": [
+  "Rank",
+  "Leaderboard",
+  "Player",
+  "Value"
+ ],
+ "rows": [
+  [
+   "1",
+   "Red Ball: 12 Levels",
+   "DividedByZero",
+   "1124.14"
+  ],
+  [
+   "2",
+   "Red Ball: 17 Levels",
+   "DividedByZero",
+   "445.501"
+  ],
+  [
+   "3",
+   "Red Ball: 12 Levels (Glitchless)",
+   "NorXor",
+   "350.313"
+  ],
+  [
+   "4",
+   "Red Ball: Raise the Flag, 11",
+   "Starline",
+   "191.599"
+  ],
+  [
+   "5",
+   "Red Ball: Raise the Flag, 10",
+   "Starline",
+   "180.425"
+  ],
+  [
+   "6",
+   "Red Ball: Raise the Flag, 8 - No Lag Abuse",
+   "Starline",
+   "159.571"
+  ],
+  [
+   "7",
+   "Red Ball: Raise the Flag, 9",
+   "Starline",
+   "155.041"
+  ],
+  [
+   "8",
+   "Red Ball: Raise the Flag, 12",
+   "Starline",
+   "124.064"
+  ],
+  [
+   "9",
+   "Red Ball: 17 Levels (Glitchless)",
+   "Magicallyy",
+   "107.281"
+  ],
+  [
+   "10",
+   "Red Ball: Raise the Flag, 13",
+   "Starline",
+   "101.593"
+  ],
+  [
+   "11",
+   "Red Ball: Raise the Flag, 17",
+   "Starline",
+   "84.427"
+  ],
+  [
+   "12",
+   "Red Ball: Raise the Flag, 14",
+   "Starline",
+   "82.071"
+  ],
+  [
+   "13",
+   "Red Ball: Raise the Flag, 7",
+   "Starline",
+   "71.807"
+  ],
+  [
+   "14",
+   "Red Ball: Raise the Flag, 3",
+   "NorXor",
+   "56.422"
+  ],
+  [
+   "15",
+   "Red Ball: Raise the Flag, 6",
+   "Miniland",
+   "52.852"
+  ],
+  [
+   "16",
+   "Red Ball: Raise the Flag, 16 - Wrong Way",
+   "Starline",
+   "47.653"
+  ],
+  [
+   "17",
+   "Red Ball: Raise the Flag, 4",
+   "Miniland",
+   "45.224"
+  ],
+  [
+   "18",
+   "Red Ball: Raise the Flag, 15 - Shop Heist",
+   "Starline",
+   "37.128"
+  ],
+  [
+   "19",
+   "Red Ball: Raise the Flag, 2",
+   "InsaneJetman",
+   "31.597"
+  ],
+  [
+   "20",
+   "Red Ball: Raise the Flag, 16 - Normal",
+   "Starline",
+   "25.396"
+  ],
+  [
+   "21",
+   "Red Ball: Raise the Flag, 5",
+   "roblox8192",
+   "18.513"
+  ],
+  [
+   "22",
+   "Red Ball: Raise the Flag, 15 - Normal",
+   "InsaneJetman",
+   "11.108"
+  ],
+  [
+   "23",
+   "Red Ball: Raise the Flag, 8 - Lag Abuse",
+   "Starline",
+   "9.197"
+  ],
+  [
+   "24",
+   "Red Ball: Raise the Flag, 1 - Normal",
+   "roblox8192",
+   "4.313"
+  ],
+  [
+   "25",
+   "Red Ball: Raise the Flag, 1 - Truncated",
+   "roblox8192",
+   "0.294"
+  ]
+ ]
+}

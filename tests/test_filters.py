@@ -4,7 +4,7 @@ import pytest
 
 from speedstats.filters import BoxTerms, parse_query, to_params
 
-# Shared with web/src/query.test.ts — keep the two tables in sync.
+# Shared with web/src/query.test.ts - keep the two tables in sync.
 CASES = [
     # legacy links: ", " separated, no v param
     (

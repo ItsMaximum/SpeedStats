@@ -1,0 +1,677 @@
+{
+ "query": "series=&games=Minecraft%3A+Java+Edition&platforms=&players=&request-type=records",
+ "columns": [
+  "Rank",
+  "Leaderboard",
+  "Player",
+  "Value"
+ ],
+ "rows": [
+  [
+   "1",
+   "Minecraft: Java Edition: Any% Glitchless - Random Seed, 1.16-1.19",
+   "lowkey",
+   "1225.69"
+  ],
+  [
+   "2",
+   "Minecraft: Java Edition: Any% Glitchless - Set Seed, 1.16-1.19",
+   "KenanKardes",
+   "1091.34"
+  ],
+  [
+   "3",
+   "Minecraft: Java Edition: Any% Glitchless - Random Seed, 1.13-1.15",
+   "M4xx",
+   "766.106"
+  ],
+  [
+   "4",
+   "Minecraft: Java Edition: Any% Glitchless - Random Seed, Pre 1.8",
+   "Infume",
+   "514.099"
+  ],
+  [
+   "5",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.16",
+   "Feinberg",
+   "439.112"
+  ],
+  [
+   "6",
+   "Minecraft: Java Edition: Any% Glitchless - Set Seed, 1.8",
+   "LucidG",
+   "362.358"
+  ],
+  [
+   "7",
+   "Minecraft: Java Edition: Any% Glitchless - Set Seed, 1.13-1.15",
+   "AgentWO6",
+   "320.277"
+  ],
+  [
+   "8",
+   "Minecraft: Java Edition: Any% Glitchless - Set Seed, 1.9-1.12",
+   "mth628_JP",
+   "276.441"
+  ],
+  [
+   "9",
+   "Minecraft: Java Edition: Any% Glitchless - Set Seed, Pre 1.8",
+   "btcmr123",
+   "273.385"
+  ],
+  [
+   "10",
+   "Minecraft: Java Edition: Any% Glitchless (Peaceful) - Set Seed, 1.9+",
+   "Keima",
+   "262.445"
+  ],
+  [
+   "11",
+   "Minecraft: Java Edition: Any% Glitchless (Peaceful) - Set Seed, Pre 1.9",
+   "PoisonousSkely",
+   "240.871"
+  ],
+  [
+   "12",
+   "Minecraft: Java Edition: Any% - Set Seed, 1.9+, External",
+   "nsla",
+   "227.595"
+  ],
+  [
+   "13",
+   "Minecraft: Java Edition: Any% Glitchless - Random Seed, 1.8",
+   "IceBacon",
+   "223.817"
+  ],
+  [
+   "14",
+   "Minecraft: Java Edition: Any% Glitchless - Set Seed, 1.20+",
+   "KenanKardes",
+   "203.893"
+  ],
+  [
+   "15",
+   "Minecraft: Java Edition: Any% Glitchless - Random Seed, 1.9-1.12",
+   "whatevermarco",
+   "177.621"
+  ],
+  [
+   "16",
+   "Minecraft: Java Edition: Any% - Random Seed, Pre 1.9, External",
+   "nsla",
+   "172.136"
+  ],
+  [
+   "17",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 2 Players, 1.16+, Random Seed",
+   "okshey",
+   "166.674"
+  ],
+  [
+   "18",
+   "Minecraft: Java Edition: Any% - Set Seed, Pre 1.9, External",
+   "nsla",
+   "157.535"
+  ],
+  [
+   "19",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 2 Players, 1.9-1.15, Random Seed",
+   "Kind",
+   "152.18"
+  ],
+  [
+   "20",
+   "Minecraft: Java Edition: Any% (Peaceful) - Set Seed, 1.9+",
+   "nsla",
+   "144.61"
+  ],
+  [
+   "21",
+   "Minecraft: Java Edition: Any% Glitchless (Demo) - 1.16+",
+   "amartema",
+   "121.403"
+  ],
+  [
+   "22",
+   "Minecraft: Java Edition: Any% (Peaceful) - Set Seed, Pre 1.9",
+   "nsla",
+   "104.538"
+  ],
+  [
+   "23",
+   "Minecraft: Java Edition: Any% Glitchless (Peaceful) - Random Seed, Pre 1.9",
+   "nsla",
+   "78.469"
+  ],
+  [
+   "24",
+   "Minecraft: Java Edition: Any% - Random Seed, 1.9+, External",
+   "nsla",
+   "70.835"
+  ],
+  [
+   "25",
+   "Minecraft: Java Edition: All Advancements - SSG, 1.1-1.6",
+   "Keima",
+   "70.413"
+  ],
+  [
+   "26",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 3 Players, 1.16+, Random Seed",
+   "silverr",
+   "65.805"
+  ],
+  [
+   "27",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 2 Players, Pre 1.9, Random Seed",
+   "nieuh",
+   "62.254"
+  ],
+  [
+   "28",
+   "Minecraft: Java Edition: Any% - Random Seed, 1.9+, Internal",
+   "novadud",
+   "56.211"
+  ],
+  [
+   "29",
+   "Minecraft: Java Edition: All Advancements - SS, 1.8-1.11",
+   "Nato",
+   "56.049"
+  ],
+  [
+   "30",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 3 Players, 1.9-1.15, Random Seed",
+   "M4xx",
+   "50.353"
+  ],
+  [
+   "31",
+   "Minecraft: Java Edition: Any% Glitchless (Demo) - 1.13-1.15",
+   "connoire",
+   "49.247"
+  ],
+  [
+   "32",
+   "Minecraft: Java Edition: Any% (Time Travel) - Set Seed",
+   "nsla",
+   "41.076"
+  ],
+  [
+   "33",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.1-1.6",
+   "Bloon",
+   "40.615"
+  ],
+  [
+   "34",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.8-1.11",
+   "3emis",
+   "34.973"
+  ],
+  [
+   "35",
+   "Minecraft: Java Edition: All Advancements - SSG, 1.16",
+   "Erchamion",
+   "34.018"
+  ],
+  [
+   "36",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 4 Players, 1.16+, Random Seed",
+   "Pjoes",
+   "30.534"
+  ],
+  [
+   "37",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 5-9 Players, 1.16+, Random Seed",
+   "Cube1337x",
+   "30.05"
+  ],
+  [
+   "38",
+   "Minecraft: Java Edition: Any% - Set Seed, 1.9+, Internal",
+   "Khalooody",
+   "28.926"
+  ],
+  [
+   "39",
+   "Minecraft: Java Edition: All Advancements - SS, 1.1-1.6",
+   "Schnidi_",
+   "28.277"
+  ],
+  [
+   "40",
+   "Minecraft: Java Edition: All Advancements - 1.15, RSG",
+   "poeaz_91740",
+   "28.128"
+  ],
+  [
+   "41",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 4 Players, 1.9-1.15, Random Seed",
+   "DuncanRuns",
+   "27.867"
+  ],
+  [
+   "42",
+   "Minecraft: Java Edition: Any% Glitchless (Demo) - 1.8",
+   "nsla",
+   "27.64"
+  ],
+  [
+   "43",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 3 Players, Pre 1.9, Random Seed",
+   "Fluhhe",
+   "27.439"
+  ],
+  [
+   "44",
+   "Minecraft: Java Edition: All Advancements - 1.12, RSG",
+   "3emis",
+   "27.04"
+  ],
+  [
+   "45",
+   "Minecraft: Java Edition: Any% (Peaceful) - Random Seed, Pre 1.9",
+   "nsla",
+   "26.758"
+  ],
+  [
+   "46",
+   "Minecraft: Java Edition: Any% - Set Seed, Pre 1.9, Internal",
+   "btcmr123",
+   "22.378"
+  ],
+  [
+   "47",
+   "Minecraft: Java Edition: Any% (Time Travel) - Random Seed",
+   "nsla",
+   "20.842"
+  ],
+  [
+   "48",
+   "Minecraft: Java Edition: Any% - Random Seed, Pre 1.9, Internal",
+   "nsla",
+   "19.392"
+  ],
+  [
+   "49",
+   "Minecraft: Java Edition: All Advancements - SSG, 1.8-1.11",
+   "Erchamion",
+   "17.142"
+  ],
+  [
+   "50",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.17",
+   "Feinberg",
+   "16.288"
+  ],
+  [
+   "51",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 2 Players, 1.16+, Set Seed",
+   "Hanabi",
+   "15.161"
+  ],
+  [
+   "52",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 5-9 Players, 1.9-1.15, Random Seed",
+   "DuncanRuns",
+   "14.989"
+  ],
+  [
+   "53",
+   "Minecraft: Java Edition: All Advancements - 1.14, RSG",
+   "Zesskyo",
+   "13.07"
+  ],
+  [
+   "54",
+   "Minecraft: Java Edition: All Advancements - 1.13, RSG",
+   "3emis",
+   "11.002"
+  ],
+  [
+   "55",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.18",
+   "Feinberg",
+   "10.741"
+  ],
+  [
+   "56",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.21.6-1.21.10",
+   "fangfang",
+   "9.587"
+  ],
+  [
+   "57",
+   "Minecraft: Java Edition: Any% Glitchless (Demo) - Pre 1.8",
+   "nsla",
+   "9.216"
+  ],
+  [
+   "58",
+   "Minecraft: Java Edition: Any% Glitchless (Demo) - 1.9-1.12",
+   "DrGuy",
+   "9.052"
+  ],
+  [
+   "59",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.21-1.21.5",
+   "Feinberg",
+   "8.265"
+  ],
+  [
+   "60",
+   "Minecraft: Java Edition: All Advancements Co-op - 2 Players, RSG, 1.16",
+   "Snakezy",
+   "8.206"
+  ],
+  [
+   "61",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.21.11-26.1",
+   "fangfang",
+   "7.991"
+  ],
+  [
+   "62",
+   "Minecraft: Java Edition: All Advancements - RS, 1.1-1.6",
+   "Schnidi_",
+   "6.944"
+  ],
+  [
+   "63",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 4 Players, Pre 1.9, Random Seed",
+   "Fluhhe",
+   "5.774"
+  ],
+  [
+   "64",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.20.5-1.20.6",
+   "Feinberg",
+   "5.114"
+  ],
+  [
+   "65",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 5-9 Players, Pre 1.9, Random Seed",
+   "nieuh",
+   "4.608"
+  ],
+  [
+   "66",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 10+ Players, 1.9-1.15, Random Seed",
+   "MinecrAvenger",
+   "3.855"
+  ],
+  [
+   "67",
+   "Minecraft: Java Edition: All Advancements - RS, 1.16",
+   "nsla",
+   "3.757"
+  ],
+  [
+   "68",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.19",
+   "Feinberg",
+   "3.693"
+  ],
+  [
+   "69",
+   "Minecraft: Java Edition: All Advancements Co-op - 3 Players, RSG, 1.16",
+   "dinonuggieboi",
+   "2.904"
+  ],
+  [
+   "70",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 2 Players, 1.9-1.15, Set Seed",
+   "Pi1MuTINRYuU",
+   "2.66"
+  ],
+  [
+   "71",
+   "Minecraft: Java Edition: All Advancements - SSG, 1.17",
+   "the_xiaohan",
+   "2.318"
+  ],
+  [
+   "72",
+   "Minecraft: Java Edition: All Advancements - 1.12, SSG",
+   "3emis",
+   "2.296"
+  ],
+  [
+   "73",
+   "Minecraft: Java Edition: All Advancements - RS, 1.8-1.11",
+   "Zesskyo",
+   "2.239"
+  ],
+  [
+   "74",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 10+ Players, 1.16+, Random Seed",
+   "AutomattPL",
+   "2.11"
+  ],
+  [
+   "75",
+   "Minecraft: Java Edition: All Advancements Co-op - 5-9 Players, RSG, 1.16",
+   "DuncanRuns",
+   "2.012"
+  ],
+  [
+   "76",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 2 Players, Pre 1.9, Set Seed",
+   "nsla",
+   "1.961"
+  ],
+  [
+   "77",
+   "Minecraft: Java Edition: All Advancements Co-op - 4 Players, RSG, 1.16",
+   "inoutoftherain",
+   "1.676"
+  ],
+  [
+   "78",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.20-1.20.4",
+   "Feinberg",
+   "1.605"
+  ],
+  [
+   "79",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 3 Players, 1.16+, Set Seed",
+   "Brina32",
+   "1.592"
+  ],
+  [
+   "80",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 10+ Players, Pre 1.9, Random Seed",
+   "nieuh",
+   "1.518"
+  ],
+  [
+   "81",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 4 Players, 1.16+, Set Seed",
+   "Brina32",
+   "1.275"
+  ],
+  [
+   "82",
+   "Minecraft: Java Edition: All Advancements Co-op - 2 Players, RSG, 1.17",
+   "Odogster",
+   "1.16"
+  ],
+  [
+   "83",
+   "Minecraft: Java Edition: All Advancements - 1.12, SS",
+   "CZX",
+   "0.719"
+  ],
+  [
+   "84",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 3 Players, 1.9-1.15, Set Seed",
+   "Hanabi",
+   "0.666"
+  ],
+  [
+   "85",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 10+ Players, 1.16+, Set Seed",
+   "Brina32",
+   "0.471"
+  ],
+  [
+   "86",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 3 Players, Pre 1.9, Set Seed",
+   "Gran5364",
+   "0.41"
+  ],
+  [
+   "87",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 5-9 Players, 1.16+, Set Seed",
+   "Brina32",
+   "0.388"
+  ],
+  [
+   "88",
+   "Minecraft: Java Edition: All Advancements Co-op - 2 Players, RSG, 1.12",
+   "Zesskyo",
+   "0.365"
+  ],
+  [
+   "89",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 4 Players, Pre 1.9, Set Seed",
+   "zelario12",
+   "0.163"
+  ],
+  [
+   "90",
+   "Minecraft: Java Edition: All Advancements Co-op - 10+ Players, RSG, 1.16",
+   "OliverSR",
+   "0.145"
+  ],
+  [
+   "91",
+   "Minecraft: Java Edition: All Advancements - SSG, 1.21-1.21.5",
+   "Erchamion",
+   "0"
+  ],
+  [
+   "92",
+   "Minecraft: Java Edition: All Advancements Co-op - 10+ Players, 1.1-1.6, SSG",
+   "DeapHere",
+   "0"
+  ],
+  [
+   "93",
+   "Minecraft: Java Edition: All Advancements - 1.13, SSG",
+   "3emis",
+   "0"
+  ],
+  [
+   "94",
+   "Minecraft: Java Edition: All Advancements Co-op - 4 Players, RSG, 1.12",
+   "Khalooody",
+   "0"
+  ],
+  [
+   "95",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 5-9 Players, Pre 1.9, Set Seed",
+   "APW8",
+   "0"
+  ],
+  [
+   "96",
+   "Minecraft: Java Edition: All Advancements Co-op - 10+ Players, RSG, 1.21.11-26.1",
+   "DuncanRuns",
+   "0"
+  ],
+  [
+   "97",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 5-9 Players, 1.9-1.15, Set Seed",
+   "Position9_P9",
+   "0"
+  ],
+  [
+   "98",
+   "Minecraft: Java Edition: All Advancements - 1.15, RS",
+   "Zesskyo",
+   "0"
+  ],
+  [
+   "99",
+   "Minecraft: Java Edition: Any% Glitchless",
+   "Khinganan",
+   "0"
+  ],
+  [
+   "100",
+   "Minecraft: Java Edition: All Advancements Co-op - 2 Players, 1.1-1.6, SSG",
+   "1imb",
+   "0"
+  ],
+  [
+   "101",
+   "Minecraft: Java Edition: All Advancements - RSG, 26.2",
+   "InFect_Dilu",
+   "0"
+  ],
+  [
+   "102",
+   "Minecraft: Java Edition: All Advancements Co-op - 2 Players, RSG, 1.15",
+   "Zesskyo",
+   "0"
+  ],
+  [
+   "103",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 4 Players, 1.9-1.15, Set Seed",
+   "Position9_P9",
+   "0"
+  ],
+  [
+   "104",
+   "Minecraft: Java Edition: All Advancements - 1.12, RS",
+   "CZX",
+   "0"
+  ],
+  [
+   "105",
+   "Minecraft: Java Edition: Any% (Peaceful) - Random Seed, 1.9+",
+   "admiral_stapler",
+   "0"
+  ],
+  [
+   "106",
+   "Minecraft: Java Edition: All Advancements Co-op - 4 Players, 1.1-1.6, SSG",
+   "1imb",
+   "0"
+  ],
+  [
+   "107",
+   "Minecraft: Java Edition: All Advancements - SS, 1.16",
+   "Odogster",
+   "0"
+  ],
+  [
+   "108",
+   "Minecraft: Java Edition: All Advancements Co-op - 3 Players, RSG, 1.15",
+   "1imb",
+   "0"
+  ],
+  [
+   "109",
+   "Minecraft: Java Edition: Any% Glitchless Co-op - 10+ Players, 1.9-1.15, Set Seed",
+   "UPGS",
+   "0"
+  ],
+  [
+   "110",
+   "Minecraft: Java Edition: All Advancements Co-op - 10+ Players, RSG, 1.17",
+   "1imb",
+   "0"
+  ],
+  [
+   "111",
+   "Minecraft: Java Edition: Any% Glitchless (Peaceful) - 1.9+",
+   "Chandelier04",
+   "0"
+  ]
+ ]
+}

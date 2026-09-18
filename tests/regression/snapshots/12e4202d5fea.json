@@ -1,0 +1,3270 @@
+{
+ "query": "series=&games=&platforms=Nintendo+64&players=&request-type=games",
+ "columns": [
+  "Rank",
+  "Game",
+  "Points"
+ ],
+ "rows": [
+  [
+   "1",
+   "Super Mario 64",
+   "191490.4"
+  ],
+  [
+   "2",
+   "Super Mario 64 Category Extensions",
+   "33881.78"
+  ],
+  [
+   "3",
+   "Diddy Kong Racing",
+   "19768.5"
+  ],
+  [
+   "4",
+   "Wave Race 64",
+   "18292.41"
+  ],
+  [
+   "5",
+   "Banjo-Kazooie",
+   "17087.54"
+  ],
+  [
+   "6",
+   "Mario Kart 64",
+   "12043.68"
+  ],
+  [
+   "7",
+   "Paper Mario",
+   "12010.42"
+  ],
+  [
+   "8",
+   "Banjo-Tooie",
+   "10646.73"
+  ],
+  [
+   "9",
+   "Super Smash Bros.",
+   "10563.27"
+  ],
+  [
+   "10",
+   "Donkey Kong 64",
+   "10200.19"
+  ],
+  [
+   "11",
+   "Super Mario 64 Randomizer",
+   "9182.2"
+  ],
+  [
+   "12",
+   "Super Mario Star Road",
+   "9142.66"
+  ],
+  [
+   "13",
+   "The Legend of Zelda: Ocarina of Time",
+   "7180.77"
+  ],
+  [
+   "14",
+   "SM64 Sapphire",
+   "5598.31"
+  ],
+  [
+   "15",
+   "Chameleon Twist",
+   "5429.42"
+  ],
+  [
+   "16",
+   "Star Fox 64",
+   "5309.44"
+  ],
+  [
+   "17",
+   "Pok\u00e9mon Snap",
+   "4940.11"
+  ],
+  [
+   "18",
+   "Mickey's Speedway USA",
+   "4784.45"
+  ],
+  [
+   "19",
+   "1080\u00b0 Snowboarding",
+   "4208.72"
+  ],
+  [
+   "20",
+   "Ocarina of Time Category Extensions",
+   "4022.85"
+  ],
+  [
+   "21",
+   "Mario Party",
+   "3736.98"
+  ],
+  [
+   "22",
+   "Goldeneye 007",
+   "3694.63"
+  ],
+  [
+   "23",
+   "Super Mario 64: The Green Stars",
+   "3210.47"
+  ],
+  [
+   "24",
+   "Super Mario 74",
+   "3130.85"
+  ],
+  [
+   "25",
+   "Pok\u00e9mon Puzzle League",
+   "3073.45"
+  ],
+  [
+   "26",
+   "Snowboard Kids",
+   "3033.78"
+  ],
+  [
+   "27",
+   "Shotgun Mario 64",
+   "2509.75"
+  ],
+  [
+   "28",
+   "The Legend of Zelda: Majora's Mask",
+   "2465.19"
+  ],
+  [
+   "29",
+   "Bomberman 64",
+   "2299.57"
+  ],
+  [
+   "30",
+   "Bomberman Hero",
+   "2166.27"
+  ],
+  [
+   "31",
+   "Super Mario 74 Extreme Edition",
+   "2099.56"
+  ],
+  [
+   "32",
+   "Star Revenge 5: Neo Blue Realm",
+   "2016.25"
+  ],
+  [
+   "33",
+   "Glover",
+   "1971.34"
+  ],
+  [
+   "34",
+   "Excitebike 64",
+   "1961.06"
+  ],
+  [
+   "35",
+   "Toy Story 2: Buzz Lightyear to the Rescue",
+   "1924.72"
+  ],
+  [
+   "36",
+   "Pok\u00e9mon Stadium",
+   "1920.67"
+  ],
+  [
+   "37",
+   "Mario Golf",
+   "1911.66"
+  ],
+  [
+   "38",
+   "Extreme-G",
+   "1899.17"
+  ],
+  [
+   "39",
+   "Star Revenge 2 Act 1: To The Moon",
+   "1869.73"
+  ],
+  [
+   "40",
+   "Mario Party 2",
+   "1836.16"
+  ],
+  [
+   "41",
+   "Ztar Attack Rebooted",
+   "1706.87"
+  ],
+  [
+   "42",
+   "Tony Hawk's Pro Skater",
+   "1615.98"
+  ],
+  [
+   "43",
+   "Space Station Silicon Valley (N64)",
+   "1594.16"
+  ],
+  [
+   "44",
+   "Katze Stuck in the Toilet 64",
+   "1541.7"
+  ],
+  [
+   "45",
+   "Eureka",
+   "1535.56"
+  ],
+  [
+   "46",
+   "Chameleon Twist 2",
+   "1525.91"
+  ],
+  [
+   "47",
+   "Star Revenge Redone v 2.0",
+   "1515.45"
+  ],
+  [
+   "48",
+   "Beetle Adventure Racing!",
+   "1507.15"
+  ],
+  [
+   "49",
+   "Despair Mario's Gambit 64",
+   "1488.38"
+  ],
+  [
+   "50",
+   "Ztar Attack 2: A Blast to the Past",
+   "1478.15"
+  ],
+  [
+   "51",
+   "Star Wars: Shadows of the Empire",
+   "1471.47"
+  ],
+  [
+   "52",
+   "SM64: Decades Later",
+   "1357.29"
+  ],
+  [
+   "53",
+   "Super Mario Rainbow Road",
+   "1356.24"
+  ],
+  [
+   "54",
+   "Mystical Ninja Starring Goemon",
+   "1352.9"
+  ],
+  [
+   "55",
+   "Conker's Bad Fur Day",
+   "1345.72"
+  ],
+  [
+   "56",
+   "Perfect Dark",
+   "1288.68"
+  ],
+  [
+   "57",
+   "Smash Remix",
+   "1227.41"
+  ],
+  [
+   "58",
+   "Mario's New Earth",
+   "1175.62"
+  ],
+  [
+   "59",
+   "Another Mario Adventure",
+   "1115.41"
+  ],
+  [
+   "60",
+   "Mario Party 3",
+   "1105.51"
+  ],
+  [
+   "61",
+   "Star Wars: Rogue Squadron",
+   "1076.17"
+  ],
+  [
+   "62",
+   "SM64: Last Impact",
+   "1044.52"
+  ],
+  [
+   "63",
+   "Star Revenge 4.5: The Kedama Takeover Rewritten",
+   "1023.4"
+  ],
+  [
+   "64",
+   "Super Mario Odyssey 64 (Physics Mod)",
+   "1021.78"
+  ],
+  [
+   "65",
+   "Shiren the Wanderer 2: Oni Invasion on Shiren Castle!",
+   "1011.55"
+  ],
+  [
+   "66",
+   "Quest 64",
+   "1002.45"
+  ],
+  [
+   "67",
+   "Army Men: Sarge's Heroes",
+   "972.94"
+  ],
+  [
+   "68",
+   "F-Zero X",
+   "947.62"
+  ],
+  [
+   "69",
+   "Star Revenge 8: Scepter of Hope",
+   "941.03"
+  ],
+  [
+   "70",
+   "Blooming Blossoms",
+   "880.89"
+  ],
+  [
+   "71",
+   "Castlevania (Nintendo 64)",
+   "866.14"
+  ],
+  [
+   "72",
+   "Star Revenge 7: Park of Time",
+   "861.25"
+  ],
+  [
+   "73",
+   "Destruction Derby 64",
+   "830.87"
+  ],
+  [
+   "74",
+   "Super Mario Treasure World",
+   "803.49"
+  ],
+  [
+   "75",
+   "Castlevania: Legacy of Darkness",
+   "788.86"
+  ],
+  [
+   "76",
+   "Lug's Delightful Dioramas",
+   "760.85"
+  ],
+  [
+   "77",
+   "Yoshi's Story",
+   "741.75"
+  ],
+  [
+   "78",
+   "Star Revenge 3: Mario on An Saoire 64",
+   "739.64"
+  ],
+  [
+   "79",
+   "Elmo's Number Journey",
+   "727.37"
+  ],
+  [
+   "80",
+   "Mario Tennis 64",
+   "710.21"
+  ],
+  [
+   "81",
+   "Pok\u00e9mon Stadium 2",
+   "695.11"
+  ],
+  [
+   "82",
+   "Goldfinger 64",
+   "641.9"
+  ],
+  [
+   "83",
+   "Mega Man Legends",
+   "589.14"
+  ],
+  [
+   "84",
+   "Harvest Moon 64",
+   "581.08"
+  ],
+  [
+   "85",
+   "Shining Stars 2: Mirror Madness",
+   "576.13"
+  ],
+  [
+   "86",
+   "Extreme-G 2",
+   "572.24"
+  ],
+  [
+   "87",
+   "Shining Stars 3: Sanctuary of the Star Comet",
+   "569.48"
+  ],
+  [
+   "88",
+   "Star Revenge 6.5 - Wrath of the Dim. Flower",
+   "559.66"
+  ],
+  [
+   "89",
+   "Star Revenge 2.5: Remnant of Doom",
+   "553.94"
+  ],
+  [
+   "90",
+   "California Speed",
+   "553.62"
+  ],
+  [
+   "91",
+   "Hydro Thunder (N64)",
+   "508.98"
+  ],
+  [
+   "92",
+   "Blast Corps",
+   "506.54"
+  ],
+  [
+   "93",
+   "Waluigi's Taco Stand",
+   "505.68"
+  ],
+  [
+   "94",
+   "Rocket: Robot on Wheels",
+   "502.95"
+  ],
+  [
+   "95",
+   "Star Revenge 6: Luigi's Adventure",
+   "490.24"
+  ],
+  [
+   "96",
+   "Cruis'n World",
+   "488.22"
+  ],
+  [
+   "97",
+   "Super Mario 64: Beta Revival",
+   "487.48"
+  ],
+  [
+   "98",
+   "SM64 Shining Stars",
+   "485.86"
+  ],
+  [
+   "99",
+   "IronMario 64",
+   "483.3"
+  ],
+  [
+   "100",
+   "Mischief Makers",
+   "475.89"
+  ],
+  [
+   "101",
+   "Top Gear Rally",
+   "473.63"
+  ],
+  [
+   "102",
+   "Cruis'n USA",
+   "465.18"
+  ],
+  [
+   "103",
+   "Star Revenge 2: Night of Doom",
+   "465.16"
+  ],
+  [
+   "104",
+   "WCW/nWo Revenge",
+   "460.81"
+  ],
+  [
+   "105",
+   "Star Wars Episode I: Racer",
+   "457.77"
+  ],
+  [
+   "106",
+   "Banjo-Kazooie Category Extensions",
+   "452.7"
+  ],
+  [
+   "107",
+   "Indy Racing 2000",
+   "450.17"
+  ],
+  [
+   "108",
+   "Kirby 64: The Crystal Shards",
+   "432.31"
+  ],
+  [
+   "109",
+   "Star Revenge 5.5: Destroyed Memories",
+   "429.5"
+  ],
+  [
+   "110",
+   "Donkey Kong 64 Category Extensions",
+   "428.05"
+  ],
+  [
+   "111",
+   "Super Mario New Star",
+   "411.85"
+  ],
+  [
+   "112",
+   "Spider-Man (2000)",
+   "407.6"
+  ],
+  [
+   "113",
+   "Super Mario Run 64",
+   "407.54"
+  ],
+  [
+   "114",
+   "Bomberman 64: The Second Attack",
+   "407.21"
+  ],
+  [
+   "115",
+   "Super Mario and the Cursed Castles",
+   "406.84"
+  ],
+  [
+   "116",
+   "Super Mario 64 Chaos Edition",
+   "404.95"
+  ],
+  [
+   "117",
+   "SM64 - The Green Comet",
+   "402.88"
+  ],
+  [
+   "118",
+   "A Bug's Life",
+   "399.8"
+  ],
+  [
+   "119",
+   "Iggy's Reckin' Balls",
+   "395.14"
+  ],
+  [
+   "120",
+   "Custom Robo",
+   "385.32"
+  ],
+  [
+   "121",
+   "Rush 2: Extreme Racing USA",
+   "384.81"
+  ],
+  [
+   "122",
+   "Super Mario 32",
+   "381"
+  ],
+  [
+   "123",
+   "Super Captain Falcon 64",
+   "371.73"
+  ],
+  [
+   "124",
+   "Super Luigi 64",
+   "365.72"
+  ],
+  [
+   "125",
+   "The Powerpuff Girls: Chemical X-Traction",
+   "356.95"
+  ],
+  [
+   "126",
+   "Dr. Mario 64",
+   "355.61"
+  ],
+  [
+   "127",
+   "Jet Force Gemini",
+   "347.54"
+  ],
+  [
+   "128",
+   "Army Men: Sarge's Heroes 2",
+   "347.52"
+  ],
+  [
+   "129",
+   "Doubutsu no Mori",
+   "343.55"
+  ],
+  [
+   "130",
+   "Star Revenge 0.5 - Unused Levels",
+   "337.5"
+  ],
+  [
+   "131",
+   "Paper Mario Category Extensions",
+   "335.89"
+  ],
+  [
+   "132",
+   "Peach's Fury",
+   "334.5"
+  ],
+  [
+   "133",
+   "WWF WrestleMania 2000",
+   "330.95"
+  ],
+  [
+   "134",
+   "Super Joan Bros 64",
+   "329.87"
+  ],
+  [
+   "135",
+   "007: The World is Not Enough",
+   "326.76"
+  ],
+  [
+   "136",
+   "Tetrisphere",
+   "325.83"
+  ],
+  [
+   "137",
+   "Super Mario 64 Land",
+   "319.41"
+  ],
+  [
+   "138",
+   "Tetris 64",
+   "301.86"
+  ],
+  [
+   "139",
+   "San Francisco Rush 2049",
+   "300.72"
+  ],
+  [
+   "140",
+   "Star Revenge 0: Galaxy of Origins",
+   "294.33"
+  ],
+  [
+   "141",
+   "SM64 Blue Star Adventure",
+   "288.49"
+  ],
+  [
+   "142",
+   "Road Rash 64",
+   "281.4"
+  ],
+  [
+   "143",
+   "Star Revenge 1: Star Takeover",
+   "270.83"
+  ],
+  [
+   "144",
+   "Mario's Nightmare 64",
+   "269.67"
+  ],
+  [
+   "145",
+   "LEGO Racers",
+   "266.67"
+  ],
+  [
+   "146",
+   "BattleTanx (N64)",
+   "263.84"
+  ],
+  [
+   "147",
+   "Donald Duck: Goin' Quackers",
+   "263.34"
+  ],
+  [
+   "148",
+   "Hey You, Pikachu!",
+   "259.8"
+  ],
+  [
+   "149",
+   "Buck Bumble",
+   "259.73"
+  ],
+  [
+   "150",
+   "Sunshine Secret Book 64",
+   "257.72"
+  ],
+  [
+   "151",
+   "Tomorrow Never Dies 64",
+   "250.35"
+  ],
+  [
+   "152",
+   "The New Tetris",
+   "247.59"
+  ],
+  [
+   "153",
+   "Pok\u00e9mon Stadium Category Extensions",
+   "246.25"
+  ],
+  [
+   "154",
+   "Super Mario & The Grand Star",
+   "243.74"
+  ],
+  [
+   "155",
+   "Star Revenge 3.5: Vacation of Cursed Dreams",
+   "242.35"
+  ],
+  [
+   "156",
+   "Gauntlet Legends",
+   "242.21"
+  ],
+  [
+   "157",
+   "Super Mario 64 Seaside Town",
+   "241.42"
+  ],
+  [
+   "158",
+   "Doraemon 2: Nobita to Hikari no Shinden",
+   "238.94"
+  ],
+  [
+   "159",
+   "Thousand Year Door 64",
+   "238.66"
+  ],
+  [
+   "160",
+   "WWF No Mercy",
+   "235.19"
+  ],
+  [
+   "161",
+   "Star Revenge 7.5: Kedowser's Return",
+   "230.84"
+  ],
+  [
+   "162",
+   "Mario's Vacation Course",
+   "226.09"
+  ],
+  [
+   "163",
+   "Snowboard Kids 2",
+   "222.17"
+  ],
+  [
+   "164",
+   "Puyo Puyo SUN",
+   "220.61"
+  ],
+  [
+   "165",
+   "Magical Tetris Challenge",
+   "217.34"
+  ],
+  [
+   "166",
+   "Sunshine 64",
+   "215.24"
+  ],
+  [
+   "167",
+   "Elmo's Letter Adventure",
+   "205.42"
+  ],
+  [
+   "168",
+   "GT 64: Championship Edition",
+   "205.13"
+  ],
+  [
+   "169",
+   "Indiana Jones and the Infernal Machine",
+   "193.16"
+  ],
+  [
+   "170",
+   "Waialae Country Club: True Golf Classics",
+   "188.86"
+  ],
+  [
+   "171",
+   "ClayFighter 63 1/3",
+   "184.6"
+  ],
+  [
+   "172",
+   "Super Releasio 64",
+   "183.7"
+  ],
+  [
+   "173",
+   "Telocation Gemini",
+   "181.64"
+  ],
+  [
+   "174",
+   "Star Revenge 1.5: Star Takeover Redone",
+   "181.17"
+  ],
+  [
+   "175",
+   "Luigi and the Violet Stars",
+   "181.03"
+  ],
+  [
+   "176",
+   "San Francisco Rush: Extreme Racing",
+   "180.73"
+  ],
+  [
+   "177",
+   "Super Mario 64: Peach's Memory",
+   "178.29"
+  ],
+  [
+   "178",
+   "Mario and the Mystic Purple Stars",
+   "177.48"
+  ],
+  [
+   "179",
+   "TsucnenT's Boss Battle TesT",
+   "177.48"
+  ],
+  [
+   "180",
+   "SM64: Ocarina of Time",
+   "177.15"
+  ],
+  [
+   "181",
+   "Bust-A-Move 2: Arcade Edition",
+   "170.93"
+  ],
+  [
+   "182",
+   "Wetrix",
+   "170.02"
+  ],
+  [
+   "183",
+   "Super Mario 64 1.5 - Ztar Attack!",
+   "169.82"
+  ],
+  [
+   "184",
+   "Super Mario 64 Relax your Life",
+   "164.4"
+  ],
+  [
+   "185",
+   "Space Invaders 1999",
+   "164.29"
+  ],
+  [
+   "186",
+   "Alfredo Lamberra",
+   "162.08"
+  ],
+  [
+   "187",
+   "Cruis'n Exotica (N64)",
+   "160.57"
+  ],
+  [
+   "188",
+   "TB8's Single Star Speedruns",
+   "160.08"
+  ],
+  [
+   "189",
+   "Star Revenge 6.25: Luigi's Adventure DX",
+   "159.81"
+  ],
+  [
+   "190",
+   "Tigger's Honey Hunt",
+   "159.79"
+  ],
+  [
+   "191",
+   "Tom and Jerry in Fists of Furry",
+   "159.28"
+  ],
+  [
+   "192",
+   "Pilotwings 64",
+   "158.77"
+  ],
+  [
+   "193",
+   "NASCAR 2000",
+   "157.44"
+  ],
+  [
+   "194",
+   "Star Revenge 1",
+   "154.95"
+  ],
+  [
+   "195",
+   "Chopper Attack",
+   "152.79"
+  ],
+  [
+   "196",
+   "SM 64 1-1 Grass",
+   "150.57"
+  ],
+  [
+   "197",
+   "Majora's Mask Category Extensions",
+   "150.4"
+  ],
+  [
+   "198",
+   "All Star Adventure",
+   "149.56"
+  ],
+  [
+   "199",
+   "Pok\u00e9mon Snap Category Extensions",
+   "148.49"
+  ],
+  [
+   "200",
+   "Doraemon: Nobita to Mittsu no Seireiseki",
+   "147.73"
+  ],
+  [
+   "201",
+   "Super Mario Warp 64",
+   "147.29"
+  ],
+  [
+   "202",
+   "South Park Rally",
+   "146.15"
+  ],
+  [
+   "203",
+   "Super Mario 64 The Missing Stars",
+   "145.57"
+  ],
+  [
+   "204",
+   "The Super Mario Bros. Super Show 64",
+   "145.24"
+  ],
+  [
+   "205",
+   "Razor Freestyle Scooter",
+   "144.68"
+  ],
+  [
+   "206",
+   "Super Banjo Tooie 64",
+   "141.3"
+  ],
+  [
+   "207",
+   "NASCAR 99",
+   "137.6"
+  ],
+  [
+   "208",
+   "Star Revenge Challenge",
+   "136.22"
+  ],
+  [
+   "209",
+   "Rayman 2: The Great Escape",
+   "134.42"
+  ],
+  [
+   "210",
+   "Scooby-Doo! Classic Creep Capers (N64)",
+   "133.86"
+  ],
+  [
+   "211",
+   "Blues Brothers 2000",
+   "132.85"
+  ],
+  [
+   "212",
+   "Automobili Lamborghini",
+   "131.31"
+  ],
+  [
+   "213",
+   "Chartreuse Star Adventure",
+   "129.92"
+  ],
+  [
+   "214",
+   "B3313",
+   "129"
+  ],
+  [
+   "215",
+   "Quake (N64)",
+   "127.81"
+  ],
+  [
+   "216",
+   "Super Event Horizon",
+   "127.39"
+  ],
+  [
+   "217",
+   "Super Mario Fallen Stars",
+   "127.03"
+  ],
+  [
+   "218",
+   "Chameleon Twist Category Extensions",
+   "126.21"
+  ],
+  [
+   "219",
+   "Star Revenge Redone",
+   "125.07"
+  ],
+  [
+   "220",
+   "Ocarina of Time Beta Quest",
+   "124.41"
+  ],
+  [
+   "221",
+   "F1 Pole Position 64",
+   "124.25"
+  ],
+  [
+   "222",
+   "Gamer Mario's Destiny 64",
+   "123.55"
+  ],
+  [
+   "223",
+   "SMB1-1 Recreation",
+   "120.95"
+  ],
+  [
+   "224",
+   "Turok: Rage Wars",
+   "119.13"
+  ],
+  [
+   "225",
+   "Super Mario SixtyFortnite",
+   "119.02"
+  ],
+  [
+   "226",
+   "Doraemon 3: Nobita no Machi SOS!",
+   "117.94"
+  ],
+  [
+   "227",
+   "TB8's Classic Pack 64",
+   "115.9"
+  ],
+  [
+   "228",
+   "Super Mario Odyssey 64",
+   "115.14"
+  ],
+  [
+   "229",
+   "Xena: Warrior Princess: The Talisman of Fate",
+   "115.01"
+  ],
+  [
+   "230",
+   "Mortal Kombat Trilogy",
+   "113.15"
+  ],
+  [
+   "231",
+   "WCW vs. nWo: World Tour",
+   "111.95"
+  ],
+  [
+   "232",
+   "Duck Dodgers Starring: Daffy Duck",
+   "111.94"
+  ],
+  [
+   "233",
+   "SM64 Paradise Island",
+   "110.37"
+  ],
+  [
+   "234",
+   "Turok 3: Shadow of Oblivion",
+   "109.85"
+  ],
+  [
+   "235",
+   "Ogre Battle 64: Person of Lordly Caliber",
+   "109.2"
+  ],
+  [
+   "236",
+   "Super Banjo Kazooie 64",
+   "108.87"
+  ],
+  [
+   "237",
+   "SM64 Darker Side",
+   "107.91"
+  ],
+  [
+   "238",
+   "Kaizo Mario 64",
+   "106.24"
+  ],
+  [
+   "239",
+   "The Legend of Zelda: Master of Time",
+   "105.64"
+  ],
+  [
+   "240",
+   "Super Mario Star",
+   "104.86"
+  ],
+  [
+   "241",
+   "Super Mario: Cyclone Fighter",
+   "104.6"
+  ],
+  [
+   "242",
+   "WWF War Zone",
+   "104.36"
+  ],
+  [
+   "243",
+   "Luigi And The Forest Ruins: Rebooted",
+   "103.32"
+  ],
+  [
+   "244",
+   "SM64 Royal Legacy Definitive Edition",
+   "102.55"
+  ],
+  [
+   "245",
+   "Tony Hawk's Pro Skater 3",
+   "101.26"
+  ],
+  [
+   "246",
+   "Resident Evil 2",
+   "101.04"
+  ],
+  [
+   "247",
+   "Killer Instinct Gold",
+   "100.91"
+  ],
+  [
+   "248",
+   "Gex 3: Deep Cover Gecko",
+   "100.12"
+  ],
+  [
+   "249",
+   "BattleTanx: Global Assault (N64)",
+   "99.17"
+  ],
+  [
+   "250",
+   "Star Soldier: Vanishing Earth",
+   "98.35"
+  ],
+  [
+   "251",
+   "Ucchannanchan no Honoo no Challenger: Denryuu Iraira Bou",
+   "97.62"
+  ],
+  [
+   "252",
+   "Nagano Winter Olympics '98",
+   "97.37"
+  ],
+  [
+   "253",
+   "Super Melee Adventure 64",
+   "96.18"
+  ],
+  [
+   "254",
+   "MRC: Multi-Racing Championship",
+   "93.36"
+  ],
+  [
+   "255",
+   "Disney's Tarzan",
+   "92.8"
+  ],
+  [
+   "256",
+   "Super Joan Bros 64 3: The Final Battle",
+   "92.28"
+  ],
+  [
+   "257",
+   "Mario Party 64",
+   "91.86"
+  ],
+  [
+   "258",
+   "Dinosaur Planet",
+   "91.74"
+  ],
+  [
+   "259",
+   "Bust-A-Move 3 DX",
+   "90.39"
+  ],
+  [
+   "260",
+   "Lucy's Levitation",
+   "89.71"
+  ],
+  [
+   "261",
+   "Super Mario 64 - Dark Edition",
+   "89"
+  ],
+  [
+   "262",
+   "Treasure World: Dream Edition",
+   "86.55"
+  ],
+  [
+   "263",
+   "Night of Doom Mashup",
+   "85.98"
+  ],
+  [
+   "264",
+   "SM64 Royal Legacy",
+   "85.36"
+  ],
+  [
+   "265",
+   "SM64 Peach And The Pink Star",
+   "85.27"
+  ],
+  [
+   "266",
+   "Saikyo Habu Shogi",
+   "85.23"
+  ],
+  [
+   "267",
+   "Super Trump 64",
+   "84.83"
+  ],
+  [
+   "268",
+   "SM64: Mega Microlevels",
+   "84.55"
+  ],
+  [
+   "269",
+   "Ridge Racer 64",
+   "84.53"
+  ],
+  [
+   "270",
+   "Super Mario: The Lost Dreams",
+   "83.27"
+  ],
+  [
+   "271",
+   "Power Rangers Lightspeed Rescue (N64)",
+   "82.97"
+  ],
+  [
+   "272",
+   "Super Mario 64 (iQue)",
+   "82.58"
+  ],
+  [
+   "273",
+   "Nightmare Creatures",
+   "82.51"
+  ],
+  [
+   "274",
+   "Paperboy (N64)",
+   "81.85"
+  ],
+  [
+   "275",
+   "Duke Nukem: Zero Hour",
+   "81.58"
+  ],
+  [
+   "276",
+   "Top Gear Overdrive",
+   "81.51"
+  ],
+  [
+   "277",
+   "Quake II (N64)",
+   "81.05"
+  ],
+  [
+   "278",
+   "Hercules: The Legendary Journeys (N64)",
+   "81.04"
+  ],
+  [
+   "279",
+   "Super Mario 64 Multiplayer",
+   "77.91"
+  ],
+  [
+   "280",
+   "Super Mario 64: Twisted Adventures",
+   "76.66"
+  ],
+  [
+   "281",
+   "Super Mario Vortex",
+   "76.56"
+  ],
+  [
+   "282",
+   "Superman 64",
+   "76.54"
+  ],
+  [
+   "283",
+   "Neon Genesis Evangelion",
+   "75.58"
+  ],
+  [
+   "284",
+   "Mortal Kombat 4",
+   "74.58"
+  ],
+  [
+   "285",
+   "Doom 64",
+   "74.54"
+  ],
+  [
+   "286",
+   "Star Revenge 6.9: Luigi Lost in Time",
+   "73.84"
+  ],
+  [
+   "287",
+   "SM64 Halloween Mayhem",
+   "71.17"
+  ],
+  [
+   "288",
+   "SM64 Red is Dead",
+   "70.33"
+  ],
+  [
+   "289",
+   "Air Boarder 64",
+   "69.88"
+  ],
+  [
+   "290",
+   "Wipeout 64",
+   "68.96"
+  ],
+  [
+   "291",
+   "Penny Racers / Choro-Q 64",
+   "68.57"
+  ],
+  [
+   "292",
+   "Star Revenge 2: To The Moon (Demo)",
+   "67.09"
+  ],
+  [
+   "293",
+   "Super Mario 64 MADNESS",
+   "66.46"
+  ],
+  [
+   "294",
+   "Fighters Destiny",
+   "66.45"
+  ],
+  [
+   "295",
+   "Mushroom Kingdom Stadium 64",
+   "63.84"
+  ],
+  [
+   "296",
+   "SM64 Christmas Carnival",
+   "63.65"
+  ],
+  [
+   "297",
+   "Scrooge 64",
+   "63.57"
+  ],
+  [
+   "298",
+   "WWF Attitude",
+   "63.2"
+  ],
+  [
+   "299",
+   "24 Hour Hack",
+   "62.38"
+  ],
+  [
+   "300",
+   "Batman Beyond: Return of the Joker",
+   "61.83"
+  ],
+  [
+   "301",
+   "Bust-A-Move '99",
+   "60.76"
+  ],
+  [
+   "302",
+   "Wheel of Fortune (N64)",
+   "60.18"
+  ],
+  [
+   "303",
+   "International Superstar Soccer 64",
+   "59.57"
+  ],
+  [
+   "304",
+   "Shadow Man",
+   "59.02"
+  ],
+  [
+   "305",
+   "Rat Attack!",
+   "58.55"
+  ],
+  [
+   "306",
+   "Ms. Pac-Man: Maze Madness",
+   "58.05"
+  ],
+  [
+   "307",
+   "Rakugakids",
+   "57.44"
+  ],
+  [
+   "308",
+   "King Boo's Revenge",
+   "57.18"
+  ],
+  [
+   "309",
+   "Starshot: Space Circus Fever",
+   "56.78"
+  ],
+  [
+   "310",
+   "Rampage World Tour",
+   "56.21"
+  ],
+  [
+   "311",
+   "Bio F.R.E.A.K.S.",
+   "56.02"
+  ],
+  [
+   "312",
+   "Glover 2",
+   "53.77"
+  ],
+  [
+   "313",
+   "Sin and Punishment",
+   "53.53"
+  ],
+  [
+   "314",
+   "S.C.A.R.S",
+   "52.56"
+  ],
+  [
+   "315",
+   "SM64 Bob-Omb Richards Mastertest",
+   "49.34"
+  ],
+  [
+   "316",
+   "Body Harvest",
+   "49.22"
+  ],
+  [
+   "317",
+   "StarCraft 64",
+   "48.49"
+  ],
+  [
+   "318",
+   "Blossoming Buds",
+   "48.47"
+  ],
+  [
+   "319",
+   "Super Mario Apocalypse",
+   "48.09"
+  ],
+  [
+   "320",
+   "Polaris SnoCross",
+   "47.87"
+  ],
+  [
+   "321",
+   "Super Ultra Kaizo Memeio Road 128 Stars Extreme Edition Revenge Deluxe",
+   "47.85"
+  ],
+  [
+   "322",
+   "Virtual Pool 64",
+   "47.45"
+  ],
+  [
+   "323",
+   "Bowser's Dank Rave 64",
+   "46.8"
+  ],
+  [
+   "324",
+   "Super Mario 64 Temple Explorer",
+   "46.8"
+  ],
+  [
+   "325",
+   "Star Wars: Episode I - Battle for Naboo",
+   "46.73"
+  ],
+  [
+   "326",
+   "Army Men - Category Extensions",
+   "46.73"
+  ],
+  [
+   "327",
+   "Escape from the Jail Definitive Edition",
+   "46.34"
+  ],
+  [
+   "328",
+   "Custom Robo V2",
+   "45.2"
+  ],
+  [
+   "329",
+   "SM64 Invasion Gumba",
+   "44.99"
+  ],
+  [
+   "330",
+   "Mario Adventure",
+   "44.98"
+  ],
+  [
+   "331",
+   "FIFA 99",
+   "44.8"
+  ],
+  [
+   "332",
+   "King Boo's Revenge 2",
+   "44.75"
+  ],
+  [
+   "333",
+   "SM64 Shining Stars Repainted",
+   "44.73"
+  ],
+  [
+   "334",
+   "Hallowoomy On Spoopy Island",
+   "44.18"
+  ],
+  [
+   "335",
+   "Mission: Impossible (N64/PS)",
+   "43.56"
+  ],
+  [
+   "336",
+   "Mario Kart 64: Amped Up",
+   "43.56"
+  ],
+  [
+   "337",
+   "Glover Category Extensions",
+   "43.48"
+  ],
+  [
+   "338",
+   "SM64 The Secret Stars",
+   "41.87"
+  ],
+  [
+   "339",
+   "4th Of July 64",
+   "41.83"
+  ],
+  [
+   "340",
+   "South Park Chef's Luv Shack",
+   "41.81"
+  ],
+  [
+   "341",
+   "Shadowgate 64",
+   "41.43"
+  ],
+  [
+   "342",
+   "Ready 2 Rumble Boxing",
+   "40.64"
+  ],
+  [
+   "343",
+   "King Boo's Revenge X",
+   "40.18"
+  ],
+  [
+   "344",
+   "Tony Hawk's Pro Skater 2",
+   "40.02"
+  ],
+  [
+   "345",
+   "Mario in the Dreamscape",
+   "39.71"
+  ],
+  [
+   "346",
+   "Pocket Monsters Stadium",
+   "39.21"
+  ],
+  [
+   "347",
+   "NFL Blitz",
+   "39.03"
+  ],
+  [
+   "348",
+   "Super Mario 74: Ten Years After",
+   "38.75"
+  ],
+  [
+   "349",
+   "Star Revenge 4: The Kedama Takeover 64",
+   "38.17"
+  ],
+  [
+   "350",
+   "Mario Heroes 64",
+   "37.76"
+  ],
+  [
+   "351",
+   "Mario Party Category Extensions",
+   "37.47"
+  ],
+  [
+   "352",
+   "Mario And The Magic Wand",
+   "37.46"
+  ],
+  [
+   "353",
+   "Hot Wheels: Turbo Racing",
+   "37.18"
+  ],
+  [
+   "354",
+   "Mortal Kombat Mythologies: Sub-Zero",
+   "37.06"
+  ],
+  [
+   "355",
+   "SM64 Autoscroller",
+   "36.94"
+  ],
+  [
+   "356",
+   "Army Men: Air Combat",
+   "36.82"
+  ],
+  [
+   "357",
+   "F-1 World Grand Prix",
+   "36.75"
+  ],
+  [
+   "358",
+   "Super Mario & Planet Stardust's Rampage",
+   "34.39"
+  ],
+  [
+   "359",
+   "Tonic Trouble (N64)",
+   "34.32"
+  ],
+  [
+   "360",
+   "SM64: Luigi's Mansion 64.5",
+   "33.75"
+  ],
+  [
+   "361",
+   "Jumping Over It with Nathaniel Bandy",
+   "33.56"
+  ],
+  [
+   "362",
+   "Dog Collab",
+   "32.95"
+  ],
+  [
+   "363",
+   "64dehakken!!tamagotchi minnade tamagotchi world",
+   "32.94"
+  ],
+  [
+   "364",
+   "Turok: Dinosaur Hunter",
+   "32.77"
+  ],
+  [
+   "365",
+   "SM64 ROM Hack Community Collab Hack",
+   "31.47"
+  ],
+  [
+   "366",
+   "Only Up 64",
+   "31.02"
+  ],
+  [
+   "367",
+   "The Magical Lands",
+   "30.04"
+  ],
+  [
+   "368",
+   "Speed Star Adventure",
+   "29.86"
+  ],
+  [
+   "369",
+   "Goemon's Great Adventure",
+   "29.44"
+  ],
+  [
+   "370",
+   "Super Joan Bros 64 2",
+   "28.79"
+  ],
+  [
+   "371",
+   "World Driver Championship",
+   "28.62"
+  ],
+  [
+   "372",
+   "Ready 2 Rumble Boxing: Round 2",
+   "27.73"
+  ],
+  [
+   "373",
+   "SM64: The Mushroom Cup",
+   "27.48"
+  ],
+  [
+   "374",
+   "Servus 64",
+   "27.18"
+  ],
+  [
+   "375",
+   "SM64 The Dark Stars",
+   "27.01"
+  ],
+  [
+   "376",
+   "Fighter Destiny 2",
+   "26.66"
+  ],
+  [
+   "377",
+   "THPS - Category Extensions",
+   "26.55"
+  ],
+  [
+   "378",
+   "Monster Truck Madness 64",
+   "26.5"
+  ],
+  [
+   "379",
+   "Super Mario 4",
+   "26.48"
+  ],
+  [
+   "380",
+   "The Legend of Banjo-Kazooie: Jiggies of Time",
+   "26.39"
+  ],
+  [
+   "381",
+   "Super Smash Bros. Category Extensions",
+   "25.99"
+  ],
+  [
+   "382",
+   "Friday 64",
+   "25.91"
+  ],
+  [
+   "383",
+   "SM64 Escape From The Jail",
+   "25.61"
+  ],
+  [
+   "384",
+   "Super Donkey Kong 64",
+   "25.5"
+  ],
+  [
+   "385",
+   "Rugrats in Paris: The Movie",
+   "25.44"
+  ],
+  [
+   "386",
+   "Super Mario Timeless Rendezvous",
+   "25.41"
+  ],
+  [
+   "387",
+   "Rampage 2: Universal Tour",
+   "24.98"
+  ],
+  [
+   "388",
+   "Super Mario 65: The Rainbow Stars",
+   "24.98"
+  ],
+  [
+   "389",
+   "Cyber Tiger",
+   "24.56"
+  ],
+  [
+   "390",
+   "Bowser's Dank Rave 3: Toadette's MLG Expansion",
+   "24.03"
+  ],
+  [
+   "391",
+   "ClayFighter: Sculptor's Cut",
+   "23.91"
+  ],
+  [
+   "392",
+   "Super Bowling (N64)",
+   "23.78"
+  ],
+  [
+   "393",
+   "Bloo Star Adventure",
+   "23.15"
+  ],
+  [
+   "394",
+   "Major League Baseball Featuring Ken Griffey Jr.",
+   "23.07"
+  ],
+  [
+   "395",
+   "Star Wars Racer Category Extensions",
+   "23.07"
+  ],
+  [
+   "396",
+   "Sere Quietude 64",
+   "22.94"
+  ],
+  [
+   "397",
+   "Off Road Challenge",
+   "22.56"
+  ],
+  [
+   "398",
+   "Rugrats: Scavenger Hunt",
+   "22.21"
+  ],
+  [
+   "399",
+   "SM64 The 10 Lost Stars",
+   "22.08"
+  ],
+  [
+   "400",
+   "Duke Nukem 64",
+   "22.08"
+  ],
+  [
+   "401",
+   "NFL Quarterback Club 98",
+   "21.92"
+  ],
+  [
+   "402",
+   "The Patchmaker's Workshop",
+   "21.9"
+  ],
+  [
+   "403",
+   "Super Trash 64",
+   "21.62"
+  ],
+  [
+   "404",
+   "Transformers: Beast Wars Transmetals (N64)",
+   "21.42"
+  ],
+  [
+   "405",
+   "Knife Edge: Nose Gunner",
+   "21.35"
+  ],
+  [
+   "406",
+   "SM64 The Final Star",
+   "21.34"
+  ],
+  [
+   "407",
+   "Super Mario Warp Zone",
+   "20.54"
+  ],
+  [
+   "408",
+   "Lode Runner 3-D",
+   "20.1"
+  ],
+  [
+   "409",
+   "Puyo Puyo~n",
+   "20.03"
+  ],
+  [
+   "410",
+   "Olmec's Hackerino",
+   "19.97"
+  ],
+  [
+   "411",
+   "World Cup 98",
+   "19.76"
+  ],
+  [
+   "412",
+   "SM64 Openworld Quest",
+   "19.72"
+  ],
+  [
+   "413",
+   "Kobe Bryant In NBA Courtside",
+   "19.63"
+  ],
+  [
+   "414",
+   "Eternal Realm",
+   "19.31"
+  ],
+  [
+   "415",
+   "Pink Gold Peach 64",
+   "18.93"
+  ],
+  [
+   "416",
+   "Captain Toad 64",
+   "18.88"
+  ],
+  [
+   "417",
+   "Super Mario 64 island",
+   "18.59"
+  ],
+  [
+   "418",
+   "AeroGauge",
+   "18.44"
+  ],
+  [
+   "419",
+   "Super Mario Integration of Fragments",
+   "18.07"
+  ],
+  [
+   "420",
+   "ELISE",
+   "17.38"
+  ],
+  [
+   "421",
+   "NBA Hangtime",
+   "17.38"
+  ],
+  [
+   "422",
+   "Mace: The Dark Age",
+   "17.29"
+  ],
+  [
+   "423",
+   "Eikou no St. Andrews",
+   "17.15"
+  ],
+  [
+   "424",
+   "Super Mario Bros. 64",
+   "16.91"
+  ],
+  [
+   "425",
+   "Hiryu no Ken Twin",
+   "16.8"
+  ],
+  [
+   "426",
+   "Aero Fighters Assault",
+   "16.27"
+  ],
+  [
+   "427",
+   "Onegai Monsters",
+   "16.17"
+  ],
+  [
+   "428",
+   "Star Revenge 4.9 - Adulterated Reality",
+   "16.05"
+  ],
+  [
+   "429",
+   "Tom Clancy's Rainbow Six",
+   "16.01"
+  ],
+  [
+   "430",
+   "Golden Nugget 64",
+   "15.55"
+  ],
+  [
+   "431",
+   "Mortal Kombat Trilogy Category Extensions",
+   "15.42"
+  ],
+  [
+   "432",
+   "Luigi's Mansion 64 Alpha",
+   "15.42"
+  ],
+  [
+   "433",
+   "Lug's Tiny Torture",
+   "15.4"
+  ],
+  [
+   "434",
+   "Plutonium Mario 64",
+   "15.39"
+  ],
+  [
+   "435",
+   "Mario & Luigi Dual Adventure",
+   "15.3"
+  ],
+  [
+   "436",
+   "Robotron 64",
+   "14.97"
+  ],
+  [
+   "437",
+   "Wayne Gretzky's 3D Hockey",
+   "14.97"
+  ],
+  [
+   "438",
+   "G.A.S.P!! Fighters' NEXTream",
+   "14.65"
+  ],
+  [
+   "439",
+   "Aidyn Chronicles: The First Mage",
+   "14.34"
+  ],
+  [
+   "440",
+   "Super Mario Bros 3D",
+   "14.2"
+  ],
+  [
+   "441",
+   "Uranium Mario 64",
+   "14.07"
+  ],
+  [
+   "442",
+   "NFL Blitz 2000",
+   "13.86"
+  ],
+  [
+   "443",
+   "Mario's Jump Quest 64",
+   "13.82"
+  ],
+  [
+   "444",
+   "Shrek Retold 64",
+   "13.51"
+  ],
+  [
+   "445",
+   "Monopoly (N64)",
+   "13.23"
+  ],
+  [
+   "446",
+   "Super Mario Lovestruck Calamity",
+   "13.19"
+  ],
+  [
+   "447",
+   "SM64 Ironfire",
+   "13.13"
+  ],
+  [
+   "448",
+   "SM64 and the Koopa Power",
+   "12.95"
+  ],
+  [
+   "449",
+   "Dual heroes",
+   "12.91"
+  ],
+  [
+   "450",
+   "Hybrid Heaven",
+   "12.51"
+  ],
+  [
+   "451",
+   "Serene Fusion",
+   "12.49"
+  ],
+  [
+   "452",
+   "TsucnenT's Treasures 2",
+   "12.16"
+  ],
+  [
+   "453",
+   "War Gods",
+   "11.58"
+  ],
+  [
+   "454",
+   "F-Zero X Expansion Kit",
+   "11.55"
+  ],
+  [
+   "455",
+   "Toy Story 2: Buzz Lightyear to the Rescue: Category Extensions",
+   "11.33"
+  ],
+  [
+   "456",
+   "Gex: Enter the Gecko",
+   "11.22"
+  ],
+  [
+   "457",
+   "Transcending the Rainbow",
+   "11.15"
+  ],
+  [
+   "458",
+   "Forsaken 64",
+   "10.82"
+  ],
+  [
+   "459",
+   "ESPN International Track & Field",
+   "10.64"
+  ],
+  [
+   "460",
+   "Daredevil 64",
+   "10.36"
+  ],
+  [
+   "461",
+   "Armorines: Project S.W.A.R.M.",
+   "10"
+  ],
+  [
+   "462",
+   "Star Revenge 3.9: Dreamish Block Beats",
+   "9.83"
+  ],
+  [
+   "463",
+   "Super Mario 64 Revenge of the Others",
+   "9.78"
+  ],
+  [
+   "464",
+   "Bounce Tales 64",
+   "9.76"
+  ],
+  [
+   "465",
+   "Mario Can't Remember",
+   "9.76"
+  ],
+  [
+   "466",
+   "Yoshi's Adventure 64",
+   "9.66"
+  ],
+  [
+   "467",
+   "South Park",
+   "9.54"
+  ],
+  [
+   "468",
+   "Forever BLJ Control",
+   "9.46"
+  ],
+  [
+   "469",
+   "SM64 Pyramid In The Sky",
+   "9.41"
+  ],
+  [
+   "470",
+   "Squeak Squad Star Stealers",
+   "9.17"
+  ],
+  [
+   "471",
+   "Twisted Adventures: Intense Challenge",
+   "9.04"
+  ],
+  [
+   "472",
+   "Road to World Cup: 98",
+   "8.74"
+  ],
+  [
+   "473",
+   "Minesweeper 64: Expert Edition",
+   "8.58"
+  ],
+  [
+   "474",
+   "SM64 It's A Crash",
+   "8.47"
+  ],
+  [
+   "475",
+   "Princess Peach Sex Hack",
+   "8.41"
+  ],
+  [
+   "476",
+   "Super Mario Fantasy 64",
+   "8.39"
+  ],
+  [
+   "477",
+   "Yoshi's Adventure 96: Puzzles for Yoshis",
+   "8.31"
+  ],
+  [
+   "478",
+   "Super Mario and the Monstrous Manor",
+   "8.2"
+  ],
+  [
+   "479",
+   "Milo's Astro Lanes",
+   "8.15"
+  ],
+  [
+   "480",
+   "Twisted Edge Extreme Snowboarding",
+   "7.79"
+  ],
+  [
+   "481",
+   "Super Mario The Galactic Journey",
+   "7.76"
+  ],
+  [
+   "482",
+   "Pok\u00e9mon Crystal Category Extensions",
+   "7.66"
+  ],
+  [
+   "483",
+   "Mundial Ronaldinho Soccer 64",
+   "7.6"
+  ],
+  [
+   "484",
+   "Jeopardy! (N64)",
+   "7.57"
+  ],
+  [
+   "485",
+   "Banjo-Dreamie",
+   "7.47"
+  ],
+  [
+   "486",
+   "Super Mario 64 Extra",
+   "7.46"
+  ],
+  [
+   "487",
+   "SM64 Return To Retroland",
+   "7.4"
+  ],
+  [
+   "488",
+   "Super Mario: The Power Star Journey",
+   "7.28"
+  ],
+  [
+   "489",
+   "Super Mario 64 Sonic/Shadow Edition",
+   "7.27"
+  ],
+  [
+   "490",
+   "Dark Rift",
+   "7.23"
+  ],
+  [
+   "491",
+   "Super Luigi 64: The Flower Cup",
+   "7.2"
+  ],
+  [
+   "492",
+   "Monochrome Mario 64",
+   "7.19"
+  ],
+  [
+   "493",
+   "Realm Invasion",
+   "7.08"
+  ],
+  [
+   "494",
+   "Super Mario 64: Twisted Adventures v2.0",
+   "6.85"
+  ],
+  [
+   "495",
+   "SM64 Stars of the Beast",
+   "6.71"
+  ],
+  [
+   "496",
+   "Mario on Indigo Island",
+   "6.54"
+  ],
+  [
+   "497",
+   "Luigi and the Forest Ruins 64",
+   "6.38"
+  ],
+  [
+   "498",
+   "ECW Hardcore Revolution",
+   "6.35"
+  ],
+  [
+   "499",
+   "Mia Hamm Soccer 64",
+   "6.28"
+  ],
+  [
+   "500",
+   "Paper Mario: Black Pit",
+   "6"
+  ],
+  [
+   "501",
+   "NBA Courtside 2: Featuring Kobe Bryant",
+   "5.89"
+  ],
+  [
+   "502",
+   "The Legend of Zelda: The Missing Link",
+   "5.61"
+  ],
+  [
+   "503",
+   "Vigilante 8",
+   "5.57"
+  ],
+  [
+   "504",
+   "SM64: Into Bowser's Castle",
+   "5.54"
+  ],
+  [
+   "505",
+   "Earthworm Jim 3D",
+   "5.22"
+  ],
+  [
+   "506",
+   "Super Robot Spirits",
+   "4.97"
+  ],
+  [
+   "507",
+   "Super Mario Island",
+   "4.96"
+  ],
+  [
+   "508",
+   "Luigi's Mansion 64",
+   "4.92"
+  ],
+  [
+   "509",
+   "MCW Regicide!",
+   "4.84"
+  ],
+  [
+   "510",
+   "In-Fisherman Bass Hunter 64",
+   "4.71"
+  ],
+  [
+   "511",
+   "Nushi Tsuri 64",
+   "4.7"
+  ],
+  [
+   "512",
+   "Jeremy McGrath Supercross 2000",
+   "4.66"
+  ],
+  [
+   "513",
+   "WCW Nitro",
+   "4.54"
+  ],
+  [
+   "514",
+   "Big Mountain 2000",
+   "4.52"
+  ],
+  [
+   "515",
+   "Phenomena",
+   "4.33"
+  ],
+  [
+   "516",
+   "Mortal Kombat 4 Category Extensions",
+   "4.33"
+  ],
+  [
+   "517",
+   "Banjo Kazooie: Blue Moon Forest",
+   "4.27"
+  ],
+  [
+   "518",
+   "International Superstar Soccer 98",
+   "4.22"
+  ],
+  [
+   "519",
+   "Zelda 64: Dawn & Dusk",
+   "4.12"
+  ],
+  [
+   "520",
+   "Hexen (N64/PS1/Saturn)",
+   "4.11"
+  ],
+  [
+   "521",
+   "Carmageddon 64",
+   "3.98"
+  ],
+  [
+   "522",
+   "NBA Showtime: NBA on NBC",
+   "3.82"
+  ],
+  [
+   "523",
+   "WinBack: Covert Operations",
+   "3.8"
+  ],
+  [
+   "524",
+   "Mario Aimlessly Drives a Car Around the City 64",
+   "3.74"
+  ],
+  [
+   "525",
+   "Takua 64",
+   "3.69"
+  ],
+  [
+   "526",
+   "Oot Master Series",
+   "3.68"
+  ],
+  [
+   "527",
+   "International Superstar Soccer 2000",
+   "3.67"
+  ],
+  [
+   "528",
+   "Tower of Delight",
+   "3.63"
+  ],
+  [
+   "529",
+   "Galaga",
+   "3.54"
+  ],
+  [
+   "530",
+   "Mario Adventure 2",
+   "3.36"
+  ],
+  [
+   "531",
+   "Super Duber Mountain",
+   "3.35"
+  ],
+  [
+   "532",
+   "A Link to the Future",
+   "3.27"
+  ],
+  [
+   "533",
+   "Super Mario's Jammin' Journey 64",
+   "3.27"
+  ],
+  [
+   "534",
+   "The Legend of Zelda: Ocarina of Time Master Quest",
+   "3.15"
+  ],
+  [
+   "535",
+   "Conker's Bad Fur Day Category Extensions",
+   "3.1"
+  ],
+  [
+   "536",
+   "Tecto",
+   "3.04"
+  ],
+  [
+   "537",
+   "Super Mario and the Marvel Adventure",
+   "3.02"
+  ],
+  [
+   "538",
+   "SD Hiryuu no Ken Densetsu",
+   "3.01"
+  ],
+  [
+   "539",
+   "40 Winks",
+   "2.99"
+  ],
+  [
+   "540",
+   "All Star Tennis 99",
+   "2.89"
+  ],
+  [
+   "541",
+   "Shining Stars 4: Another Dimensional Incident",
+   "2.88"
+  ],
+  [
+   "542",
+   "V-Rally Edition '99 (N64)",
+   "2.86"
+  ],
+  [
+   "543",
+   "Rayman 2: The Great Escape Category Extensions",
+   "2.82"
+  ],
+  [
+   "544",
+   "Portal Mario 64",
+   "2.78"
+  ],
+  [
+   "545",
+   "Dance Dance Revolution: Disney Dancing Museum",
+   "2.75"
+  ],
+  [
+   "546",
+   "Nintendo 64 Triathlon",
+   "2.74"
+  ],
+  [
+   "547",
+   "SM64 Sky Stories",
+   "2.73"
+  ],
+  [
+   "548",
+   "Daikatana",
+   "2.72"
+  ],
+  [
+   "549",
+   "Peach's Christmas Invitation",
+   "2.66"
+  ],
+  [
+   "550",
+   "SM64 Openworld Edition",
+   "2.64"
+  ],
+  [
+   "551",
+   "SM64 The Sky Sanctuary",
+   "2.64"
+  ],
+  [
+   "552",
+   "Mario's little Odyssey",
+   "2.63"
+  ],
+  [
+   "553",
+   "Ken Griffey Jr.'s Slugfest",
+   "2.62"
+  ],
+  [
+   "554",
+   "NFL Blitz 2001",
+   "2.6"
+  ],
+  [
+   "555",
+   "Micro Machines V3",
+   "2.52"
+  ],
+  [
+   "556",
+   "Bowser's Dank Rave 2: Return Of The Illuminati's Dubstep Party",
+   "2.43"
+  ],
+  [
+   "557",
+   "Resident Evil 2 Category Extensions",
+   "2.42"
+  ],
+  [
+   "558",
+   "Command & Conquer (Tiberian Dawn)",
+   "2.29"
+  ],
+  [
+   "559",
+   "SM64 Year Of The Plumber",
+   "2.22"
+  ],
+  [
+   "560",
+   "Organ Of Matrias",
+   "2.21"
+  ],
+  [
+   "561",
+   "F-Zero X Climax",
+   "2.17"
+  ],
+  [
+   "562",
+   "Ms. Pac-Man (Arcade)",
+   "2.14"
+  ],
+  [
+   "563",
+   "Super Mario Senseless Delirium",
+   "2.11"
+  ],
+  [
+   "564",
+   "BassMasters 2000",
+   "2.09"
+  ],
+  [
+   "565",
+   "Verycat Adventure",
+   "2.08"
+  ],
+  [
+   "566",
+   "Re-Volt (Console)",
+   "2.04"
+  ],
+  [
+   "567",
+   "Mario in the Colorful Lands",
+   "2.02"
+  ],
+  [
+   "568",
+   "Wayne Gretzky's 3D Hockey '98",
+   "2.01"
+  ],
+  [
+   "569",
+   "TsucnenT's Treasures",
+   "1.95"
+  ],
+  [
+   "570",
+   "Jetpac",
+   "1.94"
+  ],
+  [
+   "571",
+   "WildWaters: Extreme Kayak",
+   "1.93"
+  ],
+  [
+   "572",
+   "Super Trash 64 2: Michael Jackson's Paper Hunt Beta",
+   "1.88"
+  ],
+  [
+   "573",
+   "NBA Live 99",
+   "1.84"
+  ],
+  [
+   "574",
+   "Gay Baby Jail 64",
+   "1.82"
+  ],
+  [
+   "575",
+   "Virtual Chess 64",
+   "1.73"
+  ],
+  [
+   "576",
+   "FIFA Soccer 64",
+   "1.73"
+  ],
+  [
+   "577",
+   "SM64 A New Adventure",
+   "1.67"
+  ],
+  [
+   "578",
+   "Wonder Project J2: Corlo no Mori no Josette",
+   "1.65"
+  ],
+  [
+   "579",
+   "Donkey KongQuest",
+   "1.62"
+  ],
+  [
+   "580",
+   "Box World",
+   "1.61"
+  ],
+  [
+   "581",
+   "Pok\u00e9mon Gold/Silver Category Extensions",
+   "1.49"
+  ],
+  [
+   "582",
+   "Yakouchuu II: Satsujin Kouro",
+   "1.45"
+  ],
+  [
+   "583",
+   "Banjo-Kazooie Worlds Collide",
+   "1.44"
+  ],
+  [
+   "584",
+   "Let's Smash Tennis",
+   "1.42"
+  ],
+  [
+   "585",
+   "Madden 2000",
+   "1.4"
+  ],
+  [
+   "586",
+   "Pole Position",
+   "1.38"
+  ],
+  [
+   "587",
+   "SM64 I Wanna Be The Mario Warp 64",
+   "1.37"
+  ],
+  [
+   "588",
+   "Banjo-Kazooie: Stay at Home",
+   "1.12"
+  ],
+  [
+   "589",
+   "NHL 99",
+   "1.11"
+  ],
+  [
+   "590",
+   "Brunswick Circuit Pro Bowling",
+   "1.03"
+  ],
+  [
+   "591",
+   "N64 Four",
+   "0.86"
+  ],
+  [
+   "592",
+   "SM64 Power Star Madness",
+   "0.84"
+  ],
+  [
+   "593",
+   "Multiple Bomberman Games",
+   "0.83"
+  ],
+  [
+   "594",
+   "SM64: Boonster's Peril",
+   "0.8"
+  ],
+  [
+   "595",
+   "Water Star Adventure",
+   "0.79"
+  ],
+  [
+   "596",
+   "SM64: Beyond the Cursed Mirror",
+   "0.79"
+  ],
+  [
+   "597",
+   "Kaze's Warmup",
+   "0.78"
+  ],
+  [
+   "598",
+   "Nuclear Strike 64",
+   "0.78"
+  ],
+  [
+   "599",
+   "SM64 Dark Matter",
+   "0.78"
+  ],
+  [
+   "600",
+   "Wizard of the Board",
+   "0.77"
+  ],
+  [
+   "601",
+   "NFL Quarterback Club 99",
+   "0.77"
+  ],
+  [
+   "602",
+   "Chameleon Twist 2 Category Extensions",
+   "0.77"
+  ],
+  [
+   "603",
+   "Lonely Holidays 64",
+   "0.75"
+  ],
+  [
+   "604",
+   "The Legend of Zelda: Bedtime Story",
+   "0.74"
+  ],
+  [
+   "605",
+   "Mega Man Legends Category Extensions",
+   "0.73"
+  ],
+  [
+   "606",
+   "Super Mario Switch 64",
+   "0.73"
+  ],
+  [
+   "607",
+   "Madden NFL 2001",
+   "0.67"
+  ],
+  [
+   "608",
+   "Mario gets a DMCA on Twitch 64",
+   "0.66"
+  ],
+  [
+   "609",
+   "Vigilante 8: 2nd Offense",
+   "0.57"
+  ],
+  [
+   "610",
+   "Pokemon Puzzle League Category Extensions",
+   "0.57"
+  ],
+  [
+   "611",
+   "Hexen: Beyond Heretic",
+   "0.48"
+  ],
+  [
+   "612",
+   "WCW Mayhem",
+   "0.14"
+  ],
+  [
+   "613",
+   "International Track & Field 2000",
+   "0.07"
+  ],
+  [
+   "614",
+   "RickRollEye 64",
+   "0.06"
+  ],
+  [
+   "615",
+   "Carnival\u00e9: Cenzo's Adventure",
+   "0"
+  ],
+  [
+   "616",
+   "Pok\u00e9mon Yellow Category Extensions",
+   "0"
+  ],
+  [
+   "617",
+   "Spider-Man (2000) Category Extensions",
+   "0"
+  ],
+  [
+   "618",
+   "Turok 2: Seeds of Evil",
+   "0"
+  ],
+  [
+   "619",
+   "Styx",
+   "0"
+  ],
+  [
+   "620",
+   "The Legend of Zelda: Sacred Armor (Project Izou)",
+   "0"
+  ],
+  [
+   "621",
+   "Madden NFL 2002",
+   "0"
+  ],
+  [
+   "622",
+   "Knockout Kings 2000 (N64)",
+   "0"
+  ],
+  [
+   "623",
+   "Looney Tunes: Taz Express",
+   "0"
+  ],
+  [
+   "624",
+   "Romhack Thing",
+   "0"
+  ],
+  [
+   "625",
+   "NFL Blitz: Special Edition",
+   "0"
+  ],
+  [
+   "626",
+   "Madden NFL 99",
+   "0"
+  ],
+  [
+   "627",
+   "Goemon Mononoke Sugoroku",
+   "0"
+  ],
+  [
+   "628",
+   "Silver Stars of Wisdom",
+   "0"
+  ],
+  [
+   "629",
+   "Star Road Retooled",
+   "0"
+  ],
+  [
+   "630",
+   "Super Mario Parallel Stars",
+   "0"
+  ],
+  [
+   "631",
+   "Choro-Q 64 2: Hacha Mecha Grand Prix Race",
+   "0"
+  ],
+  [
+   "632",
+   "Top Gear Rally 2",
+   "0"
+  ],
+  [
+   "633",
+   "NBA Live 2000",
+   "0"
+  ],
+  [
+   "634",
+   "Mario in the Multiverse",
+   "0"
+  ],
+  [
+   "635",
+   "Susume! Taisen Puzzle Dama: T\u014dkon! Marutama Ch\u014d",
+   "0"
+  ],
+  [
+   "636",
+   "Harukanaru Augusta Masters '98",
+   "0"
+  ],
+  [
+   "637",
+   "Mario Kart 64 Mega Mushroom Blast",
+   "0"
+  ],
+  [
+   "638",
+   "Last Legion UX",
+   "0"
+  ],
+  [
+   "639",
+   "All-Star Baseball 2000",
+   "0"
+  ],
+  [
+   "640",
+   "Emote Challenge 64",
+   "0"
+  ],
+  [
+   "641",
+   "Stars of the Beast 2: The Legend of the Crystal Stars",
+   "0"
+  ],
+  [
+   "642",
+   "F-1 World Grand Prix II",
+   "0"
+  ],
+  [
+   "643",
+   "Virtual Pro Wrestling 64",
+   "0"
+  ],
+  [
+   "644",
+   "SM64 Stars of Reincarnation",
+   "0"
+  ],
+  [
+   "645",
+   "Mission Lost Control",
+   "0"
+  ],
+  [
+   "646",
+   "DK64 OK Edition",
+   "0"
+  ],
+  [
+   "647",
+   "Bomberman 64 2001",
+   "0"
+  ],
+  [
+   "648",
+   "Madden Football 64",
+   "0"
+  ],
+  [
+   "649",
+   "Jikkyou Powerful Pro Yakyuu 6",
+   "0"
+  ],
+  [
+   "650",
+   "Super Banjo-Kazooie 64 REDUX",
+   "0"
+  ],
+  [
+   "651",
+   "Super Mario: Invasion of Chuckya",
+   "0"
+  ],
+  [
+   "652",
+   "Star Wars: Rogue Squadron - Category Extensions",
+   "0"
+  ]
+ ]
+}

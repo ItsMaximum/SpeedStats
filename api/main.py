@@ -15,6 +15,7 @@ import hashlib
 import html
 import io
 import logging
+import re
 from collections import OrderedDict
 from contextlib import asynccontextmanager
 from datetime import date
@@ -22,6 +23,7 @@ from pathlib import Path
 from threading import Lock
 from urllib.parse import urlencode
 
+import httpx
 from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
@@ -37,7 +39,10 @@ log = logging.getLogger("speedstats.api")
 
 DIST = Path(__file__).resolve().parent.parent / "web" / "dist"
 CACHE_CONTROL = "public, max-age=300, s-maxage=604800"
+IMMUTABLE = "public, max-age=31536000, immutable"
 CACHE_ENTRIES = 2000
+FLAG_SOURCE = "https://www.speedrun.com/images/flags/"
+FLAG_ID = re.compile(r"^[a-z0-9_-]+(?:/[a-z0-9_-]+)*$")
 
 holder = DbHolder(settings.data_dir)
 
@@ -101,7 +106,7 @@ def meta_out(meta: Meta) -> MetaOut:
 
 
 def describe(spec: FilterSpec, filt: ResolvedFilter | None = None) -> str:
-    """Human title for a query, e.g. 'Player Rankings — Red Ball, -Red Ball 5'."""
+    """Human title for a query, e.g. 'Player Rankings - Red Ball, -Red Ball 5'."""
     parts: list[str] = []
     for box in BOXES:
         if filt is not None and box in filt.labels:
@@ -111,7 +116,7 @@ def describe(spec: FilterSpec, filt: ResolvedFilter | None = None) -> str:
             parts.extend(terms.include)
             parts.extend(f"-{t}" for t in terms.exclude)
     name = REQUEST_TYPE_NAMES[spec.request_type]
-    return f"{name} — {', '.join(parts)}" if parts else f"{name} — all games"
+    return f"{name} - {', '.join(parts)}" if parts else f"{name} - all games"
 
 
 def canonical_query(spec: FilterSpec) -> str:
@@ -145,6 +150,7 @@ def _execute(spec: FilterSpec) -> tuple[QueryOut, Meta]:
     try:
         filt = resolve(con, spec)
         result: QueryResult = run_query(con, spec.request_type, filt, spec.limit)
+        flags = _flag_names(con, result)
     finally:
         con.close()
 
@@ -155,10 +161,22 @@ def _execute(spec: FilterSpec) -> tuple[QueryOut, Meta]:
         rows=[[_serialize_cell(c) for c in row] for row in result.rows],
         truncated=result.truncated,
         warnings=filt.warnings,
+        flags=flags,
         meta=meta_out(meta),
     )
     cache.put(key, out)
     return out, meta
+
+
+def _flag_names(con, result: QueryResult) -> dict[str, str]:
+    if "Flag" not in result.columns:
+        return {}
+    i = result.columns.index("Flag")
+    ids = sorted({row[i] for row in result.rows if row[i]})
+    if not ids:
+        return {}
+    rows = con.execute("SELECT id, lb_name FROM areas WHERE id IN (SELECT unnest($ids::VARCHAR[]))", {"ids": ids})
+    return dict(rows.fetchall())
 
 
 # -- routes ----------------------------------------------------------------------------------------------------------
@@ -231,6 +249,24 @@ def api_suggest(box: str = Query(pattern="^(series|games|platforms|players|count
     )
 
 
+@app.get("/api/flags/{flag:path}.png", include_in_schema=False)
+def api_flag(flag: str):
+    """Flag images as shown on speedrun.com leaderboards, fetched once and cached on disk."""
+    if not FLAG_ID.match(flag):
+        raise HTTPException(404)
+    cached = settings.data_dir / "flags" / f"{flag}.png"
+    if not cached.exists():
+        try:
+            r = httpx.get(FLAG_SOURCE + flag + ".png", timeout=15, follow_redirects=True)
+        except httpx.HTTPError as e:
+            raise HTTPException(502, "flag source unreachable") from e
+        if r.status_code != 200 or not r.headers.get("content-type", "").startswith("image/"):
+            raise HTTPException(404)
+        cached.parent.mkdir(parents=True, exist_ok=True)
+        cached.write_bytes(r.content)
+    return Response(cached.read_bytes(), media_type="image/png", headers={"Cache-Control": IMMUTABLE})
+
+
 @app.get("/api/meta", response_model=MetaOut)
 def api_meta():
     try:
@@ -264,7 +300,7 @@ def _shell(request: Request) -> Response:
     spec = parse_query(request.query_params.multi_items())
     title = describe(spec)
     page = index.read_text(encoding="utf-8")
-    page = page.replace("__TITLE__", html.escape(f"SpeedStats — {title}" if request.query_params else "SpeedStats"))
+    page = page.replace("__TITLE__", html.escape(f"SpeedStats - {title}" if request.query_params else "SpeedStats"))
     page = page.replace("__DESCRIPTION__", html.escape(f"{title} on SpeedStats, speedrun.com rankings by run value."))
     page = page.replace("__URL__", html.escape(f"{settings.public_url}/?{canonical_query(spec)}"))
     headers = {"Cache-Control": CACHE_CONTROL}

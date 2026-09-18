@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api-types.d.ts","./src/api.ts","./src/main.tsx","./src/query.test.ts","./src/query.ts","./src/test-setup.ts","./src/useurlstate.ts","./src/vite-env.d.ts","./src/components/lastupdated.tsx","./src/components/queryform.tsx","./src/components/resultstable.tsx","./src/components/termbox.tsx","./src/components/warnings.tsx"],"version":"6.0.3"}

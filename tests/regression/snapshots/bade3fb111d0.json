@@ -1,0 +1,15 @@
+{
+ "query": "series=Red+Ball&games=&platforms=&players=&request-type=series",
+ "columns": [
+  "Rank",
+  "Series",
+  "Points"
+ ],
+ "rows": [
+  [
+   "1",
+   "Red Ball",
+   "101650.59"
+  ]
+ ]
+}

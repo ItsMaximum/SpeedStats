@@ -30,6 +30,7 @@ class QueryOut(BaseModel):
     rows: list[list[str | int | float | None]]
     truncated: bool
     warnings: list[str]
+    flags: dict[str, str]  # flag id (e.g. "gb/eng") -> area name, for the flags present in `rows`
     meta: MetaOut
 
 

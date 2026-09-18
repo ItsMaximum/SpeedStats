@@ -1,0 +1,26 @@
+# One production URL per line (query string after index.php?). Captured by `uv run python tools/regression.py capture`,
+# checked against a full-data database by `uv run python tools/regression.py check --db <file>`.
+series=Papa+Louie%2C+Duck+Life%2C+Vex+(Flash)%2C+Fireboy+and+Watergirl%2C+The+World%27s+Hardest+Game&games=Super+Mario+63&platforms=Web%2C+Flash&players=&request-type=pr
+series=red+ball&games=&platforms=&players=&request-type=pr
+series=&games=Red+Ball&platforms=&players=&request-type=pr
+series=&games=Red+Ball&platforms=&players=&request-type=runs
+series=&games=Red+Ball&platforms=&players=&request-type=records
+series=Red+Ball&games=&platforms=&players=&request-type=leaderboards
+series=Red+Ball&games=&platforms=&players=&request-type=games
+series=Red+Ball&games=&platforms=&players=&request-type=series
+series=Red+Ball&games=&platforms=&players=&request-type=dates
+series=&games=&platforms=&players=Maximum&request-type=runs
+series=&games=&platforms=&players=Maximum%2C+NorXor&request-type=runs
+series=&games=&platforms=&players=Maximum%2C+NorXor&request-type=pr
+series=&games=&platforms=&players=&request-type=pr
+series=&games=Minecraft%3A+Java+Edition&platforms=&players=&request-type=pr
+series=&games=Minecraft%3A+Java+Edition&platforms=&players=&request-type=records
+series=Super+Mario&games=&platforms=Nintendo+64&players=&request-type=pr
+series=&games=&platforms=Nintendo+64&players=&request-type=games
+series=&games=&platforms=&players=&request-type=series
+series=&games=&platforms=&players=&request-type=games
+series=&games=&platforms=&players=&request-type=dates
+series=&games=&platforms=&players=&request-type=leaderboards
+series=&games=&platforms=&players=&request-type=records
+series=&games=Celeste&platforms=&players=&request-type=leaderboards
+series=&games=Portal&platforms=PC&players=&request-type=runs

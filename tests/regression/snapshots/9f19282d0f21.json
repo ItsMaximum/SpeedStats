@@ -1,0 +1,310 @@
+{
+ "query": "series=&games=Celeste&platforms=&players=&request-type=leaderboards",
+ "columns": [
+  "Rank",
+  "Leaderboard",
+  "Points"
+ ],
+ "rows": [
+  [
+   "1",
+   "Celeste: Any%",
+   "199833.44"
+  ],
+  [
+   "2",
+   "Celeste: Clear, Forsaken City - Dash",
+   "22975.98"
+  ],
+  [
+   "3",
+   "Celeste: All Red Berries",
+   "12148.56"
+  ],
+  [
+   "4",
+   "Celeste: Clear, Old Site",
+   "11055.74"
+  ],
+  [
+   "5",
+   "Celeste: Clear, Celestial Resort",
+   "9185.41"
+  ],
+  [
+   "6",
+   "Celeste: Clear, Golden Ridge",
+   "8385.58"
+  ],
+  [
+   "7",
+   "Celeste: Clear, The Summit",
+   "6505.54"
+  ],
+  [
+   "8",
+   "Celeste: Clear, Farewell - No Farewell Skip",
+   "5180.85"
+  ],
+  [
+   "9",
+   "Celeste: B-Side, Mirror Temple",
+   "4366.65"
+  ],
+  [
+   "10",
+   "Celeste: Clear, Reflection",
+   "4068.93"
+  ],
+  [
+   "11",
+   "Celeste: 100%",
+   "3643.08"
+  ],
+  [
+   "12",
+   "Celeste: True Ending",
+   "3471.14"
+  ],
+  [
+   "13",
+   "Celeste: Clear, Mirror Temple",
+   "3128.51"
+  ],
+  [
+   "14",
+   "Celeste: All Hearts",
+   "3053.93"
+  ],
+  [
+   "15",
+   "Celeste: Bny%",
+   "3024.26"
+  ],
+  [
+   "16",
+   "Celeste: C-Side, Old Site",
+   "2804.38"
+  ],
+  [
+   "17",
+   "Celeste: C-Side, Golden Ridge",
+   "2431.52"
+  ],
+  [
+   "18",
+   "Celeste: All C-Sides",
+   "2281.22"
+  ],
+  [
+   "19",
+   "Celeste: B-Side, Reflection",
+   "2217.94"
+  ],
+  [
+   "20",
+   "Celeste: C-Side, The Summit",
+   "2110.64"
+  ],
+  [
+   "21",
+   "Celeste: B-Side, Forsaken City",
+   "1926.61"
+  ],
+  [
+   "22",
+   "Celeste: B-Side, Old Site",
+   "1883.18"
+  ],
+  [
+   "23",
+   "Celeste: All A-Sides",
+   "1757.57"
+  ],
+  [
+   "24",
+   "Celeste: Clear, Forsaken City - Dashless",
+   "1710.1"
+  ],
+  [
+   "25",
+   "Celeste: C-Side, Forsaken City",
+   "1612.75"
+  ],
+  [
+   "26",
+   "Celeste: B-Side, The Summit",
+   "1594.16"
+  ],
+  [
+   "27",
+   "Celeste: Clear, Core",
+   "1551.38"
+  ],
+  [
+   "28",
+   "Celeste: Collectibles, Forsaken City - Full Clear",
+   "1468.29"
+  ],
+  [
+   "29",
+   "Celeste: Collectibles, Old Site - All Red Berries",
+   "1465.39"
+  ],
+  [
+   "30",
+   "Celeste: B-Side, Celestial Resort",
+   "1407.09"
+  ],
+  [
+   "31",
+   "Celeste: B-Side, Golden Ridge",
+   "1402.29"
+  ],
+  [
+   "32",
+   "Celeste: C-Side, Mirror Temple",
+   "1348.67"
+  ],
+  [
+   "33",
+   "Celeste: Collectibles, Golden Ridge - All Red Berries+Heart",
+   "1317.19"
+  ],
+  [
+   "34",
+   "Celeste: All Cassettes",
+   "1275.6"
+  ],
+  [
+   "35",
+   "Celeste: C-Side, Core",
+   "1272.84"
+  ],
+  [
+   "36",
+   "Celeste: C-Side, Celestial Resort",
+   "1257.55"
+  ],
+  [
+   "37",
+   "Celeste: Collectibles, Celestial Resort - All Red Berries+Heart",
+   "1188.22"
+  ],
+  [
+   "38",
+   "Celeste: Collectibles, Core - All Red Berries",
+   "1112.8"
+  ],
+  [
+   "39",
+   "Celeste: All B-Sides",
+   "1046.85"
+  ],
+  [
+   "40",
+   "Celeste: Collectibles, Mirror Temple - All Red Berries",
+   "1023.5"
+  ],
+  [
+   "41",
+   "Celeste: Collectibles, The Summit - All Red Berries",
+   "1017.52"
+  ],
+  [
+   "42",
+   "Celeste: C-Side, Reflection",
+   "1002.76"
+  ],
+  [
+   "43",
+   "Celeste: B-Side, Core",
+   "918.5"
+  ],
+  [
+   "44",
+   "Celeste: Collectibles, Old Site - Full Clear",
+   "876.96"
+  ],
+  [
+   "45",
+   "Celeste: All Chapters",
+   "695.09"
+  ],
+  [
+   "46",
+   "Celeste: Collectibles, Forsaken City - All Red Berries+Heart",
+   "682.78"
+  ],
+  [
+   "47",
+   "Celeste: Collectibles, Farewell - Moon Berry",
+   "625.79"
+  ],
+  [
+   "48",
+   "Celeste: Collectibles, Forsaken City - Heart+Cassette",
+   "443.39"
+  ],
+  [
+   "49",
+   "Celeste: Collectibles, Celestial Resort - Full Clear",
+   "431.08"
+  ],
+  [
+   "50",
+   "Celeste: Collectibles, The Summit - Full Clear",
+   "357.66"
+  ],
+  [
+   "51",
+   "Celeste: Collectibles, Golden Ridge - Full Clear",
+   "346.62"
+  ],
+  [
+   "52",
+   "Celeste: Collectibles, Old Site - Heart+Cassette",
+   "298.2"
+  ],
+  [
+   "53",
+   "Celeste: Collectibles, Mirror Temple - Full Clear",
+   "293.86"
+  ],
+  [
+   "54",
+   "Celeste: Collectibles, Reflection - Full Clear",
+   "221.39"
+  ],
+  [
+   "55",
+   "Celeste: Collectibles, Golden Ridge - Heart+Cassette",
+   "212.73"
+  ],
+  [
+   "56",
+   "Celeste: 202 Berries",
+   "203.46"
+  ],
+  [
+   "57",
+   "Celeste: Collectibles, Celestial Resort - Heart+Cassette",
+   "131.23"
+  ],
+  [
+   "58",
+   "Celeste: Collectibles, Mirror Temple - Heart+Cassette",
+   "101.68"
+  ],
+  [
+   "59",
+   "Celeste: Collectibles, The Summit - Heart+Cassette",
+   "97.02"
+  ],
+  [
+   "60",
+   "Celeste: Clear, Farewell - Farewell Skip",
+   "3.29"
+  ]
+ ]
+}

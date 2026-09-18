@@ -1,0 +1,415 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "SpeedStats API",
+  "version": "4.0.0"
+ },
+ "paths": {
+  "/api/query": {
+   "get": {
+    "summary": "Api Query",
+    "operationId": "api_query_api_query_get",
+    "parameters": [
+     {
+      "name": "format",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string",
+       "pattern": "^(json|csv)$",
+       "default": "json",
+       "title": "Format"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/QueryOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/suggest": {
+   "get": {
+    "summary": "Api Suggest",
+    "operationId": "api_suggest_api_suggest_get",
+    "parameters": [
+     {
+      "name": "box",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "pattern": "^(series|games|platforms|players|countries)$",
+       "title": "Box"
+      }
+     },
+     {
+      "name": "q",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "minLength": 1,
+       "title": "Q"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/SuggestOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/meta": {
+   "get": {
+    "summary": "Api Meta",
+    "operationId": "api_meta_api_meta_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/MetaOut"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/health": {
+   "get": {
+    "summary": "Health",
+    "operationId": "health_health_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HealthOut"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "HTTPValidationError": {
+    "properties": {
+     "detail": {
+      "items": {
+       "$ref": "#/components/schemas/ValidationError"
+      },
+      "type": "array",
+      "title": "Detail"
+     }
+    },
+    "type": "object",
+    "title": "HTTPValidationError"
+   },
+   "HealthOut": {
+    "properties": {
+     "ok": {
+      "type": "boolean",
+      "title": "Ok"
+     },
+     "data_version": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Data Version"
+     },
+     "scraped_at": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Scraped At"
+     },
+     "stale": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Stale"
+     }
+    },
+    "type": "object",
+    "required": [
+     "ok"
+    ],
+    "title": "HealthOut"
+   },
+   "MetaOut": {
+    "properties": {
+     "data_version": {
+      "type": "string",
+      "title": "Data Version"
+     },
+     "scraped_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Scraped At"
+     },
+     "published_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Published At"
+     },
+     "row_count": {
+      "type": "integer",
+      "title": "Row Count"
+     },
+     "leaderboard_count": {
+      "type": "integer",
+      "title": "Leaderboard Count"
+     },
+     "player_count": {
+      "type": "integer",
+      "title": "Player Count"
+     },
+     "game_count": {
+      "type": "integer",
+      "title": "Game Count"
+     },
+     "stale": {
+      "type": "boolean",
+      "title": "Stale"
+     }
+    },
+    "type": "object",
+    "required": [
+     "data_version",
+     "scraped_at",
+     "published_at",
+     "row_count",
+     "leaderboard_count",
+     "player_count",
+     "game_count",
+     "stale"
+    ],
+    "title": "MetaOut"
+   },
+   "QueryOut": {
+    "properties": {
+     "request_type": {
+      "type": "string",
+      "title": "Request Type"
+     },
+     "title": {
+      "type": "string",
+      "title": "Title"
+     },
+     "columns": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Columns"
+     },
+     "rows": {
+      "items": {
+       "items": {
+        "anyOf": [
+         {
+          "type": "string"
+         },
+         {
+          "type": "integer"
+         },
+         {
+          "type": "number"
+         },
+         {
+          "type": "null"
+         }
+        ]
+       },
+       "type": "array"
+      },
+      "type": "array",
+      "title": "Rows"
+     },
+     "truncated": {
+      "type": "boolean",
+      "title": "Truncated"
+     },
+     "warnings": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Warnings"
+     },
+     "flags": {
+      "additionalProperties": {
+       "type": "string"
+      },
+      "type": "object",
+      "title": "Flags"
+     },
+     "meta": {
+      "$ref": "#/components/schemas/MetaOut"
+     }
+    },
+    "type": "object",
+    "required": [
+     "request_type",
+     "title",
+     "columns",
+     "rows",
+     "truncated",
+     "warnings",
+     "flags",
+     "meta"
+    ],
+    "title": "QueryOut"
+   },
+   "SuggestOut": {
+    "properties": {
+     "box": {
+      "type": "string",
+      "title": "Box"
+     },
+     "q": {
+      "type": "string",
+      "title": "Q"
+     },
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/Suggestion"
+      },
+      "type": "array",
+      "title": "Items"
+     }
+    },
+    "type": "object",
+    "required": [
+     "box",
+     "q",
+     "items"
+    ],
+    "title": "SuggestOut"
+   },
+   "Suggestion": {
+    "properties": {
+     "name": {
+      "type": "string",
+      "title": "Name"
+     },
+     "slug": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Slug"
+     }
+    },
+    "type": "object",
+    "required": [
+     "name"
+    ],
+    "title": "Suggestion"
+   },
+   "ValidationError": {
+    "properties": {
+     "loc": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "integer"
+        }
+       ]
+      },
+      "type": "array",
+      "title": "Location"
+     },
+     "msg": {
+      "type": "string",
+      "title": "Message"
+     },
+     "type": {
+      "type": "string",
+      "title": "Error Type"
+     },
+     "input": {
+      "title": "Input"
+     },
+     "ctx": {
+      "type": "object",
+      "title": "Context"
+     }
+    },
+    "type": "object",
+    "required": [
+     "loc",
+     "msg",
+     "type"
+    ],
+    "title": "ValidationError"
+   }
+  }
+ }
+}

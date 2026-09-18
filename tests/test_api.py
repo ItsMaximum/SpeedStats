@@ -25,9 +25,9 @@ def test_health_and_meta(client):
 
 def test_legacy_link_player_rankings(client):
     out = query(client, "series=&games=Red+Ball&platforms=&players=&request-type=pr")
-    assert out["columns"] == ["Rank", "Player", "Country", "Points"]
+    assert out["columns"] == ["Rank", "Player", "Flag", "Points"]
     assert out["rows"][0][0] == 1 and out["rows"][0][3] > 0
-    assert out["title"] == "Player Rankings — Red Ball"
+    assert out["title"] == "Player Rankings - Red Ball"
     assert out["truncated"] is False or len(out["rows"]) == 1000
 
 
@@ -35,7 +35,7 @@ def test_all_games_ranking_keeps_global_rank_for_player_lookup(client):
     everyone = query(client, "request-type=pr&limit=20")["rows"]
     two = query(client, "players=Maximum%2C+Niftski&request-type=pr")["rows"]
     ranks = {row[1]: row[0] for row in everyone}
-    for rank, player, _country, _points in two:
+    for rank, player, _flag, _points in two:
         assert ranks[player] == rank
 
 
@@ -62,7 +62,7 @@ def test_single_player_drops_player_column(client):
     one = query(client, "players=Maximum&request-type=runs&limit=5")
     assert one["columns"] == ["Rank", "Leaderboard", "Place", "Value"]
     two = query(client, "players=Maximum&players=Niftski&request-type=runs&limit=5&v=2")
-    assert two["columns"] == ["Rank", "Player", "Country", "Leaderboard", "Place", "Value"]
+    assert two["columns"] == ["Rank", "Player", "Flag", "Leaderboard", "Place", "Value"]
 
 
 @pytest.mark.parametrize(
@@ -103,7 +103,7 @@ def test_csv_export(client):
     r = client.get("/api/query?request-type=runs&limit=2&format=csv")
     assert r.status_code == 200 and r.headers["content-type"].startswith("text/csv")
     lines = r.text.strip().splitlines()
-    assert lines[0] == "Rank,Player,Country,Leaderboard,Place,Value" and len(lines) == 3
+    assert lines[0] == "Rank,Player,Flag,Leaderboard,Place,Value" and len(lines) == 3
 
 
 def test_cache_headers(client):

@@ -2,8 +2,8 @@
 --
 -- Input (regular tables in the work database, produced by normalize.sql or legacy.py):
 --   games_d(id, name, url, default_timer)      series_d(id, name, url)       game_series_d(game_id, series_id)
---   platforms_d(id, name, url)                 areas_d(id, name, full_name, label)
---   players_d(id, name, url, area_id, country, is_guest)
+--   platforms_d(id, name, url)                 areas_d(id, name, full_name, lb_name, lb_flag, parent_id)
+--   players_d(id, name, url, area_id, country, flag, is_guest)
 --   scored_input(ord, run_id, leaderboard_name, game_id, platform_id, player_ids, is_reverse, t, date,
 --                date_submitted, is_level_run)
 --   excluded_players(name)                     score_params(key, value)   -- data_version, scraped_at, errored_games
@@ -94,7 +94,7 @@ WITH exploded AS (
     FROM lb_valued v
 ),
 credited AS (
-    SELECT e.*, p.name AS player, p.country
+    SELECT e.*, p.name AS player, p.country, p.flag
     FROM exploded e
     JOIN players_d p ON p.id = e.player_id
     WHERE NOT p.is_guest
@@ -105,7 +105,7 @@ SELECT
     dense_rank() OVER (ORDER BY c.leaderboard_name)::INTEGER AS leaderboard_id,
     c.leaderboard_name                                       AS leaderboard,
     c.game_id, g.name                                        AS game,
-    c.player_id, c.player, c.country,
+    c.player_id, c.player, c.country, c.flag,
     c.platform_id, pl.name                                   AS platform,
     c.place::INTEGER                                         AS place,
     round(c.run_value / c.n_players, 3)                      AS value,
@@ -116,11 +116,11 @@ LEFT JOIN platforms_d pl ON pl.id = c.platform_id
 ORDER BY c.game_id, leaderboard_id, c.nominal_place;
 
 CREATE TABLE pub.player_ranks AS
-SELECT ROW_NUMBER() OVER (ORDER BY points DESC, player)::INTEGER AS rank, player_id, player, country, points
+SELECT ROW_NUMBER() OVER (ORDER BY points DESC, player)::INTEGER AS rank, player_id, player, country, flag, points
 FROM (
-    SELECT player_id, any_value(player) AS player, any_value(country) AS country,
+    SELECT player_id, any_value(player) AS player, any_value(country) AS country, any_value(flag) AS flag,
            SUM(GREATEST(value * POWER(0.99, player_rank - 1), value * 0.25)) AS points
-    FROM (SELECT player_id, player, country, value,
+    FROM (SELECT player_id, player, country, flag, value,
                  ROW_NUMBER() OVER (PARTITION BY player_id ORDER BY value DESC) AS player_rank
           FROM pub.runs)
     GROUP BY player_id
@@ -143,12 +143,14 @@ CREATE TABLE pub.platforms AS
 SELECT id, name, url AS slug, lower(name) AS name_lower, lower(url) AS slug_lower
 FROM platforms_d ORDER BY name_lower;
 
+-- is_country: areas that get their own flag on speedrun.com leaderboards (countries, plus e.g. England)
 CREATE TABLE pub.areas AS
-SELECT id, name, full_name, label, NOT contains(id, '/') AS is_country, lower(id) AS id_lower, lower(name) AS name_lower
+SELECT id, name, full_name, lb_name, lb_flag, parent_id, lb_flag = id AS is_country,
+       lower(id) AS id_lower, lower(name) AS name_lower, lower(lb_name) AS lb_name_lower
 FROM areas_d ORDER BY id_lower;
 
 CREATE TABLE pub.players AS
-SELECT id, name, url AS slug, area_id, country, lower(name) AS name_lower, lower(url) AS slug_lower
+SELECT id, name, url AS slug, area_id, country, flag, lower(name) AS name_lower, lower(url) AS slug_lower
 FROM players_d WHERE id IN (SELECT DISTINCT player_id FROM pub.runs) ORDER BY name_lower;
 CREATE INDEX players_name_lower_idx ON pub.players(name_lower);
 CREATE INDEX players_slug_lower_idx ON pub.players(slug_lower);

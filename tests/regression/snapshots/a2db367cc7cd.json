@@ -1,0 +1,4500 @@
+{
+ "query": "series=Red+Ball&games=&platforms=&players=&request-type=leaderboards",
+ "columns": [
+  "Rank",
+  "Leaderboard",
+  "Points"
+ ],
+ "rows": [
+  [
+   "1",
+   "Red Ball: 12 Levels",
+   "22108.73"
+  ],
+  [
+   "2",
+   "Red Ball 4 Vol.1: Any%",
+   "11168.76"
+  ],
+  [
+   "3",
+   "Red Ball 3: Any%",
+   "6024.95"
+  ],
+  [
+   "4",
+   "Red Ball 2: 20 Levels",
+   "4245.1"
+  ],
+  [
+   "5",
+   "Red Ball: 17 Levels",
+   "3770.08"
+  ],
+  [
+   "6",
+   "Red Ball 4 Vol.1: Any% Glitchless",
+   "2829.62"
+  ],
+  [
+   "7",
+   "Red Ball: 12 Levels (Glitchless)",
+   "2365.27"
+  ],
+  [
+   "8",
+   "Red and Blue Balls: 15 Levels",
+   "2243.7"
+  ],
+  [
+   "9",
+   "Red Ball 4 Vol.3: Any% Glitchless",
+   "2125.04"
+  ],
+  [
+   "10",
+   "Red Ball 4 Vol.2: Any%",
+   "1995.82"
+  ],
+  [
+   "11",
+   "Red Ball 4 Vol.3: Any%",
+   "1888.15"
+  ],
+  [
+   "12",
+   "Red Ball: Raise the Flag, 11",
+   "1776.46"
+  ],
+  [
+   "13",
+   "Red Ball 4 (Mobile): Green Hills - Glitchless, Any%, Original",
+   "1482.63"
+  ],
+  [
+   "14",
+   "Red Ball 2: 25 Levels",
+   "1470.31"
+  ],
+  [
+   "15",
+   "Red Ball: Raise the Flag, 9",
+   "1239.63"
+  ],
+  [
+   "16",
+   "Red Ball 4 (Mobile): Green Hills - Glitched, Any%, Unity",
+   "1092.31"
+  ],
+  [
+   "17",
+   "Red Ball: Raise the Flag, 10",
+   "1066.3"
+  ],
+  [
+   "18",
+   "Red Ball: Raise the Flag, 8 - No Lag Abuse",
+   "897.92"
+  ],
+  [
+   "19",
+   "Multiple Red Ball Games: Red Ball 4 - Any%",
+   "891.87"
+  ],
+  [
+   "20",
+   "Red Ball: Raise the Flag, 6",
+   "800.5"
+  ],
+  [
+   "21",
+   "Red Ball 5: Any% No Level Skip - Download",
+   "770.97"
+  ],
+  [
+   "22",
+   "Red Ball: Raise the Flag, 12",
+   "746.04"
+  ],
+  [
+   "23",
+   "Red Ball: Raise the Flag, 3",
+   "743.96"
+  ],
+  [
+   "24",
+   "Red Ball: Raise the Flag, 4",
+   "719.6"
+  ],
+  [
+   "25",
+   "Multiple Red Ball Games: Full Series - Any%",
+   "659.72"
+  ],
+  [
+   "26",
+   "Red and Blue Balls 3: Any%",
+   "635.89"
+  ],
+  [
+   "27",
+   "Red and Blue Balls 2: Any%",
+   "631.21"
+  ],
+  [
+   "28",
+   "Red Ball: Raise the Flag, 1 - Normal",
+   "609.94"
+  ],
+  [
+   "29",
+   "Red Ball: Raise the Flag, 7",
+   "605.56"
+  ],
+  [
+   "30",
+   "Red Ball (Mobile): Unity - 8 Levels, Android",
+   "585.75"
+  ],
+  [
+   "31",
+   "Red Ball 4 Vol.2: Any% Glitchless",
+   "575.37"
+  ],
+  [
+   "32",
+   "Red Ball 4 Vol.1: 100%",
+   "571.29"
+  ],
+  [
+   "33",
+   "Multiple Red Ball Games: Red Ball 1-3 - Any%",
+   "570.86"
+  ],
+  [
+   "34",
+   "Red Ball: Raise the Flag, 2",
+   "567.48"
+  ],
+  [
+   "35",
+   "Red Ball: Raise the Flag, 5",
+   "473"
+  ],
+  [
+   "36",
+   "Red Ball 4 (Mobile): Any% - Glitchless, Original",
+   "458.46"
+  ],
+  [
+   "37",
+   "Red Ball: Raise the Flag, 14",
+   "453.39"
+  ],
+  [
+   "38",
+   "Red and Blue Balls: 20 Levels",
+   "419.01"
+  ],
+  [
+   "39",
+   "Red Ball: Raise the Flag, 13",
+   "385.76"
+  ],
+  [
+   "40",
+   "Red Ball (Mobile): Unity - 12 Levels, Android",
+   "372.53"
+  ],
+  [
+   "41",
+   "Red Ball 3: 100%",
+   "363.22"
+  ],
+  [
+   "42",
+   "Red Ball: 17 Levels (Glitchless)",
+   "347.32"
+  ],
+  [
+   "43",
+   "Red Ball: Raise the Flag, 17",
+   "336.33"
+  ],
+  [
+   "44",
+   "Red Ball 4 Vol.1: Any%, 15",
+   "301.04"
+  ],
+  [
+   "45",
+   "Red Ball 4 (Mobile): Green Hills - Glitchless, Any%, Unity",
+   "270.54"
+  ],
+  [
+   "46",
+   "Red Ball 4 (Mobile): Green Hills - Glitched, Any%, Original",
+   "261.98"
+  ],
+  [
+   "47",
+   "Red Ball Category Extensions: Hacks - Rick Astley - 12 Levels",
+   "259.06"
+  ],
+  [
+   "48",
+   "Red Ball Category Extensions: Red Ball - Bonus Levels",
+   "257.02"
+  ],
+  [
+   "49",
+   "Red Ball Category Extensions: Red Ball - Reverse - 12 Levels",
+   "242.64"
+  ],
+  [
+   "50",
+   "Red Ball: Raise the Flag, 16 - Normal",
+   "230.46"
+  ],
+  [
+   "51",
+   "Red Ball Category Extensions: Hacks - Red Ball 4 Vol.Nice",
+   "226.77"
+  ],
+  [
+   "52",
+   "Red Ball 4 (Mobile): Glitchless, 1 - Original",
+   "226.06"
+  ],
+  [
+   "53",
+   "Red Ball: Raise the Flag, 15 - Normal",
+   "223.82"
+  ],
+  [
+   "54",
+   "Red Ball Category Extensions: Red Ball 3 - Glitchless",
+   "220.51"
+  ],
+  [
+   "55",
+   "Red Ball 2: Raise the Flag, 23",
+   "217.41"
+  ],
+  [
+   "56",
+   "Red Ball Category Extensions: Red Ball - 120 Levels",
+   "197.82"
+  ],
+  [
+   "57",
+   "Red Ball 4 Vol.1: Any%, 1",
+   "173.65"
+  ],
+  [
+   "58",
+   "Red Ball 4 Vol.3: 100%",
+   "169.75"
+  ],
+  [
+   "59",
+   "Red Ball 4 (Mobile): Any% - Glitched, Unity",
+   "163.71"
+  ],
+  [
+   "60",
+   "Red Ball Category Extensions: Red Ball - 100%",
+   "153.51"
+  ],
+  [
+   "61",
+   "Red Ball Category Extensions: Red Ball 2 - Bonus Levels",
+   "148.27"
+  ],
+  [
+   "62",
+   "Red Ball 3: Any%, 1",
+   "148.21"
+  ],
+  [
+   "63",
+   "Red Ball: Raise the Flag, 16 - Wrong Way",
+   "146.76"
+  ],
+  [
+   "64",
+   "Red Ball 4 Vol.2: 100%",
+   "144.44"
+  ],
+  [
+   "65",
+   "Red Ball 4 (Mobile): Green Hills - Glitchless, 100%, Original",
+   "139.08"
+  ],
+  [
+   "66",
+   "Red Ball 2: Raise the Flag, 15",
+   "132.63"
+  ],
+  [
+   "67",
+   "Red Ball 4 (Mobile): Box Factory - Glitchless, Any%, Original",
+   "132.11"
+  ],
+  [
+   "68",
+   "Red Ball 4 (Mobile): Glitchless, 1 - Unity",
+   "131.12"
+  ],
+  [
+   "69",
+   "Red Ball: Raise the Flag, 15 - Shop Heist",
+   "129.77"
+  ],
+  [
+   "70",
+   "Red Ball 4 Vol.3: Any%, 15",
+   "124.58"
+  ],
+  [
+   "71",
+   "Red Ball 4 (Mobile): Deep Forest - Glitchless, Any%, Original",
+   "123.36"
+  ],
+  [
+   "72",
+   "Red Ball 4 (Mobile): Deep Forest - Glitched, Any%, Unity",
+   "120.97"
+  ],
+  [
+   "73",
+   "Red Ball 4 (Mobile): Box Factory - Glitched, Any%, Unity",
+   "118.17"
+  ],
+  [
+   "74",
+   "Red Ball 5: Any% - Download",
+   "117.26"
+  ],
+  [
+   "75",
+   "Red Ball 4 Vol.3: Any%, 1",
+   "113.11"
+  ],
+  [
+   "76",
+   "Red Ball 4 (Mobile): Glitchless, 2 - Unity",
+   "112.63"
+  ],
+  [
+   "77",
+   "Red Ball 2: Raise the Flag, 1",
+   "110.01"
+  ],
+  [
+   "78",
+   "Red Ball (Mobile): Unity - 8 Levels, iOS",
+   "109.42"
+  ],
+  [
+   "79",
+   "Red Ball Category Extensions: Red Ball - Nonstop - 12 Levels",
+   "106.6"
+  ],
+  [
+   "80",
+   "Red Ball (Mobile): Unity - 17 Levels, Android",
+   "100.2"
+  ],
+  [
+   "81",
+   "Red Ball Category Extensions: Red Ball 2 - NG+ - 20 Levels",
+   "96.79"
+  ],
+  [
+   "82",
+   "Multiple Red Ball Games: Full Series Any% Relay - 2 Players",
+   "93.39"
+  ],
+  [
+   "83",
+   "Red Ball 4 Vol.1: Any%, 2",
+   "92.14"
+  ],
+  [
+   "84",
+   "Red Ball Category Extensions: Red Ball 2 - NG+ - 25 Levels",
+   "90.14"
+  ],
+  [
+   "85",
+   "Red Ball 4 (Mobile): Any% - Glitchless, Unity",
+   "84.23"
+  ],
+  [
+   "86",
+   "Red Ball 4 (Mobile): Glitchless, 15 - Unity",
+   "82.99"
+  ],
+  [
+   "87",
+   "Red and Blue Balls: Complete the Level, 1",
+   "82.44"
+  ],
+  [
+   "88",
+   "Red Ball 3 (Mobile): HeroCraft - Any%",
+   "81.4"
+  ],
+  [
+   "89",
+   "Red Ball 4 (Mobile): Box Factory - Glitchless, Any%, Unity",
+   "80.48"
+  ],
+  [
+   "90",
+   "Red Ball 4 Vol.2: Any%, 1",
+   "80.35"
+  ],
+  [
+   "91",
+   "Red Ball 4 (Mobile): Deep Forest - Glitchless, Any%, Unity",
+   "78.76"
+  ],
+  [
+   "92",
+   "Red Ball 4 Vol.1: Any%, 13",
+   "78.48"
+  ],
+  [
+   "93",
+   "Red Ball 2: Raise the Flag, 2",
+   "78.37"
+  ],
+  [
+   "94",
+   "Red Ball Category Extensions: Hacks - Kaizo Red Ball",
+   "78.04"
+  ],
+  [
+   "95",
+   "Red Ball 2: Raise the Flag, 21",
+   "77.52"
+  ],
+  [
+   "96",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitchless, Any%, Original",
+   "77.41"
+  ],
+  [
+   "97",
+   "Red Ball Category Extensions: Red Ball 3 - Reverse - Any%",
+   "76.58"
+  ],
+  [
+   "98",
+   "Red Ball 4 Vol.1: Any%, 9",
+   "75"
+  ],
+  [
+   "99",
+   "Red Ball 4 (Mobile): Green Hills - Glitchless, 100%, Unity",
+   "73.32"
+  ],
+  [
+   "100",
+   "Red Ball Category Extensions: Red Ball - OCBall - 12 Levels",
+   "71.24"
+  ],
+  [
+   "101",
+   "Red Ball 2: Raise the Flag, 11",
+   "66.18"
+  ],
+  [
+   "102",
+   "Red Ball 3: Any%, 16",
+   "65.6"
+  ],
+  [
+   "103",
+   "Red Ball 5: Any%, Level 1",
+   "65.43"
+  ],
+  [
+   "104",
+   "Red Ball Category Extensions: Hacks - RBDALT - 12 Levels (No Down Arrow)",
+   "62.41"
+  ],
+  [
+   "105",
+   "Red Ball 4 Vol.1: Any%, 6",
+   "62.27"
+  ],
+  [
+   "106",
+   "Red Ball Category Extensions: Red Ball 4 Vol.1",
+   "60.85"
+  ],
+  [
+   "107",
+   "Red Ball 4 Vol.3: Any%, 9",
+   "60.62"
+  ],
+  [
+   "108",
+   "Red Ball 4 (Mobile): 100% - Glitchless, Original",
+   "60.12"
+  ],
+  [
+   "109",
+   "Red Ball 4 (Mobile): Any% - Glitched, Original",
+   "58.75"
+  ],
+  [
+   "110",
+   "Red Ball 3: Any%, 2",
+   "58.68"
+  ],
+  [
+   "111",
+   "Red Ball 4 (Mobile): Into the Caves - Glitchless, Any%, Original",
+   "58.5"
+  ],
+  [
+   "112",
+   "Red Ball 4 Vol.3: Any%, 10",
+   "58.4"
+  ],
+  [
+   "113",
+   "Red Ball 2: Raise the Flag, 20",
+   "58.09"
+  ],
+  [
+   "114",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitched, Any%, Unity",
+   "56.1"
+  ],
+  [
+   "115",
+   "Red Ball 4 Vol.1: Any%, 11",
+   "55.28"
+  ],
+  [
+   "116",
+   "Red Ball Category Extensions: Red Ball 3 - NG+",
+   "55.08"
+  ],
+  [
+   "117",
+   "Red Ball Category Extensions: Red Ball 4 Vol.1 - Low%",
+   "54.23"
+  ],
+  [
+   "118",
+   "Red Ball 4 Vol.3: Any%, 5",
+   "53.48"
+  ],
+  [
+   "119",
+   "Multiple Red Ball Games: Red Ball 1-3 - 100%",
+   "52.04"
+  ],
+  [
+   "120",
+   "Red Ball 3: Any%, 3",
+   "50.99"
+  ],
+  [
+   "121",
+   "Red Ball 4 (Mobile): Glitchless, 2 - Original",
+   "50.68"
+  ],
+  [
+   "122",
+   "Red Ball 4 (Mobile): Glitchless, 3 - Original",
+   "50.21"
+  ],
+  [
+   "123",
+   "Red Ball 4 Vol.1: Any%, 8",
+   "50.12"
+  ],
+  [
+   "124",
+   "Red Ball 3: Any%, 19",
+   "50.11"
+  ],
+  [
+   "125",
+   "Red Ball 5: Any%, Level 2",
+   "50.07"
+  ],
+  [
+   "126",
+   "Red and Blue Balls: Complete the Level, 8",
+   "49.93"
+  ],
+  [
+   "127",
+   "Red Ball (Mobile): Unity - 12 Levels, iOS",
+   "49.86"
+  ],
+  [
+   "128",
+   "Red Ball 3: Any%, 20",
+   "49.71"
+  ],
+  [
+   "129",
+   "Red Ball 4 (Mobile): Glitched, 2 - Unity",
+   "49.31"
+  ],
+  [
+   "130",
+   "Red Ball 4 Vol.3: Any%, 7",
+   "48.25"
+  ],
+  [
+   "131",
+   "Red Ball Category Extensions: Red Ball - Low%",
+   "47.68"
+  ],
+  [
+   "132",
+   "Red Ball Category Extensions: Red Ball - 12 Levels w/ Savestates",
+   "47.51"
+  ],
+  [
+   "133",
+   "Red Ball 2: Raise the Flag, 3",
+   "47.47"
+  ],
+  [
+   "134",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 15",
+   "47.38"
+  ],
+  [
+   "135",
+   "Red Ball 2: Raise the Flag, 19",
+   "46.77"
+  ],
+  [
+   "136",
+   "Red Ball 4 Vol.3: Any%, 3",
+   "46.28"
+  ],
+  [
+   "137",
+   "Multiple Red Ball Games: Red & Blue Balls 1-3 - Any%",
+   "46.05"
+  ],
+  [
+   "138",
+   "Red Ball 4 Vol.3: Any%, 11",
+   "45.75"
+  ],
+  [
+   "139",
+   "Red Ball 4 Vol.3: Any%, 6",
+   "45.59"
+  ],
+  [
+   "140",
+   "Red Ball 2: Raise the Flag, 4",
+   "45.56"
+  ],
+  [
+   "141",
+   "Red Ball 4 Vol.3: Any%, 4",
+   "45.43"
+  ],
+  [
+   "142",
+   "Red Ball 3: Any%, 12",
+   "43.63"
+  ],
+  [
+   "143",
+   "Red Ball 4 (Mobile): Glitched, 3 - Unity",
+   "43.63"
+  ],
+  [
+   "144",
+   "Red and Blue Balls: Complete the Level, 9",
+   "43.15"
+  ],
+  [
+   "145",
+   "Red Ball Category Extensions: Hacks - RBDALT - 12 Levels",
+   "43.09"
+  ],
+  [
+   "146",
+   "Red Ball 4 (Mobile): Glitchless, 5 - Original",
+   "43.06"
+  ],
+  [
+   "147",
+   "Red Ball 5: 100% - Download",
+   "41.98"
+  ],
+  [
+   "148",
+   "Multiple Red Ball Games: Red Ball 1-3 Any% Relay",
+   "41.51"
+  ],
+  [
+   "149",
+   "Red Ball 4 Vol.1: Any%, 10",
+   "40.95"
+  ],
+  [
+   "150",
+   "Red Ball 4 Vol.1: Any%, 4",
+   "40.78"
+  ],
+  [
+   "151",
+   "Red Ball 4 (Mobile): Glitchless, 15 - Original",
+   "40.75"
+  ],
+  [
+   "152",
+   "Red Ball 4 Vol.1: Any%, 7",
+   "40.54"
+  ],
+  [
+   "153",
+   "Red Ball 4 (Mobile): Glitched, 8 - Unity",
+   "40.52"
+  ],
+  [
+   "154",
+   "Red Ball 2: Raise the Flag, 12",
+   "40.31"
+  ],
+  [
+   "155",
+   "Red Ball 2: Raise the Flag, 10",
+   "40.3"
+  ],
+  [
+   "156",
+   "Red Ball 4 Vol.2: Any%, 2",
+   "39.98"
+  ],
+  [
+   "157",
+   "Red Ball 4 (Mobile): Green Hills - Glitched, 100%, Unity",
+   "39.92"
+  ],
+  [
+   "158",
+   "Red Ball 3: Any%, 9",
+   "38.08"
+  ],
+  [
+   "159",
+   "Red Ball 4 Vol.1: Any%, 12",
+   "38.03"
+  ],
+  [
+   "160",
+   "Red Ball 4 Vol.3: Any%, 2",
+   "37.68"
+  ],
+  [
+   "161",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitchless, 100%, Original",
+   "37.44"
+  ],
+  [
+   "162",
+   "Red Ball 4 (Mobile): Glitched, 1 - Original",
+   "37.42"
+  ],
+  [
+   "163",
+   "Red Ball 5 (Beta): Any% - 0.17.0+",
+   "37.15"
+  ],
+  [
+   "164",
+   "Red Ball 4 Vol.2: Any%, 15",
+   "37.1"
+  ],
+  [
+   "165",
+   "Red Ball 2: Raise the Flag, 6",
+   "36.7"
+  ],
+  [
+   "166",
+   "Red and Blue Balls: Complete the Level, 10",
+   "36.61"
+  ],
+  [
+   "167",
+   "Red Ball 2: Raise the Flag, 24",
+   "36.12"
+  ],
+  [
+   "168",
+   "Red Ball 4 (Mobile): Glitchless, 4 - Original",
+   "36.02"
+  ],
+  [
+   "169",
+   "Red Ball 3: Any%, 13",
+   "35.83"
+  ],
+  [
+   "170",
+   "Red Ball 2: Raise the Flag, 18",
+   "35.59"
+  ],
+  [
+   "171",
+   "Red Ball 4 Vol.1: Any%, 14",
+   "35.12"
+  ],
+  [
+   "172",
+   "Red and Blue Balls: Complete the Level, 15",
+   "34.68"
+  ],
+  [
+   "173",
+   "Red Ball 4 Vol.3: Any%, 13",
+   "33.84"
+  ],
+  [
+   "174",
+   "Red Ball 3: Any%, 11",
+   "33.45"
+  ],
+  [
+   "175",
+   "Multiple Red Ball Games: Full Series Any% Relay - 3 Players",
+   "33.37"
+  ],
+  [
+   "176",
+   "Red Ball 4 (Mobile): Into the Caves - Glitchless, Any%, Unity",
+   "33.24"
+  ],
+  [
+   "177",
+   "Red Ball 4 (Mobile): Glitchless, 45 - Original",
+   "32.66"
+  ],
+  [
+   "178",
+   "Red Ball (Mobile): World 2 - Android",
+   "32.51"
+  ],
+  [
+   "179",
+   "Red Ball 4 (Mobile): Glitchless, 8 - Original",
+   "32.13"
+  ],
+  [
+   "180",
+   "Red Ball 4 Vol.3: Any%, 8",
+   "31.95"
+  ],
+  [
+   "181",
+   "Red Ball 3: Any%, 4",
+   "31.78"
+  ],
+  [
+   "182",
+   "Red Ball Category Extensions: Hacks - Rick Astley - 17 Levels",
+   "31.73"
+  ],
+  [
+   "183",
+   "Red Ball 4 (Mobile): Glitched, 7 - Unity",
+   "31.47"
+  ],
+  [
+   "184",
+   "Red Ball 3: Any%, 14 - Flag",
+   "31.47"
+  ],
+  [
+   "185",
+   "Red Ball 4 (Mobile): Glitched, 15 - Unity",
+   "31.35"
+  ],
+  [
+   "186",
+   "Red Ball 5: Any%, Level 30",
+   "31.02"
+  ],
+  [
+   "187",
+   "Red Ball 4 (Mobile): Glitchless, 37 - Original",
+   "30.88"
+  ],
+  [
+   "188",
+   "Red Ball 4 (Mobile): Glitchless, 10 - Original",
+   "30.75"
+  ],
+  [
+   "189",
+   "Red Ball 4 Vol.2: Any%, 7",
+   "30.41"
+  ],
+  [
+   "190",
+   "Red Ball 4 (Mobile): Glitchless, 3 - Unity",
+   "30.3"
+  ],
+  [
+   "191",
+   "Red Ball 3: Any%, 7",
+   "30.3"
+  ],
+  [
+   "192",
+   "Red Ball Category Extensions: Red Ball - 170 Levels",
+   "30.25"
+  ],
+  [
+   "193",
+   "Red and Blue Balls 3: Any%, 1",
+   "29.97"
+  ],
+  [
+   "194",
+   "Red Ball Category Extensions: Red Ball 4 Vol.1 - Blindfolded - Any%",
+   "29.73"
+  ],
+  [
+   "195",
+   "Red Ball Category Extensions: Red and Blue Balls - Bonus Levels",
+   "29.55"
+  ],
+  [
+   "196",
+   "Red Ball 2: Raise the Flag, 7",
+   "29.35"
+  ],
+  [
+   "197",
+   "Red Ball 4 Vol.3: Any%, 14",
+   "29.29"
+  ],
+  [
+   "198",
+   "Red Ball 5: Any%, Level 3",
+   "29.18"
+  ],
+  [
+   "199",
+   "Red Ball 3: Any%, 15",
+   "29.08"
+  ],
+  [
+   "200",
+   "Red Ball 3: Any%, 8",
+   "28.96"
+  ],
+  [
+   "201",
+   "Red Ball 4 Vol.3: Any% - No Transition, 9",
+   "28.68"
+  ],
+  [
+   "202",
+   "Red Ball 4 Vol.1: Any%, 3",
+   "28.61"
+  ],
+  [
+   "203",
+   "Red Ball 2: Raise the Flag, 22",
+   "28.59"
+  ],
+  [
+   "204",
+   "Red Ball 2: Raise the Flag, 9",
+   "28.01"
+  ],
+  [
+   "205",
+   "Red Ball 4 (Mobile): Into the Caves - Glitched, Any%, Unity",
+   "27.86"
+  ],
+  [
+   "206",
+   "Red Ball 4 (Mobile): Glitchless, 60 - Original",
+   "27.79"
+  ],
+  [
+   "207",
+   "Red Ball 2: Raise the Flag, 17",
+   "26.85"
+  ],
+  [
+   "208",
+   "Red Ball 4 (Mobile): Glitchless, 7 - Original",
+   "26.72"
+  ],
+  [
+   "209",
+   "Red Ball 4 Vol.2: Any%, 3",
+   "26.55"
+  ],
+  [
+   "210",
+   "Multiple Red Ball Games: Red Ball 4 - 100%",
+   "26.39"
+  ],
+  [
+   "211",
+   "Red Ball 4 (Mobile): Glitched, 1 - Unity",
+   "26.21"
+  ],
+  [
+   "212",
+   "Red and Blue Balls: Complete the Level, 13",
+   "26.15"
+  ],
+  [
+   "213",
+   "Red Ball 3: Any%, 5",
+   "25.98"
+  ],
+  [
+   "214",
+   "Red Ball 2: Raise the Flag, 13",
+   "25.78"
+  ],
+  [
+   "215",
+   "Red Ball 2: Raise the Flag, 14",
+   "25.71"
+  ],
+  [
+   "216",
+   "Red Ball 4 (Mobile): Glitched, 16 - Unity",
+   "25.6"
+  ],
+  [
+   "217",
+   "Red Ball 3: Any%, 17",
+   "25.05"
+  ],
+  [
+   "218",
+   "Red Ball 4 (Mobile): Deep Forest - Glitched, 100%, Unity",
+   "24.86"
+  ],
+  [
+   "219",
+   "Multiple Red Ball Games: All Flash Games - Any%",
+   "24.75"
+  ],
+  [
+   "220",
+   "Red and Blue Balls 2: Any%, 23",
+   "24.7"
+  ],
+  [
+   "221",
+   "Red Ball 4 (Mobile): Glitchless, 27 - Unity",
+   "24.08"
+  ],
+  [
+   "222",
+   "Red Ball 4 (Mobile): Glitchless, 71 - Original",
+   "23.89"
+  ],
+  [
+   "223",
+   "Red Ball 2: Raise the Flag, 5",
+   "23.78"
+  ],
+  [
+   "224",
+   "Red Ball 4 (Mobile): Glitchless, 11 - Original",
+   "23.37"
+  ],
+  [
+   "225",
+   "Red Ball 5: 100%, Level 1",
+   "23.29"
+  ],
+  [
+   "226",
+   "Red Ball Category Extensions: Red Ball 5 - NG+",
+   "23.22"
+  ],
+  [
+   "227",
+   "Red Ball 4 (Mobile): Glitchless, 36 - Original",
+   "23.17"
+  ],
+  [
+   "228",
+   "Red Ball 4 Vol.1: Any% - No Transition, 3",
+   "23.09"
+  ],
+  [
+   "229",
+   "Red Ball 4 (Mobile): Glitched, 12 - Unity",
+   "23.02"
+  ],
+  [
+   "230",
+   "Red Ball 4 Vol.3: Any% - No Transition, 2",
+   "22.96"
+  ],
+  [
+   "231",
+   "Red Ball 4 (Mobile): Glitchless, 6 - Original",
+   "22.89"
+  ],
+  [
+   "232",
+   "Red Ball 4 Vol.1: Any% - No Transition, 2",
+   "22.65"
+  ],
+  [
+   "233",
+   "Red Ball 4 (Mobile): Glitchless, 16 - Original",
+   "22.33"
+  ],
+  [
+   "234",
+   "Red Ball 4 (Mobile): Glitchless, 17 - Original",
+   "22.23"
+  ],
+  [
+   "235",
+   "Red Ball 4 (Mobile): Glitchless, 33 - Original",
+   "22.05"
+  ],
+  [
+   "236",
+   "Red Ball 4 (Mobile): Glitched, 4 - Unity",
+   "21.87"
+  ],
+  [
+   "237",
+   "Red Ball 4 (Mobile): Deep Forest - Glitched, Any%, Original",
+   "21.77"
+  ],
+  [
+   "238",
+   "Red Ball 4 Vol.1: Any% - No Transition, 9",
+   "21.68"
+  ],
+  [
+   "239",
+   "Red Ball 4 Vol.2: Any%, 4",
+   "21.44"
+  ],
+  [
+   "240",
+   "Red and Blue Balls: Complete the Level, 6",
+   "21.07"
+  ],
+  [
+   "241",
+   "Red Ball 5: Any%, Level 9",
+   "21.02"
+  ],
+  [
+   "242",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitchless, Any%, Unity",
+   "20.94"
+  ],
+  [
+   "243",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 1",
+   "20.35"
+  ],
+  [
+   "244",
+   "Red Ball 4 (Mobile): Glitchless, 21 - Original",
+   "20.29"
+  ],
+  [
+   "245",
+   "Red Ball 4 (Mobile): Glitchless, 56 - Original",
+   "20.05"
+  ],
+  [
+   "246",
+   "Red and Blue Balls 2: Any%, 19",
+   "19.85"
+  ],
+  [
+   "247",
+   "Red Ball 5: Any%, Level 12",
+   "19.74"
+  ],
+  [
+   "248",
+   "Red Ball 4 (Mobile): Glitched, 5 - Unity",
+   "19.73"
+  ],
+  [
+   "249",
+   "Red Ball 4 (Mobile): Glitchless, 46 - Original",
+   "19.69"
+  ],
+  [
+   "250",
+   "Red Ball 4 (Mobile): Glitchless, 30 - Original",
+   "19.54"
+  ],
+  [
+   "251",
+   "Red Ball 5: Any%, Level 10",
+   "19.49"
+  ],
+  [
+   "252",
+   "Red Ball 4 (Mobile): Green Hills - Glitched, 100%, Original",
+   "19.46"
+  ],
+  [
+   "253",
+   "Red Ball 4 (Mobile): Into the Caves - Glitched, Any%, Original",
+   "19.45"
+  ],
+  [
+   "254",
+   "Red Ball 4 (Mobile): Glitched, 13 - Unity",
+   "19.45"
+  ],
+  [
+   "255",
+   "Red Ball 4 Vol.2: Any%, 12",
+   "19.09"
+  ],
+  [
+   "256",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 1",
+   "18.85"
+  ],
+  [
+   "257",
+   "Red and Blue Balls 2: Any%, 21",
+   "18.72"
+  ],
+  [
+   "258",
+   "Red Ball 4 (Mobile): Glitchless, 50 - Original",
+   "18.72"
+  ],
+  [
+   "259",
+   "Multiple Red Ball Games: Full Series Any% Relay - 6 Players",
+   "18.56"
+  ],
+  [
+   "260",
+   "Red and Blue Balls: Complete the Level, 18",
+   "18.53"
+  ],
+  [
+   "261",
+   "Red Ball 4 Vol.1: Any%, 5",
+   "18.46"
+  ],
+  [
+   "262",
+   "Red Ball 2: Raise the Flag, 25",
+   "18.43"
+  ],
+  [
+   "263",
+   "Red Ball 4 (Mobile): Glitchless, 45 - Unity",
+   "18.41"
+  ],
+  [
+   "264",
+   "Red Ball 4 (Mobile): Glitchless, 25 - Unity",
+   "18.34"
+  ],
+  [
+   "265",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 3",
+   "18.3"
+  ],
+  [
+   "266",
+   "Red Ball 4 Vol.3: Any% - No Transition, 7",
+   "18.27"
+  ],
+  [
+   "267",
+   "Red Ball 2: Raise the Flag, 16",
+   "18.16"
+  ],
+  [
+   "268",
+   "Red Ball 5: Any%, Level 15",
+   "18.09"
+  ],
+  [
+   "269",
+   "Red Ball 4 Vol.2: Any%, 8",
+   "17.93"
+  ],
+  [
+   "270",
+   "Red Ball 4 (Mobile): 100% - Glitched, Original",
+   "17.73"
+  ],
+  [
+   "271",
+   "Red Ball 4 Vol.2: Any%, 5",
+   "17.57"
+  ],
+  [
+   "272",
+   "Red Ball 4 Vol.2: Any%, 10",
+   "17.48"
+  ],
+  [
+   "273",
+   "Red Ball 4 (Mobile): Glitchless, 6 - Unity",
+   "17.44"
+  ],
+  [
+   "274",
+   "Red Ball 5: Any% No Level Skip - Kizi",
+   "17.24"
+  ],
+  [
+   "275",
+   "Red Ball: Raise the Flag, 8 - Lag Abuse",
+   "17.19"
+  ],
+  [
+   "276",
+   "Red and Blue Balls: Complete the Level, 5",
+   "17.16"
+  ],
+  [
+   "277",
+   "Red Ball 4 (Mobile): Glitchless, 55 - Original",
+   "17.05"
+  ],
+  [
+   "278",
+   "Red Ball 5: Any%, Level 22",
+   "17.03"
+  ],
+  [
+   "279",
+   "Red Ball 4 (Mobile): Box Factory - Glitchless, 100%, Original",
+   "17.02"
+  ],
+  [
+   "280",
+   "Red and Blue Balls 2: Any%, 17",
+   "17"
+  ],
+  [
+   "281",
+   "Red Ball 4 Vol.3: Any%, 12",
+   "16.97"
+  ],
+  [
+   "282",
+   "Red Ball Category Extensions: Red and Blue Balls - 1 Gem",
+   "16.89"
+  ],
+  [
+   "283",
+   "Red Ball 4 (Mobile): Glitchless, 66 - Original",
+   "16.75"
+  ],
+  [
+   "284",
+   "Red Ball 4 (Mobile): Glitched, 75 - Unity",
+   "16.73"
+  ],
+  [
+   "285",
+   "Red Ball 4 (Mobile): Glitchless, 58 - Original",
+   "16.73"
+  ],
+  [
+   "286",
+   "Red and Blue Balls 2: Any%, 2",
+   "16.72"
+  ],
+  [
+   "287",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitched, 100%, Unity",
+   "16.61"
+  ],
+  [
+   "288",
+   "Red Ball 3: Any%, 6",
+   "16.53"
+  ],
+  [
+   "289",
+   "Red Ball 4 (Mobile): Glitched, 6 - Unity",
+   "16.49"
+  ],
+  [
+   "290",
+   "Red Ball 4 (Mobile): Glitchless, 9 - Original",
+   "16.48"
+  ],
+  [
+   "291",
+   "Red Ball 3: Any%, 10",
+   "16.44"
+  ],
+  [
+   "292",
+   "Red Ball 5: 100%, Level 2",
+   "16.38"
+  ],
+  [
+   "293",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 15",
+   "16.27"
+  ],
+  [
+   "294",
+   "Red Ball Category Extensions: Red Ball - Nonstop - 17 Levels",
+   "15.98"
+  ],
+  [
+   "295",
+   "Red Ball 4 (Mobile): Glitchless, 32 - Original",
+   "15.91"
+  ],
+  [
+   "296",
+   "Red Ball 4 (Mobile): Glitched, 34 - Unity",
+   "15.8"
+  ],
+  [
+   "297",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 9",
+   "15.74"
+  ],
+  [
+   "298",
+   "Red and Blue Balls 2: Any%, 16",
+   "15.73"
+  ],
+  [
+   "299",
+   "Red Ball 5: Any%, Level 24",
+   "15.72"
+  ],
+  [
+   "300",
+   "Red Ball 4 (Mobile): Glitched, 47 - Unity",
+   "15.71"
+  ],
+  [
+   "301",
+   "Red Ball 4 Vol.1: Any% - No Transition, 12",
+   "15.65"
+  ],
+  [
+   "302",
+   "Red Ball 4 (Mobile): Glitched, 22 - Unity",
+   "15.63"
+  ],
+  [
+   "303",
+   "Red Ball 4 Vol.2: Any%, 9",
+   "15.49"
+  ],
+  [
+   "304",
+   "Red Ball 4 (Mobile): Glitchless, 75 - Original",
+   "15.36"
+  ],
+  [
+   "305",
+   "Red Ball 4 (Mobile): Glitchless, 7 - Unity",
+   "15.27"
+  ],
+  [
+   "306",
+   "Red Ball 4 (Mobile): Glitchless, 12 - Original",
+   "15.23"
+  ],
+  [
+   "307",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 2",
+   "15.22"
+  ],
+  [
+   "308",
+   "Red Ball 4 (Mobile): Glitchless, 16 - Unity",
+   "15.17"
+  ],
+  [
+   "309",
+   "Red Ball 4 (Mobile): Glitched, 48 - Unity",
+   "15.1"
+  ],
+  [
+   "310",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 11",
+   "14.88"
+  ],
+  [
+   "311",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 5",
+   "14.82"
+  ],
+  [
+   "312",
+   "Red Ball 4 (Mobile): Glitched, 56 - Unity",
+   "14.81"
+  ],
+  [
+   "313",
+   "Red Ball Category Extensions: Red Ball 4 Vol.1 - 150 Levels",
+   "14.79"
+  ],
+  [
+   "314",
+   "Red Ball 4 (Mobile): Glitched, 16 - Original",
+   "14.77"
+  ],
+  [
+   "315",
+   "Red Ball 4 (Mobile): Deep Forest - Glitchless, 100%, Original",
+   "14.69"
+  ],
+  [
+   "316",
+   "Red Ball 4 Vol.3: Any% - No Transition, 5",
+   "14.66"
+  ],
+  [
+   "317",
+   "Red Ball 4 Vol.3: Any% - No Transition, 10",
+   "14.43"
+  ],
+  [
+   "318",
+   "Red Ball 3: 100%, 12",
+   "14.3"
+  ],
+  [
+   "319",
+   "Red Ball 4 (Mobile): Glitchless, 27 - Original",
+   "14.3"
+  ],
+  [
+   "320",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 12",
+   "14.19"
+  ],
+  [
+   "321",
+   "Red Ball 5: Any%, Level 20",
+   "14.15"
+  ],
+  [
+   "322",
+   "Red and Blue Balls: Complete the Level, 19",
+   "14.09"
+  ],
+  [
+   "323",
+   "Red and Blue Balls: Complete the Level, 7",
+   "13.88"
+  ],
+  [
+   "324",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 3",
+   "13.86"
+  ],
+  [
+   "325",
+   "Red Ball 4 Vol.2: Any%, 14",
+   "13.85"
+  ],
+  [
+   "326",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 7",
+   "13.82"
+  ],
+  [
+   "327",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 10",
+   "13.79"
+  ],
+  [
+   "328",
+   "Red Ball 4 Vol.3: Any% - No Transition, 3",
+   "13.76"
+  ],
+  [
+   "329",
+   "Red Ball 4 (Mobile): Glitchless, 21 - Unity",
+   "13.75"
+  ],
+  [
+   "330",
+   "Red Ball 4 Vol.2: Any% - No Transition, 12",
+   "13.74"
+  ],
+  [
+   "331",
+   "Red Ball 5: Any%, Level 29",
+   "13.69"
+  ],
+  [
+   "332",
+   "Multiple Red Ball Games: Red Ball 4 Any% Relay",
+   "13.6"
+  ],
+  [
+   "333",
+   "Red Ball 5: Any%, Level 16",
+   "13.41"
+  ],
+  [
+   "334",
+   "Red Ball 5: Any%, Level 14",
+   "13.37"
+  ],
+  [
+   "335",
+   "Red and Blue Balls: Complete the Level, 11",
+   "13.27"
+  ],
+  [
+   "336",
+   "Red Ball 4 (Mobile): Glitched, 10 - Unity",
+   "13.24"
+  ],
+  [
+   "337",
+   "Red Ball 5: Any%, Level 13",
+   "13.22"
+  ],
+  [
+   "338",
+   "Red Ball 4 (Mobile): Into the Caves - Glitchless, 100%, Original",
+   "13.21"
+  ],
+  [
+   "339",
+   "Red and Blue Balls: Complete the Level, 2",
+   "13.2"
+  ],
+  [
+   "340",
+   "Red and Blue Balls: Complete the Level, 3",
+   "13.07"
+  ],
+  [
+   "341",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 7",
+   "13.06"
+  ],
+  [
+   "342",
+   "Red Ball 4 (Mobile): Glitchless, 68 - Original",
+   "13.04"
+  ],
+  [
+   "343",
+   "Red Ball 5: Any%, Level 11",
+   "12.98"
+  ],
+  [
+   "344",
+   "Red Ball 4 (Mobile): Glitched, 33 - Unity",
+   "12.95"
+  ],
+  [
+   "345",
+   "Red Ball 4 (Mobile): Glitchless, 66 - Unity",
+   "12.86"
+  ],
+  [
+   "346",
+   "Red Ball 4 (Mobile): Glitchless, 43 - Original",
+   "12.85"
+  ],
+  [
+   "347",
+   "Red and Blue Balls: Complete the Level, 20",
+   "12.63"
+  ],
+  [
+   "348",
+   "Red Ball 4 (Mobile): Glitchless, 67 - Original",
+   "12.6"
+  ],
+  [
+   "349",
+   "Red Ball 5: 100%, Level 3",
+   "12.56"
+  ],
+  [
+   "350",
+   "Red Ball 4 (Mobile): Glitched, 11 - Unity",
+   "12.55"
+  ],
+  [
+   "351",
+   "Red Ball 5: Any%, Level 28",
+   "12.51"
+  ],
+  [
+   "352",
+   "Red and Blue Balls: Complete the Level, 16",
+   "12.48"
+  ],
+  [
+   "353",
+   "Red Ball 4 (Mobile): Glitchless, 42 - Original",
+   "12.18"
+  ],
+  [
+   "354",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 3",
+   "12.17"
+  ],
+  [
+   "355",
+   "Red Ball 4 (Mobile): Glitchless, 13 - Original",
+   "12.15"
+  ],
+  [
+   "356",
+   "Red Ball 4 Vol.2: Any%, 13",
+   "12.12"
+  ],
+  [
+   "357",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitchless, 100%, Unity",
+   "12.09"
+  ],
+  [
+   "358",
+   "Red Ball 4 (Mobile): Glitchless, 24 - Original",
+   "12.04"
+  ],
+  [
+   "359",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 4",
+   "11.98"
+  ],
+  [
+   "360",
+   "Red and Blue Balls 3: Any%, 11",
+   "11.97"
+  ],
+  [
+   "361",
+   "Red and Blue Balls 2: Any%, 1",
+   "11.97"
+  ],
+  [
+   "362",
+   "Multiple Red Ball Games: Red & Blue Balls 1-3 - 100%",
+   "11.93"
+  ],
+  [
+   "363",
+   "Red Ball 4 (Mobile): Glitchless, 4 - Unity",
+   "11.92"
+  ],
+  [
+   "364",
+   "Red and Blue Balls 3: Any%, 3",
+   "11.88"
+  ],
+  [
+   "365",
+   "Red Ball 4 (Mobile): Glitchless, 52 - Original",
+   "11.83"
+  ],
+  [
+   "366",
+   "Red and Blue Balls: Complete the Level, 12",
+   "11.81"
+  ],
+  [
+   "367",
+   "Red Ball 4 (Mobile): Glitchless, 8 - Unity",
+   "11.73"
+  ],
+  [
+   "368",
+   "Red Ball 3: Any%, 18",
+   "11.61"
+  ],
+  [
+   "369",
+   "Red Ball 4 (Mobile): Into the Caves - Glitched, 100%, Unity",
+   "11.58"
+  ],
+  [
+   "370",
+   "Red Ball 4 Vol.3: Any% - No Transition, 14",
+   "11.55"
+  ],
+  [
+   "371",
+   "Red Ball 4 (Mobile): Glitchless, 14 - Original",
+   "11.54"
+  ],
+  [
+   "372",
+   "Red Ball 4 (Mobile): Glitched, 52 - Original",
+   "11.53"
+  ],
+  [
+   "373",
+   "Red and Blue Balls: Complete the Level, 17",
+   "11.52"
+  ],
+  [
+   "374",
+   "Red Ball Category Extensions: Red Ball - OCBall - 17 Levels",
+   "11.51"
+  ],
+  [
+   "375",
+   "Red Ball 4 (Mobile): Glitchless, 65 - Original",
+   "11.5"
+  ],
+  [
+   "376",
+   "Red and Blue Balls 2: Any%, 18",
+   "11.48"
+  ],
+  [
+   "377",
+   "Red Ball 5: Any%, Level 27",
+   "11.43"
+  ],
+  [
+   "378",
+   "Red Ball 4 (Mobile): Glitchless, 13 - Unity",
+   "11.4"
+  ],
+  [
+   "379",
+   "Red Ball 4 (Mobile): Glitched, 9 - Unity",
+   "11.34"
+  ],
+  [
+   "380",
+   "Red Ball 4 (Mobile): Glitched, 62 - Unity",
+   "11.27"
+  ],
+  [
+   "381",
+   "Red Ball 4 (Mobile): Glitchless, 26 - Original",
+   "11.24"
+  ],
+  [
+   "382",
+   "Red and Blue Balls 2: Any%, 12",
+   "11.24"
+  ],
+  [
+   "383",
+   "Red Ball 5: 100%, Level 22",
+   "11.16"
+  ],
+  [
+   "384",
+   "Red Ball 4 (Mobile): Glitchless, 39 - Original",
+   "11.16"
+  ],
+  [
+   "385",
+   "Red Ball 5: Any%, Level 23",
+   "11.08"
+  ],
+  [
+   "386",
+   "Red Ball 4 (Mobile): Glitched, 20 - Unity",
+   "11.06"
+  ],
+  [
+   "387",
+   "Red Ball 4 (Mobile): Glitched, 46 - Unity",
+   "11.06"
+  ],
+  [
+   "388",
+   "Red Ball 4 Vol.1: Any% - No Transition, 11",
+   "10.86"
+  ],
+  [
+   "389",
+   "Red Ball 4 (Mobile): Glitchless, 31 - Original",
+   "10.8"
+  ],
+  [
+   "390",
+   "Red and Blue Balls 3: Any%, 13",
+   "10.79"
+  ],
+  [
+   "391",
+   "Red Ball 5: Any%, Level 21",
+   "10.73"
+  ],
+  [
+   "392",
+   "Red Ball 4 Vol.2: Any% - No Transition, 2",
+   "10.6"
+  ],
+  [
+   "393",
+   "Red Ball Category Extensions: Red Ball - Blindfolded - 12 Levels",
+   "10.59"
+  ],
+  [
+   "394",
+   "Red Ball 4 (Mobile): Glitchless, 44 - Original",
+   "10.55"
+  ],
+  [
+   "395",
+   "Red Ball 4 (Mobile): Glitchless, 73 - Original",
+   "10.55"
+  ],
+  [
+   "396",
+   "Red Ball 4 (Mobile): Glitchless, 60 - Unity",
+   "10.49"
+  ],
+  [
+   "397",
+   "Red Ball 5: Any%, Level 4",
+   "10.32"
+  ],
+  [
+   "398",
+   "Red Ball 4 (Mobile): Glitchless, 18 - Original",
+   "10.29"
+  ],
+  [
+   "399",
+   "Red and Blue Balls 3: Any%, 2",
+   "10.25"
+  ],
+  [
+   "400",
+   "Red Ball 2: Raise the Flag, 8",
+   "10.22"
+  ],
+  [
+   "401",
+   "Red and Blue Balls 3: Any%, 12",
+   "10.09"
+  ],
+  [
+   "402",
+   "Red Ball 4 (Mobile): Glitchless, 63 - Original",
+   "10.06"
+  ],
+  [
+   "403",
+   "Red Ball 4 (Mobile): Glitched, 14 - Unity",
+   "10.05"
+  ],
+  [
+   "404",
+   "Red Ball 4 (Mobile): Glitchless, 34 - Original",
+   "10.03"
+  ],
+  [
+   "405",
+   "Red Ball 4 (Mobile): Glitched, 45 - Unity",
+   "9.99"
+  ],
+  [
+   "406",
+   "Red and Blue Balls: Complete the Level, 4",
+   "9.96"
+  ],
+  [
+   "407",
+   "Red Ball 4 Vol.3: Any% - No Transition, 11",
+   "9.94"
+  ],
+  [
+   "408",
+   "Red and Blue Balls 3: Any%, 19",
+   "9.94"
+  ],
+  [
+   "409",
+   "Red Ball 4 (Mobile): Glitched, 21 - Unity",
+   "9.89"
+  ],
+  [
+   "410",
+   "Red and Blue Balls 2: Any%, 6",
+   "9.89"
+  ],
+  [
+   "411",
+   "Red Ball 5: Any%, Level 7",
+   "9.8"
+  ],
+  [
+   "412",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 6",
+   "9.77"
+  ],
+  [
+   "413",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 1",
+   "9.75"
+  ],
+  [
+   "414",
+   "Multiple Red Ball Games: Red Ball 4 - Any% Glitchless",
+   "9.73"
+  ],
+  [
+   "415",
+   "Red Ball 4 (Mobile): Glitchless, 53 - Original",
+   "9.62"
+  ],
+  [
+   "416",
+   "Red Ball 4 (Mobile): Deep Forest - Glitched, 100%, Original",
+   "9.58"
+  ],
+  [
+   "417",
+   "Red and Blue Balls 3: Any%, 14",
+   "9.56"
+  ],
+  [
+   "418",
+   "Red Ball 4 Vol.2: Any%, 6",
+   "9.55"
+  ],
+  [
+   "419",
+   "Red Ball 4 Vol.1: Any% - No Transition, 4",
+   "9.5"
+  ],
+  [
+   "420",
+   "Red and Blue Balls 2: Any%, 8",
+   "9.5"
+  ],
+  [
+   "421",
+   "Red Ball Category Extensions: Red and Blue Balls - 2P - 15 Levels (2P)",
+   "9.48"
+  ],
+  [
+   "422",
+   "Red Ball 3 (Mobile): HeroCraft (Legacy) - Any%",
+   "9.35"
+  ],
+  [
+   "423",
+   "Red Ball 4 (Mobile): Glitchless, 49 - Original",
+   "9.29"
+  ],
+  [
+   "424",
+   "Red Ball 4 (Mobile): Glitched, 45 - Original",
+   "9.28"
+  ],
+  [
+   "425",
+   "Red Ball 4 (Mobile): Glitched, 25 - Unity",
+   "9.18"
+  ],
+  [
+   "426",
+   "Red Ball 4 (Mobile): Glitchless, 61 - Original",
+   "9.13"
+  ],
+  [
+   "427",
+   "Red Ball 3: 100%, 14",
+   "9.11"
+  ],
+  [
+   "428",
+   "Red Ball 5: 100%, Level 10",
+   "9.1"
+  ],
+  [
+   "429",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 4",
+   "9.03"
+  ],
+  [
+   "430",
+   "Red Ball 4 (Mobile): Glitchless, 5 - Unity",
+   "9.02"
+  ],
+  [
+   "431",
+   "Red Ball 4 (Mobile): Glitchless, 54 - Original",
+   "9.02"
+  ],
+  [
+   "432",
+   "Red Ball 4 (Mobile): Glitched, 38 - Original",
+   "8.91"
+  ],
+  [
+   "433",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 13",
+   "8.9"
+  ],
+  [
+   "434",
+   "Red and Blue Balls 3: Any%, 20",
+   "8.84"
+  ],
+  [
+   "435",
+   "Red Ball 4 (Mobile): Glitched, 29 - Unity",
+   "8.83"
+  ],
+  [
+   "436",
+   "Red Ball 4 (Mobile): Glitchless, 62 - Original",
+   "8.8"
+  ],
+  [
+   "437",
+   "Red Ball 4 (Mobile): Glitched, 55 - Unity",
+   "8.79"
+  ],
+  [
+   "438",
+   "Red Ball 4 (Mobile): Glitched, 17 - Unity",
+   "8.77"
+  ],
+  [
+   "439",
+   "Red Ball 4 (Mobile): Glitchless, 11 - Unity",
+   "8.76"
+  ],
+  [
+   "440",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 2",
+   "8.76"
+  ],
+  [
+   "441",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 3",
+   "8.69"
+  ],
+  [
+   "442",
+   "Red Ball 5: 100%, Level 14",
+   "8.68"
+  ],
+  [
+   "443",
+   "Red and Blue Balls 2: Any%, 20",
+   "8.63"
+  ],
+  [
+   "444",
+   "Red and Blue Balls 2: Any%, 24",
+   "8.6"
+  ],
+  [
+   "445",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 4",
+   "8.56"
+  ],
+  [
+   "446",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 10",
+   "8.52"
+  ],
+  [
+   "447",
+   "Red Ball 5: Any%, Level 19",
+   "8.5"
+  ],
+  [
+   "448",
+   "Red Ball 5: 100%, Level 18",
+   "8.5"
+  ],
+  [
+   "449",
+   "Red Ball 4 Vol.3: Any% - No Transition, 6",
+   "8.49"
+  ],
+  [
+   "450",
+   "Red Ball 4 Vol.3: Any% - No Transition, 13",
+   "8.45"
+  ],
+  [
+   "451",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 8",
+   "8.42"
+  ],
+  [
+   "452",
+   "Red Ball 4 (Mobile): Glitched, 52 - Unity",
+   "8.37"
+  ],
+  [
+   "453",
+   "Red Ball 4 (Mobile): Glitchless, 75 - Unity",
+   "8.3"
+  ],
+  [
+   "454",
+   "Red and Blue Balls 3: Any%, 25",
+   "8.3"
+  ],
+  [
+   "455",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 5",
+   "8.28"
+  ],
+  [
+   "456",
+   "Red Ball 4 (Mobile): Glitchless, 12 - Unity",
+   "8.25"
+  ],
+  [
+   "457",
+   "Red Ball 4 (Mobile): Glitchless, 35 - Original",
+   "8.24"
+  ],
+  [
+   "458",
+   "Red Ball 4 (Mobile): Glitchless, 20 - Unity",
+   "8.17"
+  ],
+  [
+   "459",
+   "Red and Blue Balls 3: Any%, 22",
+   "8.13"
+  ],
+  [
+   "460",
+   "Red Ball 4 Vol.1: Any% - No Transition, 6",
+   "8.11"
+  ],
+  [
+   "461",
+   "Red Ball 4 Vol.3: Any% - No Transition, 4",
+   "8.09"
+  ],
+  [
+   "462",
+   "Multiple Red Ball Games: Full Series - 100%",
+   "8.07"
+  ],
+  [
+   "463",
+   "Red Ball (Mobile): Unity - 17 Levels, iOS",
+   "8.06"
+  ],
+  [
+   "464",
+   "Red Ball 4 (Mobile): Glitchless, 25 - Original",
+   "8"
+  ],
+  [
+   "465",
+   "Red Ball 4 (Mobile): Glitchless, 29 - Original",
+   "7.98"
+  ],
+  [
+   "466",
+   "Red Ball 4 (Mobile): Glitchless, 47 - Unity",
+   "7.98"
+  ],
+  [
+   "467",
+   "Red Ball 4 (Mobile): Glitchless, 51 - Original",
+   "7.96"
+  ],
+  [
+   "468",
+   "Red Ball 4 (Mobile): Glitchless, 38 - Original",
+   "7.92"
+  ],
+  [
+   "469",
+   "Red Ball (Mobile): Unity - Android, All Worlds",
+   "7.88"
+  ],
+  [
+   "470",
+   "Red Ball 3: 100%, 1",
+   "7.87"
+  ],
+  [
+   "471",
+   "Red Ball 4 (Mobile): Glitchless, 30 - Unity",
+   "7.87"
+  ],
+  [
+   "472",
+   "Red Ball 4 (Mobile): Glitched, 60 - Unity",
+   "7.85"
+  ],
+  [
+   "473",
+   "Red Ball 4 (Mobile): Glitchless, 9 - Unity",
+   "7.83"
+  ],
+  [
+   "474",
+   "Red Ball 4 (Mobile): Glitchless, 47 - Original",
+   "7.82"
+  ],
+  [
+   "475",
+   "Red and Blue Balls: Complete the Level, 14",
+   "7.75"
+  ],
+  [
+   "476",
+   "Red Ball 5: 100%, Level 15",
+   "7.71"
+  ],
+  [
+   "477",
+   "Red Ball 4 (Mobile): Deep Forest - Glitchless, 100%, Unity",
+   "7.71"
+  ],
+  [
+   "478",
+   "Red Ball 4 (Mobile): Glitchless, 19 - Unity",
+   "7.7"
+  ],
+  [
+   "479",
+   "Red Ball 4 (Mobile): Box Factory - Glitched, 100%, Unity",
+   "7.66"
+  ],
+  [
+   "480",
+   "Red Ball (Mobile): World 1, 13 - Android",
+   "7.61"
+  ],
+  [
+   "481",
+   "Red and Blue Balls 2: Any%, 4",
+   "7.57"
+  ],
+  [
+   "482",
+   "Red Ball 4 (Mobile): Glitchless, 22 - Original",
+   "7.57"
+  ],
+  [
+   "483",
+   "Red Ball 4 (Mobile): Glitchless, 40 - Original",
+   "7.57"
+  ],
+  [
+   "484",
+   "Red and Blue Balls 2: Any%, 7",
+   "7.49"
+  ],
+  [
+   "485",
+   "Red Ball 4 (Mobile): Glitchless, 64 - Original",
+   "7.49"
+  ],
+  [
+   "486",
+   "Red Ball 4 (Mobile): Glitchless, 70 - Original",
+   "7.45"
+  ],
+  [
+   "487",
+   "Red Ball 4 (Mobile): Glitchless, 36 - Unity",
+   "7.45"
+  ],
+  [
+   "488",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 9",
+   "7.44"
+  ],
+  [
+   "489",
+   "Red Ball 4 (Mobile): Glitched, 4 - Original",
+   "7.41"
+  ],
+  [
+   "490",
+   "Red Ball 4 (Mobile): Glitched, 39 - Original",
+   "7.38"
+  ],
+  [
+   "491",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 6",
+   "7.36"
+  ],
+  [
+   "492",
+   "Red Ball 4 (Mobile): Glitchless, 28 - Original",
+   "7.35"
+  ],
+  [
+   "493",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 7",
+   "7.34"
+  ],
+  [
+   "494",
+   "Red Ball 5: 100%, Level 28",
+   "7.33"
+  ],
+  [
+   "495",
+   "Red Ball 4 Vol.1: Any% - No Transition, 5",
+   "7.33"
+  ],
+  [
+   "496",
+   "Red Ball 4 Vol.1: Any% - No Transition, 8",
+   "7.29"
+  ],
+  [
+   "497",
+   "Red and Blue Balls 3: Any%, 7",
+   "7.29"
+  ],
+  [
+   "498",
+   "Red and Blue Balls 3: Any%, 8",
+   "7.27"
+  ],
+  [
+   "499",
+   "Red and Blue Balls 2: Any%, 5",
+   "7.26"
+  ],
+  [
+   "500",
+   "Red Ball 4 (Mobile): Box Factory - Glitchless, 100%, Unity",
+   "7.24"
+  ],
+  [
+   "501",
+   "Red Ball 5: Any%, Level 5",
+   "7.22"
+  ],
+  [
+   "502",
+   "Red Ball 4 (Mobile): Glitchless, 23 - Original",
+   "7.07"
+  ],
+  [
+   "503",
+   "Red Ball 4 (Mobile): Glitched, 31 - Unity",
+   "7.06"
+  ],
+  [
+   "504",
+   "Red Ball 4 (Mobile): Glitched, 12 - Original",
+   "7.04"
+  ],
+  [
+   "505",
+   "Red Ball 4 (Mobile): Glitched, 53 - Unity",
+   "7.01"
+  ],
+  [
+   "506",
+   "Red Ball 4 (Mobile): Glitchless, 41 - Original",
+   "7.01"
+  ],
+  [
+   "507",
+   "Red Ball 4 (Mobile): Glitched, 23 - Unity",
+   "7"
+  ],
+  [
+   "508",
+   "Red Ball 4 Vol.3: Any% - No Transition, 8",
+   "6.96"
+  ],
+  [
+   "509",
+   "Red Ball 4 (Mobile): Glitched, 39 - Unity",
+   "6.92"
+  ],
+  [
+   "510",
+   "Red Ball 4 Vol.3: Any% - No Transition, 12",
+   "6.9"
+  ],
+  [
+   "511",
+   "Red Ball 5: Any%, Level 18",
+   "6.89"
+  ],
+  [
+   "512",
+   "Red Ball 4 (Mobile): Glitched, 2 - Original",
+   "6.88"
+  ],
+  [
+   "513",
+   "Red Ball 5: 100%, Level 24",
+   "6.86"
+  ],
+  [
+   "514",
+   "Red Ball 4 Vol.2: Any% - No Transition, 10",
+   "6.83"
+  ],
+  [
+   "515",
+   "Red and Blue Balls 3: Any%, 16",
+   "6.77"
+  ],
+  [
+   "516",
+   "Red Ball 5: 100%, Level 11",
+   "6.77"
+  ],
+  [
+   "517",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 2",
+   "6.75"
+  ],
+  [
+   "518",
+   "Red Ball 4 Vol.1: Any% - No Transition, 10",
+   "6.71"
+  ],
+  [
+   "519",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 8",
+   "6.62"
+  ],
+  [
+   "520",
+   "Red Ball 4 (Mobile): Glitched, 58 - Unity",
+   "6.62"
+  ],
+  [
+   "521",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 9",
+   "6.62"
+  ],
+  [
+   "522",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 14",
+   "6.61"
+  ],
+  [
+   "523",
+   "Red Ball 4 (Mobile): Glitchless, 19 - Original",
+   "6.6"
+  ],
+  [
+   "524",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 10",
+   "6.59"
+  ],
+  [
+   "525",
+   "Red Ball 4 (Mobile): Glitchless, 18 - Unity",
+   "6.59"
+  ],
+  [
+   "526",
+   "Red Ball 5: 100%, Level 20",
+   "6.56"
+  ],
+  [
+   "527",
+   "Red Ball 4 Vol.1: Any% - No Transition, 14",
+   "6.56"
+  ],
+  [
+   "528",
+   "Red and Blue Balls 2: Any%, 15",
+   "6.56"
+  ],
+  [
+   "529",
+   "Red Ball 5: Any%, Level 26",
+   "6.48"
+  ],
+  [
+   "530",
+   "Red Ball 5: Any%, Level 25",
+   "6.45"
+  ],
+  [
+   "531",
+   "Red and Blue Balls 2: Any%, 14",
+   "6.44"
+  ],
+  [
+   "532",
+   "Red Ball 5: Any%, Level 6",
+   "6.44"
+  ],
+  [
+   "533",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 12",
+   "6.43"
+  ],
+  [
+   "534",
+   "Red Ball 4 (Mobile): Glitchless, 61 - Unity",
+   "6.32"
+  ],
+  [
+   "535",
+   "Red Ball Category Extensions: Red Ball - 1200 Levels",
+   "6.28"
+  ],
+  [
+   "536",
+   "Red Ball 4 (Mobile): Glitchless, 17 - Unity",
+   "6.21"
+  ],
+  [
+   "537",
+   "Red Ball 5: 100%, Level 8",
+   "6.19"
+  ],
+  [
+   "538",
+   "Red Ball 4 (Mobile): Glitched, 50 - Unity",
+   "6.19"
+  ],
+  [
+   "539",
+   "Red Ball 3: 100%, 13",
+   "6.18"
+  ],
+  [
+   "540",
+   "Red Ball 4 (Mobile): Glitched, 51 - Unity",
+   "6.17"
+  ],
+  [
+   "541",
+   "Red Ball 4 (Mobile): Glitchless, 74 - Original",
+   "6.17"
+  ],
+  [
+   "542",
+   "Red Ball 4 Vol.2: Any% - No Transition, 5",
+   "6.16"
+  ],
+  [
+   "543",
+   "Red Ball 4 (Mobile): Glitchless, 72 - Original",
+   "6.15"
+  ],
+  [
+   "544",
+   "Red Ball 4 (Mobile): Glitchless, 69 - Original",
+   "6.13"
+  ],
+  [
+   "545",
+   "Red Ball 5: 100%, Level 9",
+   "6.13"
+  ],
+  [
+   "546",
+   "Red Ball Category Extensions: Red Ball 3 - Red Ball Hero - Any%",
+   "6.07"
+  ],
+  [
+   "547",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 13",
+   "6.05"
+  ],
+  [
+   "548",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 11",
+   "6.04"
+  ],
+  [
+   "549",
+   "Red Ball 4 (Mobile): Glitched, 28 - Unity",
+   "6.04"
+  ],
+  [
+   "550",
+   "Red Ball 4 (Mobile): Glitched, 24 - Unity",
+   "6.03"
+  ],
+  [
+   "551",
+   "Red Ball 4 (Mobile): Glitchless, 34 - Unity",
+   "6.03"
+  ],
+  [
+   "552",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 6",
+   "6"
+  ],
+  [
+   "553",
+   "Red Ball 3: 100%, 15",
+   "5.99"
+  ],
+  [
+   "554",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 2",
+   "5.99"
+  ],
+  [
+   "555",
+   "Red Ball 4 (Mobile): Glitched, 23 - Original",
+   "5.98"
+  ],
+  [
+   "556",
+   "Red and Blue Balls 3: Any%, 18",
+   "5.92"
+  ],
+  [
+   "557",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 1",
+   "5.91"
+  ],
+  [
+   "558",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 2",
+   "5.9"
+  ],
+  [
+   "559",
+   "Red Ball 4 (Mobile): Glitched, 21 - Original",
+   "5.87"
+  ],
+  [
+   "560",
+   "Red Ball 4 (Mobile): Glitched, 69 - Unity",
+   "5.86"
+  ],
+  [
+   "561",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 1",
+   "5.86"
+  ],
+  [
+   "562",
+   "Red Ball 4 (Mobile): Glitched, 32 - Unity",
+   "5.84"
+  ],
+  [
+   "563",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 7",
+   "5.83"
+  ],
+  [
+   "564",
+   "Red and Blue Balls 3: Any%, 23",
+   "5.83"
+  ],
+  [
+   "565",
+   "Red Ball 4 (Mobile): Glitched, 27 - Unity",
+   "5.83"
+  ],
+  [
+   "566",
+   "Red and Blue Balls 2: Any%, 3",
+   "5.82"
+  ],
+  [
+   "567",
+   "Red Ball 5: 100%, Level 12",
+   "5.81"
+  ],
+  [
+   "568",
+   "Red Ball 5: 100%, Level 23",
+   "5.79"
+  ],
+  [
+   "569",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 7",
+   "5.79"
+  ],
+  [
+   "570",
+   "Red Ball 4 (Mobile): Glitched, 60 - Original",
+   "5.78"
+  ],
+  [
+   "571",
+   "Red Ball 4 (Mobile): Glitched, 66 - Unity",
+   "5.71"
+  ],
+  [
+   "572",
+   "Multiple Red Ball Games: Trifecta",
+   "5.67"
+  ],
+  [
+   "573",
+   "Red Ball 4 (Mobile): Glitched, 62 - Original",
+   "5.66"
+  ],
+  [
+   "574",
+   "Red Ball 4 (Mobile): Glitchless, 50 - Unity",
+   "5.66"
+  ],
+  [
+   "575",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 12",
+   "5.6"
+  ],
+  [
+   "576",
+   "Red Ball 4 (Mobile): Into the Caves - Glitchless, 100%, Unity",
+   "5.6"
+  ],
+  [
+   "577",
+   "Red Ball 3: 100%, 7",
+   "5.6"
+  ],
+  [
+   "578",
+   "Red Ball 4 (Mobile): Glitched, 74 - Unity",
+   "5.58"
+  ],
+  [
+   "579",
+   "Red Ball 5: 100%, Level 30",
+   "5.57"
+  ],
+  [
+   "580",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 6",
+   "5.56"
+  ],
+  [
+   "581",
+   "Red Ball 5: 100%, Level 16",
+   "5.41"
+  ],
+  [
+   "582",
+   "Red Ball 5: Any%, Level 17",
+   "5.4"
+  ],
+  [
+   "583",
+   "Red Ball 4 (Mobile): Glitched, 54 - Original",
+   "5.39"
+  ],
+  [
+   "584",
+   "Red Ball 4 (Mobile): Glitchless, 59 - Original",
+   "5.37"
+  ],
+  [
+   "585",
+   "Red Ball 5: 100%, Level 25",
+   "5.34"
+  ],
+  [
+   "586",
+   "Red and Blue Balls 3: Any%, 21",
+   "5.24"
+  ],
+  [
+   "587",
+   "Red Ball 4 (Mobile): Glitchless, 67 - Unity",
+   "5.22"
+  ],
+  [
+   "588",
+   "Red Ball 4 (Mobile): Glitched, 67 - Unity",
+   "5.2"
+  ],
+  [
+   "589",
+   "Red and Blue Balls 3: Any%, 17",
+   "5.18"
+  ],
+  [
+   "590",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 13",
+   "5.17"
+  ],
+  [
+   "591",
+   "Red Ball 4 (Mobile): Glitchless, 29 - Unity",
+   "5.15"
+  ],
+  [
+   "592",
+   "Red and Blue Balls 3: Any%, 5",
+   "5.14"
+  ],
+  [
+   "593",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 14",
+   "5.13"
+  ],
+  [
+   "594",
+   "Red Ball 5: 100%, Level 19",
+   "5.12"
+  ],
+  [
+   "595",
+   "Red Ball 4 (Mobile): Glitchless, 20 - Original",
+   "5.11"
+  ],
+  [
+   "596",
+   "Red and Blue Balls 2: Any%, 22",
+   "5.11"
+  ],
+  [
+   "597",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 9",
+   "5.1"
+  ],
+  [
+   "598",
+   "Red Ball 3: 100%, 17",
+   "5.1"
+  ],
+  [
+   "599",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 14",
+   "5.04"
+  ],
+  [
+   "600",
+   "Red Ball 3: 100%, 5",
+   "5.03"
+  ],
+  [
+   "601",
+   "Red Ball 4 (Mobile): Glitched, 19 - Original",
+   "5.01"
+  ],
+  [
+   "602",
+   "Red Ball 4 (Mobile): Glitched, 42 - Original",
+   "5.01"
+  ],
+  [
+   "603",
+   "Red Ball 3: 100%, 2",
+   "5"
+  ],
+  [
+   "604",
+   "Red Ball 5: 100%, Level 13",
+   "5"
+  ],
+  [
+   "605",
+   "Red and Blue Balls 3: Any%, 6",
+   "4.99"
+  ],
+  [
+   "606",
+   "Red Ball 4 (Mobile): Glitched, 37 - Original",
+   "4.97"
+  ],
+  [
+   "607",
+   "Red Ball 4 (Mobile): Glitched, 57 - Unity",
+   "4.97"
+  ],
+  [
+   "608",
+   "Red and Blue Balls 3: Any%, 15",
+   "4.95"
+  ],
+  [
+   "609",
+   "Red Ball 4 (Mobile): Glitched, 37 - Unity",
+   "4.94"
+  ],
+  [
+   "610",
+   "Red Ball 4 (Mobile): Glitched, 64 - Unity",
+   "4.93"
+  ],
+  [
+   "611",
+   "Red Ball 4 (Mobile): Glitched, 36 - Original",
+   "4.93"
+  ],
+  [
+   "612",
+   "Red Ball 4 Vol.2: Any% - No Transition, 7",
+   "4.92"
+  ],
+  [
+   "613",
+   "Red Ball 4 (Mobile): Glitchless, 57 - Original",
+   "4.81"
+  ],
+  [
+   "614",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 5",
+   "4.8"
+  ],
+  [
+   "615",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 8",
+   "4.79"
+  ],
+  [
+   "616",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 8",
+   "4.79"
+  ],
+  [
+   "617",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 14",
+   "4.72"
+  ],
+  [
+   "618",
+   "Red Ball 4 Vol.1: Any% - No Transition, 13",
+   "4.72"
+  ],
+  [
+   "619",
+   "Red Ball 5: 100%, Level 7",
+   "4.71"
+  ],
+  [
+   "620",
+   "Red Ball 4 (Mobile): Glitched, 51 - Original",
+   "4.67"
+  ],
+  [
+   "621",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 3",
+   "4.57"
+  ],
+  [
+   "622",
+   "Red Ball 4 (Mobile): Glitchless, 37 - Unity",
+   "4.53"
+  ],
+  [
+   "623",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 4",
+   "4.51"
+  ],
+  [
+   "624",
+   "Red Ball 5: Any%, Level 8",
+   "4.5"
+  ],
+  [
+   "625",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 5",
+   "4.47"
+  ],
+  [
+   "626",
+   "Red Ball 4 (Mobile): Glitched, 18 - Unity",
+   "4.46"
+  ],
+  [
+   "627",
+   "Red Ball 4 (Mobile): Glitched, 36 - Unity",
+   "4.41"
+  ],
+  [
+   "628",
+   "Red and Blue Balls 2: Any%, 25",
+   "4.41"
+  ],
+  [
+   "629",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 9",
+   "4.33"
+  ],
+  [
+   "630",
+   "Red Ball 4 (Mobile): Glitched, 41 - Original",
+   "4.3"
+  ],
+  [
+   "631",
+   "Red Ball 4 Vol.1: Any% - No Transition, 7",
+   "4.26"
+  ],
+  [
+   "632",
+   "Red Ball 4 (Mobile): Glitchless, 48 - Unity",
+   "4.24"
+  ],
+  [
+   "633",
+   "Red and Blue Balls 2: Any%, 9",
+   "4.23"
+  ],
+  [
+   "634",
+   "Red Ball (Mobile): World 1, 1 - Android",
+   "4.19"
+  ],
+  [
+   "635",
+   "Red Ball 4 (Mobile): Glitched, 66 - Original",
+   "4.17"
+  ],
+  [
+   "636",
+   "Red Ball 3: 100%, 9",
+   "4.15"
+  ],
+  [
+   "637",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 4",
+   "4.13"
+  ],
+  [
+   "638",
+   "Red Ball 5: 100%, Level 17",
+   "4.12"
+  ],
+  [
+   "639",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 11",
+   "4.03"
+  ],
+  [
+   "640",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 1",
+   "4.01"
+  ],
+  [
+   "641",
+   "Red Ball 3: 100%, 8",
+   "3.99"
+  ],
+  [
+   "642",
+   "Red Ball 4 (Mobile): Glitched, 43 - Unity",
+   "3.98"
+  ],
+  [
+   "643",
+   "Red Ball 4 (Mobile): Glitched, 22 - Original",
+   "3.94"
+  ],
+  [
+   "644",
+   "Red Ball 4 (Mobile): 100% - Glitchless, Unity",
+   "3.93"
+  ],
+  [
+   "645",
+   "Red and Blue Balls 2: Any%, 13",
+   "3.87"
+  ],
+  [
+   "646",
+   "Red Ball 3: 100%, 20",
+   "3.85"
+  ],
+  [
+   "647",
+   "Red Ball 4 (Mobile): Glitched, 68 - Unity",
+   "3.83"
+  ],
+  [
+   "648",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 13",
+   "3.82"
+  ],
+  [
+   "649",
+   "Red Ball 4 (Mobile): Glitched, 38 - Unity",
+   "3.79"
+  ],
+  [
+   "650",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 2",
+   "3.79"
+  ],
+  [
+   "651",
+   "Red Ball 4 (Mobile): Glitched, 44 - Original",
+   "3.77"
+  ],
+  [
+   "652",
+   "Red Ball 4 (Mobile): Glitchless, 24 - Unity",
+   "3.76"
+  ],
+  [
+   "653",
+   "Red Ball 4 Vol.2: Any%, 11",
+   "3.76"
+  ],
+  [
+   "654",
+   "Red Ball 4 (Mobile): Glitched, 30 - Unity",
+   "3.72"
+  ],
+  [
+   "655",
+   "Red Ball 4 (Mobile): Glitched, 5 - Original",
+   "3.71"
+  ],
+  [
+   "656",
+   "Red Ball 4 (Mobile): Glitched, 46 - Original",
+   "3.71"
+  ],
+  [
+   "657",
+   "Red Ball 4 (Mobile): Glitched, 11 - Original",
+   "3.67"
+  ],
+  [
+   "658",
+   "Red Ball 4 (Mobile): Glitchless, 62 - Unity",
+   "3.63"
+  ],
+  [
+   "659",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 11",
+   "3.54"
+  ],
+  [
+   "660",
+   "Red Ball 4 (Mobile): Glitched, 32 - Original",
+   "3.53"
+  ],
+  [
+   "661",
+   "Red Ball 4 (Mobile): Glitched, 47 - Original",
+   "3.45"
+  ],
+  [
+   "662",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 12",
+   "3.42"
+  ],
+  [
+   "663",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 14",
+   "3.42"
+  ],
+  [
+   "664",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 8",
+   "3.39"
+  ],
+  [
+   "665",
+   "Red Ball 5: 100%, Level 29",
+   "3.37"
+  ],
+  [
+   "666",
+   "Red Ball 5: 100%, Level 21",
+   "3.33"
+  ],
+  [
+   "667",
+   "Red Ball 4 Vol.2: Any% - No Transition, 8",
+   "3.32"
+  ],
+  [
+   "668",
+   "Red Ball 5: 100%, Level 26",
+   "3.26"
+  ],
+  [
+   "669",
+   "Red Ball 5: 100%, Level 6",
+   "3.2"
+  ],
+  [
+   "670",
+   "Red Ball 5: 100%, Level 27",
+   "3.18"
+  ],
+  [
+   "671",
+   "Red Ball 4 (Mobile): Glitchless, 28 - Unity",
+   "3.16"
+  ],
+  [
+   "672",
+   "Red Ball 4 (Mobile): Glitchless, 23 - Unity",
+   "3.15"
+  ],
+  [
+   "673",
+   "Red Ball (Mobile): World 1, 12 - Android",
+   "3.14"
+  ],
+  [
+   "674",
+   "Red Ball 4 (Mobile): Glitchless, 54 - Unity",
+   "3.13"
+  ],
+  [
+   "675",
+   "Red Ball 4 (Mobile): Glitchless, 48 - Original",
+   "3.11"
+  ],
+  [
+   "676",
+   "Red Ball 3: 100%, 6",
+   "3.1"
+  ],
+  [
+   "677",
+   "Red Ball 4 (Mobile): Glitched, 54 - Unity",
+   "3.08"
+  ],
+  [
+   "678",
+   "Red Ball 4 (Mobile): Glitched, 26 - Unity",
+   "3.01"
+  ],
+  [
+   "679",
+   "Red Ball 3: 100%, 19",
+   "2.97"
+  ],
+  [
+   "680",
+   "Red Ball 4 (Mobile): Glitchless, 39 - Unity",
+   "2.97"
+  ],
+  [
+   "681",
+   "Red Ball 4 Vol.2: Any% - No Transition, 3",
+   "2.96"
+  ],
+  [
+   "682",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 10",
+   "2.96"
+  ],
+  [
+   "683",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 9",
+   "2.96"
+  ],
+  [
+   "684",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 13",
+   "2.94"
+  ],
+  [
+   "685",
+   "Red Ball 4 Vol.2: Any% - No Transition, 4",
+   "2.92"
+  ],
+  [
+   "686",
+   "Red and Blue Balls 3: Any%, 4",
+   "2.92"
+  ],
+  [
+   "687",
+   "Red Ball 4 (Mobile): Glitched, 49 - Unity",
+   "2.92"
+  ],
+  [
+   "688",
+   "Red Ball 3: 100%, 4",
+   "2.91"
+  ],
+  [
+   "689",
+   "Red Ball 4 (Mobile): Glitched, 17 - Original",
+   "2.89"
+  ],
+  [
+   "690",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 13",
+   "2.87"
+  ],
+  [
+   "691",
+   "Red Ball 4 (Mobile): Glitched, 14 - Original",
+   "2.86"
+  ],
+  [
+   "692",
+   "Multiple Red Ball Games: Extended Series - Any%, Unrestricted",
+   "2.86"
+  ],
+  [
+   "693",
+   "Red and Blue Balls 3: Any%, 9",
+   "2.85"
+  ],
+  [
+   "694",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitched, 100%, Original",
+   "2.66"
+  ],
+  [
+   "695",
+   "Red Ball 5: 100%, Level 4",
+   "2.65"
+  ],
+  [
+   "696",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 10",
+   "2.65"
+  ],
+  [
+   "697",
+   "Red Ball 4 (Mobile): Box Factory - Glitched, 100%, Original",
+   "2.65"
+  ],
+  [
+   "698",
+   "Red Ball Category Extensions: Red Ball 3 - Red Ball Hero - 100%",
+   "2.64"
+  ],
+  [
+   "699",
+   "Red Ball 4 (Mobile): Box Factory - Glitched, Any%, Original",
+   "2.63"
+  ],
+  [
+   "700",
+   "Red Ball 4 Vol.2: Gold Medal - Restricted Speed, 6",
+   "2.62"
+  ],
+  [
+   "701",
+   "Red Ball 4 (Mobile): Glitchless, 14 - Unity",
+   "2.62"
+  ],
+  [
+   "702",
+   "Red Ball 4 (Mobile): Glitchless, 10 - Unity",
+   "2.59"
+  ],
+  [
+   "703",
+   "Red Ball 4 (Mobile): Glitched, 71 - Unity",
+   "2.55"
+  ],
+  [
+   "704",
+   "Red Ball 3: 100%, 3",
+   "2.55"
+  ],
+  [
+   "705",
+   "Red Ball 4 Vol.2: Any% Glitchless - Restricted Speed, 14",
+   "2.53"
+  ],
+  [
+   "706",
+   "Red Ball (Mobile): World 1, 7 - Android",
+   "2.51"
+  ],
+  [
+   "707",
+   "Red Ball 4 Vol.3: Gold Medal - Restricted Speed, 11",
+   "2.5"
+  ],
+  [
+   "708",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 12",
+   "2.49"
+  ],
+  [
+   "709",
+   "Red and Blue Balls 3: Any%, 10",
+   "2.48"
+  ],
+  [
+   "710",
+   "Red Ball 4 (Mobile): Glitchless, 22 - Unity",
+   "2.47"
+  ],
+  [
+   "711",
+   "Red Ball 4 (Mobile): Glitchless, 33 - Unity",
+   "2.47"
+  ],
+  [
+   "712",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 11",
+   "2.47"
+  ],
+  [
+   "713",
+   "Red Ball 4 Vol.2: Any% - No Transition, 14",
+   "2.46"
+  ],
+  [
+   "714",
+   "Red Ball 3 (Mobile): HeroCraft (Legacy) - 100%",
+   "2.46"
+  ],
+  [
+   "715",
+   "Red Ball 4 (Mobile): Glitched, 70 - Unity",
+   "2.44"
+  ],
+  [
+   "716",
+   "Red Ball 4 (Mobile): Glitched, 19 - Unity",
+   "2.44"
+  ],
+  [
+   "717",
+   "Red Ball Category Extensions: Red Ball 3 - Low%",
+   "2.43"
+  ],
+  [
+   "718",
+   "Red Ball 4 Vol.2: Any% - No Transition, 6",
+   "2.42"
+  ],
+  [
+   "719",
+   "Red Ball 4 (Mobile): Glitched, 56 - Original",
+   "2.41"
+  ],
+  [
+   "720",
+   "Red Ball 4 (Mobile): Glitchless, 46 - Unity",
+   "2.4"
+  ],
+  [
+   "721",
+   "Red and Blue Balls 2: Any%, 10",
+   "2.39"
+  ],
+  [
+   "722",
+   "Red and Blue Balls 3: Any%, 24",
+   "2.34"
+  ],
+  [
+   "723",
+   "Red Ball 4 (Mobile): Glitched, 73 - Unity",
+   "2.34"
+  ],
+  [
+   "724",
+   "Red Ball 4 (Mobile): Glitchless, 51 - Unity",
+   "2.32"
+  ],
+  [
+   "725",
+   "Red Ball 4 (Mobile): Glitched, 75 - Original",
+   "2.3"
+  ],
+  [
+   "726",
+   "Red Ball 4 (Mobile): Glitched, 50 - Original",
+   "2.29"
+  ],
+  [
+   "727",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 10",
+   "2.29"
+  ],
+  [
+   "728",
+   "Red Ball 4 Vol.1: Gold Medal - Restricted Speed, 5",
+   "2.29"
+  ],
+  [
+   "729",
+   "Red Ball 4 (Mobile): Glitched, 35 - Unity",
+   "2.27"
+  ],
+  [
+   "730",
+   "Red Ball 4 (Mobile): Glitched, 44 - Unity",
+   "2.26"
+  ],
+  [
+   "731",
+   "Red Ball 4 (Mobile): Glitchless, 35 - Unity",
+   "2.26"
+  ],
+  [
+   "732",
+   "Red Ball 4 (Mobile): Glitchless, 57 - Unity",
+   "2.26"
+  ],
+  [
+   "733",
+   "Red Ball 4 Vol.3: Any% Glitchless - Restricted Speed, 15",
+   "2.25"
+  ],
+  [
+   "734",
+   "Red Ball 4 (Mobile): Glitched, 24 - Original",
+   "2.21"
+  ],
+  [
+   "735",
+   "Red Ball 4 (Mobile): Glitched, 18 - Original",
+   "2.2"
+  ],
+  [
+   "736",
+   "Red Ball 4 (Mobile): Glitched, 53 - Original",
+   "2.19"
+  ],
+  [
+   "737",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 8",
+   "2.19"
+  ],
+  [
+   "738",
+   "Red Ball 4 (Mobile): Glitched, 41 - Unity",
+   "2.18"
+  ],
+  [
+   "739",
+   "Red Ball 5: 100%, Level 5",
+   "2.17"
+  ],
+  [
+   "740",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 7",
+   "2.17"
+  ],
+  [
+   "741",
+   "Red Ball 4 (Mobile): Glitched, 58 - Original",
+   "2.15"
+  ],
+  [
+   "742",
+   "Red Ball 4 (Mobile): Glitched, 65 - Unity",
+   "2.14"
+  ],
+  [
+   "743",
+   "Red Ball 4 (Mobile): Glitchless, 65 - Unity",
+   "2.14"
+  ],
+  [
+   "744",
+   "Red Ball 3: 100%, 10",
+   "2.14"
+  ],
+  [
+   "745",
+   "Red Ball 4 (Mobile): Glitched, 63 - Unity",
+   "2.13"
+  ],
+  [
+   "746",
+   "Red Ball 3: 100%, 11",
+   "2.13"
+  ],
+  [
+   "747",
+   "Red Ball 4 (Mobile): Glitched, 72 - Unity",
+   "2.06"
+  ],
+  [
+   "748",
+   "Red Ball 3: 100%, 16",
+   "2.03"
+  ],
+  [
+   "749",
+   "Red Ball 4 (Mobile): Glitched, 68 - Original",
+   "2.03"
+  ],
+  [
+   "750",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 5",
+   "2.02"
+  ],
+  [
+   "751",
+   "Red Ball 3: 100%, 18",
+   "2.02"
+  ],
+  [
+   "752",
+   "Red Ball 4 (Mobile): Glitched, 43 - Original",
+   "2.02"
+  ],
+  [
+   "753",
+   "Red Ball 5: 100% - Kizi",
+   "2"
+  ],
+  [
+   "754",
+   "Red and Blue Balls 2: Any%, 11",
+   "1.99"
+  ],
+  [
+   "755",
+   "Red Ball 4 (Mobile): Glitched, 61 - Original",
+   "1.96"
+  ],
+  [
+   "756",
+   "Red Ball 4 (Mobile): Glitched, 34 - Original",
+   "1.94"
+  ],
+  [
+   "757",
+   "Red Ball 4 (Mobile): Glitched, 7 - Original",
+   "1.93"
+  ],
+  [
+   "758",
+   "Red Ball 4 (Mobile): Glitchless, 55 - Unity",
+   "1.92"
+  ],
+  [
+   "759",
+   "Red Ball 4 (Mobile): Glitched, 3 - Original",
+   "1.92"
+  ],
+  [
+   "760",
+   "Red Ball 5 (Beta): Any% - 0.16.1",
+   "1.9"
+  ],
+  [
+   "761",
+   "Red Ball Category Extensions: Red and Blue Balls - 2P - 15 Levels (1P)",
+   "1.88"
+  ],
+  [
+   "762",
+   "Red Ball 4 (Mobile): Glitched, 69 - Original",
+   "1.64"
+  ],
+  [
+   "763",
+   "Red Ball 4 (Mobile): Glitched, 15 - Original",
+   "1.63"
+  ],
+  [
+   "764",
+   "Red Ball 4 Vol.2: Any% - No Transition, 13",
+   "1.54"
+  ],
+  [
+   "765",
+   "Red Ball 4 (Mobile): Glitchless, 26 - Unity",
+   "1.48"
+  ],
+  [
+   "766",
+   "Red Ball 4 (Mobile): Glitched, 48 - Original",
+   "1.46"
+  ],
+  [
+   "767",
+   "Red Ball 4 (Mobile): Glitched, 59 - Unity",
+   "1.46"
+  ],
+  [
+   "768",
+   "Red Ball Category Extensions: Red Ball 4 Vol.3 - 150 Levels",
+   "1.46"
+  ],
+  [
+   "769",
+   "Red Ball 4 (Mobile): 100% - Glitched, Unity",
+   "1.46"
+  ],
+  [
+   "770",
+   "Red Ball 4 (Mobile): Glitchless, 74 - Unity",
+   "1.44"
+  ],
+  [
+   "771",
+   "Red Ball 4 (Mobile): Glitchless, 49 - Unity",
+   "1.43"
+  ],
+  [
+   "772",
+   "Red Ball 4 (Mobile): Glitched, 27 - Original",
+   "1.4"
+  ],
+  [
+   "773",
+   "Red Ball 4 (Mobile): Glitchless, 31 - Unity",
+   "1.39"
+  ],
+  [
+   "774",
+   "Red Ball 4 (Mobile): Glitched, 6 - Original",
+   "1.39"
+  ],
+  [
+   "775",
+   "Red Ball 4 (Mobile): Glitched, 61 - Unity",
+   "1.39"
+  ],
+  [
+   "776",
+   "Red Ball 4 (Mobile): Glitchless, 40 - Unity",
+   "1.38"
+  ],
+  [
+   "777",
+   "Red Ball 4 (Mobile): Glitchless, 32 - Unity",
+   "1.38"
+  ],
+  [
+   "778",
+   "Red Ball 4 (Mobile): Glitched, 9 - Original",
+   "1.37"
+  ],
+  [
+   "779",
+   "Red Ball 4 (Mobile): Glitched, 55 - Original",
+   "1.32"
+  ],
+  [
+   "780",
+   "Red Ball 4 (Mobile): Glitched, 71 - Original",
+   "1.3"
+  ],
+  [
+   "781",
+   "Red Ball 4 (Mobile): Glitched, 30 - Original",
+   "1.28"
+  ],
+  [
+   "782",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 6",
+   "1.26"
+  ],
+  [
+   "783",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 12",
+   "1.24"
+  ],
+  [
+   "784",
+   "Red Ball 4 Vol.2: Any% - No Transition, 9",
+   "1.23"
+  ],
+  [
+   "785",
+   "Red Ball (Mobile): World 1, 14 - Android",
+   "1.11"
+  ],
+  [
+   "786",
+   "Red Ball 4 (Mobile): Glitched, 72 - Original",
+   "1.06"
+  ],
+  [
+   "787",
+   "Red Ball 4 (Mobile): Glitchless, 43 - Unity",
+   "1.06"
+  ],
+  [
+   "788",
+   "Red Ball 4 (Mobile): Glitchless, 59 - Unity",
+   "1.05"
+  ],
+  [
+   "789",
+   "Red Ball 4 (Mobile): Glitched, 59 - Original",
+   "1.04"
+  ],
+  [
+   "790",
+   "Red Ball 4 (Mobile): Glitchless, 42 - Unity",
+   "1"
+  ],
+  [
+   "791",
+   "Red Ball (Mobile): World 1, 4 - Android",
+   "0.93"
+  ],
+  [
+   "792",
+   "Red Ball 4 (Mobile): Glitchless, 56 - Unity",
+   "0.92"
+  ],
+  [
+   "793",
+   "Red Ball 5 (Beta): Any%, 1-1 - 0.17.0+",
+   "0.9"
+  ],
+  [
+   "794",
+   "Red Ball (Mobile): World 1, 5 - Android",
+   "0.89"
+  ],
+  [
+   "795",
+   "Multiple Red Ball Games: All Flash Games - 100%",
+   "0.85"
+  ],
+  [
+   "796",
+   "Red Ball 4 (Mobile): Glitched, 65 - Original",
+   "0.81"
+  ],
+  [
+   "797",
+   "Red Ball 4 (Mobile): Glitchless, 68 - Unity",
+   "0.8"
+  ],
+  [
+   "798",
+   "Red Ball 4 (Mobile): Glitched, 42 - Unity",
+   "0.77"
+  ],
+  [
+   "799",
+   "Red Ball 4 (Mobile): Glitched, 73 - Original",
+   "0.77"
+  ],
+  [
+   "800",
+   "Red Ball 4 (Mobile): Glitched, 74 - Original",
+   "0.76"
+  ],
+  [
+   "801",
+   "Red Ball 4 (Mobile): Glitched, 67 - Original",
+   "0.76"
+  ],
+  [
+   "802",
+   "Red Ball 4 (Mobile): Battle for the Moon - Glitched, Any%, Original",
+   "0.75"
+  ],
+  [
+   "803",
+   "Red Ball 4 (Mobile): Glitched, 49 - Original",
+   "0.75"
+  ],
+  [
+   "804",
+   "Red Ball Category Extensions: Red Ball 2 - Reverse - 20 Levels",
+   "0.75"
+  ],
+  [
+   "805",
+   "Red Ball 4 (Mobile): Into the Caves - Glitched, 100%, Original",
+   "0.75"
+  ],
+  [
+   "806",
+   "Red Ball 4 (Mobile): Glitched, 25 - Original",
+   "0.74"
+  ],
+  [
+   "807",
+   "Red Ball 4 (Mobile): Glitched, 31 - Original",
+   "0.74"
+  ],
+  [
+   "808",
+   "Red Ball 4 (Mobile): Glitchless, 44 - Unity",
+   "0.74"
+  ],
+  [
+   "809",
+   "Red Ball 3: Any%, 14 - Rabbit",
+   "0.73"
+  ],
+  [
+   "810",
+   "Red Ball 4 (Mobile): Glitched, 20 - Original",
+   "0.73"
+  ],
+  [
+   "811",
+   "Red Ball 4 (Mobile): Glitched, 64 - Original",
+   "0.73"
+  ],
+  [
+   "812",
+   "Red Ball 4 (Mobile): Glitched, 70 - Original",
+   "0.71"
+  ],
+  [
+   "813",
+   "Red Ball 4 (Mobile): Glitchless, 52 - Unity",
+   "0.69"
+  ],
+  [
+   "814",
+   "Red Ball 4 (Mobile): Glitched, 57 - Original",
+   "0.68"
+  ],
+  [
+   "815",
+   "Red Ball: Raise the Flag, 1 - Truncated",
+   "0.59"
+  ],
+  [
+   "816",
+   "Red Ball 4 (Mobile): Glitched, 63 - Original",
+   "0.43"
+  ],
+  [
+   "817",
+   "Red Ball (Mobile): World 1, 9 - Android",
+   "0.41"
+  ],
+  [
+   "818",
+   "Red Ball (Mobile): World 1, 10 - Android",
+   "0.41"
+  ],
+  [
+   "819",
+   "Red Ball 4 (Mobile): Glitchless, 72 - Unity",
+   "0.4"
+  ],
+  [
+   "820",
+   "Red Ball (Mobile): World 1, 17 - Android",
+   "0.4"
+  ],
+  [
+   "821",
+   "Red Ball 4 (Mobile): Glitched, 26 - Original",
+   "0.4"
+  ],
+  [
+   "822",
+   "Red Ball 4 (Mobile): Glitched, 8 - Original",
+   "0.4"
+  ],
+  [
+   "823",
+   "Red Ball 4 (Mobile): Glitchless, 69 - Unity",
+   "0.39"
+  ],
+  [
+   "824",
+   "Red Ball (Mobile): World 1, 6 - Android",
+   "0.39"
+  ],
+  [
+   "825",
+   "Red Ball 4 (Mobile): Glitched, 33 - Original",
+   "0.39"
+  ],
+  [
+   "826",
+   "Red Ball 4 (Mobile): Glitched, 28 - Original",
+   "0.39"
+  ],
+  [
+   "827",
+   "Red Ball (Mobile): World 2, 1 - Android",
+   "0.39"
+  ],
+  [
+   "828",
+   "Red Ball 4 (Mobile): Glitched, 40 - Unity",
+   "0.39"
+  ],
+  [
+   "829",
+   "Red Ball 4 (Mobile): Glitched, 29 - Original",
+   "0.39"
+  ],
+  [
+   "830",
+   "Red Ball (Mobile): World 2, 2 - Android",
+   "0.39"
+  ],
+  [
+   "831",
+   "Red Ball 4 (Mobile): Glitched, 10 - Original",
+   "0.39"
+  ],
+  [
+   "832",
+   "Red Ball 4 (Mobile): Glitchless, 64 - Unity",
+   "0.39"
+  ],
+  [
+   "833",
+   "Red Ball (Mobile): World 1, 8 - Android",
+   "0.39"
+  ],
+  [
+   "834",
+   "Red Ball 4 (Mobile): Glitched, 40 - Original",
+   "0.39"
+  ],
+  [
+   "835",
+   "Red Ball 4 (Mobile): Glitched, 35 - Original",
+   "0.39"
+  ],
+  [
+   "836",
+   "Red Ball 5 (Beta): Any%, 1-2 - 0.17.0+",
+   "0.38"
+  ],
+  [
+   "837",
+   "Red Ball 4 (Mobile): Glitchless, 58 - Unity",
+   "0.38"
+  ],
+  [
+   "838",
+   "Red Ball (Mobile): World 2, 3 - Android",
+   "0.38"
+  ],
+  [
+   "839",
+   "Red Ball 4 (Mobile): Glitched, 13 - Original",
+   "0.38"
+  ],
+  [
+   "840",
+   "Red Ball (Mobile): World 1, 16 - Android",
+   "0.37"
+  ],
+  [
+   "841",
+   "Red Ball (Mobile): Original - 1.2x, 7 Levels",
+   "0.09"
+  ],
+  [
+   "842",
+   "Red Ball (Mobile): World 1, 11 - Android",
+   "0"
+  ],
+  [
+   "843",
+   "Red Ball 4 (Mobile): Glitchless, 41 - Unity",
+   "0"
+  ],
+  [
+   "844",
+   "Red Ball (Mobile): World 2, 15 - Android",
+   "0"
+  ],
+  [
+   "845",
+   "Red Ball (Mobile): World 2, 14 - Android",
+   "0"
+  ],
+  [
+   "846",
+   "Red Ball 3 (Mobile): HeroCraft - All Levels",
+   "0"
+  ],
+  [
+   "847",
+   "Multiple Red Ball Games: Extended Series Any% Relay - Main Categories",
+   "0"
+  ],
+  [
+   "848",
+   "Red Ball 5 (Beta): Any%, 2-2 - 0.17.0+",
+   "0"
+  ],
+  [
+   "849",
+   "Red Ball 5 (Beta): Any%, 7-2 - 0.17.0+",
+   "0"
+  ],
+  [
+   "850",
+   "Red Ball (Mobile): World 1, 2 - Android",
+   "0"
+  ],
+  [
+   "851",
+   "Red Ball (Mobile): World 2, 10 - Android",
+   "0"
+  ],
+  [
+   "852",
+   "Red Ball 4 (Mobile): Glitchless, 53 - Unity",
+   "0"
+  ],
+  [
+   "853",
+   "Red Ball (Mobile): World 2, 16 - Android",
+   "0"
+  ],
+  [
+   "854",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 4",
+   "0"
+  ],
+  [
+   "855",
+   "Multiple Red Ball Games: Full Series (Mobile)",
+   "0"
+  ],
+  [
+   "856",
+   "Red Ball 5 (Beta): Any%, 6-3 - 0.17.0+",
+   "0"
+  ],
+  [
+   "857",
+   "Red Ball (Mobile): World 1, 11 - Original (1.2x)",
+   "0"
+  ],
+  [
+   "858",
+   "Red Ball Category Extensions: Red And Blue Balls 2/3 - RABB2 w/ RABB3 Speed",
+   "0"
+  ],
+  [
+   "859",
+   "Red Ball (Mobile): World 2, 5 - Android",
+   "0"
+  ],
+  [
+   "860",
+   "Red Ball (Mobile): World 2, 7 - Android",
+   "0"
+  ],
+  [
+   "861",
+   "Red Ball 3 (Mobile): HeroCraft - 20L All Stars",
+   "0"
+  ],
+  [
+   "862",
+   "Multiple Red Ball Games: Extended Series - 100%, Main Categories",
+   "0"
+  ],
+  [
+   "863",
+   "Red Ball 5 (Beta): Any%, Prologue - 0.17.0+",
+   "0"
+  ],
+  [
+   "864",
+   "Red Ball 5 (Beta): Any%, 4-1 - 0.17.0+",
+   "0"
+  ],
+  [
+   "865",
+   "Red Ball (Mobile): 3D World 2",
+   "0"
+  ],
+  [
+   "866",
+   "Red Ball (Mobile): World 2, 8 - Android",
+   "0"
+  ],
+  [
+   "867",
+   "Red Ball 4 (Mobile): Glitchless, 63 - Unity",
+   "0"
+  ],
+  [
+   "868",
+   "Red Ball Category Extensions: Red Ball - Blindfolded - 17 Levels",
+   "0"
+  ],
+  [
+   "869",
+   "Red Ball (Mobile): World 2, 9 - Android",
+   "0"
+  ],
+  [
+   "870",
+   "Red Ball 4 Vol.1: Any% Glitchless - Restricted Speed, 3",
+   "0"
+  ],
+  [
+   "871",
+   "Multiple Red Ball Games: All Flash Games Any% Relay",
+   "0"
+  ],
+  [
+   "872",
+   "Red Ball 5 (Beta): Any%, 6-1 - 0.17.0+",
+   "0"
+  ],
+  [
+   "873",
+   "Red Ball (Mobile): World 1, 3 - Android",
+   "0"
+  ],
+  [
+   "874",
+   "Red Ball Category Extensions: Red Ball 4 Vol.2 - 150 Levels",
+   "0"
+  ],
+  [
+   "875",
+   "Red Ball (Mobile): World 2, 12 - Android",
+   "0"
+  ],
+  [
+   "876",
+   "Red Ball (Mobile): World 2, 6 - Android",
+   "0"
+  ],
+  [
+   "877",
+   "Red Ball 3 (Mobile): HeroCraft - NG+",
+   "0"
+  ],
+  [
+   "878",
+   "Multiple Red Ball Games: Extended Series - 100%, Unrestricted",
+   "0"
+  ],
+  [
+   "879",
+   "Red Ball 5: Any% - Kizi",
+   "0"
+  ],
+  [
+   "880",
+   "Red Ball 5 (Beta): Any%, 3-2 - 0.17.0+",
+   "0"
+  ],
+  [
+   "881",
+   "Red Ball (Mobile): Original - 1.2x, 17 Levels",
+   "0"
+  ],
+  [
+   "882",
+   "Red Ball (Mobile): World 1, 15 - Android",
+   "0"
+  ],
+  [
+   "883",
+   "Red Ball 4 (Mobile): Glitchless, 71 - Unity",
+   "0"
+  ],
+  [
+   "884",
+   "Red Ball 4 (Mobile): Glitchless, 73 - Unity",
+   "0"
+  ],
+  [
+   "885",
+   "Red Ball (Mobile): World 2, 4 - Android",
+   "0"
+  ],
+  [
+   "886",
+   "Red Ball (Mobile): World 2, 11 - Android",
+   "0"
+  ],
+  [
+   "887",
+   "Red Ball 4 (Mobile): Glitchless, 70 - Unity",
+   "0"
+  ],
+  [
+   "888",
+   "Multiple Red Ball Games: Extended Series Any% Relay - Unrestricted",
+   "0"
+  ],
+  [
+   "889",
+   "Red Ball 5 (Beta): Any%, 1-3 - 0.17.0+",
+   "0"
+  ],
+  [
+   "890",
+   "Red Ball (Mobile): World 1, 4 - iOS",
+   "0"
+  ],
+  [
+   "891",
+   "Red Ball 5 (Beta): Any%, 3-3 - 0.17.0+",
+   "0"
+  ],
+  [
+   "892",
+   "Red Ball (Mobile): World 2, 13 - Android",
+   "0"
+  ],
+  [
+   "893",
+   "Red Ball 4 (Mobile): Glitchless, 38 - Unity",
+   "0"
+  ],
+  [
+   "894",
+   "Red Ball (Mobile): World 3, 1 - Android",
+   "0"
+  ],
+  [
+   "895",
+   "Multiple Red Ball Games: Extended Series - Any%, Main Categories",
+   "0"
+  ],
+  [
+   "896",
+   "Red Ball 4 Vol.2: Any% - No Transition, 11",
+   "0"
+  ],
+  [
+   "897",
+   "Red Ball (Mobile): Original - 1.2x, 12 Levels",
+   "0"
+  ],
+  [
+   "898",
+   "Red Ball 5 (Beta): Any%, 2-1 - 0.17.0+",
+   "0"
+  ]
+ ]
+}

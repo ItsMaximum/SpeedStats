@@ -57,9 +57,16 @@ def insert_arrow(con: duckdb.DuckDBPyConnection, table: str, rows: list[dict], s
         con.unregister("_batch")
 
 
-def _insert(con: duckdb.DuckDBPyConnection, sql: str, rows: list[tuple]) -> None:
-    if rows:  # executemany rejects an empty list
-        con.executemany(sql, rows)
+def _insert(con: duckdb.DuckDBPyConnection, table: str, columns: list[str], rows: list[tuple]) -> None:
+    """Bulk insert via Arrow; executemany would issue one statement per row."""
+    if not rows:
+        return
+    data = {col: [r[i] for r in rows] for i, col in enumerate(columns)}
+    con.register("_batch", pa.table(data))
+    try:
+        con.execute(f"INSERT INTO {table} ({', '.join(columns)}) SELECT * FROM _batch")
+    finally:
+        con.unregister("_batch")
 
 
 def load_legacy_json(con: duckdb.DuckDBPyConnection, path: Path) -> datetime:
@@ -114,13 +121,10 @@ def load_legacy_json(con: duckdb.DuckDBPyConnection, path: Path) -> datetime:
     log.info("loaded %s groups, %s runs", n_groups, ord_)
 
     series = sorted({s for names in games.values() for s in names})
-    _insert(con, "INSERT INTO games_d VALUES (?, ?, NULL, NULL)", [(g, g) for g in games])
-    _insert(con, "INSERT INTO series_d VALUES (?, ?, NULL)", [(s, s) for s in series])
-    _insert(con, "INSERT INTO game_series_d VALUES (?, ?)", [(g, s) for g, ns in games.items() for s in sorted(ns)])
-    _insert(con, "INSERT INTO platforms_d VALUES (?, ?, NULL)", [(p, p) for p in sorted(platforms)])
-    _insert(
-        con,
-        "INSERT INTO players_d VALUES (?, ?, NULL, NULL, NULL, ?)",
-        [(p, p, p.startswith(GUEST_PREFIX)) for p in players],
-    )
+    _insert(con, "games_d", ["id", "name"], [(g, g) for g in games])
+    _insert(con, "series_d", ["id", "name"], [(s, s) for s in series])
+    _insert(con, "game_series_d", ["game_id", "series_id"], [(g, s) for g, ns in games.items() for s in sorted(ns)])
+    _insert(con, "platforms_d", ["id", "name"], [(p, p) for p in sorted(platforms)])
+    _insert(con, "players_d", ["id", "name", "is_guest"], [(p, p, p.startswith(GUEST_PREFIX)) for p in players])
+    # no area data in the legacy format: country / flag stay NULL
     return datetime.fromtimestamp(path.stat().st_mtime, tz=UTC)

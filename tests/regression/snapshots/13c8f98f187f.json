@@ -1,0 +1,6011 @@
+{
+ "query": "series=&games=&platforms=&players=&request-type=records",
+ "columns": [
+  "Rank",
+  "Leaderboard",
+  "Player",
+  "Value"
+ ],
+ "rows": [
+  [
+   "1",
+   "Super Mario Odyssey: Any% - 1P",
+   "Tyron18",
+   "3658.44"
+  ],
+  [
+   "2",
+   "SpongeBob SquarePants: Battle for Bikini Bottom: Any% - Xbox/GCN",
+   "StarSpeedruns",
+   "3498.25"
+  ],
+  [
+   "3",
+   "Celeste: Any%",
+   "secureaccount",
+   "3374.36"
+  ],
+  [
+   "4",
+   "SpongeBob SquarePants: Battle for Bikini Bottom: Classic - Any%",
+   "StarSpeedruns",
+   "2266.76"
+  ],
+  [
+   "5",
+   "Getting Over It With Bennett Foddy: Glitchless",
+   "OyamaTakeshi",
+   "1851.37"
+  ],
+  [
+   "6",
+   "SpongeBob SquarePants: Battle for Bikini Bottom: Classic - No SBA",
+   "StarSpeedruns",
+   "1850.66"
+  ],
+  [
+   "7",
+   "Super Mario Sunshine: Any% - GCN, No ACE",
+   "inkstar",
+   "1809.69"
+  ],
+  [
+   "8",
+   "The Legend of Zelda: Breath of the Wild: Any% - Normal Mode, 1.0 - 1.7",
+   "MoldyMeatballs",
+   "1694.6"
+  ],
+  [
+   "9",
+   "LEGO Star Wars: The Complete Saga (PC/Console): Any% - Solo, PC",
+   "colten8",
+   "1642.7"
+  ],
+  [
+   "10",
+   "Super Metroid: Any%",
+   "ShinyZeni",
+   "1636.59"
+  ],
+  [
+   "11",
+   "Portal: Out of Bounds - PC",
+   "wyrnicus",
+   "1561.31"
+  ],
+  [
+   "12",
+   "Portal 2: Single Player - No SLA",
+   "leough",
+   "1530.25"
+  ],
+  [
+   "13",
+   "Outlast: Any% - PC, Main Game",
+   "SexterMorgan",
+   "1518.22"
+  ],
+  [
+   "14",
+   "Grand Theft Auto: Vice City: Any% (No SSU)",
+   "NightYemin",
+   "1451.55"
+  ],
+  [
+   "15",
+   "Refunct: Any% - Normal",
+   "smythe",
+   "1433.2"
+  ],
+  [
+   "16",
+   "The Legend of Zelda: Tears of the Kingdom: Any% - pre-v1.2.1, Glitched",
+   "MoldyMeatballs",
+   "1418.61"
+  ],
+  [
+   "17",
+   "SpongeBob SquarePants: Battle for Bikini Bottom: 100%",
+   "SHiFT",
+   "1391.58"
+  ],
+  [
+   "18",
+   "Super Mario 64: 120 Star - N64",
+   "Suigi",
+   "1376.97"
+  ],
+  [
+   "19",
+   "Splatoon: Any% - WiiU",
+   "Negat",
+   "1368.8"
+  ],
+  [
+   "20",
+   "Portal: Inbounds - PC",
+   "lacunae",
+   "1368.05"
+  ],
+  [
+   "21",
+   "Grand Theft Auto V: Segments - Trevor%",
+   "VIl2486l",
+   "1312.01"
+  ],
+  [
+   "22",
+   "A Hat in Time: Any% - Lagless, PC",
+   "lumeria",
+   "1310.95"
+  ],
+  [
+   "23",
+   "Super Mario 64: 16 Star - N64",
+   "Suigi",
+   "1233.94"
+  ],
+  [
+   "24",
+   "Hollow Knight: Any% - No Major Glitches",
+   "zVypurr",
+   "1233.5"
+  ],
+  [
+   "25",
+   "Minecraft: Java Edition: Any% Glitchless - Random Seed, 1.16-1.19",
+   "lowkey",
+   "1225.69"
+  ],
+  [
+   "26",
+   "The Simpsons: Hit & Run: All Story Missions - PC",
+   "HomerOfSteel",
+   "1223.26"
+  ],
+  [
+   "27",
+   "The Legend of Zelda: Breath of the Wild: All Dungeons - Original, 1.0 - 1.7",
+   "MoldyMeatballs",
+   "1204.63"
+  ],
+  [
+   "28",
+   "Super Mario Odyssey: Darker Side - 1P",
+   "Tyron18",
+   "1192.35"
+  ],
+  [
+   "29",
+   "Outlast: Glitchless - Main Game, PC, No S+Q",
+   "JayV",
+   "1183.84"
+  ],
+  [
+   "30",
+   "Super Mario 64: 70 Star - N64",
+   "Suigi",
+   "1150.35"
+  ],
+  [
+   "31",
+   "Super Mario Bros.: Any% - NTSC",
+   "Niftski",
+   "1148.58"
+  ],
+  [
+   "32",
+   "The Messenger: 8-Bit - No OoB, New Game",
+   "SortofAlpha",
+   "1135.29"
+  ],
+  [
+   "33",
+   "Red Ball: 12 Levels",
+   "DividedByZero",
+   "1124.14"
+  ],
+  [
+   "34",
+   "The Legend of Zelda: The Minish Cap: Any%",
+   "TGH",
+   "1122.64"
+  ],
+  [
+   "35",
+   "Super Mario 64: 16 Star - EMU",
+   "ohyeah_",
+   "1106.84"
+  ],
+  [
+   "36",
+   "Undertale: Neutral - 1.00-1.001, Glitched, Fresh Save",
+   "tetrisbit",
+   "1102.03"
+  ],
+  [
+   "37",
+   "Super Mario 63: Any% - Normal",
+   "Vertic",
+   "1101.64"
+  ],
+  [
+   "38",
+   "Ratchet & Clank: Up Your Arsenal: NG+ No QE",
+   "Torrbullen",
+   "1099.69"
+  ],
+  [
+   "39",
+   "Super Mario Sunshine: 120 Shines - GCN",
+   "akane",
+   "1096.44"
+  ],
+  [
+   "40",
+   "Mirror's Edge: Any%",
+   "-Phoenix-",
+   "1094.72"
+  ],
+  [
+   "41",
+   "Ratchet & Clank: NG+",
+   "Ataappi",
+   "1093.76"
+  ],
+  [
+   "42",
+   "Minecraft: Java Edition: Any% Glitchless - Set Seed, 1.16-1.19",
+   "KenanKardes",
+   "1091.34"
+  ],
+  [
+   "43",
+   "Jump King: Main Babe",
+   "Hanyeah",
+   "1086.61"
+  ],
+  [
+   "44",
+   "Donkey Kong Bananza: Any% - 1P, Restricted",
+   "Twirly",
+   "1079.38"
+  ],
+  [
+   "45",
+   "Celeste: All Red Berries",
+   "Jackthewack",
+   "1063"
+  ],
+  [
+   "46",
+   "New Super Mario Bros. Wii: Any% - Physical",
+   "BigCheese",
+   "1050.89"
+  ],
+  [
+   "47",
+   "The Legend of Zelda: The Wind Waker HD: Any% - Unrestricted",
+   "mralberto23",
+   "1049.13"
+  ],
+  [
+   "48",
+   "Super Mario Odyssey: World Peace - 1P",
+   "BusterDoggy",
+   "1046.84"
+  ],
+  [
+   "49",
+   "Portal: Glitchless - PC",
+   "SiDiouS",
+   "1043.1"
+  ],
+  [
+   "50",
+   "Titanfall 2: Any% - Standard",
+   "Darkwin",
+   "1032.43"
+  ],
+  [
+   "51",
+   "Cuphead: Version 1.1+ - Any%, Regular",
+   "SBDWolf",
+   "1031.91"
+  ],
+  [
+   "52",
+   "Half-Life 2: New Engine - Any% No Voidclip",
+   "Buster12",
+   "1004.74"
+  ],
+  [
+   "53",
+   "Spyro the Dragon: 120%",
+   "Jordy_925",
+   "1000.53"
+  ],
+  [
+   "54",
+   "Crash Team Racing: Any% (No Major Glitches) - Disc",
+   "Hypnoshark",
+   "999.931"
+  ],
+  [
+   "55",
+   "Jak 3: Any% No OoB - Original, Unrestricted",
+   "usual",
+   "995.889"
+  ],
+  [
+   "56",
+   "Scooby-Doo! Night of 100 Frights: Any% - No HGC",
+   "Mortal",
+   "982.614"
+  ],
+  [
+   "57",
+   "Plants vs. Zombies: Any% - PC",
+   "TheLoneBanana0",
+   "961.043"
+  ],
+  [
+   "58",
+   "Half-Life: WON - Scriptless",
+   "KaNanga",
+   "959.549"
+  ],
+  [
+   "59",
+   "Kirby and the Forgotten Land: Any% - Switch",
+   "hirahira",
+   "955.143"
+  ],
+  [
+   "60",
+   "Hollow Knight: Any% - 1.4.3.2+ NMG",
+   "Yihou",
+   "945.433"
+  ],
+  [
+   "61",
+   "Cuphead: Legacy Version - Any%, Regular",
+   "Yuka",
+   "937.59"
+  ],
+  [
+   "62",
+   "Human Fall Flat: Aztec% - Solo",
+   "imomushi59",
+   "935.518"
+  ],
+  [
+   "63",
+   "Luigi's Mansion: Any% (No OoB) - GCN",
+   "jovin",
+   "929.935"
+  ],
+  [
+   "64",
+   "Grand Theft Auto V: Any% - Classic, No",
+   "UnNameD",
+   "929.208"
+  ],
+  [
+   "65",
+   "The Legend of Zelda: Breath of the Wild: Great Plateau Any% - 1.0 - 1.7",
+   "MoldyMeatballs",
+   "927.509"
+  ],
+  [
+   "66",
+   "Super Mario Galaxy: Any% - 1P, Luigi",
+   "Mr.CloudKirby",
+   "921.855"
+  ],
+  [
+   "67",
+   "Banjo-Kazooie: Nintendo 64 - 100%, FFM",
+   "Funderful",
+   "917.876"
+  ],
+  [
+   "68",
+   "Fallout: New Vegas: Any% - Yes Man",
+   "WaveClipping",
+   "912.967"
+  ],
+  [
+   "69",
+   "Ratchet & Clank: Any%",
+   "Ataappi",
+   "911.414"
+  ],
+  [
+   "70",
+   "Sekiro: Shadows Die Twice: Shura - PC, Glitchless",
+   "Yeruka",
+   "909.908"
+  ],
+  [
+   "71",
+   "The Legend of Zelda: Skyward Sword: Any%",
+   "Thunderbolt",
+   "907.157"
+  ],
+  [
+   "72",
+   "Red Ball 4 Vol.1: Any%",
+   "Starline",
+   "906.79"
+  ],
+  [
+   "73",
+   "Crash Bandicoot 2: Cortex Strikes Back: 100%",
+   "Stuart0000",
+   "905.467"
+  ],
+  [
+   "74",
+   "The Legend of Zelda: Twilight Princess: Any% - GameCube",
+   "bewildebeest",
+   "902.823"
+  ],
+  [
+   "75",
+   "Only Up!: Any% - Launchless",
+   "Deafmute",
+   "899.094"
+  ],
+  [
+   "76",
+   "SpongeBob SquarePants: Battle for Bikini Bottom: Boost% - Unrestricted",
+   "SHiFT",
+   "889.272"
+  ],
+  [
+   "77",
+   "The Elder Scrolls V: Skyrim: Main Quest - PC",
+   "DankSlushie",
+   "888.986"
+  ],
+  [
+   "78",
+   "Slime Rancher: Any% Glitchless - 1.0.1 - 1.4.4",
+   "ThePigKing",
+   "886.84"
+  ],
+  [
+   "79",
+   "Donkey Kong Country: All Stages - SNES",
+   "lovebird920",
+   "881.831"
+  ],
+  [
+   "80",
+   "Spyro: Year of the Dragon: 117%",
+   "notvanni",
+   "877.812"
+  ],
+  [
+   "81",
+   "Super Mario Odyssey: Dark Side - 1P",
+   "Tyron18",
+   "872.584"
+  ],
+  [
+   "82",
+   "Dark Souls: All Bosses",
+   "xmonkeh",
+   "870.187"
+  ],
+  [
+   "83",
+   "Undertale: True Pacifist - 1.00-1.001, Glitched, Fresh Save",
+   "Jaq",
+   "864.74"
+  ],
+  [
+   "84",
+   "Spyro 2: Ripto's Rage!: 100%",
+   "bluntbows",
+   "856.371"
+  ],
+  [
+   "85",
+   "DOOM: Any%",
+   "seeker",
+   "853.709"
+  ],
+  [
+   "86",
+   "Sly Cooper and the Thievius Raccoonus: Any% - Original, Console",
+   "Gehis514",
+   "848.096"
+  ],
+  [
+   "87",
+   "Harry Potter and the Prisoner of Azkaban (PC): Any%",
+   "pietrak",
+   "845.723"
+  ],
+  [
+   "88",
+   "Outer Wilds: Any% - Normal, PC",
+   "ptminsker",
+   "843.654"
+  ],
+  [
+   "89",
+   "Super Mario Odyssey: All Moons",
+   "BP31",
+   "841.532"
+  ],
+  [
+   "90",
+   "Super Mario 3D World + Bowser's Fury: Bowser's Fury - Any%, No Amiibo",
+   "Nin-Tanner",
+   "840.51"
+  ],
+  [
+   "91",
+   "Karlson (Itch.io): Any%",
+   "FOPAWESOME",
+   "837.266"
+  ],
+  [
+   "92",
+   "Dishonored: Dishonored - Any%",
+   "HardLifeNH",
+   "836.946"
+  ],
+  [
+   "93",
+   "The SpongeBob SquarePants Movie: No Major Glitches",
+   "Purple",
+   "829.427"
+  ],
+  [
+   "94",
+   "Ori and the Blind Forest Definitive Edition: All Skills - No OOB/TA",
+   "Primorix",
+   "826.474"
+  ],
+  [
+   "95",
+   "Subnautica: Any% - Survival, Glitched",
+   "ItsFrosti",
+   "825.803"
+  ],
+  [
+   "96",
+   "NieR: Automata: [A] - Normal",
+   "Percyy",
+   "824.798"
+  ],
+  [
+   "97",
+   "Star Wars Jedi Knight: Jedi Academy: Any% no Stablaunch",
+   "l1f3l6sS",
+   "818.239"
+  ],
+  [
+   "98",
+   "The Elder Scrolls IV: Oblivion: No OoB - PC",
+   "Dezmone",
+   "814.58"
+  ],
+  [
+   "99",
+   "Clustertruck: Any% - Any%",
+   "EmilySailor",
+   "812.533"
+  ],
+  [
+   "100",
+   "Jak II: Any% - Original",
+   "BlordBlordan",
+   "811.358"
+  ],
+  [
+   "101",
+   "Portal: Inbounds Legacy - PC",
+   "SiDiouS",
+   "806.582"
+  ],
+  [
+   "102",
+   "Spyro the Dragon: Any%",
+   "Composer",
+   "798.822"
+  ],
+  [
+   "103",
+   "Super Metroid: 100%",
+   "ShinyZeni",
+   "798.661"
+  ],
+  [
+   "104",
+   "The Legend of Zelda: Majora's Mask: Any% - No Major Glitches",
+   "thesausage",
+   "793.41"
+  ],
+  [
+   "105",
+   "Jak and Daxter: The Precursor Legacy: No LTS",
+   "DeanoBeano",
+   "792.015"
+  ],
+  [
+   "106",
+   "Star Wars: Knights of the Old Republic: Any% - Unrestricted",
+   "NinkoHD",
+   "790.315"
+  ],
+  [
+   "107",
+   "Factorio: Any% - 1.x.x",
+   "Zaspar",
+   "789.934"
+  ],
+  [
+   "108",
+   "Outlast: All Chapters - Main Game, PC",
+   "seaagle",
+   "783.175"
+  ],
+  [
+   "109",
+   "BONEWORKS: NewGame+",
+   "Emil_",
+   "781.375"
+  ],
+  [
+   "110",
+   "Chained Together: Any% - Restricted, v1.7.3+, 1 Player, Main",
+   "Zerek_",
+   "778.345"
+  ],
+  [
+   "111",
+   "Half-Life 2 Category Extensions: Cutsceneless - HL1 Movement Fun%",
+   "Nikitos12",
+   "772.893"
+  ],
+  [
+   "112",
+   "Minecraft: Java Edition: Any% Glitchless - Random Seed, 1.13-1.15",
+   "M4xx",
+   "766.106"
+  ],
+  [
+   "113",
+   "Luigi's Mansion 3: Any% - Solo, Legacy",
+   "Izorious",
+   "765.056"
+  ],
+  [
+   "114",
+   "Super Mario Galaxy: Any% - 2P, Luigi",
+   "Mr.CloudKirby",
+   "764.973"
+  ],
+  [
+   "115",
+   "Resident Evil 2 (2019): New Game (PC) - Leon, Standard, 120",
+   "Frit",
+   "762.882"
+  ],
+  [
+   "116",
+   "Super Paper Mario: Any% - Wii / Wii U",
+   "Castle",
+   "762.738"
+  ],
+  [
+   "117",
+   "Red Ball 3: Any%",
+   "minichip",
+   "762.661"
+  ],
+  [
+   "118",
+   "Dark Souls: Any%",
+   "QueueKyoo",
+   "759.272"
+  ],
+  [
+   "119",
+   "Granny (PC): Any% - Door",
+   "mssnb666",
+   "757.815"
+  ],
+  [
+   "120",
+   "The Legend of Zelda: Ocarina of Time: MST",
+   "CountLG",
+   "757.336"
+  ],
+  [
+   "121",
+   "Jet Set Radio Future: Any%",
+   "JonIsDifferent",
+   "756.665"
+  ],
+  [
+   "122",
+   "The Legend of Zelda: Breath of the Wild: All Shrines - Original, No Restrictions, 1.0 - 1.7",
+   "MoldyMeatballs",
+   "755.698"
+  ],
+  [
+   "123",
+   "Super Mario World: 96 Exit",
+   "maibaRTA",
+   "755.297"
+  ],
+  [
+   "124",
+   "The Impossible Quiz: 100%",
+   "minidanger13",
+   "752.836"
+  ],
+  [
+   "125",
+   "Crash Bandicoot 3: Warped: Any% (No Item Glitch)",
+   "Potty",
+   "746.893"
+  ],
+  [
+   "126",
+   "Only Up!: Any% - Dragon Route",
+   "RadishRavler",
+   "744.392"
+  ],
+  [
+   "127",
+   "Portal 2 Speedrun Mod: Single Player",
+   "Burger40",
+   "743.442"
+  ],
+  [
+   "128",
+   "Hollow Knight: All Skills - No Major Glitches",
+   "JackmanMarcus",
+   "733.386"
+  ],
+  [
+   "129",
+   "Celeste: Clear, Forsaken City - Dash",
+   "secureaccount",
+   "731.821"
+  ],
+  [
+   "130",
+   "The Legend of Zelda: Any% No Up+A - First Quest",
+   "Schicksal",
+   "730.859"
+  ],
+  [
+   "131",
+   "OneShot: Any% - Glitched",
+   "Laberry",
+   "726.267"
+  ],
+  [
+   "132",
+   "ROBLOX: Speed Run 4: Main World - No Skips, 5 Levels, Pre-Sept 2024",
+   "Nolyswag",
+   "725.353"
+  ],
+  [
+   "133",
+   "Dark Souls III: Any% Restricted",
+   "quietx",
+   "724.985"
+  ],
+  [
+   "134",
+   "ENA: Dream BBQ: Chapter 1 - Purge Event, Unrestricted",
+   "citruslvr",
+   "720.139"
+  ],
+  [
+   "135",
+   "The Simpsons: Hit & Run: 100% - PC",
+   "HomerOfSteel",
+   "719.813"
+  ],
+  [
+   "136",
+   "Resident Evil 7: Biohazard: Any% - PC, New Game+, Easy, Full Game",
+   "CaptainEzekiel",
+   "716.48"
+  ],
+  [
+   "137",
+   "Deltarune: Chapter 1 - Any%",
+   "Jaq",
+   "716.289"
+  ],
+  [
+   "138",
+   "Fallout 4: Any% - Full-game",
+   "pekkanen",
+   "715.625"
+  ],
+  [
+   "139",
+   "Superliminal: Glitchless - PC",
+   "michaell",
+   "713.95"
+  ],
+  [
+   "140",
+   "The Legend of Zelda: Four Swords Adventures: Any%",
+   "NaviLyn",
+   "713.646"
+  ],
+  [
+   "141",
+   "Super Mario Bros.: Warpless - NTSC",
+   "Niftski",
+   "707.859"
+  ],
+  [
+   "142",
+   "Castlevania (NES): Any%",
+   "SBDWolf",
+   "707.094"
+  ],
+  [
+   "143",
+   "Dark Souls III: Any%",
+   "Fadis",
+   "706.668"
+  ],
+  [
+   "144",
+   "Jak and Daxter: The Precursor Legacy: 100%",
+   "aslov",
+   "703.261"
+  ],
+  [
+   "145",
+   "Dark Souls III: All Bosses - Restricted",
+   "Kuroko",
+   "702.545"
+  ],
+  [
+   "146",
+   "Sekiro: Shadows Die Twice: Shura - PC, Restricted",
+   "WormdogBS",
+   "699.601"
+  ],
+  [
+   "147",
+   "Resident Evil 2 (2019): New Game (PC) - Claire, Standard, 120",
+   "Frit",
+   "698.6"
+  ],
+  [
+   "148",
+   "The Legend of Zelda: Majora's Mask: Any% - Unrestricted",
+   "JTown2909",
+   "698.374"
+  ],
+  [
+   "149",
+   "Pizza Tower: Any% - Unrestricted, Peppino",
+   "doof_heinz",
+   "694.373"
+  ],
+  [
+   "150",
+   "Grand Theft Auto III: Any% (No ASE)",
+   "Chivu",
+   "693.495"
+  ],
+  [
+   "151",
+   "Metroid: Zero Mission: 100% - Normal",
+   "CScottyW",
+   "693.057"
+  ],
+  [
+   "152",
+   "Resident Evil 4 (Steam): New Game - Professional, 60 FPS, Single Segment",
+   "JokerUY",
+   "691.158"
+  ],
+  [
+   "153",
+   "The Legend of Zelda: A Link Between Worlds: Any% - Normal Mode, Original",
+   "Thunderbolt",
+   "689.62"
+  ],
+  [
+   "154",
+   "Tony Hawk's Underground: Any% - Beginner",
+   "shnazz",
+   "686.592"
+  ],
+  [
+   "155",
+   "The Legend of Zelda: Ocarina of Time: Defeat Ganon - No SRM",
+   "TKC",
+   "686.284"
+  ],
+  [
+   "156",
+   "Untitled Goose Game: Any% Glitchless - 1 player",
+   "Keiichi",
+   "686.166"
+  ],
+  [
+   "157",
+   "Ratchet & Clank: Going Commando: NG+ No IMG - Original",
+   "FeaR",
+   "683.646"
+  ],
+  [
+   "158",
+   "Skylanders: Spyro's Adventure (Wii/WiiU): Any% - Solo, Hardware",
+   "Universe",
+   "680.267"
+  ],
+  [
+   "159",
+   "Zelda II: The Adventure of Link: 100% All Keys, 1CC",
+   "OrkleDorkle",
+   "679.05"
+  ],
+  [
+   "160",
+   "LEGO Batman: The Videogame: Story - Solo, Hero",
+   "firmynator",
+   "678.362"
+  ],
+  [
+   "161",
+   "A Difficult Game About Climbing: Glitchless",
+   "NERFI",
+   "676.773"
+  ],
+  [
+   "162",
+   "Elden Ring: Any% - Glitchless",
+   "N1ghtglow",
+   "676.195"
+  ],
+  [
+   "163",
+   "Minecraft: Bedrock Edition: Any% - Mobile, Set Seed",
+   "Goldenlemon",
+   "675.434"
+  ],
+  [
+   "164",
+   "Undertale: Genocide - 1.00-1.001",
+   "tetrisbit",
+   "674.808"
+  ],
+  [
+   "165",
+   "Roblox: DOORS: The Hotel - No Shop, Legacy (Hotel-), Solo",
+   "Spondos",
+   "674.017"
+  ],
+  [
+   "166",
+   "A Hat in Time: Any% - Lag Abuse, PC",
+   "lumeria",
+   "672.897"
+  ],
+  [
+   "167",
+   "Resident Evil 2 (2019): New Game (Console) - Leon, Standard",
+   "Dyldor",
+   "672.524"
+  ],
+  [
+   "168",
+   "Devil May Cry: Any% - Dante, Normal",
+   "ChrisLink",
+   "671.47"
+  ],
+  [
+   "169",
+   "Hollow Knight: True Ending - No Major Glitches",
+   "StratSus",
+   "670.491"
+  ],
+  [
+   "170",
+   "Splatoon 2: Any%",
+   "Roylouk",
+   "670.381"
+  ],
+  [
+   "171",
+   "Katana ZERO: All Stages - Katana, Normal",
+   "KittyLyra",
+   "670.1"
+  ],
+  [
+   "172",
+   "LEGO Star Wars: The Video Game: Any% - Solo, GCN",
+   "coolestto",
+   "668.148"
+  ],
+  [
+   "173",
+   "Cry of Fear: New Game+ - Bhopcap",
+   "Riggy87",
+   "667.728"
+  ],
+  [
+   "174",
+   "SpongeBob SquarePants: Battle for Bikini Bottom: Cheat%",
+   "StarSpeedruns",
+   "666.997"
+  ],
+  [
+   "175",
+   "Super Mario World: 11 Exit - Glitchless",
+   "oil_in_water",
+   "666.846"
+  ],
+  [
+   "176",
+   "LEGO Indiana Jones: The Original Adventures: Any% - Solo, PC",
+   "Sonic7",
+   "666.378"
+  ],
+  [
+   "177",
+   "Super Mario 3D World + Bowser's Fury: Super Mario 3D World - Any%",
+   "LuigiMaster",
+   "665.574"
+  ],
+  [
+   "178",
+   "Dead Space 2: Any% - Casual",
+   "sharkhat",
+   "663.844"
+  ],
+  [
+   "179",
+   "Super Mario Odyssey Category Extensions: Nipple% - Hint Art",
+   "Tyron18",
+   "662.037"
+  ],
+  [
+   "180",
+   "Wii Sports Resort: Cycling - Solo, 6-Stage",
+   "RayndX210",
+   "660.772"
+  ],
+  [
+   "181",
+   "Five Nights at Freddy's: Security Breach: Vanny Ending - Out of Bounds, PC, 1.04",
+   "MichaelCheddar",
+   "660.274"
+  ],
+  [
+   "182",
+   "Resident Evil 2 (2019): New Game (PC) - Leon, Standard, 60",
+   "TheFuretto",
+   "658.705"
+  ],
+  [
+   "183",
+   "Donkey Kong Country 2: Diddy's Kong Quest: Any% - SNES",
+   "Leftover0w0",
+   "657.342"
+  ],
+  [
+   "184",
+   "Wii Sports Resort: All Sports",
+   "Benson",
+   "656.187"
+  ],
+  [
+   "185",
+   "Final Fantasy X: PC - Any%",
+   "CaracarnVi",
+   "654.445"
+  ],
+  [
+   "186",
+   "Animal Well: Any% - NMG",
+   "plasmanta",
+   "651.205"
+  ],
+  [
+   "187",
+   "Mafia: The City of Lost Heaven: Any% - PC",
+   "anton523",
+   "649.896"
+  ],
+  [
+   "188",
+   "Bloodborne: All Bosses - Unrestricted",
+   "LanQiu",
+   "649.515"
+  ],
+  [
+   "189",
+   "Super Mario World: No Starworld",
+   "Mnine",
+   "649.241"
+  ],
+  [
+   "190",
+   "Wii Sports Resort: Golf - 18 Holes",
+   "MineXeniM",
+   "647.738"
+  ],
+  [
+   "191",
+   "Red Ball 2: 20 Levels",
+   "Helicopter",
+   "647.177"
+  ],
+  [
+   "192",
+   "BioShock: Any% - PC",
+   "Reev_0",
+   "647.145"
+  ],
+  [
+   "193",
+   "S.T.A.L.K.E.R.: Shadow of Chernobyl: Any% - Novice",
+   "Horned_Reaper",
+   "646.536"
+  ],
+  [
+   "194",
+   "Ape Escape 3: Any%",
+   "EDO",
+   "645.698"
+  ],
+  [
+   "195",
+   "Spyro Reignited Trilogy (Console & Time Trials): Spyro the Dragon - Any% NBS",
+   "Narwhal",
+   "644.684"
+  ],
+  [
+   "196",
+   "SpongeBob SquarePants: Battle for Bikini Bottom: Boost% - Classic",
+   "Louf",
+   "642.932"
+  ],
+  [
+   "197",
+   "The Legend of Zelda: Ocarina of Time: GSR",
+   "CountLG",
+   "641.303"
+  ],
+  [
+   "198",
+   "Splatoon 2: Octo Expansion: Any% - No Death Abuse",
+   "Roylouk",
+   "639.541"
+  ],
+  [
+   "199",
+   "SpongeBob SquarePants: Battle for Bikini Bottom: Any% - PS2",
+   "SHiFT",
+   "636.913"
+  ],
+  [
+   "200",
+   "Sonic Frontiers: Any% - PC",
+   "Onaku",
+   "635.782"
+  ],
+  [
+   "201",
+   "The Fancy Pants Adventures: World 1: Any%",
+   "DylCat",
+   "633.615"
+  ],
+  [
+   "202",
+   "Celeste: Clear, Celestial Resort",
+   "secureaccount",
+   "632.844"
+  ],
+  [
+   "203",
+   "Deltarune: Chapter 2 - Main Route, Glitched",
+   "MarioMan47",
+   "632.746"
+  ],
+  [
+   "204",
+   "Penumbra: Black Plague: Any%",
+   "PixelArth",
+   "631.778"
+  ],
+  [
+   "205",
+   "Shovel Knight: Any% - Shovel Knight",
+   "applesauc",
+   "631.354"
+  ],
+  [
+   "206",
+   "Okami: NG Any%",
+   "RiftyRTA",
+   "631.081"
+  ],
+  [
+   "207",
+   "Super Mario World 2: Yoshi's Island: All Main Stages - SNES, Warpless",
+   "Calco2",
+   "630.901"
+  ],
+  [
+   "208",
+   "Super Mario Galaxy: Any% - 1P, Mario",
+   "dara_",
+   "630.475"
+  ],
+  [
+   "209",
+   "The Legend of Zelda: Link's Awakening (2019): Any% - Normal",
+   "ta0myo",
+   "630.222"
+  ],
+  [
+   "210",
+   "The SpongeBob SquarePants Movie: No Pause Storage - Defeat Neptune",
+   "Purple",
+   "627.607"
+  ],
+  [
+   "211",
+   "Hollow Knight: 112% APB - No Major Glitches",
+   "ScottyBVB",
+   "627.396"
+  ],
+  [
+   "212",
+   "Kirby Super Star: Any%",
+   "Yotta",
+   "626.708"
+  ],
+  [
+   "213",
+   "Peggle Deluxe: Adventure Mode",
+   "Jnano",
+   "626.414"
+  ],
+  [
+   "214",
+   "Minecraft: Bedrock Edition: Any% Glitchless - PC, 1.16, Set Seed",
+   "Danny15",
+   "626.101"
+  ],
+  [
+   "215",
+   "Super Mario 64: 70 Star - EMU",
+   "taihou",
+   "625.973"
+  ],
+  [
+   "216",
+   "Ratchet & Clank: Going Commando: NG+ - Original",
+   "FeaR",
+   "624.593"
+  ],
+  [
+   "217",
+   "Grand Theft Auto Category Extensions: San Andreas - Los Santos, Original",
+   "creezyful",
+   "624.239"
+  ],
+  [
+   "218",
+   "Super Mario Bros. 3: Any% Warpless",
+   "Kuto1k",
+   "623.038"
+  ],
+  [
+   "219",
+   "Spyro the Dragon: Vortex",
+   "Composer",
+   "620.703"
+  ],
+  [
+   "220",
+   "Splatoon 3: Any% - Unrestricted",
+   "salt29yo",
+   "620.157"
+  ],
+  [
+   "221",
+   "SUPERHOT: Any% - PC",
+   "FOK",
+   "619.573"
+  ],
+  [
+   "222",
+   "Outlast: Glitchless - Whistleblower, PC, No S+Q",
+   "PyBrou",
+   "619.138"
+  ],
+  [
+   "223",
+   "Pizza Tower: Any% - No Major Glitches, Peppino",
+   "Yottacat",
+   "618.923"
+  ],
+  [
+   "224",
+   "Crash Bandicoot 3: Warped: 105%",
+   "Potty",
+   "618.487"
+  ],
+  [
+   "225",
+   "The Legend of Zelda: The Wind Waker: PST",
+   "minimini352",
+   "618.209"
+  ],
+  [
+   "226",
+   "The Legend of Zelda: Breath of the Wild: Master Sword - Original, Restricted, 1.0 - 1.7",
+   "MoldyMeatballs",
+   "617.554"
+  ],
+  [
+   "227",
+   "Paper Mario: The Thousand-Year Door: Any% - No AMW",
+   "SwayNC",
+   "616.143"
+  ],
+  [
+   "228",
+   "Batman: Arkham Asylum: Any% - Easy, PC",
+   "Bepsi",
+   "615.364"
+  ],
+  [
+   "229",
+   "Geometry Dash: 1-8 - Any%, Platformer/PC, No Major Glitches",
+   "NorXor",
+   "614.704"
+  ],
+  [
+   "230",
+   "Ratchet & Clank (PS4): NG+",
+   "Xanthoconite",
+   "614.396"
+  ],
+  [
+   "231",
+   "Donkey Kong 64: No Levels Early - N64",
+   "RandomSauce",
+   "613.35"
+  ],
+  [
+   "232",
+   "Crash Twinsanity: Any%",
+   "Gpro",
+   "610.059"
+  ],
+  [
+   "233",
+   "Mirror's Edge Catalyst: Any% - Classic",
+   "Balunn",
+   "609.135"
+  ],
+  [
+   "234",
+   "Super Mario Galaxy: 120 Stars - 2P, Luigi",
+   "Mr.CloudKirby",
+   "609.009"
+  ],
+  [
+   "235",
+   "Sly 2: Band of Thieves: Any% - Remaster",
+   "Crystls",
+   "606.585"
+  ],
+  [
+   "236",
+   "Metroid Dread: Any% - Normal, No Major Glitches",
+   "noyazaki",
+   "606.083"
+  ],
+  [
+   "237",
+   "Ratchet & Clank: All Gold Bolts",
+   "Ataappi",
+   "605.937"
+  ],
+  [
+   "238",
+   "Little Nightmares: Any% - PC",
+   "CappuccinoMan",
+   "603.325"
+  ],
+  [
+   "239",
+   "Wubbzy's Amazing Adventure: Any% Skipless - 1.1",
+   "DylCat",
+   "601.972"
+  ],
+  [
+   "240",
+   "The Legend of Zelda: Majora's Mask: 100% - No Major Glitches",
+   "jess57329",
+   "600.336"
+  ],
+  [
+   "241",
+   "Ori and the Blind Forest: Any%",
+   "Ikewolf",
+   "599.909"
+  ],
+  [
+   "242",
+   "Super Mario Bros. Wonder: Any% No Major Glitches",
+   "ZimPractical",
+   "599.411"
+  ],
+  [
+   "243",
+   "Furi: Speedrun Mode - Legacy, Rider, No Skip",
+   "Dircashede",
+   "598.25"
+  ],
+  [
+   "244",
+   "Rabi-Ribi: 10 Town Members - Casual, Standard",
+   "chanmo",
+   "596.145"
+  ],
+  [
+   "245",
+   "DOOM Eternal: Any% (Restricted) - Classic",
+   "Tehn0va",
+   "595.429"
+  ],
+  [
+   "246",
+   "Super Mario 64 DS: 80 Star",
+   "relievedliberty",
+   "595.078"
+  ],
+  [
+   "247",
+   "Super Meat Boy: Any%",
+   "DrZytho",
+   "593.055"
+  ],
+  [
+   "248",
+   "Getting Over It (Scratch edition): Any%",
+   "BlastMagic",
+   "591.824"
+  ],
+  [
+   "249",
+   "Spyro: Year of the Dragon: Any%",
+   "jeremythompson",
+   "590.154"
+  ],
+  [
+   "250",
+   "The Legend of Zelda: A Link to the Past: No Major Glitches - Any%",
+   "Eriror",
+   "588.436"
+  ],
+  [
+   "251",
+   "The Legend of Zelda: Ocarina of Time: 100% - No SRM",
+   "AxelLarsen",
+   "587.456"
+  ],
+  [
+   "252",
+   "Crash Bandicoot: 100%",
+   "Tebt_W",
+   "585.576"
+  ],
+  [
+   "253",
+   "Super Mario Bros. 3: 100%",
+   "Kuto1k",
+   "584.815"
+  ],
+  [
+   "254",
+   "Dishonored 2: Any% - Corvo",
+   "Cearadeth",
+   "583.37"
+  ],
+  [
+   "255",
+   "Robot 64: No Major Glitches - No Bonus Levels",
+   "ssurt_",
+   "583.096"
+  ],
+  [
+   "256",
+   "Pikmin 2: Pay Off Debt - GC",
+   "JackDraz",
+   "580.03"
+  ],
+  [
+   "257",
+   "Diddy Kong Racing: 100%",
+   "MrPonytale",
+   "579.999"
+  ],
+  [
+   "258",
+   "The Simpsons: Hit & Run: ASM (NG+) - PC",
+   "chris_speedruns",
+   "579.164"
+  ],
+  [
+   "259",
+   "Hotline Miami: NG+ All Levels",
+   "Agamem",
+   "578.867"
+  ],
+  [
+   "260",
+   "Super Mario 63: No Major Skips - Normal",
+   "Vertic",
+   "578.455"
+  ],
+  [
+   "261",
+   "The Legend of Zelda: Link's Awakening DX: Any% (No S+Q/WW/OoB)",
+   "TGH",
+   "575.857"
+  ],
+  [
+   "262",
+   "Harry Potter and the Philosopher's Stone (PC): Any%",
+   "Flo203",
+   "575.441"
+  ],
+  [
+   "263",
+   "The Legend of Zelda: Twilight Princess HD: Any%",
+   "gymnast86",
+   "574.511"
+  ],
+  [
+   "264",
+   "Celeste: Clear, Golden Ridge",
+   "secureaccount",
+   "573.84"
+  ],
+  [
+   "265",
+   "Hollow Knight: All Skills - 1.4.3.2+ NMG",
+   "Yihou",
+   "572.748"
+  ],
+  [
+   "266",
+   "PEAK: Peak% - Solo, No Major Glitches, Set Seed, PEAK",
+   "Chocler",
+   "572.694"
+  ],
+  [
+   "267",
+   "Grand Theft Auto: San Andreas: Any% (No AJS) - Without 3rd-party caps",
+   "PaschalBrush260",
+   "570.006"
+  ],
+  [
+   "268",
+   "LEGO Star Wars: The Complete Saga (PC/Console): Free Play - Solo, PC",
+   "Zacc",
+   "569.315"
+  ],
+  [
+   "269",
+   "Contra: Any%",
+   "k1ngk0opa",
+   "569.116"
+  ],
+  [
+   "270",
+   "Portal Stories: Mel: Story Mode - Inbounds",
+   "Burger40",
+   "568.646"
+  ],
+  [
+   "271",
+   "Final Fantasy VII: PC - Any%, No Turbo",
+   "zergu12",
+   "568.392"
+  ],
+  [
+   "272",
+   "Celeste: Clear, Old Site",
+   "secureaccount",
+   "567.779"
+  ],
+  [
+   "273",
+   "Star Wars Jedi: Fallen Order: Any% - PC, No PBC",
+   "Tomatomato",
+   "567.027"
+  ],
+  [
+   "274",
+   "Diddy Kong Racing: All Trophy Races",
+   "Leah",
+   "566.59"
+  ],
+  [
+   "275",
+   "Ninja Gaiden Black: Normal - Any%",
+   "Pahlsson",
+   "565.808"
+  ],
+  [
+   "276",
+   "Warframe: Solo, Profit-Taker - Pre-35.5",
+   "Vaeli",
+   "565.355"
+  ],
+  [
+   "277",
+   "Chameleon Twist: Any%",
+   "Rainchus",
+   "565.316"
+  ],
+  [
+   "278",
+   "Super Monkey Ball 2: Story Mode - All Levels",
+   "callumbal",
+   "564.375"
+  ],
+  [
+   "279",
+   "Luigi's Mansion: 100% - GCN",
+   "jovin",
+   "564.282"
+  ],
+  [
+   "280",
+   "The Last of Us: Grounded Glitchless - New Game",
+   "AnthonyCaliber",
+   "562.694"
+  ],
+  [
+   "281",
+   "Fable: The Lost Chapters: Any%",
+   "m3xon",
+   "562.17"
+  ],
+  [
+   "282",
+   "The Forest: Any% (No Explosive Glitch) - Creative",
+   "sxczurass",
+   "561.698"
+  ],
+  [
+   "283",
+   "Sly 3: Honor Among Thieves: Any%",
+   "Baconman12",
+   "560.2"
+  ],
+  [
+   "284",
+   "Okami: NG+ Any% - PS2, PS3, Wii",
+   "RiftyRTA",
+   "560.086"
+  ],
+  [
+   "285",
+   "Superliminal: Glitchless - Console",
+   "HazelSR",
+   "559.084"
+  ],
+  [
+   "286",
+   "Banjo-Kazooie: Xbox - 100% FFM",
+   "Trep",
+   "557.182"
+  ],
+  [
+   "287",
+   "Crash Team Racing: Nitro-Fueled: Any% - Current Patch",
+   "MartinIOV",
+   "554.354"
+  ],
+  [
+   "288",
+   "Ninja Gaiden (NES): Any%",
+   "TheRetroRunner",
+   "554.233"
+  ],
+  [
+   "289",
+   "Roblox: Grace: Any% - Solo, Tints of Rose, Unrestricted, Traitsless",
+   "Zenterf",
+   "552.922"
+  ],
+  [
+   "290",
+   "Fallout: New Vegas: Glitchless - Yes Man",
+   "PigSpots",
+   "552.83"
+  ],
+  [
+   "291",
+   "Dark Souls: Any% No Wrong Warp",
+   "xmonkeh",
+   "551.443"
+  ],
+  [
+   "292",
+   "Super Mario 64: 120 Star - EMU",
+   "Raisn",
+   "551.191"
+  ],
+  [
+   "293",
+   "The Legend of Zelda: Breath of the Wild: All Main Quests - Original, Restricted, 1.0 - 1.7",
+   "MoldyMeatballs",
+   "551.068"
+  ],
+  [
+   "294",
+   "Super Smash Bros. Brawl: Subspace Emissary - Easy, Solo, Any%",
+   "Tech",
+   "549.322"
+  ],
+  [
+   "295",
+   "Devil May Cry 3: Special Edition: NG Dante - Normal, PC",
+   "jslash",
+   "547.818"
+  ],
+  [
+   "296",
+   "Katamari Damacy Reroll: Any%",
+   "KamaCrimson",
+   "547.684"
+  ],
+  [
+   "297",
+   "Crash Bandicoot: Any%",
+   "Tebt_W",
+   "547.682"
+  ],
+  [
+   "298",
+   "Resident Evil 7: Biohazard: Any% - Console, New Game+, Easy, Full Game",
+   "DynastyDN",
+   "547.491"
+  ],
+  [
+   "299",
+   "Minecraft: Bedrock Edition: Any% Glitchless - PC, 1.18+, Set Seed",
+   "Khalooody",
+   "546.803"
+  ],
+  [
+   "300",
+   "Harry Potter and the Chamber of Secrets (PC): Any%",
+   "Flo203",
+   "544.905"
+  ],
+  [
+   "301",
+   "Duck Life 1: No Major Glitches - Any%",
+   "Caarda",
+   "542.661"
+  ],
+  [
+   "302",
+   "Getting Over It With Bennett Foddy: Snake",
+   "Tendou_Kisara",
+   "542.31"
+  ],
+  [
+   "303",
+   "Chip 'N Dale: Rescue Rangers: Any%",
+   "Neithend",
+   "541.452"
+  ],
+  [
+   "304",
+   "Robot 64: No Major Glitches - [Legacy] No Bonus Levels",
+   "sage211",
+   "541.148"
+  ],
+  [
+   "305",
+   "Batman: Arkham City: Any% - Easy, PC",
+   "ArkhamRuns",
+   "540.706"
+  ],
+  [
+   "306",
+   "Super Mario 64: 1 Star - N64",
+   "Suigi",
+   "539.583"
+  ],
+  [
+   "307",
+   "Super Castlevania IV: Any% - 1st Loop",
+   "JoeDamillio",
+   "539.345"
+  ],
+  [
+   "308",
+   "Donkey Kong Country: Any% - SNES",
+   "lovebird920",
+   "539.268"
+  ],
+  [
+   "309",
+   "A Hat in Time (Beta Build): 2017 Speedrunning Event",
+   "doesthisusername",
+   "539.226"
+  ],
+  [
+   "310",
+   "Deepest Sword: Any%",
+   "Brasil",
+   "538.486"
+  ],
+  [
+   "311",
+   "Crash Bandicoot: N. Sane Trilogy: Crash Bandicoot - Any%, PC, MG",
+   "WingKn0x",
+   "537.111"
+  ],
+  [
+   "312",
+   "Spyro Reignited Trilogy (PC): Spyro the Dragon - 120%",
+   "toastedkat",
+   "535.972"
+  ],
+  [
+   "313",
+   "Borderlands 2: Any% w/DLC - Gaige",
+   "darksmoke11",
+   "535.832"
+  ],
+  [
+   "314",
+   "Jak 3: Any% Hero Mode - Original",
+   "usual",
+   "535.818"
+  ],
+  [
+   "315",
+   "Star Wars - Jedi Knight II: Jedi Outcast: Any% - Normal",
+   "l1f3l6sS",
+   "535.419"
+  ],
+  [
+   "316",
+   "Bookworm Adventures: Adventure Mode",
+   "Chaoskiller05",
+   "535.253"
+  ],
+  [
+   "317",
+   "Ratchet: Deadlocked: NG+ No LC - Solo",
+   "roboo",
+   "532.841"
+  ],
+  [
+   "318",
+   "Astro's Playroom: Any%",
+   "Miksuwaaan",
+   "532.146"
+  ],
+  [
+   "319",
+   "Plants vs. Zombies: All Puzzles - PC",
+   "Guestwith9",
+   "532.117"
+  ],
+  [
+   "320",
+   "Dishonored 2: Any% - Emily",
+   "Cearadeth",
+   "531.066"
+  ],
+  [
+   "321",
+   "Ratchet & Clank: Rift Apart: NG+ - PS5",
+   "Bdud5",
+   "531.057"
+  ],
+  [
+   "322",
+   "Pok\u00e9mon Red/Blue: Any% Glitchless - ENG",
+   "SlNNED",
+   "529.133"
+  ],
+  [
+   "323",
+   "Yooka-Laylee: Any% - PC",
+   "hedweg",
+   "528.838"
+  ],
+  [
+   "324",
+   "Untitled Goose Game: Any% - 1 player",
+   "Hypaws",
+   "527.985"
+  ],
+  [
+   "325",
+   "Wii Sports: Golf: 9 Holes",
+   "EmoadNomad",
+   "527.744"
+  ],
+  [
+   "326",
+   "Will You Snail?: Any% NMG - Infinitely Easy",
+   "Meister_Moehrchen",
+   "527.54"
+  ],
+  [
+   "327",
+   "The Legend of Zelda: Oracle of Seasons: All Essences",
+   "Nitroz",
+   "526.154"
+  ],
+  [
+   "328",
+   "Super Mario World: All Castles",
+   "oosui",
+   "525.596"
+  ],
+  [
+   "329",
+   "Ghostrunner: Any% - Inbounds, Classic",
+   "pasiflora",
+   "524.991"
+  ],
+  [
+   "330",
+   "Resident Evil 7: Biohazard: Any% - PC, New Game, Easy, Full Game",
+   "CaptainEzekiel",
+   "524.554"
+  ],
+  [
+   "331",
+   "Jet Set Radio: Any% - PC",
+   "DylCat",
+   "523.693"
+  ],
+  [
+   "332",
+   "Super Mario 64 Category Extensions: 16 Star No LBLJ",
+   "Suigi",
+   "523.485"
+  ],
+  [
+   "333",
+   "Sekiro: Shadows Die Twice: All Bosses/Minibosses - PC, Glitchless",
+   "Beita",
+   "523.029"
+  ],
+  [
+   "334",
+   "Super Mario Bros. 2: Any%",
+   "EthanRTA",
+   "521.259"
+  ],
+  [
+   "335",
+   "The Hobbit: No Major Glitches - PC",
+   "MKarma",
+   "520.554"
+  ],
+  [
+   "336",
+   "Dark Souls III: Any% Glitchless",
+   "olzku23",
+   "519.589"
+  ],
+  [
+   "337",
+   "Mario Kart World: 30 Tracks (Classic) - With COM",
+   "Unkwn",
+   "518.184"
+  ],
+  [
+   "338",
+   "The Legend of Zelda: Ocarina of Time: All Dungeons - No SRM",
+   "zfg",
+   "518.009"
+  ],
+  [
+   "339",
+   "Metroid Prime: Any% - Normal",
+   "T3",
+   "516.693"
+  ],
+  [
+   "340",
+   "Super Mario Galaxy: 120 Stars - 1P, Luigi",
+   "HardcoreGaming",
+   "515.761"
+  ],
+  [
+   "341",
+   "Mario Kart 8 Deluxe: 48 Tracks - 200cc, No Items, Nintendo Switch",
+   "Armybidonville",
+   "515.527"
+  ],
+  [
+   "342",
+   "Hotline Miami: Any%",
+   "Pochtron",
+   "514.621"
+  ],
+  [
+   "343",
+   "God of War II: Any% NG+ - PlayStation 3",
+   "FlamesToy",
+   "514.202"
+  ],
+  [
+   "344",
+   "Metroid Dread: Any% - Normal, Unrestricted",
+   "bane",
+   "514.183"
+  ],
+  [
+   "345",
+   "Minecraft: Java Edition: Any% Glitchless - Random Seed, Pre 1.8",
+   "Infume",
+   "514.099"
+  ],
+  [
+   "346",
+   "Poppy Playtime: Chapter 2: PC - Out of Bounds, 1.0, Any%",
+   "proacventure",
+   "513.682"
+  ],
+  [
+   "347",
+   "Mario Kart 64: All Cups (Skips) - N64",
+   "abney317",
+   "512.553"
+  ],
+  [
+   "348",
+   "Champion Island Games: AllScrolls% - Warps Allowed",
+   "merio",
+   "512.513"
+  ],
+  [
+   "349",
+   "Ratchet & Clank: Up Your Arsenal: Any% No FC",
+   "king_dedede",
+   "512.359"
+  ],
+  [
+   "350",
+   "Filtered Seed Glitchless: Any% (1.16) - Seedbank, Solo",
+   "KostuGaming",
+   "510.751"
+  ],
+  [
+   "351",
+   "Spyro Reignited Trilogy (PC): Spyro the Dragon - Any% NBS",
+   "groxu",
+   "509.358"
+  ],
+  [
+   "352",
+   "Madagascar: Any% - PC",
+   "chris_speedruns",
+   "508.199"
+  ],
+  [
+   "353",
+   "Super Mario 3D World: Any%",
+   "LuigiMaster",
+   "507.253"
+  ],
+  [
+   "354",
+   "Outlast: Any% - PC, Whistleblower",
+   "KabzdariK",
+   "507"
+  ],
+  [
+   "355",
+   "Kirby 64: The Crystal Shards: 100%",
+   "Curtissimo",
+   "506.129"
+  ],
+  [
+   "356",
+   "OnlyUp Fortnite!: Any% - No Major Skips, The Moon, Only Up",
+   "LBMTheLegend",
+   "505.411"
+  ],
+  [
+   "357",
+   "Battle For Dream Island Again 5b: Any% - RTA",
+   "Numbly",
+   "505.268"
+  ],
+  [
+   "358",
+   "Wii Sports: All Sports",
+   "RyMacG4",
+   "505.122"
+  ],
+  [
+   "359",
+   "Metroid: Zero Mission: Any% - Normal",
+   "CScottyW",
+   "504.771"
+  ],
+  [
+   "360",
+   "The Simpsons: Hit & Run: No Mission Warps - PC",
+   "HomerOfSteel",
+   "504.174"
+  ],
+  [
+   "361",
+   "Spyro: Year of the Dragon: 100 Egg",
+   "jeremythompson",
+   "503.689"
+  ],
+  [
+   "362",
+   "Shovel Knight: Any% - Specter Knight",
+   "patwah",
+   "503.451"
+  ],
+  [
+   "363",
+   "Dark Souls Remastered: All Bosses - No Dropmod",
+   "olzku23",
+   "503.262"
+  ],
+  [
+   "364",
+   "New Super Mario Bros. 2: Any%",
+   "Zen_speedrun",
+   "502.192"
+  ],
+  [
+   "365",
+   "LittleBigPlanet: Any% No Overlord",
+   "nightcarries",
+   "502.042"
+  ],
+  [
+   "366",
+   "Batman: The Video Game (NES): Any%",
+   "st4nzzz",
+   "501.641"
+  ],
+  [
+   "367",
+   "Crash Bandicoot 2: Cortex Strikes Back: Any% (No Game Over Abuse)",
+   "Stuart0000",
+   "501.072"
+  ],
+  [
+   "368",
+   "2048: 2048 - Keyboard",
+   "IvyCide",
+   "501.042"
+  ],
+  [
+   "369",
+   "Grand Theft Auto: Vice City: All Missions",
+   "kaewdlo",
+   "500.882"
+  ],
+  [
+   "370",
+   "There Is No Game: Web - Glitchless",
+   "oatmealgobbler81",
+   "500.217"
+  ],
+  [
+   "371",
+   "Paper Mario: Glitchless - N64",
+   "realblopez",
+   "499.416"
+  ],
+  [
+   "372",
+   "Celeste: Clear, The Summit",
+   "secureaccount",
+   "498.787"
+  ],
+  [
+   "373",
+   "Ratchet & Clank: Going Commando: Any% - HD Collection",
+   "Scottobozo",
+   "498.239"
+  ],
+  [
+   "374",
+   "Amok Runner: Any%",
+   "Weegee",
+   "497.266"
+  ],
+  [
+   "375",
+   "Borderlands 2: UVHM Geared - Salvador",
+   "darksmoke11",
+   "496.959"
+  ],
+  [
+   "376",
+   "The Legend of Zelda: A Link to the Past: Restricted Major Glitches - All Dungeons",
+   "Doomtap",
+   "496.65"
+  ],
+  [
+   "377",
+   "OMORI (PC): Any% - No Save Warp, PC",
+   "Midona",
+   "496.257"
+  ],
+  [
+   "378",
+   "Banjo-Tooie: Any% - N64",
+   "Falcon",
+   "496.231"
+  ],
+  [
+   "379",
+   "Prey (2017): Any%",
+   "Yunt",
+   "495.921"
+  ],
+  [
+   "380",
+   "Uncharted: Drake's Fortune: Any% No Airwalk - No Launches",
+   "Panzerdeer",
+   "495.667"
+  ],
+  [
+   "381",
+   "Half-Life: WON - Scripted",
+   "javac_",
+   "495.219"
+  ],
+  [
+   "382",
+   "Neon White: Level Rush - PC (Steam), White, Heaven",
+   "lexi_spl",
+   "494.486"
+  ],
+  [
+   "383",
+   "Donkey Kong 64: No Levels Early - Wii U VC / NSO",
+   "Connor75",
+   "494.154"
+  ],
+  [
+   "384",
+   "Ratchet & Clank: Going Commando: All Platinum Bolts - Original",
+   "Emeralve",
+   "494.115"
+  ],
+  [
+   "385",
+   "Crash Bandicoot 4: It's About Time: Any% - Console",
+   "serenade_yuuki",
+   "494.088"
+  ],
+  [
+   "386",
+   "God of War: Any% NG+ - PlayStation 3",
+   "FlamesToy",
+   "494.03"
+  ],
+  [
+   "387",
+   "Deltarune: Chapter 2 - Main Route, Glitchless",
+   "MarioMan47",
+   "493.479"
+  ],
+  [
+   "388",
+   "Minecraft: Bedrock Edition: Any% - PC, Set Seed",
+   "Khalooody",
+   "492.089"
+  ],
+  [
+   "389",
+   "Outlast: No OoB - Main Game, PC, All Chapters",
+   "JayV",
+   "491.337"
+  ],
+  [
+   "390",
+   "Rotate: Any%",
+   "Mutogokuhun",
+   "491.058"
+  ],
+  [
+   "391",
+   "Genshin Impact: Elite Enemies: WL9 400EE NPuI - No Ley Line",
+   "milideci",
+   "490.911"
+  ],
+  [
+   "392",
+   "Castlevania: Symphony of the Night: Alucard - Any% NSC",
+   "Dr4gonBlitz",
+   "490.464"
+  ],
+  [
+   "393",
+   "Pok\u00e9mon Snap: Any% - N64",
+   "gunlap",
+   "490.045"
+  ],
+  [
+   "394",
+   "Super Paper Mario: Flipside Pit of 100 Trials - Wii / Wii U, Classic",
+   "FRN6_Phantom",
+   "489.543"
+  ],
+  [
+   "395",
+   "Hypixel Dropper: All Runs - 1.9+",
+   "imoniya",
+   "488.777"
+  ],
+  [
+   "396",
+   "Splatoon 2: NG+",
+   "Ath_",
+   "488.644"
+  ],
+  [
+   "397",
+   "Sekiro: Shadows Die Twice: Immortal Severance - PC, Glitchless",
+   "Yeruka",
+   "488.081"
+  ],
+  [
+   "398",
+   "Ape Escape 2: Any%",
+   "Yurivii",
+   "487.449"
+  ],
+  [
+   "399",
+   "Crash Bandicoot: N. Sane Trilogy: Crash Bandicoot 3: Warped - Any%, PC",
+   "CasuallyClutching",
+   "486.801"
+  ],
+  [
+   "400",
+   "Spyro 2: Ripto's Rage!: 14 Talisman",
+   "bluntbows",
+   "483.174"
+  ],
+  [
+   "401",
+   "Sonic Adventure 2: Battle: Hero Story - New Game, HD",
+   "Katie4",
+   "482.892"
+  ],
+  [
+   "402",
+   "Kirby: Nightmare in Dream Land: Any%",
+   "Kobral",
+   "482.176"
+  ],
+  [
+   "403",
+   "Brave Fencer Musashi: Any%",
+   "Furopen",
+   "481.239"
+  ],
+  [
+   "404",
+   "Super Mario World 2: Yoshi's Island: 100% - SNES, No Major Glitches",
+   "Calco2",
+   "480.561"
+  ],
+  [
+   "405",
+   "Harry Potter and the Philosopher's Stone (PS1): Any%",
+   "Flo203",
+   "480.064"
+  ],
+  [
+   "406",
+   "Super Mario Sunshine: 20 Shines - GCN",
+   "sIime",
+   "479.492"
+  ],
+  [
+   "407",
+   "The Legend of Zelda: Tears of the Kingdom: All Dungeons - pre-v1.2.1, Glitched",
+   "Xdri33s",
+   "479.062"
+  ],
+  [
+   "408",
+   "Super Mario 63: 100% - Normal",
+   "Vertic",
+   "478.319"
+  ],
+  [
+   "409",
+   "SpongeBob SquarePants: Battle for Bikini Bottom \u2013 Rehydrated: PC - 77 Spatulas, No Lag Abuse",
+   "chinoe",
+   "477.277"
+  ],
+  [
+   "410",
+   "Toxic 2: Any%",
+   "Vertic",
+   "477.198"
+  ],
+  [
+   "411",
+   "Spyro Reignited Trilogy (Console & Time Trials): Spyro the Dragon - 120%",
+   "groxu",
+   "476.869"
+  ],
+  [
+   "412",
+   "Pok\u00e9mon Let's Go Pikachu/Eevee: Any% NMS - Eevee, ENG, Switch 1",
+   "Etchy",
+   "476.249"
+  ],
+  [
+   "413",
+   "Enter the Gungeon: 1 Character - Any%",
+   "HollowGun",
+   "475.751"
+  ],
+  [
+   "414",
+   "Red and Blue Balls: 15 Levels",
+   "minichip",
+   "475.508"
+  ],
+  [
+   "415",
+   "Paper Mario: All Cards",
+   "ryoma",
+   "475.221"
+  ],
+  [
+   "416",
+   "Hollow Knight: Level, Path of Pain",
+   "Gtewwp_",
+   "474.071"
+  ],
+  [
+   "417",
+   "Skylanders: Giants: All Story Levels - Easy, Solo",
+   "ollie1307",
+   "472.758"
+  ],
+  [
+   "418",
+   "Hotline Miami 2: Wrong Number: NG+ Any%",
+   "kaboing",
+   "472.692"
+  ],
+  [
+   "419",
+   "Donkey Kong 64: 101% - N64",
+   "Znernicus",
+   "472.155"
+  ],
+  [
+   "420",
+   "Pok\u00e9mon Red/Blue: Any% No Save Corruption - ENG",
+   "Grogir",
+   "471.618"
+  ],
+  [
+   "421",
+   "Run 2: Runner Level Set - Any%, Runner No DJ, Fast",
+   "mattjxn",
+   "471.144"
+  ],
+  [
+   "422",
+   "Hollow Knight: 106% TE - No Major Glitches",
+   "hazelness",
+   "469.946"
+  ],
+  [
+   "423",
+   "Super Bear Adventure: Any% - 10.0.0+",
+   "AzzamSpeedrunner",
+   "469.486"
+  ],
+  [
+   "424",
+   "SpongeBob SquarePants: Battle for Bikini Bottom: AUT",
+   "StarSpeedruns",
+   "469.249"
+  ],
+  [
+   "425",
+   "Seterra (Old Version): Europe: Countries - Website, Pin",
+   "benken",
+   "469.225"
+  ],
+  [
+   "426",
+   "Castlevania: Aria of Sorrow: Soma Any% No 0HP - Standard",
+   "Chewy4u",
+   "469.064"
+  ],
+  [
+   "427",
+   "Rayman: PS1 - 100%",
+   "kronkie10",
+   "468.817"
+  ],
+  [
+   "428",
+   "The Legend of Zelda: Ocarina of Time 3D: Any% - Regular Quest",
+   "JTown2909",
+   "468.78"
+  ],
+  [
+   "429",
+   "Secret of Evermore: Any%",
+   "Zockerstu",
+   "468.694"
+  ],
+  [
+   "430",
+   "OvO: 1.2-1.4 - With glitches, Easy",
+   "StephenMogo",
+   "468.316"
+  ],
+  [
+   "431",
+   "Spelunky 2: Any%",
+   "ZSRoach",
+   "468.073"
+  ],
+  [
+   "432",
+   "Super Dangerous Dungeons: Grass Dungeon",
+   "Sukkaboy",
+   "467.647"
+  ],
+  [
+   "433",
+   "Turok: Dinosaur Hunter: Any% PC Remaster",
+   "CatmanTheCat",
+   "467.586"
+  ],
+  [
+   "434",
+   "Super Mario Odyssey Category Extensions: Koopa Freerunning RTA",
+   "kochoco",
+   "467.326"
+  ],
+  [
+   "435",
+   "Minecraft: Bedrock Edition: Any% Glitchless - Mobile, 1.18+, Set Seed",
+   "WaterBacon82873",
+   "466.868"
+  ],
+  [
+   "436",
+   "The World's Hardest Game: Any% - Flash",
+   "minichip",
+   "466.717"
+  ],
+  [
+   "437",
+   "Cyber Shadow: Any%",
+   "Tky619",
+   "466.584"
+  ],
+  [
+   "438",
+   "Hollow Knight: Silksong: Any% - No Major Glitches, Cloak",
+   "CYV_",
+   "466.51"
+  ],
+  [
+   "439",
+   "Kirby's Dream Land 2: Any%",
+   "laff4",
+   "466.22"
+  ],
+  [
+   "440",
+   "Cleaning Simulator: Any% Solo - Without moon grav",
+   "Jay596",
+   "466.21"
+  ],
+  [
+   "441",
+   "Pikmin 3 Deluxe: Any%",
+   "Jay596",
+   "466.095"
+  ],
+  [
+   "442",
+   "New Super Mario Bros. Wii: Cannonless - Physical",
+   "Cads",
+   "465.55"
+  ],
+  [
+   "443",
+   "Deus Ex: Human Revolution: Any%",
+   "coyotl",
+   "465.374"
+  ],
+  [
+   "444",
+   "The Legend of Zelda: Breath of the Wild: 100% - Original, 1.0 - 1.7",
+   "Player5",
+   "465.238"
+  ],
+  [
+   "445",
+   "Outlast 2: Any% - PC",
+   "seaagle",
+   "465.177"
+  ],
+  [
+   "446",
+   "Sly Cooper and the Thievius Raccoonus: All Keys - Original, Console",
+   "Gehis514",
+   "465.04"
+  ],
+  [
+   "447",
+   "Devil May Cry 4: Special Edition: NG (PC) - Nero/Dante, Devil Hunter, Unrestricted",
+   "R3N_ZERO",
+   "463.75"
+  ],
+  [
+   "448",
+   "Super Mario Land 2: 6 Golden Coins: Any% Glitchless",
+   "AyakaPerfectDream",
+   "463.749"
+  ],
+  [
+   "449",
+   "Owlboy: Any% - PC",
+   "Keiichi",
+   "463.549"
+  ],
+  [
+   "450",
+   "New Super Mario Bros. Wii: Any% No W5 - Physical",
+   "Cads",
+   "463.222"
+  ],
+  [
+   "451",
+   "Poppy Playtime: Chapter 1: PC - Restricted, Any%, <1.1",
+   "Zippppyyy",
+   "461.426"
+  ],
+  [
+   "452",
+   "Limbo: Normal Route",
+   "par_h3lion",
+   "461.12"
+  ],
+  [
+   "453",
+   "Final Fantasy X: Cutscene Remover - Any%",
+   "CaracarnVi",
+   "460.999"
+  ],
+  [
+   "454",
+   "Sly Cooper and the Thievius Raccoonus: Any% - Remaster / Load Patch, Console",
+   "ryyd",
+   "460.514"
+  ],
+  [
+   "455",
+   "Minecraft: Bedrock Edition: Any% Glitchless - Mobile, 1.16, Set Seed",
+   "shooooken",
+   "459.973"
+  ],
+  [
+   "456",
+   "DOOM Eternal: Any% - Classic, Unrestricted",
+   "therealpaisano",
+   "459.86"
+  ],
+  [
+   "457",
+   "Kingdom Hearts Final Mix: Any% - Beginner, PS4/PS5",
+   "Ninten866",
+   "459.632"
+  ],
+  [
+   "458",
+   "Sly 2: Band of Thieves: Any%, Episode 1 - Remaster",
+   "Mapiotho",
+   "459.431"
+  ],
+  [
+   "459",
+   "Kao the Kangaroo Round 2: Any% - Quadless",
+   "Meaningless_",
+   "458.639"
+  ],
+  [
+   "460",
+   "The Elder Scrolls IV: Oblivion: Any% - PC",
+   "Karsto",
+   "456.32"
+  ],
+  [
+   "461",
+   "Resident Evil 3: Nemesis: PC (TWN/CHN) - Any%, Heavy, Vanilla",
+   "MattGael",
+   "454.641"
+  ],
+  [
+   "462",
+   "ULTRAKILL: Any%, 2-1: Bridgeburner - Pre-Revamp",
+   "Darknn",
+   "452.361"
+  ],
+  [
+   "463",
+   "Final Fantasy VII: PSX Disc - No Slots, No Turbo",
+   "Zheal",
+   "452.321"
+  ],
+  [
+   "464",
+   "Bloons Tower Defense 6: Easy, Monkey Meadow - Single Player",
+   "linksally",
+   "452.202"
+  ],
+  [
+   "465",
+   "Super Meat Boy: 106%",
+   "Matte",
+   "450.363"
+  ],
+  [
+   "466",
+   "Hypixel BedWars: Solo Win - Normal",
+   "JES5IKA",
+   "449.566"
+  ],
+  [
+   "467",
+   "Pok\u00e9mon Let's Go Pikachu/Eevee: Any% NMS - Pikachu, ENG, Switch 1",
+   "randalleatscheese",
+   "449.451"
+  ],
+  [
+   "468",
+   "Bug Fables: The Everlasting Sapling: Any% Glitchless",
+   "LunarAria",
+   "449.403"
+  ],
+  [
+   "469",
+   "ULTRAKILL: Any%, 1-4: Clair De Lune - Pre-Revamp",
+   "CATPERFECT",
+   "447.733"
+  ],
+  [
+   "470",
+   "ROBLOX: Piggy: Chapter 1: House - 1-Player",
+   "DaRealFlamer",
+   "447.481"
+  ],
+  [
+   "471",
+   "Horizon Zero Dawn: NG+ - Ultra Hard, PlayStation",
+   "Elkjaer",
+   "447.171"
+  ],
+  [
+   "472",
+   "Super Mario Bros.: Minus World Ending",
+   "Niftski",
+   "446.959"
+  ],
+  [
+   "473",
+   "Jazzpunk: Any% - PC Current Patch",
+   "eim64",
+   "446.791"
+  ],
+  [
+   "474",
+   "Choppy Orc: Any%",
+   "Klutch",
+   "446.457"
+  ],
+  [
+   "475",
+   "ball and axe: Level 1, Main game - Any%",
+   "ii_Spectre",
+   "446.426"
+  ],
+  [
+   "476",
+   "Kingdom Hearts III: Any% - Beginner, New Game, Console",
+   "Yidamoda",
+   "446.395"
+  ],
+  [
+   "477",
+   "Klonoa: Door to Phantomile: Any%",
+   "Balneor",
+   "445.877"
+  ],
+  [
+   "478",
+   "Red Ball: 17 Levels",
+   "DividedByZero",
+   "445.501"
+  ],
+  [
+   "479",
+   "The Legend of Zelda: Majora's Mask: Any% - Glitchless",
+   "jess57329",
+   "445.22"
+  ],
+  [
+   "480",
+   "King's Quest VI: Heir Today, Gone Tomorrow: Any% - CD",
+   "PensiveGoat",
+   "444.151"
+  ],
+  [
+   "481",
+   "New Super Mario Bros. U: Any%",
+   "okosan",
+   "443.91"
+  ],
+  [
+   "482",
+   "Super Mario Odyssey: Any% - 2P",
+   "Jambo",
+   "443.882"
+  ],
+  [
+   "483",
+   "Super Mario Sunshine: 96 Shines - GCN",
+   "JJsrl",
+   "443.87"
+  ],
+  [
+   "484",
+   "Dark Souls Remastered: Any% - No Dropmod",
+   "aeiouSoT",
+   "443.4"
+  ],
+  [
+   "485",
+   "Alien: Isolation: All Missions - No CC, Nightmare",
+   "_xEB",
+   "443.064"
+  ],
+  [
+   "486",
+   "Mirror's Edge: Glitchless",
+   "-Phoenix-",
+   "443.038"
+  ],
+  [
+   "487",
+   "Hades: Any Heat - Unseeded, v1.37+, Unmodded",
+   "DrkFrst",
+   "443.034"
+  ],
+  [
+   "488",
+   "Shovel Knight: Any% - Plague Knight",
+   "Breadpan",
+   "443.017"
+  ],
+  [
+   "489",
+   "Zuma's Revenge: Any%",
+   "Hurts_",
+   "442.782"
+  ],
+  [
+   "490",
+   "Outlast: 100% - Main Game, PC",
+   "JayV",
+   "442.712"
+  ],
+  [
+   "491",
+   "Metal Gear Solid: Any% - PC (2000), Easy, Standard",
+   "JN_sc2",
+   "440.521"
+  ],
+  [
+   "492",
+   "Call of Duty 4: Modern Warfare: Recruit",
+   "Whose",
+   "440.309"
+  ],
+  [
+   "493",
+   "Hollow Knight: Silksong: Any% - No Major Glitches, Cloakless",
+   "CYV_",
+   "440.298"
+  ],
+  [
+   "494",
+   "Minecraft: Java Edition: All Advancements - RSG, 1.16",
+   "Feinberg",
+   "439.112"
+  ],
+  [
+   "495",
+   "The Legend of Zelda: Ocarina of Time: Any%",
+   "CountLG",
+   "439.033"
+  ],
+  [
+   "496",
+   "Jak 3: Any% - Original",
+   "usual",
+   "438.768"
+  ],
+  [
+   "497",
+   "The Legend of Zelda: Ocarina of Time: Glitchless - Any%",
+   "Smaugy",
+   "438.673"
+  ],
+  [
+   "498",
+   "SpongeBob SquarePants: Battle for Bikini Bottom: Robo-Sandy RTA - Xbox/GCN",
+   "StarSpeedruns",
+   "438.625"
+  ],
+  [
+   "499",
+   "Poppy Playtime: Chapter 1: PC - Unrestricted, Any%, 1.3",
+   "proacventure",
+   "438.618"
+  ],
+  [
+   "500",
+   "Kirby's Dream Land: Normal Mode",
+   "PTO",
+   "438.298"
+  ],
+  [
+   "501",
+   "Mario Kart 8 Deluxe: 48 Tracks - 150cc, Items, Nintendo Switch",
+   "kusaan",
+   "438.246"
+  ],
+  [
+   "502",
+   "Kingdom Hearts II Final Mix: Any% - Beginner, Console 60 FPS, ENG",
+   "podgy713",
+   "438.118"
+  ],
+  [
+   "503",
+   "Minecraft: Java Edition Category Extensions: Etner Edn - SSG",
+   "Hanabi",
+   "436.684"
+  ],
+  [
+   "504",
+   "Wii Sports Resort: Showdown - Normal",
+   "HiliRoid",
+   "436.071"
+  ],
+  [
+   "505",
+   "Pikmin 4: Olimar's Shipwreck Tale",
+   "96_Leaf",
+   "436.029"
+  ],
+  [
+   "506",
+   "Jak and Daxter: The Precursor Legacy: No FCS",
+   "aslov",
+   "435.797"
+  ],
+  [
+   "507",
+   "Deltarune: Chapter 3 - Any%, Glitched",
+   "ARDI",
+   "435.542"
+  ],
+  [
+   "508",
+   "Pok\u00e9mon Legends: Arceus: Any% - ENG",
+   "halqery",
+   "434.733"
+  ],
+  [
+   "509",
+   "Super Mario Bros. 3: Any%",
+   "Kuto1k",
+   "434.622"
+  ],
+  [
+   "510",
+   "Grand Theft Auto: Vice City: 100%",
+   "Redopter",
+   "434.22"
+  ],
+  [
+   "511",
+   "Zelda II: The Adventure of Link: Any%",
+   "PRZNation",
+   "432.782"
+  ],
+  [
+   "512",
+   "Exodus from the Earth: Any% - English Version",
+   "Kisimov",
+   "432.376"
+  ],
+  [
+   "513",
+   "Poppy Playtime: Chapter 1: PC - Restricted, Any%, 1.2",
+   "Zippppyyy",
+   "432.308"
+  ],
+  [
+   "514",
+   "Rayman 2: The Great Escape: Any% - PC",
+   "EricZen",
+   "431.814"
+  ],
+  [
+   "515",
+   "The Legend of Zelda: Ocarina of Time: Glitchless - All Main Quests",
+   "Smaugy",
+   "431.802"
+  ],
+  [
+   "516",
+   "Learn to Fly 3: All Bonus - 200k",
+   "brandog",
+   "431.577"
+  ],
+  [
+   "517",
+   "Death's Door: Any% - Latest Patch, Restricted, Any Weapon",
+   "TFT",
+   "431.571"
+  ],
+  [
+   "518",
+   "Resident Evil 2: PC - Any%, Normal, Leon A, PC (Vanilla)",
+   "LanceLM",
+   "431.319"
+  ],
+  [
+   "519",
+   "The End Is Nigh: Friend%",
+   "MRTrombocit",
+   "431.278"
+  ],
+  [
+   "520",
+   "Far Cry: Any% - RTA, Easy, Unrestricted",
+   "DozexxRETURNS",
+   "430.963"
+  ],
+  [
+   "521",
+   "Mario Kart 8 Deluxe: 48 Tracks - 150cc, No Items, Nintendo Switch",
+   "PandaMK8",
+   "430.814"
+  ],
+  [
+   "522",
+   "Roblox: DOORS: The Hotel - Shop, Legacy (Hotel-), Solo",
+   "Spondos",
+   "430.776"
+  ],
+  [
+   "523",
+   "Sonic & SEGA All-Stars Racing: All Cups - Glitchless, HD",
+   "dwaitley24",
+   "430.462"
+  ],
+  [
+   "524",
+   "Metal Gear Solid 2: Substance: Any% - Very Easy, PC",
+   "PlatonicGuy",
+   "429.936"
+  ],
+  [
+   "525",
+   "Minecraft: Bedrock Edition: Any% Glitchless - Console, 1.18+, Set Seed",
+   "x2sky",
+   "429.809"
+  ],
+  [
+   "526",
+   "Metal Gear Solid: All Bosses - PC (2000), Easy, Standard",
+   "JN_sc2",
+   "429.403"
+  ],
+  [
+   "527",
+   "Teenage Mutant Ninja Turtles: Any%",
+   "Skunky48",
+   "428.593"
+  ],
+  [
+   "528",
+   "Psychonauts: Any%",
+   "yp",
+   "428.461"
+  ],
+  [
+   "529",
+   "The Legend of Zelda: Link's Awakening DX: Any% (No WW/OoB)",
+   "Nitroz",
+   "428.369"
+  ],
+  [
+   "530",
+   "Dark Souls III: All Bosses (No DLC) - Restricted",
+   "Fadis",
+   "428.368"
+  ],
+  [
+   "531",
+   "The Legend of Zelda: Twilight Princess: 100% - GameCube",
+   "bewildebeest",
+   "428.145"
+  ],
+  [
+   "532",
+   "Grand Theft Auto: The Ballad of Gay Tony: Any%",
+   "Artacer",
+   "427.943"
+  ],
+  [
+   "533",
+   "Red Ball 4 Vol.1: Any% Glitchless",
+   "Incredi",
+   "427.799"
+  ],
+  [
+   "534",
+   "Jump King: New Babe+",
+   "Hanyeah",
+   "427.215"
+  ],
+  [
+   "535",
+   "Slash/Jump: Any% NMG",
+   "Viggozoto",
+   "427.167"
+  ],
+  [
+   "536",
+   "Shrek 2: Any%",
+   "Weengell",
+   "426.735"
+  ],
+  [
+   "537",
+   "Super Mario Star Road: 80 Star - Legacy",
+   "Dackage",
+   "426.686"
+  ],
+  [
+   "538",
+   "Harry Potter and the Chamber of Secrets (PC): Glitchless",
+   "PiKine",
+   "426.656"
+  ],
+  [
+   "539",
+   "Super Mario 64: 0 Star - N64",
+   "Suigi",
+   "426.023"
+  ],
+  [
+   "540",
+   "Terraria: Moon Lord - Random, 1.4 NMA, None",
+   "Sn0wMak3r",
+   "425.803"
+  ],
+  [
+   "541",
+   "Celeste: 100%",
+   "yujene",
+   "425.56"
+  ],
+  [
+   "542",
+   "Marble Madness (NES): Any%",
+   "yelsraek",
+   "424.416"
+  ],
+  [
+   "543",
+   "Cuphead: Legacy Version - Any%, Simple",
+   "Yuka",
+   "424.137"
+  ],
+  [
+   "544",
+   "Bugsnax: Any% - PC",
+   "syrefps",
+   "424.018"
+  ],
+  [
+   "545",
+   "Bloodborne: Any% Glitchless",
+   "Genso",
+   "423.576"
+  ],
+  [
+   "546",
+   "Cuphead: DLC - Any%, Solo",
+   "MarkinSws",
+   "423.488"
+  ],
+  [
+   "547",
+   "Onikura: Demo",
+   "Boddaxtar",
+   "423.464"
+  ],
+  [
+   "548",
+   "Donkey Kong 64: Any% - N64",
+   "Awhitmore",
+   "423.333"
+  ],
+  [
+   "549",
+   "SpongeBob's Truth or Square: Any%",
+   "BubbleBass",
+   "422.811"
+  ],
+  [
+   "550",
+   "Celeste: All Hearts",
+   "secureaccount",
+   "422.559"
+  ],
+  [
+   "551",
+   "F.E.A.R.: Any% - Current Patch",
+   "Churp",
+   "422.474"
+  ],
+  [
+   "552",
+   "Super Mario Bros.: The Lost Levels: Any% - Mario",
+   "Niftski",
+   "422.473"
+  ],
+  [
+   "553",
+   "Crash Bash: 1 Player Any% - No MM",
+   "ItzEliteMN",
+   "422.453"
+  ],
+  [
+   "554",
+   "Factorio: 100% - 1.x.x",
+   "AntiElitz",
+   "422.431"
+  ],
+  [
+   "555",
+   "The Messenger: Linear - No OoB, New Game",
+   "SortofAlpha",
+   "422.167"
+  ],
+  [
+   "556",
+   "Ty the Tasmanian Tiger: Any% - PC",
+   "KamaCrimson",
+   "421.659"
+  ],
+  [
+   "557",
+   "The Legend of Zelda: Oracle of Ages: Any%",
+   "Thunderbolt",
+   "421.462"
+  ],
+  [
+   "558",
+   "ROBLOX: Speed Run 4: Main World - No Skips, 8 Levels, Pre-Sept 2024",
+   "TheGutturalGaping",
+   "421.195"
+  ],
+  [
+   "559",
+   "Temple Run 2: No coins",
+   "lipee_sk",
+   "420.659"
+  ],
+  [
+   "560",
+   "Monkey Island 2: Lechuck's Revenge: Any % - No Major Glitches",
+   "aWay0fLife",
+   "420.604"
+  ],
+  [
+   "561",
+   "ULTRAKILL: P Rank, 1-4: Clair De Lune - Pre-Revamp",
+   "CATPERFECT",
+   "420.387"
+  ],
+  [
+   "562",
+   "Kingdom Hearts Final Mix: Any% - Beginner, PC",
+   "Ninten866",
+   "419.883"
+  ],
+  [
+   "563",
+   "Celeste: Clear, Farewell - No Farewell Skip",
+   "GrosHiken",
+   "419.674"
+  ],
+  [
+   "564",
+   "Fallout 3: Any%",
+   "HydreiZoniX",
+   "419.534"
+  ],
+  [
+   "565",
+   "Spelunky 2: No Teleporter Any%",
+   "TheRealShadow",
+   "419.361"
+  ],
+  [
+   "566",
+   "Ty the Tasmanian Tiger: 51 TE - PC",
+   "KamaCrimson",
+   "419.006"
+  ],
+  [
+   "567",
+   "Grand Theft Auto: The Lost and Damned: Any%",
+   "timonIV",
+   "418.829"
+  ],
+  [
+   "568",
+   "Bloodborne: Any% Current Patch - Restricted",
+   "Genso",
+   "418.544"
+  ],
+  [
+   "569",
+   "A Nightmare on Elm Street: Any%",
+   "IluvMario",
+   "418.393"
+  ],
+  [
+   "570",
+   "Cat Bird: Marda - Any% - NMG",
+   "SunShard",
+   "418.175"
+  ],
+  [
+   "571",
+   "Grand Theft Auto IV: Any% - PC",
+   "Sorviknight",
+   "418.105"
+  ],
+  [
+   "572",
+   "DuckTales (NES): Any%",
+   "Zhrakula",
+   "417.449"
+  ],
+  [
+   "573",
+   "God of War III: Very Hard Glitchless - PlayStation 4/5",
+   "Lacerda13455",
+   "417.171"
+  ],
+  [
+   "574",
+   "Super Mario Galaxy 2: Any% - 1P, Original",
+   "NolifeVV",
+   "416.827"
+  ],
+  [
+   "575",
+   "Goime 500: 100% - v1.1+ (v1.14)",
+   "KorZen",
+   "416.783"
+  ],
+  [
+   "576",
+   "LEGO Harry Potter: The Battle for Hogwarts: Any%",
+   "SixRock",
+   "415.518"
+  ],
+  [
+   "577",
+   "Kingdom Hearts II Final Mix: Any% - Critical, Console 60 FPS, ENG",
+   "CuragaByxis",
+   "415.263"
+  ],
+  [
+   "578",
+   "Spider-Man 2: Any% - Console",
+   "Just_Faze",
+   "414.88"
+  ],
+  [
+   "579",
+   "Hello Neighbor: Alpha 1 - Any% Glitchless",
+   "BigBoi",
+   "413.593"
+  ],
+  [
+   "580",
+   "Star Wars: Battlefront II: Rise of the Empire - Any%, w/Awards, Both",
+   "Maddirisa",
+   "412.813"
+  ],
+  [
+   "581",
+   "Another Perspective: Story - No WW",
+   "Glbchkf",
+   "412.705"
+  ],
+  [
+   "582",
+   "Hypixel BedWars: Destroy a Bed - Solo, With Party",
+   "anytuna",
+   "412.534"
+  ],
+  [
+   "583",
+   "Red Ball 4 Vol.3: Any% Glitchless",
+   "Starline",
+   "412.302"
+  ],
+  [
+   "584",
+   "Tony Hawk's Underground 2: Story - Easy, NG",
+   "PokemonAce101",
+   "412.15"
+  ],
+  [
+   "585",
+   "Harry Potter and the Goblet of Fire: Any% - 1 Player",
+   "Ablazeknight",
+   "411.956"
+  ],
+  [
+   "586",
+   "Ratchet & Clank: Up Your Arsenal: NG+",
+   "Torrbullen",
+   "411.937"
+  ],
+  [
+   "587",
+   "Half-Life: Opposing Force: WON (RTA) - Scriptless",
+   "KaNanga",
+   "411.748"
+  ],
+  [
+   "588",
+   "Chained Together: Wings - v1.7.3+, 1 Player, Main, Restricted",
+   "CaptunCat",
+   "411.722"
+  ],
+  [
+   "589",
+   "Super Mario Galaxy: Any% - 2P, Mario",
+   "Tibs",
+   "411.697"
+  ],
+  [
+   "590",
+   "Job Simulator: Office Worker - No PSA",
+   "Speed",
+   "410.861"
+  ],
+  [
+   "591",
+   "The Legend of Zelda: Majora's Mask 3D: Any%",
+   "JTown2909",
+   "410.559"
+  ],
+  [
+   "592",
+   "Helltaker: Any% - Base",
+   "NormDanchik",
+   "410.373"
+  ],
+  [
+   "593",
+   "Call of Duty: Black Ops Cold War Zombies: Die Maschine - Solo, Easter Egg, Classic",
+   "BDog102",
+   "410.237"
+  ],
+  [
+   "594",
+   "Pikmin 2: All Treasures - GC",
+   "iid01",
+   "410.052"
+  ],
+  [
+   "595",
+   "The Legend of Zelda: The Wind Waker: Any% - No ACE",
+   "iwabi74",
+   "410.029"
+  ],
+  [
+   "596",
+   "Granny: v1.0 - Any%",
+   "BadGuyGaming",
+   "409.924"
+  ],
+  [
+   "597",
+   "Super Mario Bros.: Any% All-Stars",
+   "Niftski",
+   "409.919"
+  ],
+  [
+   "598",
+   "Give Up, Robot: New Game",
+   "Viet1975",
+   "409.633"
+  ],
+  [
+   "599",
+   "Pac-Man World 2: Any% - US/EU",
+   "McKiddy",
+   "409.276"
+  ],
+  [
+   "600",
+   "Left 4 Dead 2: Main Campaigns Solo - Any Difficulty",
+   "vogeltech",
+   "409.09"
+  ],
+  [
+   "601",
+   "Get to Work.: Top Grabs",
+   "IvyCide",
+   "408.897"
+  ],
+  [
+   "602",
+   "Banjo-Tooie: Any% No Bitclips - N64",
+   "Falcon",
+   "408.45"
+  ],
+  [
+   "603",
+   "The Legend of Zelda: A Link to the Past: No Major Glitches - Master Sword",
+   "Xelna",
+   "408.33"
+  ],
+  [
+   "604",
+   "Final Fantasy XIII: Any% - PC",
+   "MMM",
+   "408.265"
+  ],
+  [
+   "605",
+   "Cave Story: Best Ending",
+   "periwinkle",
+   "407.798"
+  ],
+  [
+   "606",
+   "The Henry Stickmin Collection: Any% - No PU",
+   "Octo",
+   "407.691"
+  ],
+  [
+   "607",
+   "Barnyard: Any% - PC",
+   "Wazzip",
+   "405.917"
+  ],
+  [
+   "608",
+   "Sonic Adventure DX: Director's Cut: Sonic's Story - PC",
+   "wonderland",
+   "405.813"
+  ],
+  [
+   "609",
+   "The Legend of Zelda: Twilight Princess: Any% - Wii",
+   "bdamja",
+   "405.376"
+  ],
+  [
+   "610",
+   "Super Mario 64: 1 Star - EMU",
+   "ohyeah_",
+   "405.342"
+  ],
+  [
+   "611",
+   "Spelunky 2: Sunken City%",
+   "ZSRoach",
+   "404.536"
+  ],
+  [
+   "612",
+   "Deltarune: Chapter 2 - Snowgrave, Glitched",
+   "CrystalSRL",
+   "404.303"
+  ],
+  [
+   "613",
+   "Mario Kart DS: 32 Tracks",
+   "mkdsabel",
+   "404.099"
+  ],
+  [
+   "614",
+   "Happy Wheels: Demo - Any%",
+   "Dray",
+   "404.094"
+  ],
+  [
+   "615",
+   "Super Metroid: RBO",
+   "ShinyZeni",
+   "403.61"
+  ],
+  [
+   "616",
+   "Super Mario 64: 70 Star - VC",
+   "Finnii602",
+   "403.545"
+  ],
+  [
+   "617",
+   "Super Mario Maker 2: Endless Mode - Easy",
+   "Rici64",
+   "403.456"
+  ],
+  [
+   "618",
+   "Resident Evil 4 (Console): New Game - Single Segment",
+   "MikeWave",
+   "403.298"
+  ],
+  [
+   "619",
+   "Tomb Raider II: Any% - Glitches, PC",
+   "TrexOfTerror",
+   "402.927"
+  ],
+  [
+   "620",
+   "NieR: Automata: Prologue - Normal",
+   "Percyy",
+   "402.735"
+  ],
+  [
+   "621",
+   "Banjo-Tooie: No DCW/BC - N64",
+   "Falcon",
+   "402.265"
+  ],
+  [
+   "622",
+   "Subnautica: Any% - Creative, Glitched",
+   "Jura3",
+   "402.037"
+  ],
+  [
+   "623",
+   "Subway Surfers: Coins - 100 Coins, Mobile",
+   "XN_chn",
+   "401.776"
+  ],
+  [
+   "624",
+   "Ghostrunner Demo: Legacy Demo Any% - Inbounds",
+   "Free1Taps",
+   "401.726"
+  ],
+  [
+   "625",
+   "God of War III: Any% NG+ - PlayStation 4/5",
+   "Lacerda13455",
+   "401.633"
+  ],
+  [
+   "626",
+   "ROBLOX: Speed Run 4: Main World - No Skips, All Levels (Pre-Sept 2024), Pre-Sept 2024",
+   "sage211",
+   "401.19"
+  ],
+  [
+   "627",
+   "Hello Neighbor: PC - Any%, No Lag Abuse",
+   "spiderjeen86",
+   "400.951"
+  ],
+  [
+   "628",
+   "Defunct: Any% - PC",
+   "ChakaZaluu",
+   "400.901"
+  ],
+  [
+   "629",
+   "The Legend of Zelda: Breath of the Wild: Master Sword - Original, No Restrictions, 1.0 - 1.7",
+   "MoldyMeatballs",
+   "399.736"
+  ],
+  [
+   "630",
+   "Hollow Knight: Any% - No Main Menu Storage",
+   "Staxis",
+   "398.948"
+  ],
+  [
+   "631",
+   "Granny: v1.8+ - Any%, Extreme, Sewer Ending",
+   "BadGuyGaming",
+   "398.797"
+  ],
+  [
+   "632",
+   "The Legend of Zelda: The Wind Waker HD: All Dungeons - Unrestricted",
+   "mralberto23",
+   "398.408"
+  ],
+  [
+   "633",
+   "NEED MORE HEAT: Good Ending...? - No Cutscene Skip",
+   "baconbaconbacon",
+   "397.379"
+  ],
+  [
+   "634",
+   "The Elder Scrolls V: Skyrim: Glitchless Main Quest - Novice (PC)",
+   "Lilu_",
+   "397.181"
+  ],
+  [
+   "635",
+   "Space Station Silicon Valley (N64): Any% - N64",
+   "C_Sharp",
+   "396.806"
+  ],
+  [
+   "636",
+   "Mike Tyson's Punch-Out!!: Single Segment",
+   "Summoningsalt",
+   "396.708"
+  ],
+  [
+   "637",
+   "Pikmin: All Parts - GC",
+   "iid01",
+   "396.694"
+  ],
+  [
+   "638",
+   "The Lion King (SNES): Any% Easy",
+   "Purplee",
+   "396.619"
+  ],
+  [
+   "639",
+   "Silent Hill 2 (PC): New Game - Any Difficulty",
+   "Aaron",
+   "396.589"
+  ],
+  [
+   "640",
+   "Dead Cells: Any% Warpless - Unseeded",
+   "HanehiroChiaki",
+   "396.562"
+  ],
+  [
+   "641",
+   "Brawl Stars: Tutorial",
+   "SlothLord",
+   "395.62"
+  ],
+  [
+   "642",
+   "Inside: Any%",
+   "par_h3lion",
+   "395.29"
+  ],
+  [
+   "643",
+   "Genshin Impact: Katheryne to Katheryne - Mondstadt to Liyue, Glitchless",
+   "Taksihs",
+   "394.791"
+  ],
+  [
+   "644",
+   "Granny: Legacy: ve1.8 - PC, Preset, Door Ending, Extreme, No Grandpa, Any% Glitched",
+   "weplaygg",
+   "394.607"
+  ],
+  [
+   "645",
+   "Dustforce DX: Any% All Levels (NG+)",
+   "Fishy",
+   "393.612"
+  ],
+  [
+   "646",
+   "Pikmin 4: Rescue Olimar - New Game",
+   "CCCharge",
+   "393.375"
+  ],
+  [
+   "647",
+   "ENA: Dream BBQ: Chapter 1 - Ascension, Unrestricted",
+   "citruslvr",
+   "392.964"
+  ],
+  [
+   "648",
+   "Luigi's Mansion: Any% - GCN",
+   "jovin",
+   "392.892"
+  ],
+  [
+   "649",
+   "Crash Bandicoot: N. Sane Trilogy: Crash Bandicoot 2: Cortex Strikes Back - Any%, PC",
+   "Krisuchu",
+   "392.692"
+  ],
+  [
+   "650",
+   "Super Mario Odyssey Category Extensions: Nipple% - No Hint Art",
+   "Gorganim",
+   "391.607"
+  ],
+  [
+   "651",
+   "Mario Kart 8 Deluxe: Nitro Tracks - No Items, 150cc, Nintendo Switch",
+   "PandaMK8",
+   "390.832"
+  ],
+  [
+   "652",
+   "Pseudoregalia: Any% - Full Gold Patch, OOB",
+   "outlyer",
+   "390.71"
+  ],
+  [
+   "653",
+   "Batman: Arkham City: Glitchless - Easy, PC",
+   "BlooWonder",
+   "390.639"
+  ],
+  [
+   "654",
+   "Garfield's Scary Scavenger Hunt: Any% Warpless - Random Seed",
+   "Simbachul",
+   "390.595"
+  ],
+  [
+   "655",
+   "Resident Evil: PC - No Major Glitches, Bad Ending, No Restriction, Jill",
+   "Hamo",
+   "390.357"
+  ],
+  [
+   "656",
+   "Deltarune: Chapter 1 - True Pacifist",
+   "Jaq",
+   "390.255"
+  ],
+  [
+   "657",
+   "Dino Crisis 2: Any% - PC, Normal",
+   "appallingmango",
+   "389.806"
+  ],
+  [
+   "658",
+   "Super Mario 64 DS: 50 Star",
+   "relievedliberty",
+   "389.636"
+  ],
+  [
+   "659",
+   "Scooby-Doo! Unmasked: Any%",
+   "SinDarkFatez",
+   "389.277"
+  ],
+  [
+   "660",
+   "Titanfall 2: Any%, The Beacon Part 2 - Standard",
+   "Blaidan",
+   "389.049"
+  ],
+  [
+   "661",
+   "Minecraft: Java Edition Category Extensions: All Swords - SSG, Structures, Pre 1.16",
+   "AgentWO6",
+   "388.681"
+  ],
+  [
+   "662",
+   "Postal 2: Any% - Normal Mode",
+   "xaos333",
+   "387.987"
+  ],
+  [
+   "663",
+   "The Messenger: Any% - No OoB, New Game",
+   "halflinghelper",
+   "387.956"
+  ],
+  [
+   "664",
+   "Bomb Rush Cyberfunk: Any%",
+   "Storied",
+   "387.753"
+  ],
+  [
+   "665",
+   "Hades: Any Heat - Unseeded, v1.37+, Modded",
+   "Vorime",
+   "387.69"
+  ],
+  [
+   "666",
+   "Super Mario 64: 16 Star - VC",
+   "Finnii602",
+   "387.686"
+  ],
+  [
+   "667",
+   "Call of Duty: Modern Warfare 2: Any% - Recruit",
+   "medz",
+   "386.353"
+  ],
+  [
+   "668",
+   "Titan Souls: Any% (Beat the Game) - Normal",
+   "Melestara",
+   "385.757"
+  ],
+  [
+   "669",
+   "Granny: v1.8+ - Any%, Practice, Door Ending",
+   "BadGuyGaming",
+   "385.505"
+  ],
+  [
+   "670",
+   "Final Fantasy X-2: HD - PC Any%",
+   "CaracarnVi",
+   "385.398"
+  ],
+  [
+   "671",
+   "Crash Nitro Kart: Any% - No Major Skips",
+   "C_Fred",
+   "385.254"
+  ],
+  [
+   "672",
+   "Cuphead: No Major Glitches - Any%, Regular",
+   "Quincely0",
+   "385.126"
+  ],
+  [
+   "673",
+   "Super Mario Odyssey: 100%",
+   "heytherecool",
+   "385.057"
+  ],
+  [
+   "674",
+   "Billy Hatcher and the Giant Egg: Any% - Console",
+   "monkeysmb",
+   "384.998"
+  ],
+  [
+   "675",
+   "The Legend of Zelda: Tears of the Kingdom: Great Sky Island - Glitched, pre-v1.2.1",
+   "Xdri33s",
+   "384.938"
+  ],
+  [
+   "676",
+   "Conker's Bad Fur Day: Chapters 100% - All",
+   "Arbliterator",
+   "384.904"
+  ],
+  [
+   "677",
+   "Fable Anniversary: Any%",
+   "KJFreshly",
+   "384.866"
+  ],
+  [
+   "678",
+   "Marble It Up!: Classic - Full Game",
+   "m2k_",
+   "384.65"
+  ],
+  [
+   "679",
+   "Luigi's Mansion 3: Any% - Solo, 1.4.0+",
+   "TwistedElf6966",
+   "383.087"
+  ],
+  [
+   "680",
+   "Banjo-Kazooie: Nintendo 64 - Any%, FFM",
+   "Funderful",
+   "382.924"
+  ],
+  [
+   "681",
+   "Risk of Rain 2: Any% - Solo, 1.0",
+   "verstatx",
+   "382.881"
+  ],
+  [
+   "682",
+   "Deltarune: Chapter 2 - Snowgrave, Glitchless",
+   "CrystalSRL",
+   "382.522"
+  ],
+  [
+   "683",
+   "Ori and the Will of the Wisps: All Challenges - Main Quest Order",
+   "GarnyWarny",
+   "381.16"
+  ],
+  [
+   "684",
+   "Ori and the Will of the Wisps: Any% - Easy, No Menu Glitch",
+   "LyxM",
+   "380.536"
+  ],
+  [
+   "685",
+   "Webbed: Any% - Scroll Jump",
+   "OnlyFlan",
+   "380.294"
+  ],
+  [
+   "686",
+   "Seterra (Geoguessr Version): Europe: Countries (with Kosovo) - Pin, Website",
+   "unfried",
+   "380.125"
+  ],
+  [
+   "687",
+   "Vex: Any%",
+   "FGFalcon",
+   "379.705"
+  ],
+  [
+   "688",
+   "Celeste: B-Side, Mirror Temple",
+   "secureaccount",
+   "379.45"
+  ],
+  [
+   "689",
+   "Subnautica: Any% - Creative, Glitchless",
+   "Jura3",
+   "379.377"
+  ],
+  [
+   "690",
+   "Grand Theft Auto V: Segments - Countryside",
+   "VIl2486l",
+   "379.26"
+  ],
+  [
+   "691",
+   "Bendy and the Dark Revival: Inbounds - PC, True Ending",
+   "obser",
+   "378.768"
+  ],
+  [
+   "692",
+   "Super Mario Bros. 3: Any% (No Wrong Warp)",
+   "MostDefinitelyAlbert",
+   "378.674"
+  ],
+  [
+   "693",
+   "Sonic Adventure DX: Director's Cut: Tails' Story - PC",
+   "yalpher",
+   "378.645"
+  ],
+  [
+   "694",
+   "Celeste: Bny%",
+   "secureaccount",
+   "378.35"
+  ],
+  [
+   "695",
+   "The Legend of Zelda: The Wind Waker HD: Any% - No MSS",
+   "mralberto23",
+   "377.478"
+  ],
+  [
+   "696",
+   "Super Smash TV: Easy% - 1 Player",
+   "CHX42",
+   "377.437"
+  ],
+  [
+   "697",
+   "Celeste: True Ending",
+   "Isaactayy",
+   "377.356"
+  ],
+  [
+   "698",
+   "Mario Kart 8 Deluxe: 48 Tracks - 200cc, Items, Nintendo Switch",
+   "Toshiki.",
+   "377.297"
+  ],
+  [
+   "699",
+   "Peggle Nights: Any%",
+   "WhaleEleven",
+   "377.266"
+  ],
+  [
+   "700",
+   "Harry Potter and the Half Blood Prince: Any%",
+   "Flo203",
+   "377.212"
+  ],
+  [
+   "701",
+   "Jump King: Ghost of the Babe",
+   "Hanyeah",
+   "377.176"
+  ],
+  [
+   "702",
+   "Salt and Sanctuary: Any% - No Major Glitches",
+   "_KFR",
+   "376.93"
+  ],
+  [
+   "703",
+   "Rocket League: Training - Tutorial: Basic",
+   "dinoduckandy1",
+   "376.743"
+  ],
+  [
+   "704",
+   "ROBLOX: Speed Run 4 Classic: No Skips - 5 Levels",
+   "Nolyswag",
+   "376.652"
+  ],
+  [
+   "705",
+   "Resident Evil 2 (2019): New Game (Console) - Claire, Standard",
+   "Dyldor",
+   "376.453"
+  ],
+  [
+   "706",
+   "Super Mario Sunshine: 79 Shines - GCN",
+   "akane",
+   "376.37"
+  ],
+  [
+   "707",
+   "New Super Luigi U: Any% - Normal",
+   "Tark",
+   "376.354"
+  ],
+  [
+   "708",
+   "Chameleon Twist 2: Any%",
+   "Livelyraccoon",
+   "376.073"
+  ],
+  [
+   "709",
+   "Out There Somewhere: Any% IGT",
+   "kirin3",
+   "376.062"
+  ],
+  [
+   "710",
+   "Micro Platformer: Any%, Tutorial",
+   "Quadrales",
+   "375.361"
+  ],
+  [
+   "711",
+   "Mafia II: Any% - Classic",
+   "yakovcev",
+   "375.2"
+  ],
+  [
+   "712",
+   "VVVVVV: No OoB - Legacy",
+   "AlphaBetaFullRelease",
+   "374.764"
+  ],
+  [
+   "713",
+   "CrossCode: Any% NMG - NG, PC",
+   "gulebamse",
+   "374.208"
+  ],
+  [
+   "714",
+   "Sly Cooper: Thieves in Time: Any%",
+   "Remo",
+   "374.161"
+  ],
+  [
+   "715",
+   "Quake II (PC): Any% (Easy)",
+   "Clouder",
+   "374.085"
+  ],
+  [
+   "716",
+   "Super Mario Sunshine: Any% - 3DAS, No ACE",
+   "Yuto",
+   "374.052"
+  ],
+  [
+   "717",
+   "ULTRAKILL: Any%, 2-4: Court Of The Corpse King - Pre-Revamp",
+   "vivyaann",
+   "373.763"
+  ],
+  [
+   "718",
+   "Paper Mario: Glitchless",
+   "Butterlord",
+   "373.749"
+  ],
+  [
+   "719",
+   "Super Mario World: 11 Exit - Cloud",
+   "oil_in_water",
+   "373.723"
+  ],
+  [
+   "720",
+   "Ratchet & Clank: Going Commando: NG+ - HD Collection",
+   "Emeralve",
+   "373.662"
+  ],
+  [
+   "721",
+   "Final Fantasy: Pixel Remaster - Any% (No QS Manip)",
+   "6chi8",
+   "373.42"
+  ],
+  [
+   "722",
+   "Spyro Reignited Trilogy (Console & Time Trials): Spyro: Year of the Dragon - Any%",
+   "ShingerZ0s",
+   "372.719"
+  ],
+  [
+   "723",
+   "Splatoon: All Scrolls - WiiU",
+   "LonTr0",
+   "372.382"
+  ],
+  [
+   "724",
+   "Mario Kart World: All Grands Prix",
+   "CSH261296",
+   "372.193"
+  ],
+  [
+   "725",
+   "Spyro Reignited Trilogy (PC): Spyro: Year of the Dragon - Any%",
+   "ShingerZ0s",
+   "371.713"
+  ],
+  [
+   "726",
+   "Dying Light: Prison Heist - Any%",
+   "FLINTLOCKWOODDDD",
+   "371.343"
+  ],
+  [
+   "727",
+   "Minecraft: Bedrock Edition: Any% Glitchless - PC, 1.16, Random Seed",
+   "Khalooody",
+   "371.32"
+  ],
+  [
+   "728",
+   "The Talos Principle: Any% - Messenger, Unrestricted",
+   "Skizzie",
+   "371.237"
+  ],
+  [
+   "729",
+   "Pitfall: The Lost Expedition: Any% - Console",
+   "thebluetoo",
+   "370.824"
+  ],
+  [
+   "730",
+   "Roblox: Pressure: The Hadal Blacksite - No Shop, Solo, Legacy",
+   "lp_sty",
+   "370.525"
+  ],
+  [
+   "731",
+   "Octopath Traveler: Single Story - Tressa, Switch, NMG",
+   "quadraaceps",
+   "370.432"
+  ],
+  [
+   "732",
+   "Multiple Mario Games: 3D Mario 602",
+   "Odme_",
+   "370.397"
+  ],
+  [
+   "733",
+   "Mario Kart 8 Deluxe: 32 Tracks - 150cc, No Items, Nintendo Switch",
+   "PandaMK8",
+   "370.242"
+  ],
+  [
+   "734",
+   "Donkey Kong Country: No Major Glitches - SNES",
+   "lovebird920",
+   "370.231"
+  ],
+  [
+   "735",
+   "Terraria: Moon Lord - Random, Journey Glitched, None",
+   "RHgeKZvmfebBnywKVrbwhxBC5",
+   "370.06"
+  ],
+  [
+   "736",
+   "Bastion: Any% No MS - New Game",
+   "Primorix",
+   "369.836"
+  ],
+  [
+   "737",
+   "Divinity: Original Sin 2: Any% - Current Patch",
+   "fazerer",
+   "369.391"
+  ],
+  [
+   "738",
+   "BONEWORKS: Glitchless",
+   "Emil_",
+   "368.904"
+  ],
+  [
+   "739",
+   "Mario Kart 8 Deluxe: Nitro Tracks - No Items, 200cc, Nintendo Switch",
+   "mkalpha",
+   "368.801"
+  ],
+  [
+   "740",
+   "Fishy: Any% - No Major Glitches",
+   "tarek",
+   "368.774"
+  ],
+  [
+   "741",
+   "Cars: Any% - Compact, No Lap Skip",
+   "HomerOfSteel",
+   "368.74"
+  ],
+  [
+   "742",
+   "Crash Bandicoot: N. Sane Trilogy: Crash Bandicoot - Any%, Console, MG",
+   "WingKn0x",
+   "368.559"
+  ],
+  [
+   "743",
+   "Golfing Over It with Alva Majo: Main game",
+   "Centrius",
+   "368.155"
+  ],
+  [
+   "744",
+   "Tengen Tetris (NES): 100 Lines",
+   "JackPro",
+   "368.054"
+  ],
+  [
+   "745",
+   "ROBLOX: Survive and Kill the Killers in Area 51: Killhouse - Legacy",
+   "Limesruleman",
+   "368.036"
+  ],
+  [
+   "746",
+   "Animal Well: Any% - Glitched",
+   "SpidersNRhap",
+   "367.958"
+  ],
+  [
+   "747",
+   "Super Mario Maker 2: Story Mode (Any%) - No Luigi Assist",
+   "HooraySR",
+   "367.693"
+  ],
+  [
+   "748",
+   "ROBLOX: Piggy: Chapter 8: Carnival - 1-Player",
+   "DaRealFlamer",
+   "367.333"
+  ],
+  [
+   "749",
+   "Minecraft Dungeons: Any% - Solo, No Levels Early",
+   "JohnSexHaver",
+   "367.318"
+  ],
+  [
+   "750",
+   "Disney's Aladdin (SNES): Any%",
+   "LeHulk",
+   "366.838"
+  ],
+  [
+   "751",
+   "ULTRAKILL: P Rank, P-1: Soul Survivor - Pre-Revamp",
+   "Sowsher",
+   "366.796"
+  ],
+  [
+   "752",
+   "Astral Chain: Any\uff05(No Major Glitches)",
+   "Aznyaa76",
+   "366.724"
+  ],
+  [
+   "753",
+   "New Super Mario Bros.: Any% - Official Releases",
+   "Pidgey",
+   "366.721"
+  ],
+  [
+   "754",
+   "NEED MORE HEAT: Good Ending...? - Cutscene skip",
+   "baconbaconbacon",
+   "366.589"
+  ],
+  [
+   "755",
+   "Spyro 2: Ripto's Rage!: Any%",
+   "bluntbows",
+   "366.532"
+  ],
+  [
+   "756",
+   "Elden Ring: All Remembrances (No DLC) - Unrestricted",
+   "catalystz",
+   "366.446"
+  ],
+  [
+   "757",
+   "Kung Fu: Any% (Game A)",
+   "joecurr",
+   "366.379"
+  ],
+  [
+   "758",
+   "The Last of Us: Left Behind: Any% - PS4/PS5",
+   "AnthonyCaliber",
+   "366.172"
+  ],
+  [
+   "759",
+   "Resident Evil 3 (2020): Any% (PC) - Standard, Full Game",
+   "Minnotar",
+   "366.126"
+  ],
+  [
+   "760",
+   "Darkwing Duck (NES): Any%",
+   "st4nzzz",
+   "366.102"
+  ],
+  [
+   "761",
+   "Spelunky 2: No Teleporter Sunken City%",
+   "Wumper",
+   "365.951"
+  ],
+  [
+   "762",
+   "Crash Bandicoot: N. Sane Trilogy: Crash Bandicoot 3: Warped - Any%, Console",
+   "Potty",
+   "365.414"
+  ],
+  [
+   "763",
+   "Zuma Deluxe: Any%",
+   "Hurts_",
+   "365.283"
+  ],
+  [
+   "764",
+   "IQ Ball: 25 Levels",
+   "kevinfebb",
+   "365.049"
+  ],
+  [
+   "765",
+   "Momodora: Reverie Under the Moonlight: Any% - Easy, Legacy",
+   "heyyyhoooo",
+   "364.902"
+  ],
+  [
+   "766",
+   "Star Fox: Assault: Any% - Bronze",
+   "maruga",
+   "364.69"
+  ],
+  [
+   "767",
+   "SUPERHOT VR: Any%",
+   "trickster00",
+   "364.222"
+  ],
+  [
+   "768",
+   "My Little Pony: A Maretime Bay Adventure: Any% - PC",
+   "Optic_Rainfall",
+   "364.119"
+  ],
+  [
+   "769",
+   "Enchain: Demo Any% No OOB - Any Patch",
+   "Clarple",
+   "363.811"
+  ],
+  [
+   "770",
+   "ULTRAKILL: P Rank, 0-1: Into The Fire - Pre-Revamp",
+   "eanra",
+   "363.779"
+  ],
+  [
+   "771",
+   "New Super Mario Bros. Wii: 100% - Physical",
+   "Cads",
+   "363.239"
+  ],
+  [
+   "772",
+   "Xenoblade Chronicles 2: Any% - DLC, Normal",
+   "quadraaceps",
+   "363.021"
+  ],
+  [
+   "773",
+   "Kirby & The Amazing Mirror: 100%",
+   "hirahira",
+   "362.956"
+  ],
+  [
+   "774",
+   "Refunct: Any% - New Game Glitch",
+   "TastyMeowmix",
+   "362.857"
+  ],
+  [
+   "775",
+   "Mario Kart Wii: 32 Tracks - No Skips",
+   "LukeGB",
+   "362.735"
+  ],
+  [
+   "776",
+   "Minecraft: Java Edition: Any% Glitchless - Set Seed, 1.8",
+   "LucidG",
+   "362.358"
+  ],
+  [
+   "777",
+   "Seterra (Old Version): 193 UN Member States - Website, Pin",
+   "Lezt",
+   "362.173"
+  ],
+  [
+   "778",
+   "Extreme Power Pamplona: Upper Path",
+   "romaining",
+   "361.975"
+  ],
+  [
+   "779",
+   "Charlie in the Moistverse of Madness: Any%",
+   "ThyBreadKing",
+   "361.789"
+  ],
+  [
+   "780",
+   "Super Mario 3D World + Bowser's Fury: Super Mario 3D World - 380 Stars",
+   "shoyu_parfait",
+   "361.396"
+  ],
+  [
+   "781",
+   "Red Ball 2: 25 Levels",
+   "minichip",
+   "361.193"
+  ],
+  [
+   "782",
+   "CELESTE Classic: Any%",
+   "Meep_Moop",
+   "361.169"
+  ],
+  [
+   "783",
+   "Metroid Dread: Any% - No Major Glitches, Rookie",
+   "JustNZane",
+   "361.037"
+  ],
+  [
+   "784",
+   "Bloodborne: Any% Current Patch - Unrestricted",
+   "Genso",
+   "360.818"
+  ],
+  [
+   "785",
+   "Hyper Light Drifter: Any% - New Game, No Major Glitches",
+   "Whisk487",
+   "360.816"
+  ],
+  [
+   "786",
+   "Final Fantasy X: PS2 - Any%",
+   "CaracarnVi",
+   "360.295"
+  ],
+  [
+   "787",
+   "ULTRAKILL: Any%, P-1: Soul Survivor - Pre-Revamp",
+   "Sowsher",
+   "360.199"
+  ],
+  [
+   "788",
+   "Donkey Kong 64: 101% - Wii U VC / NSO",
+   "signakong",
+   "360.164"
+  ],
+  [
+   "789",
+   "Learn to Fly 2: All Bonus - Story",
+   "TLC1",
+   "359.916"
+  ],
+  [
+   "790",
+   "Tom Clancy's Splinter Cell: Any% - Normal, PC",
+   "Distro",
+   "359.793"
+  ],
+  [
+   "791",
+   "Genshin Impact: Adventure Ranks - AR 7, LRT",
+   "againfast",
+   "359.67"
+  ],
+  [
+   "792",
+   "Pikmin 3 Deluxe: All Fruits",
+   "Jay596",
+   "359.652"
+  ],
+  [
+   "793",
+   "EarthBound: Boogey% - EarthBound",
+   "Czikubi",
+   "359.383"
+  ],
+  [
+   "794",
+   "Super Mario Land: Any%",
+   "EiP25",
+   "359.179"
+  ],
+  [
+   "795",
+   "Spelunky 2: Abzu%",
+   "ZSRoach",
+   "359.098"
+  ],
+  [
+   "796",
+   "Librarian: Tidy Up the Arcane Library!: Any%",
+   "FeuerFaulTier",
+   "359.062"
+  ],
+  [
+   "797",
+   "Resident Evil 7: Biohazard: Any% - Console, New Game, Easy, Full Game",
+   "DynastyDN",
+   "359.019"
+  ],
+  [
+   "798",
+   "Half-Life 2: New Engine - Any%",
+   "maltemller",
+   "358.358"
+  ],
+  [
+   "799",
+   "Resident Evil 2 (2019): New Game + (Console) - Claire",
+   "SpeedIdol",
+   "358.181"
+  ],
+  [
+   "800",
+   "The Legend of Zelda: Ocarina of Time: Defeat Ganon - Classic Kakariko Route",
+   "Torje",
+   "358.172"
+  ],
+  [
+   "801",
+   "Shining Force: The Legacy of Great Intention: Any%",
+   "ty2358",
+   "357.629"
+  ],
+  [
+   "802",
+   "ROBLOX: Escape The Dentist Obby: (Legacy) Glitchless",
+   "Jbox",
+   "357.389"
+  ],
+  [
+   "803",
+   "Palia: Tower No Major Glitches",
+   "Loukki",
+   "357.38"
+  ],
+  [
+   "804",
+   "Kirby: Star Allies: Any%",
+   "Okashi",
+   "357.054"
+  ],
+  [
+   "805",
+   "Donkey Kong Country 3: Dixie Kong's Double Trouble!: Any% - SNES",
+   "laff4",
+   "356.643"
+  ],
+  [
+   "806",
+   "Sonic the Hedgehog (2006): Sonic's Story - Xbox 360, No Credits Warp",
+   "Nick867",
+   "356.443"
+  ],
+  [
+   "807",
+   "Digimon World: No Major Glitches",
+   "_8P_",
+   "356.44"
+  ],
+  [
+   "808",
+   "The Elder Scrolls IV: Oblivion Remastered: Any% - PC",
+   "EmpressValla",
+   "356.426"
+  ],
+  [
+   "809",
+   "Baldi's Basics Classic Remastered: Any% - Classic Style",
+   "jjsalt",
+   "355.851"
+  ],
+  [
+   "810",
+   "Roblox: DOORS But Bad: (Old) Hotel NG - NMS",
+   "musichum4n",
+   "355.701"
+  ],
+  [
+   "811",
+   "Die Hard (NES): Any% (Beginner)",
+   "ZendoiKaban",
+   "355.383"
+  ],
+  [
+   "812",
+   "Get to Work.: No Top Grabs",
+   "IvyCide",
+   "355.325"
+  ],
+  [
+   "813",
+   "Need for Speed: Carbon: Career Any% - NG",
+   "Artacer",
+   "354.951"
+  ],
+  [
+   "814",
+   "Dr. Mario (NES): 0-10",
+   "floyd_1977",
+   "354.859"
+  ],
+  [
+   "815",
+   "LEGO City Undercover: Undercover% - Solo, Remaster (All Other Platforms)",
+   "WizardPower",
+   "354.811"
+  ],
+  [
+   "816",
+   "Papa's Burgeria: Rank 5",
+   "JokaFRFX",
+   "354.561"
+  ],
+  [
+   "817",
+   "Resident Evil 2 (2019): New Game + (Console) - Leon",
+   "SpeedIdol",
+   "354.387"
+  ],
+  [
+   "818",
+   "Final Fantasy IX: HD PC - Any% No Major Skips",
+   "Sebyds",
+   "353.355"
+  ],
+  [
+   "819",
+   "Minecraft: Java Edition Category Extensions: Hero of the Village - RSG",
+   "fobyr",
+   "353.292"
+  ],
+  [
+   "820",
+   "Super Mario World: No Cape, No Starworld",
+   "maibaRTA",
+   "352.781"
+  ],
+  [
+   "821",
+   "Escape From Lavender Island: Any%",
+   "Weegee",
+   "352.464"
+  ],
+  [
+   "822",
+   "Xenoblade Chronicles 2: Any% - No DLC, Normal",
+   "Shemcat",
+   "352.138"
+  ],
+  [
+   "823",
+   "Poppy Playtime: Chapter 1: Mobile - Any% Restricted",
+   "IfPpclh",
+   "352.063"
+  ],
+  [
+   "824",
+   "Minecraft: Bedrock Edition Category Extensions: SSP Solo - Glitchless, PC",
+   "Khalooody",
+   "351.639"
+  ],
+  [
+   "825",
+   "LEGO Star Wars: The Complete Saga (PC/Console): Prequels - Solo, PC",
+   "colten8",
+   "351.288"
+  ],
+  [
+   "826",
+   "A Hat in Time: All Time Pieces - Base Levels, Lag Abuse, PC",
+   "Zoro64",
+   "351.126"
+  ],
+  [
+   "827",
+   "Tom & Jerry (NES): Any%",
+   "st4nzzz",
+   "350.631"
+  ],
+  [
+   "828",
+   "Super Mario Odyssey Category Extensions: Festival%",
+   "Tyron18",
+   "350.332"
+  ],
+  [
+   "829",
+   "Red Ball: 12 Levels (Glitchless)",
+   "NorXor",
+   "350.313"
+  ],
+  [
+   "830",
+   "Outlast: Any% - Playstation, Main Game",
+   "BarrisCJ",
+   "350.191"
+  ],
+  [
+   "831",
+   "Donut County: Beat the Game - PC",
+   "Thundar001",
+   "349.854"
+  ],
+  [
+   "832",
+   "Castle Crashers: Any% NG+",
+   "Jango756",
+   "349.805"
+  ],
+  [
+   "833",
+   "Google Minesweeper: Any% - Hard, Web",
+   "extratoner",
+   "349.386"
+  ],
+  [
+   "834",
+   "The Talos Principle: All Sigils - Unrestricted",
+   "Gelly",
+   "349.138"
+  ],
+  [
+   "835",
+   "Resident Evil 2 (2019): New Game (PC) - Claire 2nd, Standard, 120",
+   "Frit",
+   "348.904"
+  ],
+  [
+   "836",
+   "LEGO Harry Potter: Years 1-4: Any% - Solo, Standard",
+   "Cocozito",
+   "348.838"
+  ],
+  [
+   "837",
+   "Ring Fit Adventure: Beat World 1 - Any Intensity, restricted",
+   "toudou_sk",
+   "348.29"
+  ],
+  [
+   "838",
+   "There Is No Game: Polished Mobile - Glitchless",
+   "BonzoKop123",
+   "348.267"
+  ],
+  [
+   "839",
+   "Karlson (Itch.io): Any%, Escape 2",
+   "cosmicblockycat",
+   "348.153"
+  ],
+  [
+   "840",
+   "The Legend of Zelda: Twilight Princess: All Dungeons - GameCube",
+   "bewildebeest",
+   "348.003"
+  ],
+  [
+   "841",
+   "ROBLOX: Speed Run 4: Main World - No Skips, 5 Levels, Current",
+   "QueSpids",
+   "347.95"
+  ],
+  [
+   "842",
+   "Sekiro: Shadows Die Twice: All Memories & Prayer Beads - PC, Glitchless",
+   "Yeruka",
+   "347.889"
+  ],
+  [
+   "843",
+   "Resident Evil 4 (2023): Separate Ways - PC, Professional",
+   "Missing",
+   "347.777"
+  ],
+  [
+   "844",
+   "Hollow Knight: Silksong: True Ending - No Major Glitches",
+   "LaneOrLaine",
+   "347.665"
+  ],
+  [
+   "845",
+   "Bastion: All Story Levels - New Game",
+   "Primorix",
+   "347.653"
+  ],
+  [
+   "846",
+   "Hollow Knight Category Extensions: 4 Mask Shards - 1.4.3.2+ NMG",
+   "zVypurr",
+   "347.598"
+  ],
+  [
+   "847",
+   "Sekiro: Shadows Die Twice: Shura - PC, No Airswim",
+   "WormdogBS",
+   "347.462"
+  ],
+  [
+   "848",
+   "Resident Evil 4 (2023): Any% - PC, Professional, Full Game",
+   "hqqqaq",
+   "347.397"
+  ],
+  [
+   "849",
+   "Dark Souls II: Scholar of the First Sin: Any% - Restricted",
+   "ruhanzito",
+   "346.846"
+  ],
+  [
+   "850",
+   "Tomb Raider: Any% - Glitches, PC",
+   "TrexOfTerror",
+   "346.835"
+  ],
+  [
+   "851",
+   "Final Fantasy: PSP - Any%",
+   "Sawneyrath11",
+   "346.71"
+  ],
+  [
+   "852",
+   "Chip 'n Dale Rescue Rangers 2: Any%",
+   "Neithend",
+   "346.639"
+  ],
+  [
+   "853",
+   "The Legend of Zelda: Twilight Princess: Goron Mines RTA",
+   "bdamja",
+   "346.582"
+  ],
+  [
+   "854",
+   "Refunct: 100% - Normal",
+   "TastyMeowmix",
+   "346.425"
+  ],
+  [
+   "855",
+   "The Legend of Zelda: Link's Awakening: Warpless",
+   "Nitroz",
+   "346.369"
+  ],
+  [
+   "856",
+   "Super Mario Odyssey Category Extensions: All Purple Coins - New Game",
+   "BusterDoggy",
+   "346.24"
+  ],
+  [
+   "857",
+   "Resident Evil 3 (2020): Any% NG+ (Console) - Full Game",
+   "JIEIJIEI",
+   "346.174"
+  ],
+  [
+   "858",
+   "Geometry Dash: Beat The Level, The Tower - Any%",
+   "Vertic",
+   "346.031"
+  ],
+  [
+   "859",
+   "Wii Play: Charge! - Any%",
+   "perchance",
+   "345.886"
+  ],
+  [
+   "860",
+   "DuckTales 2 (NES): Any%",
+   "Kazemitra",
+   "345.825"
+  ],
+  [
+   "861",
+   "Yu-Gi-Oh! Forbidden Memories: Any% (Manipless) - 15 card",
+   "Rhyse",
+   "345.733"
+  ],
+  [
+   "862",
+   "Smol Ame: Any%, Ame's Office - Current Physics",
+   "Redring",
+   "345.684"
+  ],
+  [
+   "863",
+   "Spelunky 2: Low%",
+   "Wumper",
+   "345.422"
+  ],
+  [
+   "864",
+   "ActRaiser: Professional! Mode",
+   "Aquas",
+   "345.251"
+  ],
+  [
+   "865",
+   "Putt-Putt Saves the Zoo: Any% - PC",
+   "plank",
+   "345.183"
+  ],
+  [
+   "866",
+   "Terranigma: Any%",
+   "Z4T0X",
+   "344.911"
+  ],
+  [
+   "867",
+   "Kirby's Adventure: Any% No Major Glitches",
+   "miririi6",
+   "344.853"
+  ],
+  [
+   "868",
+   "The Emperor's New Groove: Any% - PC",
+   "OrionYTP",
+   "344.849"
+  ],
+  [
+   "869",
+   "Harry Potter and the Philosopher's Stone (GBA): Any%",
+   "Flo203",
+   "344.784"
+  ],
+  [
+   "870",
+   "Harry Potter Category Extensions: 2PC - Chungus%",
+   "U_0001",
+   "344.688"
+  ],
+  [
+   "871",
+   "Stranded Isle: Any% - Glitchless, Vanilla*",
+   "elwiwi",
+   "344.309"
+  ],
+  [
+   "872",
+   "Red Ball 4 Vol.2: Any%",
+   "lombre914",
+   "343.756"
+  ],
+  [
+   "873",
+   "Grand Theft Auto III: 100%",
+   "guywith",
+   "343.611"
+  ],
+  [
+   "874",
+   "Hello Neighbor: Alpha 2 - Glitchless",
+   "MEFG",
+   "343.216"
+  ],
+  [
+   "875",
+   "Layers of Fear (2016): Any% - PC",
+   "AsigaN",
+   "342.94"
+  ],
+  [
+   "876",
+   "Undertale: True Pacifist - 1.00-1.001, Glitchless, Fresh Save",
+   "tetrisbit",
+   "342.917"
+  ],
+  [
+   "877",
+   "The Lion King (Genesis/MegaDrive): Easy Any%",
+   "Bronkel",
+   "342.718"
+  ],
+  [
+   "878",
+   "ULTRAKILL: Layer Any% - Prelude, Pre-Revamp",
+   "DevilHunter",
+   "342.664"
+  ],
+  [
+   "879",
+   "Moto X3M: Any% PC/Web (CMG) - No Skips",
+   "Sh_tReapsCody",
+   "342.087"
+  ],
+  [
+   "880",
+   "Kirby Super Star: 100%",
+   "Yotta",
+   "342.055"
+  ],
+  [
+   "881",
+   "Minecraft: Java Edition Category Extensions: Full Inventy! - SSG, Structures",
+   "galaxy1010_w",
+   "341.482"
+  ],
+  [
+   "882",
+   "Mirror's Edge Catalyst: NG+",
+   "CodeNameMeteor",
+   "341.114"
+  ],
+  [
+   "883",
+   "Sekiro: Shadows Die Twice: All Bosses/Minibosses - PC, Restricted",
+   "WormdogBS",
+   "341.099"
+  ],
+  [
+   "884",
+   "Super Metroid: GT Code - Classic",
+   "ShinyZeni",
+   "340.745"
+  ],
+  [
+   "885",
+   "Hollow Knight: Level, Pantheon of the Master - Any Bindings",
+   "rainie923",
+   "340.685"
+  ],
+  [
+   "886",
+   "Spelunky 2: Duat%",
+   "ZSRoach",
+   "340.444"
+  ],
+  [
+   "887",
+   "The Big Catch: Tacklebox - 10 Fish",
+   "StratSus",
+   "340.425"
+  ],
+  [
+   "888",
+   "Spyro 2: Ripto's Rage!: 40 Orb",
+   "bluntbows",
+   "340.307"
+  ],
+  [
+   "889",
+   "LEGO Batman: The Videogame: Free Play - Solo, Hero",
+   "musk_operacji",
+   "340.021"
+  ],
+  [
+   "890",
+   "Dark Souls III: Any% Current Patch",
+   "Fadis",
+   "339.967"
+  ],
+  [
+   "891",
+   "Wii Sports Resort: Cycling - Solo, Around the Island",
+   "RayndX210",
+   "339.84"
+  ],
+  [
+   "892",
+   "Robot 64: Any% - No Credits Warp",
+   "Cornpyn",
+   "339.824"
+  ],
+  [
+   "893",
+   "Skylanders: Trap Team: Any% - Solo",
+   "ExtraHotCheeto",
+   "339.789"
+  ],
+  [
+   "894",
+   "Sonic Heroes: Team Sonic - Unrestricted",
+   "justtrell",
+   "339.687"
+  ],
+  [
+   "895",
+   "Harry Potter and the Order of the Phoenix: Any%",
+   "Flo203",
+   "339.224"
+  ],
+  [
+   "896",
+   "Metroid Fusion: 100% - Normal",
+   "CScottyW",
+   "339.083"
+  ],
+  [
+   "897",
+   "Wii Sports Resort: Frisbee Golf - 18 Holes",
+   "Benson",
+   "338.854"
+  ],
+  [
+   "898",
+   "New Super Mario Bros. U Deluxe: NSMBU - Any%, Normal",
+   "Inforcer",
+   "338.84"
+  ],
+  [
+   "899",
+   "Super Mario Odyssey Category Extensions: Talkatoo% - Any%",
+   "BusterDoggy",
+   "338.666"
+  ],
+  [
+   "900",
+   "Tomb Raider: Legend: Any% - No Bug Jump",
+   "BryNu",
+   "338.493"
+  ],
+  [
+   "901",
+   "Minecraft: Java Edition Category Extensions: Full Inventy! - RSG, No Structures",
+   "noobbcp",
+   "338.393"
+  ],
+  [
+   "902",
+   "A Story About My Uncle: Any% - NoFling",
+   "Fate7799",
+   "338.251"
+  ],
+  [
+   "903",
+   "Seterra (Geoguessr Version): 193 UN Member States - Pin, Website",
+   "AgadzAgadza",
+   "338.237"
+  ],
+  [
+   "904",
+   "Metroid Fusion: Any% - Normal",
+   "CScottyW",
+   "338.08"
+  ],
+  [
+   "905",
+   "Red Ball 4 Vol.3: Any%",
+   "rubienlily",
+   "337.968"
+  ],
+  [
+   "906",
+   "Tomb Raider III: Adventures of Lara Croft: Any% - Glitches, PC",
+   "guigui0001",
+   "337.825"
+  ],
+  [
+   "907",
+   "Kingdom Hearts Final Mix: Any% - Beginner, PS3",
+   "Ninten866",
+   "337.382"
+  ],
+  [
+   "908",
+   "Pizza Tower: True Ending - Unrestricted, Peppino",
+   "Yottacat",
+   "337.351"
+  ],
+  [
+   "909",
+   "Antichamber: Any% - Warpless",
+   "CAKEbuilder",
+   "336.972"
+  ],
+  [
+   "910",
+   "I Wanna Be The Boshy: Any% (No WW, DBO) - Average",
+   "AnsoWizard",
+   "336.598"
+  ],
+  [
+   "911",
+   "Wii Sports: Golf: 3 Holes - Intermediate",
+   "EmoadNomad",
+   "336.365"
+  ],
+  [
+   "912",
+   "SCP Containment Breach: Set Seed Inbounds - Gate A: Ending 1",
+   "KriswithaK",
+   "336.353"
+  ],
+  [
+   "913",
+   "Adventure Forward 2: Points of Conflict: 33 Stars - (Legacy) Glitch",
+   "Speedrun",
+   "336.177"
+  ],
+  [
+   "914",
+   "Cat Mario: Warpless No OoB",
+   "Big_Mukmuk",
+   "336.032"
+  ],
+  [
+   "915",
+   "The Legend of Zelda: Any% - First Quest",
+   "Schicksal",
+   "335.939"
+  ],
+  [
+   "916",
+   "Yakuza Kiwami: Any% - Any Difficulty, PC, 240",
+   "BigNoNo",
+   "335.785"
+  ],
+  [
+   "917",
+   "Portal: Inbounds No SLA - PC",
+   "SiDiouS",
+   "335.643"
+  ],
+  [
+   "918",
+   "LEGO Batman: The Videogame: Story - Solo, Villain",
+   "firmynator",
+   "335.625"
+  ],
+  [
+   "919",
+   "Resident Evil 4 (2023): NMG - PC, Standard, Full Game",
+   "hqqqaq",
+   "335.469"
+  ],
+  [
+   "920",
+   "The Messenger: 8-Bit - OoB, New Game",
+   "halflinghelper",
+   "335.136"
+  ],
+  [
+   "921",
+   "Return to Castle Wolfenstein: Any% - I am Death incarnate!",
+   "In_trance_I_trust",
+   "335.1"
+  ],
+  [
+   "922",
+   "Mario Kart 8 Deluxe: Nitro Cups - Mushroom Cup, 150cc, No Items, Nintendo Switch",
+   "PandaMK8",
+   "335.015"
+  ],
+  [
+   "923",
+   "Bendy And The Ink Machine: Any% - Unpatched",
+   "obser",
+   "334.931"
+  ],
+  [
+   "924",
+   "Celeste: Clear, Reflection",
+   "Jackthewack",
+   "334.916"
+  ],
+  [
+   "925",
+   "LEGO Star Wars: The Complete Saga (PC/Console): All Minikits - Solo, PC",
+   "Bricko",
+   "334.906"
+  ],
+  [
+   "926",
+   "Super Mario 64 Randomizer: 70 Star - Random Seed, Regular, Normal",
+   "Frogdunker",
+   "334.88"
+  ],
+  [
+   "927",
+   "BattleBlock Theater: Any% No Level Skips - Normal, Weapons",
+   "Starcoin",
+   "334.821"
+  ],
+  [
+   "928",
+   "Half-Life 2: Episode Two: Any% - RTA",
+   "HardLifeNH",
+   "334.673"
+  ],
+  [
+   "929",
+   "Metroid (NES): Any%",
+   "CScottyW",
+   "334.359"
+  ],
+  [
+   "930",
+   "Hollow Knight: Silksong: Act 1 - No Major Glitches, Judgement",
+   "8Biggy",
+   "334.178"
+  ],
+  [
+   "931",
+   "Xenoblade Chronicles: Future Connected: Any% - Casual Mode, Not Used",
+   "hino_maru",
+   "333.958"
+  ],
+  [
+   "932",
+   "Silent Hill: NG (Easy) - Emulator",
+   "Punchy",
+   "333.89"
+  ],
+  [
+   "933",
+   "Ooh, Aah & You: Fetch-A-Fruit: Easy - No VS/FS",
+   "zaiisleepyy",
+   "333.834"
+  ],
+  [
+   "934",
+   "LEGO Harry Potter: Years 1-4: Sorcerer's Stone - Solo, Story",
+   "Cocozito",
+   "333.767"
+  ],
+  [
+   "935",
+   "Cuphead: Bad Ending (Menu Glitch) - Legacy",
+   "Sublime",
+   "333.581"
+  ],
+  [
+   "936",
+   "Mario Kart 8 Deluxe: Bonus Tracks - No Items, 200cc, Nintendo Switch",
+   "Armybidonville",
+   "333.44"
+  ],
+  [
+   "937",
+   "Super Mario Bros.: Warpless All-Stars",
+   "Niftski",
+   "333.392"
+  ],
+  [
+   "938",
+   "Castlevania: Aria of Sorrow: Soma Glitchless - Standard",
+   "Darko",
+   "333.317"
+  ],
+  [
+   "939",
+   "Final Fantasy III: Pixel Remaster Any% - Any% No boost",
+   "Clomy17",
+   "333.218"
+  ],
+  [
+   "940",
+   "Opposite Day: Any%",
+   "0Rad10active",
+   "332.882"
+  ],
+  [
+   "941",
+   "Hollow Knight: Level, Pantheon of Hallownest - Any Bindings",
+   "Ybslsxx",
+   "332.76"
+  ],
+  [
+   "942",
+   "The Legend of Zelda: Link's Awakening DX: 100% - No WW/OOB",
+   "TGH",
+   "332.476"
+  ],
+  [
+   "943",
+   "Ratchet & Clank: Going Commando: Any% - Original",
+   "nishikori",
+   "332.225"
+  ],
+  [
+   "944",
+   "Call of Duty: Black Ops III Zombies: Der Eisendrache - 1 Player, Easter Egg, Megas",
+   "Seqn3",
+   "331.886"
+  ],
+  [
+   "945",
+   "Kirby: Planet Robobot: Meta Knightmare Returns",
+   "sokuno",
+   "331.17"
+  ],
+  [
+   "946",
+   "Kirby 64: The Crystal Shards: Any%",
+   "DarkRiolu27",
+   "331.161"
+  ],
+  [
+   "947",
+   "Mario Party DS: Boss Bash",
+   "rhin_woods",
+   "330.726"
+  ],
+  [
+   "948",
+   "Wii Sports: Golf: 3 Holes - Beginner",
+   "Catafir",
+   "330.484"
+  ],
+  [
+   "949",
+   "The Simpsons: Hit & Run: Any% - PC (Restricted)",
+   "HomerOfSteel",
+   "330.121"
+  ],
+  [
+   "950",
+   "Resident Evil 2 (2019): New Game (PC) - Leon, Hardcore, 120",
+   "Frit",
+   "329.993"
+  ],
+  [
+   "951",
+   "Super Mario 64 Randomizer: 70 Star - Random Seed, Non-Stop, Normal",
+   "mcneills99",
+   "329.984"
+  ],
+  [
+   "952",
+   "Minions Adventure Obby: Despicable Forces: Any% - No Coils, No Cutscene Skips",
+   "_TheEpicGamer_",
+   "329.867"
+  ],
+  [
+   "953",
+   "Minecraft: Java Edition Category Extensions: All Wood Logs - SSG, 1.16-1.18",
+   "Brina32",
+   "329.813"
+  ],
+  [
+   "954",
+   "Skies of Arcadia: Legends: Any% RTA",
+   "chaserlewis",
+   "329.618"
+  ],
+  [
+   "955",
+   "Super Mario RPG: Legend of the Seven Stars: Any%",
+   "Justin-credible",
+   "329.592"
+  ],
+  [
+   "956",
+   "Sekiro: Shadows Die Twice: All Memories & Prayer Beads - PC, Restricted",
+   "WormdogBS",
+   "329.125"
+  ],
+  [
+   "957",
+   "Freedom Planet: Lilac",
+   "revolucion",
+   "329.093"
+  ],
+  [
+   "958",
+   "Renegade (NES): Easy",
+   "MikieDiesAlot",
+   "328.899"
+  ],
+  [
+   "959",
+   "Rayman 3: Hoodlum Havoc: GCN - Any%",
+   "Torcnein",
+   "328.71"
+  ],
+  [
+   "960",
+   "Harry Potter and the Philosopher's Stone (PC): Glitchless",
+   "Flo203",
+   "328.668"
+  ],
+  [
+   "961",
+   "ULTRAKILL: P Rank, 0-2: The Meatgrinder - Pre-Revamp",
+   "Athael",
+   "328.638"
+  ],
+  [
+   "962",
+   "Prince of Persia: Warrior Within: Any% - Standard",
+   "R3N_ZERO",
+   "328.45"
+  ],
+  [
+   "963",
+   "Hello Neighbor: PC, Act 1",
+   "Aloucoum",
+   "328.242"
+  ],
+  [
+   "964",
+   "Grand Theft Auto V: All Stunt Jumps",
+   "szau",
+   "328.178"
+  ],
+  [
+   "965",
+   "Slime Rancher: Pink Gordo - 1.3.2 - 1.4.4",
+   "Giraffe_",
+   "328.014"
+  ],
+  [
+   "966",
+   "The Simpsons: Hit & Run: All Tasks NLR - PC",
+   "HomerOfSteel",
+   "327.876"
+  ],
+  [
+   "967",
+   "Grand Poo World 2: Any % Good Ending",
+   "stew_",
+   "327.856"
+  ],
+  [
+   "968",
+   "Granny: v1.7 - Practice, Door Ending, Any%",
+   "Yurizono_Seia",
+   "327.514"
+  ],
+  [
+   "969",
+   "Deepwoken: Chaser - Solo, Glitched, Normal, Patched",
+   "nebrula",
+   "326.95"
+  ],
+  [
+   "970",
+   "Blood: Full Game Run - Skill 1, Any% (No Episode Warp)",
+   "lachlannmagnus",
+   "326.786"
+  ],
+  [
+   "971",
+   "Poppy Playtime: Chapter 1: Console - Unrestricted, Any%",
+   "ohbno",
+   "326.659"
+  ],
+  [
+   "972",
+   "Grand Theft Auto III: All Missions",
+   "3Dwindex",
+   "326.41"
+  ],
+  [
+   "973",
+   "Deepwoken: Chaser - Solo, No Major Glitches, Normal, Patched",
+   "brenohai",
+   "326.253"
+  ],
+  [
+   "974",
+   "Splatoon: NG+ - WiiU",
+   "Dee_G",
+   "326.252"
+  ],
+  [
+   "975",
+   "Super Mario Galaxy: 120 Stars - 1P, Mario",
+   "HardcoreGaming",
+   "325.963"
+  ],
+  [
+   "976",
+   "Pizza Tower: Any% - No Major Glitches, Noise",
+   "Cawis",
+   "325.69"
+  ],
+  [
+   "977",
+   "LEGO Indiana Jones 2: The Adventure Continues: Any% - Solo, Standard",
+   "MetalString",
+   "325.577"
+  ],
+  [
+   "978",
+   "Ape Escape: Any% No IJ",
+   "El_Dorado",
+   "325.443"
+  ],
+  [
+   "979",
+   "Resident Evil 2 (2019): New Game (PC) - Claire, Standard, 60",
+   "TheFuretto",
+   "324.857"
+  ],
+  [
+   "980",
+   "Barbie Horse Adventures: Mystery Ride: Any%",
+   "Astix",
+   "324.436"
+  ],
+  [
+   "981",
+   "Final Fantasy X: HD Console - Any%",
+   "oddmog",
+   "324.391"
+  ],
+  [
+   "982",
+   "Prince of Persia: Any% - No Major Glitches",
+   "higlak",
+   "324.357"
+  ],
+  [
+   "983",
+   "Undertale: Genocide - 1.02+",
+   "Majoog",
+   "324.341"
+  ],
+  [
+   "984",
+   "Ato: Any% - Assist, No Major Glitches",
+   "D49David49",
+   "324.159"
+  ],
+  [
+   "985",
+   "Cavern of Dreams: Any%",
+   "Jakarr_Sampson",
+   "324.151"
+  ],
+  [
+   "986",
+   "Broforce: Arcade Mode (Legacy) - Normal",
+   "StarScuffle",
+   "324.065"
+  ],
+  [
+   "987",
+   "The Messenger: 8-Bit - No OoB, New Game +",
+   "SortofAlpha",
+   "323.973"
+  ],
+  [
+   "988",
+   "Bomberman Hero: JP Any%",
+   "Tideking",
+   "323.775"
+  ],
+  [
+   "989",
+   "Super Mario 64: 0 Star - EMU",
+   "ohyeah_",
+   "323.718"
+  ],
+  [
+   "990",
+   "Castlevania: Dracula X: Bad Ending (Catacomb Shortcut)",
+   "jay_cee",
+   "323.597"
+  ],
+  [
+   "991",
+   "Sonic R: Any% (No OoB) - PC",
+   "DylCat",
+   "323.025"
+  ],
+  [
+   "992",
+   "Serious Sam: The First Encounter: Any% - Normal, Singleplayer",
+   "Inv1ve",
+   "323.011"
+  ],
+  [
+   "993",
+   "Skylanders: SuperChargers: All Story Levels - Easy, Solo, No Warps",
+   "SpeedrunnerCartman",
+   "322.922"
+  ],
+  [
+   "994",
+   "Barbie: Horse Trails: Any%",
+   "alhexadecimal",
+   "322.865"
+  ],
+  [
+   "995",
+   "Resident Evil 2 (2019): New Game (Console) - Leon 2nd, Standard",
+   "Dyldor",
+   "322.818"
+  ],
+  [
+   "996",
+   "Serious Sam: The First Encounter: Any% - Tourist/Easy, Singleplayer",
+   "Inv1ve",
+   "322.786"
+  ],
+  [
+   "997",
+   "Kirby: Star Allies: Guest Star ???? Star Allies Go!",
+   "yanapppppu",
+   "322.669"
+  ],
+  [
+   "998",
+   "Crash Bandicoot: N. Sane Trilogy: Crash Bandicoot 2: Cortex Strikes Back - 100%, PC",
+   "CHAMBERSSENPAI",
+   "322.608"
+  ],
+  [
+   "999",
+   "Sonic R: Any% (No OoB) - Gamecube",
+   "DylCat",
+   "322.045"
+  ],
+  [
+   "1000",
+   "Ratchet & Clank: Up Your Arsenal: All Titanium Bolts",
+   "king_dedede",
+   "321.793"
+  ]
+ ]
+}

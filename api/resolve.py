@@ -1,7 +1,7 @@
 """Turn the free-text terms of a FilterSpec into sets of ids, using the published lookup tables.
 
-Every term matches a full name or a speedrun.com slug, case-insensitively. Countries also match the ISO code
-or the flag label. Unmatched terms become warnings and are never silently dropped.
+Every term matches a full name or a speedrun.com slug, case-insensitively. Countries match the ISO code or name of
+any area that has its own leaderboard flag on speedrun.com (countries, plus e.g. England). Unmatched terms become warnings and are never silently dropped.
 """
 
 from __future__ import annotations
@@ -20,16 +20,17 @@ BOX_LABELS = {
     "countries": "country",
 }
 
+_BY_NAME_OR_SLUG = (
+    "SELECT t.term, x.id, x.name FROM terms t JOIN {table} x ON x.name_lower = t.term OR x.slug_lower = t.term"
+)
 _LOOKUP_SQL = {
-    "games": "SELECT t.term, x.id, x.name FROM terms t JOIN games x ON x.name_lower = t.term OR x.slug_lower = t.term",
-    "series": "SELECT t.term, x.id, x.name FROM terms t JOIN series x ON x.name_lower = t.term OR x.slug_lower = t.term",
-    "platforms": (
-        "SELECT t.term, x.id, x.name FROM terms t JOIN platforms x ON x.name_lower = t.term OR x.slug_lower = t.term"
-    ),
-    "players": "SELECT t.term, x.id, x.name FROM terms t JOIN players x ON x.name_lower = t.term OR x.slug_lower = t.term",
+    "games": _BY_NAME_OR_SLUG.format(table="games"),
+    "series": _BY_NAME_OR_SLUG.format(table="series"),
+    "platforms": _BY_NAME_OR_SLUG.format(table="platforms"),
+    "players": _BY_NAME_OR_SLUG.format(table="players"),
     "countries": (
         "SELECT t.term, x.id, x.name FROM terms t JOIN areas x ON x.is_country "
-        "AND (x.id_lower = t.term OR x.name_lower = t.term OR lower(x.label) = t.term)"
+        "AND (x.id_lower = t.term OR x.name_lower = t.term OR x.lb_name_lower = t.term)"
     ),
 }
 

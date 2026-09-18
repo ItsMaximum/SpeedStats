@@ -19,20 +19,24 @@ WITH scope AS (
       AND (r.platform_id IS NULL OR r.platform_id NOT IN (SELECT unnest($exc_platforms::VARCHAR[])))
       AND ($all_players OR r.player_id IN (SELECT unnest($inc_players::VARCHAR[])))
       AND r.player_id NOT IN (SELECT unnest($exc_players::VARCHAR[]))
-      AND ($all_countries OR r.country IN (SELECT unnest($inc_countries::VARCHAR[])))
+      AND ($all_countries OR r.country IN (SELECT unnest($inc_countries::VARCHAR[]))
+                             OR r.flag IN (SELECT unnest($inc_countries::VARCHAR[])))
       AND (r.country IS NULL OR r.country NOT IN (SELECT unnest($exc_countries::VARCHAR[])))
+      AND (r.flag IS NULL OR r.flag NOT IN (SELECT unnest($exc_countries::VARCHAR[])))
 )
 """
 
 # Player Rankings over all games come straight from the precomputed table. Global rank is kept when only
 # players are named (a "where do these players stand" lookup); a country filter re-numbers ("US rankings").
 PR_PRECOMPUTED = """
-SELECT {rank} AS "Rank", player AS "Player", country AS "Country", round(points, 2) AS "Points"
+SELECT {rank} AS "Rank", player AS "Player", flag AS "Flag", round(points, 2) AS "Points"
 FROM player_ranks p
 WHERE ($all_players OR p.player_id IN (SELECT unnest($inc_players::VARCHAR[])))
   AND p.player_id NOT IN (SELECT unnest($exc_players::VARCHAR[]))
-  AND ($all_countries OR p.country IN (SELECT unnest($inc_countries::VARCHAR[])))
+  AND ($all_countries OR p.country IN (SELECT unnest($inc_countries::VARCHAR[]))
+                       OR p.flag IN (SELECT unnest($inc_countries::VARCHAR[])))
   AND (p.country IS NULL OR p.country NOT IN (SELECT unnest($exc_countries::VARCHAR[])))
+  AND (p.flag IS NULL OR p.flag NOT IN (SELECT unnest($exc_countries::VARCHAR[])))
 ORDER BY rank LIMIT $limit
 """
 
@@ -40,16 +44,16 @@ PR_SCOPED = (
     SCOPE_CTE
     + """,
 ranked AS (
-    SELECT player_id, player, country, value,
+    SELECT player_id, player, flag, value,
            ROW_NUMBER() OVER (PARTITION BY player_id ORDER BY value DESC) AS pr
     FROM scope
 ),
 pts AS (
-    SELECT player_id, any_value(player) AS player, any_value(country) AS country,
+    SELECT player_id, any_value(player) AS player, any_value(flag) AS flag,
            SUM(GREATEST(value * POWER(0.99, pr - 1), value * 0.25)) AS points
     FROM ranked GROUP BY player_id
 )
-SELECT ROW_NUMBER() OVER (ORDER BY points DESC, player) AS "Rank", player AS "Player", country AS "Country",
+SELECT ROW_NUMBER() OVER (ORDER BY points DESC, player) AS "Rank", player AS "Player", flag AS "Flag",
        round(points, 2) AS "Points"
 FROM pts ORDER BY points DESC, player LIMIT $limit
 """
@@ -118,7 +122,7 @@ class QueryResult:
 
 
 def build_sql(request_type: str, filt: ResolvedFilter) -> str:
-    player_cols = "" if filt.single_player else 'player AS "Player", country AS "Country",'
+    player_cols = "" if filt.single_player else 'player AS "Player", flag AS "Flag",'
     match request_type:
         case "pr":
             if filt.unfiltered_ranking:
