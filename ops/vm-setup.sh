@@ -34,7 +34,18 @@ log() { printf '\n==> %s\n' "$*"; }
 # 1. Docker -----------------------------------------------------------------------------------------------------
 if ! command -v docker >/dev/null 2>&1; then
   log "installing Docker"
-  curl -fsSL https://get.docker.com | sudo sh
+  . /etc/os-release
+  case "$ID" in
+    ol|rhel|centos|rocky|almalinux)
+      # get.docker.com does not support Oracle Linux; Docker's RHEL/CentOS repo works on OL8/9 (x86_64 and aarch64)
+      sudo dnf -y install dnf-plugins-core
+      sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+      sudo dnf -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+      ;;
+    *)
+      curl -fsSL https://get.docker.com | sudo sh
+      ;;
+  esac
 fi
 sudo systemctl enable --now docker
 if ! id -nG "$USER" | grep -qw docker; then
