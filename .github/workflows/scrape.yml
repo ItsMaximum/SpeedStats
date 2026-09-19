@@ -41,6 +41,11 @@ jobs:
           [ "$RESUME" = "true" ] && FLAGS="$FLAGS --resume"
           [ "$FORCE" = "true" ] && FLAGS="$FLAGS --force"
           docker compose run --rm scraper all $FLAGS
+      - name: Stop the scraper container if this run was cancelled
+        if: cancelled()
+        run: |
+          ids=$(docker ps -q --filter label=com.docker.compose.project=speedstats --filter label=com.docker.compose.service=scraper)
+          if [ -n "$ids" ]; then docker stop $ids; echo "stopped scraper container(s); the next run resumes the crawl"; fi
       - name: Job summary
         if: always()
         run: |
