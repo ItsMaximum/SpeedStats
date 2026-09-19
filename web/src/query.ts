@@ -42,7 +42,7 @@ export interface QuerySpec {
   limit: number;
 }
 
-export interface BoxTerms {
+interface BoxTerms {
   include: string[];
   exclude: string[];
 }
@@ -135,10 +135,6 @@ export function toSearchParams(spec: QuerySpec): URLSearchParams {
 
 export function toSearch(spec: QuerySpec): string {
   return "?" + toSearchParams(spec).toString();
-}
-
-export function isEmptyQuery(spec: QuerySpec): boolean {
-  return BOXES.every((box) => spec.terms[box].length === 0);
 }
 
 /** Link to a related query from a table cell (player -> their runs, game -> its rankings, ...). */

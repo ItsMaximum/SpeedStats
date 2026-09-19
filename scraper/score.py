@@ -11,6 +11,8 @@ from pathlib import Path
 
 import duckdb
 
+from speedstats import paths
+
 log = logging.getLogger("speedstats.score")
 
 
@@ -87,3 +89,37 @@ def build_published(
 
     os.replace(partial, out_path)
     return out_path
+
+
+def crawl_version(crawl: Path) -> str:
+    return crawl.stem.removeprefix("crawl-")
+
+
+def score_crawl(crawl: Path, data_dir: Path, *, excluded_players: Iterable[str], set_current: bool) -> Path:
+    """Normalize a finished crawl database and score it into data_dir/speedstats-<version>.duckdb."""
+    version = crawl_version(crawl)
+    con = duckdb.connect(str(crawl))
+    configure(con, tmp=paths.work_dir(data_dir) / "tmp")
+    try:
+        stage = con.execute("SELECT value FROM crawl_meta WHERE key = 'stage'").fetchone()
+        if not stage or stage[0] != "games_crawled":
+            raise SystemExit(f"crawl {crawl.name} is not complete (stage: {stage[0] if stage else 'none'})")
+        started = con.execute("SELECT value FROM crawl_meta WHERE key = 'started_at'").fetchone()
+        scraped_at = datetime.fromisoformat(started[0]).replace(tzinfo=UTC) if started else datetime.now(UTC)
+        errored = con.execute("SELECT COUNT(*) FROM crawl_checkpoint WHERE status = 'error'").fetchone()[0]
+        log.info("normalizing %s", crawl.name)
+        con.execute(sql_text("normalize.sql"))
+        out = build_published(
+            con,
+            paths.published_path(data_dir, version),
+            data_version=version,
+            scraped_at=scraped_at,
+            excluded_players=excluded_players,
+            errored_games=errored,
+        )
+    finally:
+        con.close()
+    if set_current:
+        paths.write_current(data_dir, out)
+        log.info("CURRENT -> %s", out.name)
+    return out

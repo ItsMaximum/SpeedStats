@@ -18,8 +18,8 @@ speedstats/ shared: settings, query-string parsing (mirrored in web/src/query.ts
    `data/work/crawl-<version>.duckdb` as they arrive (a few hundred MB of RAM, not tens of GB) and progress is
    checkpointed per game, so `--resume` continues a crashed crawl.
 2. **Score** (`python -m scraper score`): `normalize.sql` + `score.sql` reproduce the original Python scoring
-   exactly (the parity test compares every row, place and value with the old pipeline's output) and write
-   `data/speedstats-<version>.duckdb`.
+   exactly (verified row by row against the old pipeline; `tests/test_scoring.py` pins that output as golden
+   files) and write `data/speedstats-<version>.duckdb`.
 3. **Validate + publish**: sanity gates (row counts vs last week, top-100 overlap, smoke queries...). Only when
    they pass does `data/CURRENT` move to the new file; the API notices within 10 s and hot-swaps, the Cloudflare
    cache is purged, and a parquet snapshot goes to R2. If they fail, last week's data keeps serving.
@@ -41,9 +41,8 @@ cp .env.example .env      # optional; defaults work
 Get a database (any of these writes `data/CURRENT`):
 
 ```bash
-uv run python -m scraper fixture-db                                   # tiny Red Ball fixture, instant
+uv run python -m scraper fixture-db                                   # the Fancy Pants series (checked-in crawl), instant
 uv run python -m scraper crawl --only-series 643gq07w && uv run python -m scraper score   # one series, live data
-uv run python -m scraper score --from-json ../SpeedStats-V3/data/runs.json               # a full old-format crawl
 uv run python -m scraper bootstrap                                    # latest published snapshot from R2
 ```
 
@@ -54,14 +53,14 @@ npm run dev          # API on :8000 (auto-reload) + web on :5173 (HMR); open htt
 npm run dev:live     # web only, talking to the deployed API at new.speedstats.app
 npm run check        # ruff + pytest + tsc + vitest + vite build, same as CI
 npm run gen-types    # regenerate web/src/api-types.d.ts after changing the API models
+uv run python tools/update_golden.py   # after an intentional scoring change: refresh tests/fixtures/expected-*.csv
 ```
 
 Local crawls use direct requests (no `SRC_PROXIES` in `.env`); keep them to a series or a game.
 
-Useful checks:
+To compare against the live site for a set of real URLs (`tests/regression/urls.txt`):
 
 ```bash
-uv run python -m scraper parity --csv ../SpeedStats-V3/data/runs.csv     # row-by-row comparison with the old output
 uv run python tools/regression.py capture && uv run python tools/regression.py check --db data/<file>.duckdb
 ```
 

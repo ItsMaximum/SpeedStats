@@ -28,10 +28,6 @@ class BoxTerms:
     include: tuple[str, ...] = ()
     exclude: tuple[str, ...] = ()
 
-    @property
-    def empty(self) -> bool:
-        return not self.include and not self.exclude
-
 
 @dataclass(frozen=True)
 class FilterSpec:

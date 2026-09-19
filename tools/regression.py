@@ -19,6 +19,9 @@ from pathlib import Path
 
 import httpx
 
+from api import main as api_main
+from speedstats import paths
+
 ROOT = Path(__file__).resolve().parent.parent
 URLS = ROOT / "tests" / "regression" / "urls.txt"
 SNAPSHOTS = ROOT / "tests" / "regression" / "snapshots"
@@ -97,15 +100,12 @@ def _normalize(value: str | int | float | None) -> str:
 def check(db: Path) -> int:
     from fastapi.testclient import TestClient
 
-    from api import main
-    from speedstats import paths
-
     data_dir = db.parent
     if paths.read_current(data_dir) != db:
         paths.write_current(data_dir, db)
-    main.holder.data_dir = data_dir
+    api_main.holder.data_dir = data_dir
     failures = 0
-    with TestClient(main.app) as client:
+    with TestClient(api_main.app) as client:
         for qs in urls():
             path = snapshot_path(qs)
             if not path.exists():
@@ -149,5 +149,4 @@ def main_() -> int:
 
 
 if __name__ == "__main__":
-    sys.path.insert(0, str(ROOT))
     sys.exit(main_())
