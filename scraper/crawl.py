@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import asyncio
 import logging
-import random
 import time
 from dataclasses import dataclass, field
 from typing import Any
@@ -19,6 +18,7 @@ from scraper.writer import DbWriter, now
 log = logging.getLogger("speedstats.crawl")
 
 STAGES = ["", "static", "series_listed", "series_games_listed", "games_listed", "games_crawled"]
+LEADERBOARD_TYPE = 1  # 1 = GetGameLeaderboard (200 runs/page), 2 = GetGameLeaderboard2 (100 runs/page)
 # Series whose v2 GetGameList(seriesId) is incomplete (Harry Potter: 4 of 39 games); use the v1 API for these.
 V1_SERIES = {"15ndxp7r"}
 
@@ -30,7 +30,6 @@ class CrawlConfig:
     games_in_flight: int = 48
     only_series: str | None = None
     only_game: str | None = None
-    lb_seed: int | None = None
 
 
 @dataclass
@@ -50,9 +49,6 @@ class Crawler:
         self.writer = writer
         self.cfg = cfg
         self.game_sem = asyncio.Semaphore(cfg.games_in_flight)
-        seed = cfg.lb_seed if cfg.lb_seed is not None else random.randrange(1 << 30)
-        self.rng = random.Random(seed)
-        writer.set_meta("lb_seed", str(seed))
         self.done = 0
         self.total = 0
         self.started = time.monotonic()
@@ -351,7 +347,7 @@ class Crawler:
         )
 
     async def crawl_category(self, game_id: str, category_id: str) -> tuple[int, int]:
-        lb_type = self.rng.choice((1, 2))
+        lb_type = LEADERBOARD_TYPE
         first = await self.client.get_leaderboard(game_id, category_id, 1, lb_type)
         runs = await self._put_page(first, lb_type, 1)
         rest = await asyncio.gather(

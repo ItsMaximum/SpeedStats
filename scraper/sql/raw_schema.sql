@@ -1,7 +1,7 @@
 -- Raw crawl store: append-only, no keys or indexes. Re-fetches produce duplicates that normalize.sql collapses
 -- (latest seen_at wins). One file per crawl: work/crawl-<version>.duckdb.
 
-CREATE TABLE IF NOT EXISTS crawl_meta (key VARCHAR PRIMARY KEY, value VARCHAR);
+CREATE TABLE IF NOT EXISTS crawl_meta (key VARCHAR PRIMARY KEY, value VARCHAR);  -- version, started_at, stage
 
 CREATE TABLE IF NOT EXISTS raw_series      (id VARCHAR, name VARCHAR, url VARCHAR, seen_at TIMESTAMP);
 CREATE TABLE IF NOT EXISTS raw_game_list   (id VARCHAR, name VARCHAR, url VARCHAR, seen_at TIMESTAMP);

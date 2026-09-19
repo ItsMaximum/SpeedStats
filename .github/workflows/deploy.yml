@@ -78,7 +78,8 @@ jobs:
           R2_BUCKET=${{ vars.R2_BUCKET || 'speedstats' }}
           PUBLIC_URL=${{ vars.PUBLIC_URL || 'https://new.speedstats.app' }}
           SRC_PER_PROXY_CONCURRENCY=${{ vars.SRC_PER_PROXY_CONCURRENCY || '2' }}
-          SRC_PER_PROXY_RPM=${{ vars.SRC_PER_PROXY_RPM || '100' }}
+          SRC_WINDOW_REQUESTS=${{ vars.SRC_WINDOW_REQUESTS || '500' }}
+          SRC_WINDOW_SECONDS=${{ vars.SRC_WINDOW_SECONDS || '1200' }}
           EXCLUDED_GAMES=${{ vars.EXCLUDED_GAMES || 'w6jrzxdj' }}
           EXCLUDED_CATEGORIES=${{ vars.EXCLUDED_CATEGORIES || 'n2y350ed,5dw43j0k' }}
           MIN_LEADERBOARDS=${{ vars.MIN_LEADERBOARDS || '600000' }}

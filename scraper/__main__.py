@@ -42,8 +42,16 @@ async def _run_crawl(path: Path, cfg, resume: bool) -> None:
     from scraper.writer import DbWriter
 
     apps = await dedupe_proxies_by_ip(settings.src_proxies) if settings.use_proxy else []
-    pool = ProxyPool.build(apps, settings.src_per_proxy_concurrency, settings.src_per_proxy_rpm)
-    logging.info("crawling via %s (%d concurrent requests)", "proxies" if apps else "direct requests", pool.capacity)
+    pool = ProxyPool.build(
+        apps, settings.src_per_proxy_concurrency, settings.src_window_requests, settings.src_window_seconds
+    )
+    logging.info(
+        "crawling via %s: %d concurrent requests, %d requests per %.0f-minute window",
+        "proxies" if apps else "direct requests",
+        pool.capacity,
+        pool.budget_per_window,
+        settings.src_window_seconds / 60,
+    )
     client = SrcClient(pool, settings.src_max_attempts, settings.src_timeout)
     writer = DbWriter(path)
     if not resume:

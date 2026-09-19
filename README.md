@@ -92,6 +92,9 @@ Secrets (proxy names, excluded players, Cloudflare and R2 tokens) are GitHub Act
 workflow writes them to `/opt/speedstats/.env` on the VM. Non-secret settings (`PUBLIC_URL`, `R2_BUCKET`, ...) are
 repository variables. Change one, re-run Deploy. See `.env.example` for the full list.
 
+speedrun.com's API limit is 500 requests per 20-minute window per IP (measured, see `scraper/proxy_pool.py`);
+with 26 proxies a full crawl of ~100k requests takes about 3 hours.
+
 ### Cut-over plan
 
 1. `new.speedstats.app` points at the new API while `speedstats.app` keeps serving the PHP site.

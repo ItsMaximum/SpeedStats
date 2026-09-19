@@ -10,7 +10,7 @@ from scraper.writer import DbWriter
 
 
 def make_client(handler, apps, per_proxy=1, max_attempts=6):
-    pool = ProxyPool.build(apps, per_proxy, rpm=0)
+    pool = ProxyPool.build(apps, per_proxy)
     client = SrcClient(pool, max_attempts=max_attempts, timeout=5, transient_delay=0.01)
     client._client = httpx.AsyncClient(transport=httpx.MockTransport(handler), base_url="")
     return client, pool
@@ -36,7 +36,7 @@ async def test_rate_limited_proxy_is_skipped_and_request_succeeds_elsewhere():
     assert out["ok"]
     assert "good.herokuapp.com" in hits[-1]
     bad = next(p for p in pool.proxies if p.app == "bad")
-    assert bad.strikes == 1 and bad.available_at > 0
+    assert bad.rate_limited == 1 and bad.available_at > 0
     # the rate-limited proxy is not used again while backing off
     for _ in range(3):
         await client.request("GetStaticData")
@@ -180,25 +180,54 @@ async def test_writer_commits_in_fifo_order_and_resumes_ord(tmp_path):
     reopened.con.close()
 
 
-async def test_burst_of_429s_is_one_strike():
-    pool = ProxyPool.build(["p"], per_proxy=4, rpm=0)
+async def test_burst_of_429s_is_one_event():
+    pool = ProxyPool.build(["p"], per_proxy=4)
     p = pool.proxies[0]
-    for _ in range(4):
+    p.take(asyncio.get_running_loop().time())
+    await pool.rate_limited(p)
+    parked_until = p.available_at
+    for _ in range(3):
         await pool.rate_limited(p)
-    assert p.strikes == 1 and p.rate_limited == 4
+    assert p.available_at == parked_until and p.rate_limited == 4
 
 
-async def test_rate_cap_spaces_requests():
-    pool = ProxyPool.build([], per_proxy=1, rpm=6000, direct_limit=4)  # 10ms apart
+async def test_window_budget_parks_a_proxy_until_its_window_ends(monkeypatch):
+    """500 per 20 min per IP, window anchored at the first request: after the budget is spent the proxy waits
+    until window_start + window_seconds (+ margin), then gets a fresh budget."""
+    import scraper.proxy_pool as pp
+
+    monkeypatch.setattr(pp, "WINDOW_MARGIN", 0.0)
+    pool = ProxyPool.build(["p"], per_proxy=8, window_requests=3, window_seconds=0.3)
+    p = pool.proxies[0]
     t0 = asyncio.get_running_loop().time()
-    for _ in range(4):
-        p = await pool.acquire()
-        await pool.release(p)
-    assert asyncio.get_running_loop().time() - t0 >= 0.025
+    for _ in range(3):
+        await pool.release(await pool.acquire())
+    assert p.window_used == 3 and p.windows == 1
+    fourth = await pool.acquire()  # blocks until the 0.3 s window has passed
+    waited = asyncio.get_running_loop().time() - t0
+    assert fourth is p and waited >= 0.3 and p.windows == 2 and p.window_used == 1
+    await pool.release(fourth)
+
+
+async def test_429_waits_for_the_window_not_exponentially(monkeypatch):
+    import scraper.proxy_pool as pp
+
+    monkeypatch.setattr(pp, "WINDOW_MARGIN", 0.0)
+    pool = ProxyPool.build(["p"], per_proxy=2, window_requests=500, window_seconds=100.0)
+    p = pool.proxies[0]
+    p.take(asyncio.get_running_loop().time())  # window starts now
+    import time
+
+    p.window_start = time.monotonic() - 40  # pretend 40 s of the window have passed
+    await pool.rate_limited(p)
+    await pool.rate_limited(p)  # a second 429 while parked changes nothing
+    remaining = p.available_at - time.monotonic()
+    assert 55 <= remaining <= 60.5  # the rest of the 100 s window, not 60 * 2**strikes
+    assert p.window_used == 500 and p.rate_limited == 2
 
 
 async def test_pool_waits_for_capacity():
-    pool = ProxyPool.build([], per_proxy=1, rpm=0, direct_limit=1)
+    pool = ProxyPool.build([], per_proxy=1, direct_limit=1)
     p = await pool.acquire()
     waiter = asyncio.create_task(pool.acquire())
     await asyncio.sleep(0.05)
@@ -212,12 +241,13 @@ async def test_proxy_names_never_appear_in_logs_or_errors(caplog, monkeypatch):
 
     import scraper.proxy_pool as pp
 
-    monkeypatch.setattr(pp, "RATE_LIMIT_BASE", 0.01)  # do not really wait out the 429 backoff
+    monkeypatch.setattr(pp, "WINDOW_MARGIN", 0.0)  # do not really wait out the window after the 429
 
     def handler(request):
         return httpx.Response(429)
 
     client, pool = make_client(handler, ["secret-app-name"], max_attempts=2)
+    pool.proxies[0].window_seconds = 0.01
     with caplog.at_level(logging.DEBUG):
         with pytest.raises(CrawlError) as err:
             await client.request("GetStaticData")
