@@ -21,6 +21,7 @@ class ProxyState:
     app: str  # Heroku app name, or "" for direct
     limit: int
     min_interval: float = 0.0  # seconds between request starts (per-IP rate cap)
+    label: str = "direct"  # what logs call this proxy; never the app name
     inflight: int = 0
     available_at: float = 0.0
     next_at: float = 0.0
@@ -48,7 +49,14 @@ class ProxyPool:
         interval = 60.0 / rpm if rpm > 0 else 0.0
         if not apps:
             return cls([ProxyState("", direct_limit, interval)])
-        return cls([ProxyState(app, per_proxy, interval) for app in apps])
+        return cls([ProxyState(app, per_proxy, interval, f"proxy-{i}") for i, app in enumerate(apps, start=1)])
+
+    def redact(self, text: str) -> str:
+        """Replace proxy hostnames in `text` (e.g. from an httpx error) with their labels."""
+        for p in self.proxies:
+            if p.app:
+                text = text.replace(f"{p.app}.herokuapp.com", p.label).replace(p.app, p.label)
+        return text
 
     @property
     def capacity(self) -> int:
@@ -95,11 +103,11 @@ class ProxyPool:
         delay *= random.uniform(1.0, 1.25)
         proxy.strikes += 1
         proxy.available_at = now + delay
-        log.warning("proxy %s rate limited; backing off %.0fs (strike %d)", proxy.app or "direct", delay, proxy.strikes)
+        log.warning("%s rate limited; backing off %.0fs (strike %d)", proxy.label, delay, proxy.strikes)
 
     async def penalize(self, proxy: ProxyState, seconds: float) -> None:
         proxy.failures += 1
         proxy.available_at = max(proxy.available_at, time.monotonic() + seconds)
 
     def stats(self) -> str:
-        return ", ".join(f"{p.app or 'direct'}:{p.requests}r/{p.rate_limited}rl/{p.failures}f" for p in self.proxies)
+        return ", ".join(f"{p.label}:{p.requests}r/{p.rate_limited}rl/{p.failures}f" for p in self.proxies)

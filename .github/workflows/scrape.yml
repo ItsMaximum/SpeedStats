@@ -25,6 +25,11 @@ jobs:
     timeout-minutes: 1440
     steps:
       - uses: actions/checkout@v4
+      - name: Mask proxy names in this run's log
+        env:
+          SRC_PROXIES: ${{ secrets.SRC_PROXIES }}
+        run: |
+          for p in ${SRC_PROXIES//,/ }; do echo "::add-mask::$p"; done
       - name: Crawl, score, validate, publish
         env:
           RESUME: ${{ github.event_name == 'schedule' || inputs.resume }}

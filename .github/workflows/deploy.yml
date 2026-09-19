@@ -57,6 +57,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ env.REF }}
+      - name: Mask proxy names in this run's log
+        env:
+          SRC_PROXIES: ${{ secrets.SRC_PROXIES }}
+        run: |
+          for p in ${SRC_PROXIES//,/ }; do echo "::add-mask::$p"; done
       - name: Write /opt/speedstats/.env from repository secrets and variables
         # Secrets: Settings -> Secrets and variables -> Actions. Editing one and re-running Deploy updates the VM;
         # the file never lives in the repo. Non-secret settings are repository *variables*.

@@ -205,3 +205,24 @@ async def test_pool_waits_for_capacity():
     assert not waiter.done()
     await pool.release(p)
     assert await asyncio.wait_for(waiter, 1) is p
+
+
+async def test_proxy_names_never_appear_in_logs_or_errors(caplog, monkeypatch):
+    import logging
+
+    import scraper.proxy_pool as pp
+
+    monkeypatch.setattr(pp, "RATE_LIMIT_BASE", 0.01)  # do not really wait out the 429 backoff
+
+    def handler(request):
+        return httpx.Response(429)
+
+    client, pool = make_client(handler, ["secret-app-name"], max_attempts=2)
+    with caplog.at_level(logging.DEBUG):
+        with pytest.raises(CrawlError) as err:
+            await client.request("GetStaticData")
+    assert "secret-app-name" not in str(err.value)
+    assert "secret-app-name" not in caplog.text and "proxy-1" in caplog.text
+    assert "secret-app-name" not in pool.stats()
+    assert pool.redact("ConnectError: https://secret-app-name.herokuapp.com/x") == "ConnectError: https://proxy-1/x"
+    await client.aclose()

@@ -254,7 +254,7 @@ class Crawler:
                 await self._checkpoint(game_id, "skipped", result, "not found")
                 return
             except CrawlError as e:
-                await self._checkpoint(game_id, "error", result, str(e))
+                await self._checkpoint(game_id, "error", result, self.client.pool.redact(str(e)))
                 return
             try:
                 await self._put_game_data(game_id, data)
@@ -264,7 +264,7 @@ class Crawler:
                     *(self.crawl_category(game_id, c["id"]) for c in categories), return_exceptions=True
                 )
             except Exception as e:  # malformed payload etc.
-                await self._checkpoint(game_id, "error", result, f"{type(e).__name__}: {e}")
+                await self._checkpoint(game_id, "error", result, self.client.pool.redact(f"{type(e).__name__}: {e}"))
                 return
             errors = [o for o in outcomes if isinstance(o, BaseException)]
             for o in outcomes:
@@ -272,7 +272,8 @@ class Crawler:
                     result.pages += o[0]
                     result.runs += o[1]
             if errors:
-                await self._checkpoint(game_id, "error", result, f"{type(errors[0]).__name__}: {errors[0]}")
+                detail = self.client.pool.redact(f"{type(errors[0]).__name__}: {errors[0]}")
+                await self._checkpoint(game_id, "error", result, detail)
             else:
                 await self._checkpoint(game_id, "done", result)
             self._progress("games")

@@ -56,12 +56,29 @@ def encode_params(params: dict[str, Any]) -> str:
     return base64.urlsafe_b64encode(raw).decode().rstrip("=")
 
 
+class _RedactProxies(logging.Filter):
+    """httpx/httpcore log full request URLs, which contain the proxy hostname; rewrite them before they are emitted."""
+
+    def __init__(self, pool: ProxyPool):
+        super().__init__()
+        self.pool = pool
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        record.msg = self.pool.redact(str(record.msg))
+        if record.args:
+            # args include httpx.URL objects, hence str()
+            record.args = tuple(a if isinstance(a, int | float) else self.pool.redact(str(a)) for a in record.args)
+        return True
+
+
 class SrcClient:
     def __init__(self, pool: ProxyPool, max_attempts: int = 20, timeout: float = 60.0, transient_delay: float = 15.0):
         self.pool = pool
         self.max_attempts = max_attempts
         self.transient_delay = transient_delay
         self._client = httpx.AsyncClient(timeout=timeout, headers=HEADERS, http2=True, follow_redirects=True)
+        for name in ("httpx", "httpcore"):
+            logging.getLogger(name).addFilter(_RedactProxies(pool))
 
     async def aclose(self) -> None:
         await self._client.aclose()
@@ -80,7 +97,7 @@ class SrcClient:
             try:
                 resp = await self._client.get(f"{proxy.base_url}{url}", params=query)
             except (httpx.TimeoutException, httpx.TransportError) as e:
-                last = f"{type(e).__name__}: {e}"
+                last = self.pool.redact(f"{type(e).__name__}: {e}")
                 await self.pool.penalize(proxy, 2 * self.transient_delay)
                 continue
             finally:
@@ -99,7 +116,7 @@ class SrcClient:
             if status == 404:
                 raise NotFound(label)
             if 400 <= status < 500:
-                raise ClientError(status, resp.text)
+                raise ClientError(status, self.pool.redact(resp.text))
             try:
                 data = resp.json()
             except ValueError:
@@ -153,7 +170,9 @@ def _retry_after(resp: httpx.Response) -> float | None:
 
 
 async def dedupe_proxies_by_ip(apps: list[str], timeout: float = 30.0) -> list[str]:
-    """Two Heroku apps can land on the same dyno IP and share speedrun.com's rate limit; keep one per IP."""
+    """Two Heroku apps can land on the same dyno IP and share speedrun.com's rate limit; keep one per IP.
+
+    Logs refer to proxies by their position in the configured list only (names and IPs are not logged)."""
     if not apps:
         return []
     async with httpx.AsyncClient(timeout=timeout, headers=HEADERS) as client:
@@ -163,7 +182,7 @@ async def dedupe_proxies_by_ip(apps: list[str], timeout: float = 30.0) -> list[s
                 r = await client.get(f"https://{app}.herokuapp.com/ip4only.me/api/")
                 return app, r.text.split(",")[1].strip()
             except (httpx.HTTPError, IndexError) as e:
-                log.warning("proxy %s unusable: %s", app, e)
+                log.warning("proxy #%d unusable: %s", apps.index(app) + 1, type(e).__name__)
                 return app, None
 
         results = await asyncio.gather(*(ip_of(app) for app in apps))
@@ -172,7 +191,7 @@ async def dedupe_proxies_by_ip(apps: list[str], timeout: float = 30.0) -> list[s
         if ip and ip not in seen:
             seen[ip] = app
         elif ip:
-            log.info("proxy %s shares IP %s with %s; skipping", app, ip, seen[ip])
+            log.info("proxy #%d shares its IP with proxy #%d; skipping", apps.index(app) + 1, apps.index(seen[ip]) + 1)
     usable = list(seen.values())
     log.info("%d of %d proxies usable", len(usable), len(apps))
     return usable
