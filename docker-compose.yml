@@ -36,7 +36,8 @@ services:
       DOZZLE_NO_ANALYTICS: "true"
       DOZZLE_ENABLE_ACTIONS: "true"
 
-  # run on demand by the scrape workflow: docker compose run --rm scraper all --resume
+  # run on demand by the scrape workflow with SPEEDSTATS_IMAGE set to the api's image:
+  #   docker compose run --rm scraper all --resume
   scraper:
     image: ${SPEEDSTATS_IMAGE:-ghcr.io/itsmaximum/speedstats:latest}
     profiles: ["manual"]

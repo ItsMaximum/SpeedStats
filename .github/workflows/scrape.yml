@@ -35,7 +35,9 @@ jobs:
           RESUME: ${{ github.event_name == 'schedule' || inputs.resume }}
           FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force }}
         run: |
-          docker compose pull scraper
+          # run the scraper from the exact image the api is serving (pinned by the last Deploy), no pull needed
+          export SPEEDSTATS_IMAGE=$(docker inspect --format '{{.Config.Image}}' speedstats-api-1)
+          echo "image: $SPEEDSTATS_IMAGE"
           rm -f /opt/speedstats/data/step-summary.md
           FLAGS=""
           [ "$RESUME" = "true" ] && FLAGS="$FLAGS --resume"
