@@ -123,15 +123,9 @@ export default function App() {
     const more: QuerySpec = { ...spec, limit: MAX_LIMIT };
     setSpec(more);
   }
-
+  
   return (
-    <main>
-      <h1 className="brand">
-        <a href="/">
-          <img src="/logo.png" alt="" width={44} height={44} />
-          SpeedStats
-        </a>
-      </h1>
+    <>
       {!result && !error ? (
         // first open: nothing is shown until the first query is back, so chips never appear without their names
         <div className="site-loading" role="status" aria-label="Loading">
@@ -184,6 +178,6 @@ export default function App() {
         )}
         {result && <DataCounts meta={result.meta} />}
       </section>
-    </main>
+    </>
   );
 }
