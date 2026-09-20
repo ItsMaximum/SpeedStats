@@ -420,4 +420,6 @@ def _media_type(file: Path) -> str:
         ".txt": "text/plain",
         ".json": "application/json",
         ".webmanifest": "application/manifest+json",
+        ".woff2": "font/woff2",
+        ".webp": "image/webp",
     }.get(file.suffix, "application/octet-stream")
