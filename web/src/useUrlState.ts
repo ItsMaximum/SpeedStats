@@ -28,6 +28,14 @@ export function navigate(search: string) {
   emit();
 }
 
+/** Rewrite the current entry in place (replaceState): used to swap typed names for abbreviations. */
+export function replace(search: string) {
+  const target = "/" + (search.startsWith("?") ? search : "?" + search);
+  if (window.location.pathname + window.location.search === target) return;
+  window.history.replaceState(null, "", target);
+  emit();
+}
+
 /** The current query, parsed from the address bar; every state of the page is a shareable link. */
 export function useUrlState(): [QuerySpec, (spec: QuerySpec) => void, string] {
   const search = useSyncExternalStore(subscribe, getSearch, () => "");

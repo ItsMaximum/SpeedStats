@@ -34,6 +34,7 @@ from api.queries import REQUEST_TYPE_NAMES, QueryResult, run_query
 from api.resolve import ResolvedFilter, resolve
 from api.schemas import HealthOut, MetaOut, PlayerStyle, QueryOut, Suggestion, SuggestOut
 from speedstats.config import settings
+from speedstats.continents import CONTINENT_CODES, is_continent_code
 from speedstats.filters import BOXES, FilterSpec, parse_query, to_params
 
 log = logging.getLogger("speedstats.api")
@@ -112,15 +113,13 @@ def meta_out(meta: Meta) -> MetaOut:
 
 
 def describe(spec: FilterSpec, filt: ResolvedFilter | None = None) -> str:
-    """Human title for a query, e.g. 'Player Rankings - Red Ball, -Red Ball 5'."""
+    """Human title for a query, e.g. 'Player Rankings - Red Ball, !Red Ball 5'."""
     parts: list[str] = []
     for box in BOXES:
         if filt is not None and box in filt.labels:
             parts.extend(filt.labels[box])
         else:
-            terms = spec.box(box)
-            parts.extend(terms.include)
-            parts.extend(f"-{t}" for t in terms.exclude)
+            parts.extend(spec.box(box).signed)
     name = REQUEST_TYPE_NAMES[spec.request_type]
     return f"{name} - {', '.join(parts)}" if parts else f"{name} - all games"
 
@@ -157,6 +156,7 @@ def _execute(spec: FilterSpec) -> tuple[QueryOut, Meta]:
         filt = resolve(con, spec)
         result: QueryResult = run_query(con, spec.request_type, filt, spec.limit)
         players = _player_styles(con, result)
+        slugs = _cell_slugs(con, result)
     finally:
         con.close()
 
@@ -168,10 +168,38 @@ def _execute(spec: FilterSpec) -> tuple[QueryOut, Meta]:
         truncated=result.truncated,
         warnings=filt.warnings,
         players=players,
+        slugs=slugs,
+        term_info=filt.terms,
         meta=meta_out(meta),
     )
     cache.put(key, out)
     return out, meta
+
+
+# Columns whose cells link to another query, and the table that knows their abbreviation.
+_LINK_COLUMNS = {"Player": "players", "Game": "games", "Series": "series"}
+
+
+def _cell_slugs(con, result: QueryResult) -> dict[str, dict[str, str]]:
+    """Abbreviations for the names in linkable columns, so cell links put `games=fpa1` in the URL, not the name."""
+    out: dict[str, dict[str, str]] = {}
+    for col, table in _LINK_COLUMNS.items():
+        if col not in result.columns:
+            continue
+        i = result.columns.index(col)
+        names = sorted({row[i] for row in result.rows if row[i]})
+        if not names:
+            continue
+        rows = con.execute(
+            f"SELECT name, slug FROM {table} "
+            "WHERE slug IS NOT NULL AND name_lower IN (SELECT lower(unnest($names::VARCHAR[])))",
+            {"names": names},
+        ).fetchall()
+        wanted = set(names)
+        found = {name: slug for name, slug in rows if name in wanted and slug != name}
+        if found:
+            out[col] = found
+    return out
 
 
 def _player_styles(con, result: QueryResult) -> dict[str, PlayerStyle]:
@@ -238,7 +266,7 @@ _SUGGEST_TABLES = {
 
 
 @app.get("/api/suggest", response_model=SuggestOut)
-def api_suggest(box: str = Query(pattern="^(series|games|platforms|players|countries)$"), q: str = Query(min_length=1)):
+def api_suggest(box: str = Query(pattern="^(series|games|platforms|players|locations)$"), q: str = Query(min_length=1)):
     needle = q.strip().casefold().replace("%", r"\%").replace("_", r"\_")
     if not needle:
         return SuggestOut(box=box, q=q, items=[])
@@ -247,18 +275,30 @@ def api_suggest(box: str = Query(pattern="^(series|games|platforms|players|count
     except NoDatabase as e:
         raise HTTPException(503, "no data published yet") from e
     try:
-        if box == "countries":
+        if box == "locations":
+            # continents first (our own list), then areas at any depth: countries before states before cities
+            typed = q.strip().casefold()
+            continents = [
+                (name, code)
+                for code, name in CONTINENT_CODES.items()
+                if typed in name.casefold() or typed == code.lower()
+            ]
             sql = """
-                SELECT name, id FROM areas
-                WHERE is_country AND (name_lower LIKE '%' || $q || '%' ESCAPE '\\' OR id_lower = $q)
-                ORDER BY starts_with(name_lower, $q) DESC, length(name), name LIMIT 10"""
+                SELECT coalesce(full_name, name), id FROM areas
+                WHERE name_lower LIKE $q || '%' ESCAPE '\\' OR lower(full_name) LIKE $q || '%' ESCAPE '\\'
+                   OR name_lower LIKE '% ' || $q || '%' ESCAPE '\\' OR id_lower = $q
+                ORDER BY starts_with(name_lower, $q) DESC, length(id) - length(replace(id, '/', '')), length(name), name
+                LIMIT 10"""
+            # a country id that doubles as a continent code (na, sa, ...) is offered by name (the code is the continent)
+            areas = [(n, None if is_continent_code(i) else i) for n, i in con.execute(sql, {"q": needle}).fetchall()]
+            rows = (continents + areas)[:10]
         else:
             sql = f"""
                 SELECT name, slug FROM {_SUGGEST_TABLES[box]}
                 WHERE name_lower LIKE '%' || $q || '%' ESCAPE '\\' OR slug_lower LIKE $q || '%' ESCAPE '\\'
                 ORDER BY starts_with(name_lower, $q) DESC, starts_with(coalesce(slug_lower, ''), $q) DESC,
                          length(name), name LIMIT 10"""
-        rows = con.execute(sql, {"q": needle}).fetchall()
+            rows = con.execute(sql, {"q": needle}).fetchall()
     finally:
         con.close()
     meta = holder.meta

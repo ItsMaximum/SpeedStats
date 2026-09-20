@@ -75,9 +75,13 @@ SELECT
       || CASE WHEN r.level_id IS NOT NULL THEN ', ' || l.name ELSE '' END
       || CASE WHEN rs.subcat_text IS NOT NULL THEN ' - ' || rs.subcat_text ELSE '' END AS leaderboard_name,
     c.time_direction = 1 AS is_reverse,
-    CASE WHEN g.default_timer IN (0, 1)
-         THEN coalesce(r.time, r.time_with_loads, r.igt + 10000000.0)   -- RTA/LRT games: IGT-only runs sort last
-         ELSE coalesce(r.igt, r.time, r.time_with_loads) END AS t,
+    -- The board's primary timer (defaultTimer: 0 = time, 1 = timeWithLoads, 2 = igt), falling back to the others;
+    -- IGT-only runs on an RTA-timed board carry +1e7 so they sort last
+    CASE g.default_timer
+         WHEN 1 THEN coalesce(r.time_with_loads, r.time, r.igt + 10000000.0)
+         WHEN 2 THEN coalesce(r.igt, r.time, r.time_with_loads)
+         ELSE coalesce(r.time, r.time_with_loads, r.igt + 10000000.0) END AS t,
+    (CASE g.default_timer WHEN 1 THEN r.time_with_loads WHEN 2 THEN r.igt ELSE r.time END) IS NULL AS missing_primary,
     coalesce(r.date, 0)                    AS date,
     coalesce(r.date_submitted, 2147483647) AS date_submitted,
     r.level_id IS NOT NULL                 AS is_level_run

@@ -15,6 +15,9 @@ const CELL_LINKS: Record<string, [BoxName, RequestType]> = {
   Series: ["series", "pr"],
 };
 
+/** Long-text columns that get a minimum width so they do not collapse to their longest word on a phone. */
+const WIDE_COLUMNS = new Set(["Leaderboard", "Game", "Series"]);
+
 function compare(a: Cell, b: Cell): number {
   if (a === b) return 0;
   if (a === null || a === undefined) return 1;
@@ -25,8 +28,8 @@ function compare(a: Cell, b: Cell): number {
 
 function formatCell(column: string, value: Cell): string {
   if (value === null || value === undefined) return "";
-  if (typeof value === "number" && (column === "Points" || column === "Value")) {
-    return value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 3 });
+  if (typeof value === "number" && column === "Points") {
+    return value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   }
   return String(value);
 }
@@ -82,7 +85,10 @@ export function ResultsTable({ result }: Props) {
             {result.columns.map((col, i) => (
               <th key={col} onClick={() => toggle(i)} aria-sort={sort?.column === i ? (sort.dir === 1 ? "ascending" : "descending") : "none"}>
                 {col}
-                {sort?.column === i && <span className="sort-indicator">{sort.dir === 1 ? " ▲" : " ▼"}</span>}
+                {/* always present so the header keeps its width whichever column is sorted */}
+                <span className="sort-indicator" aria-hidden="true">
+                  {sort?.column === i ? (sort.dir === 1 ? "▲" : "▼") : ""}
+                </span>
               </th>
             ))}
           </tr>
@@ -93,17 +99,20 @@ export function ResultsTable({ result }: Props) {
               {row.map((cell, c) => {
                 const col = result.columns[c];
                 const link = CELL_LINKS[col];
+                // links use the speedrun.com abbreviation when the API knows one, so URLs stay short
+                const slugOf = (name: string) => result.slugs?.[col]?.[name] ?? name;
                 const text = formatCell(col, cell);
                 if (col === "Player" && cell !== null && cell !== undefined) {
                   return (
                     <td key={c} className="player">
-                      <PlayerName name={String(cell)} style={result.players[String(cell)]} href={linkTo("players", String(cell), "runs")} />
+                      <PlayerName name={String(cell)} style={result.players[String(cell)]} href={linkTo("players", slugOf(String(cell)), "runs")} />
                     </td>
                   );
                 }
+                const cls = typeof cell === "number" ? "num" : WIDE_COLUMNS.has(col) ? "wide" : undefined;
                 return (
-                  <td key={c} className={typeof cell === "number" ? "num" : undefined}>
-                    {link && cell !== null && cell !== undefined ? <a href={linkTo(link[0], String(cell), link[1])}>{text}</a> : text}
+                  <td key={c} className={cls}>
+                    {link && cell !== null && cell !== undefined ? <a href={linkTo(link[0], slugOf(String(cell)), link[1])}>{text}</a> : text}
                   </td>
                 );
               })}

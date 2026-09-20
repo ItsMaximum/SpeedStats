@@ -40,7 +40,14 @@ class QueryOut(BaseModel):
     truncated: bool
     warnings: list[str]
     players: dict[str, PlayerStyle]  # by player name, for the players present in `rows`
+    slugs: dict[str, dict[str, str]] = {}  # column -> cell text -> speedrun.com abbreviation, for linkable columns
+    term_info: dict[str, dict[str, TermInfo]] = {}  # box -> query term as given -> what it resolved to
     meta: MetaOut
+
+
+class TermInfo(BaseModel):
+    name: str  # display name for the chip
+    slug: str | None = None  # abbreviation for the URL; None when the term matched more than one thing
 
 
 class Suggestion(BaseModel):

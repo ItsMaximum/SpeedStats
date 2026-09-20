@@ -3,11 +3,12 @@
  * test table).
  *
  * Legacy links (no `v` param) separate terms with ", ". New links (`v=2`) repeat the param once per term, so
- * names containing ", " work. A leading "-" on a term excludes it.
+ * names containing ", " work. A leading "!" on a term excludes it (no speedrun.com name starts with "!").
  */
 
-export const BOXES = ["series", "games", "platforms", "players", "countries"] as const;
+export const BOXES = ["series", "games", "platforms", "players", "locations"] as const;
 export type BoxName = (typeof BOXES)[number];
+const BOX_ALIASES: Record<string, BoxName> = { countries: "locations" };
 
 export const REQUEST_TYPES = ["pr", "runs", "records", "leaderboards", "games", "series", "dates"] as const;
 export type RequestType = (typeof REQUEST_TYPES)[number];
@@ -27,7 +28,7 @@ export const BOX_LABELS: Record<BoxName, string> = {
   games: "Games",
   platforms: "Platforms",
   players: "Players",
-  countries: "Countries",
+  locations: "Locations",
 };
 
 export const DEFAULT_LIMIT = 1000;
@@ -35,7 +36,7 @@ export const MAX_LIMIT = 5000;
 const LEGACY_SEPARATOR = ", ";
 const FORMAT_VERSION = "2";
 
-/** Terms keep their leading "-" (exclusions) as typed. */
+/** Terms keep their leading "!" (exclusions) as typed. */
 export interface QuerySpec {
   terms: Record<BoxName, string[]>;
   requestType: RequestType;
@@ -49,7 +50,7 @@ interface BoxTerms {
 
 export function emptySpec(): QuerySpec {
   return {
-    terms: { series: [], games: [], platforms: [], players: [], countries: [] },
+    terms: { series: [], games: [], platforms: [], players: [], locations: [] },
     requestType: "pr",
     limit: DEFAULT_LIMIT,
   };
@@ -71,16 +72,16 @@ export function splitTerms(values: string[], newFormat: boolean): string[] {
   return out;
 }
 
-/** Drop a bare "-" and case-insensitive duplicates, keeping first occurrence and original spelling. */
+/** Drop a bare "!" and case-insensitive duplicates, keeping first occurrence and original spelling. */
 export function normalizeTerms(terms: string[]): string[] {
   const seen = new Set<string>();
   const out: string[] = [];
   for (const raw of terms) {
     let term = raw.trim();
-    if (term.startsWith("-")) {
+    if (term.startsWith("!")) {
       const rest = term.slice(1).trim();
       if (!rest) continue;
-      term = "-" + rest;
+      term = "!" + rest;
     }
     if (!term) continue;
     const key = term.toLowerCase();
@@ -96,7 +97,7 @@ export function splitSign(terms: string[]): BoxTerms {
   const include: string[] = [];
   const exclude: string[] = [];
   for (const term of normalizeTerms(terms)) {
-    if (term.startsWith("-")) exclude.push(term.slice(1).trim());
+    if (term.startsWith("!")) exclude.push(term.slice(1).trim());
     else include.push(term);
   }
   return { include, exclude };
@@ -107,7 +108,9 @@ export function parseQuery(search: string | URLSearchParams): QuerySpec {
   const newFormat = params.getAll("v").includes(FORMAT_VERSION);
   const spec = emptySpec();
   for (const box of BOXES) {
-    spec.terms[box] = normalizeTerms(splitTerms(params.getAll(box), newFormat));
+    const aliases = Object.entries(BOX_ALIASES).filter(([, target]) => target === box).map(([alias]) => alias);
+    const values = [...params.getAll(box), ...aliases.flatMap((alias) => params.getAll(alias))];
+    spec.terms[box] = normalizeTerms(splitTerms(values, newFormat));
   }
   const requestType = (params.getAll("request-type").at(-1) ?? "").trim();
   spec.requestType = isRequestType(requestType) ? requestType : "pr";
@@ -119,13 +122,11 @@ export function parseQuery(search: string | URLSearchParams): QuerySpec {
   return spec;
 }
 
-/** Canonical v=2 params. Same ordering as filters.to_params so both sides produce identical URLs. */
+/** Canonical v=2 params: terms in the order given, as filters.to_params does, so both sides agree. */
 export function toSearchParams(spec: QuerySpec): URLSearchParams {
   const params = new URLSearchParams();
   for (const box of BOXES) {
-    const { include, exclude } = splitSign(spec.terms[box]);
-    for (const term of include) params.append(box, term);
-    for (const term of exclude) params.append(box, "-" + term);
+    for (const term of normalizeTerms(spec.terms[box])) params.append(box, term);
   }
   params.append("request-type", spec.requestType);
   if (spec.limit !== DEFAULT_LIMIT) params.append("limit", String(spec.limit));
@@ -134,7 +135,34 @@ export function toSearchParams(spec: QuerySpec): URLSearchParams {
 }
 
 export function toSearch(spec: QuerySpec): string {
-  return "?" + toSearchParams(spec).toString();
+  // "!" is safe unescaped in a query string and reads better in the address bar than %21
+  return "?" + toSearchParams(spec).toString().replace(/%21/g, "!");
+}
+
+/** What the API said each term resolved to: box -> term as given -> name and (unambiguous) abbreviation. */
+export type TermInfo = Record<string, Record<string, { name: string; slug?: string | null }>>;
+
+/** Split a term into its exclusion sign and the bare text. */
+export function splitTerm(term: string): { sign: "" | "!"; bare: string } {
+  return term.startsWith("!") ? { sign: "!", bare: term.slice(1) } : { sign: "", bare: term };
+}
+
+/**
+ * The same query with every term replaced by its abbreviation, so URLs stay short however a term was
+ * entered. Terms the API did not resolve, or that matched more than one thing (no slug), stay as typed.
+ */
+export function canonicalize(spec: QuerySpec, info: TermInfo): QuerySpec {
+  const terms = { ...spec.terms };
+  for (const box of BOXES) {
+    terms[box] = normalizeTerms(
+      spec.terms[box].map((term) => {
+        const { sign, bare } = splitTerm(term);
+        const slug = info[box]?.[bare]?.slug;
+        return slug && slug.toLowerCase() !== bare.toLowerCase() ? sign + slug : term;
+      }),
+    );
+  }
+  return { ...spec, terms };
 }
 
 /** Link to a related query from a table cell (player -> their runs, game -> its rankings, ...). */

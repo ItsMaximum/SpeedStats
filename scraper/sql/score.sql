@@ -4,18 +4,18 @@
 --   games_d(id, name, url, default_timer)      series_d(id, name, url)       game_series_d(game_id, series_id)
 --   platforms_d(id, name, url)                 areas_d(id, name, full_name, lb_name, lb_flag, parent_id)
 --   players_d(id, name, url, area_id, country, flag, color1, color2, is_guest)
---   scored_input(ord, run_id, leaderboard_name, game_id, platform_id, player_ids, is_reverse, t, date,
---                date_submitted, is_level_run)
+--   scored_input(ord, run_id, leaderboard_name, game_id, platform_id, player_ids, is_reverse, t, missing_primary,
+--                date, date_submitted, is_level_run)
 --   excluded_players(name)                     score_params(key, value)   -- data_version, scraped_at, errored_games
 --
 -- This is a line-by-line port of SpeedStats-V3/processruns.py; comments reference the Python it reproduces.
 -- `ord` is insertion order, which is the tiebreak Python's stable sorts fall back to.
 
 -- buildLeaderboard(): stable sort by (date, dateSubmitted), then stable sort by time (desc when reverse),
--- keep the first run per ordered player list.
+-- keep the first run per ordered player list. Runs lacking the board's primary timer sort behind all others.
 CREATE OR REPLACE TABLE lb AS
 WITH o AS (
-    SELECT *, CASE WHEN is_reverse THEN -t ELSE t END AS t_ord
+    SELECT *, CASE WHEN is_reverse THEN -t ELSE t END + CASE WHEN missing_primary THEN 10000000.0 ELSE 0 END AS t_ord
     FROM scored_input
     WHERE t IS NOT NULL
 ),

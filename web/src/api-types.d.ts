@@ -149,6 +149,24 @@ export interface components {
             players: {
                 [key: string]: components["schemas"]["PlayerStyle"];
             };
+            /**
+             * Slugs
+             * @default {}
+             */
+            slugs: {
+                [key: string]: {
+                    [key: string]: string;
+                };
+            };
+            /**
+             * Term Info
+             * @default {}
+             */
+            term_info: {
+                [key: string]: {
+                    [key: string]: components["schemas"]["TermInfo"];
+                };
+            };
             meta: components["schemas"]["MetaOut"];
         };
         /** SuggestOut */
@@ -162,6 +180,13 @@ export interface components {
         };
         /** Suggestion */
         Suggestion: {
+            /** Name */
+            name: string;
+            /** Slug */
+            slug?: string | null;
+        };
+        /** TermInfo */
+        TermInfo: {
             /** Name */
             name: string;
             /** Slug */

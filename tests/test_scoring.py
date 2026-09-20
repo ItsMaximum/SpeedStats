@@ -38,7 +38,7 @@ def test_runs_match_golden_file(con):
         """
     ).fetchone()[0]
     assert diff == 0
-    assert con.execute("SELECT row_count, leaderboard_count, game_count FROM meta").fetchone() == (1077, 136, 13)
+    assert con.execute("SELECT row_count, leaderboard_count, game_count FROM meta").fetchone() == (1109, 146, 14)
 
 
 def test_player_ranks_match_golden_file(con):
@@ -71,5 +71,20 @@ def test_excluded_players_are_dropped(tmp_path):
     pub = duckdb.connect(str(out), read_only=True)
     assert pub.execute("SELECT COUNT(*) FROM runs WHERE player = 'DylCat'").fetchone()[0] == 0
     assert pub.execute("SELECT COUNT(*) FROM player_ranks WHERE player = 'DylCat'").fetchone()[0] == 0
-    assert pub.execute("SELECT row_count FROM meta").fetchone()[0] < 1077
+    assert pub.execute("SELECT row_count FROM meta").fetchone()[0] < 1109
     pub.close()
+
+
+def test_loads_inclusive_default_timer_ranks_like_speedrun_com(con):
+    places = con.execute(
+        "SELECT player, place FROM runs WHERE leaderboard = 'Ys IX: Monstrum Nox: Any% - Easy, PC' "
+        "ORDER BY place LIMIT 6"
+    ).fetchall()
+    assert places == [
+        ("zweiair", 1),
+        ("jphpue", 2),
+        ("Jaddo", 3),
+        ("GhostKumo", 4),
+        ("DongDeYanSe", 5),
+        ("Skorch64", 6),
+    ]

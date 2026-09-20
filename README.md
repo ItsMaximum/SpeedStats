@@ -68,9 +68,14 @@ uv run python tools/regression.py capture && uv run python tools/regression.py c
 
 Old links keep working: `/index.php?series=&games=Red+Ball&platforms=&players=&request-type=pr` (terms separated
 by `", "`). New links use `v=2` with one param per term (`games=A&games=B`), so names containing commas work.
-Every box accepts a name or the speedrun.com abbreviation (`redball1`, `fpa`, `us`, `england`); a leading `-`
-excludes (`series=Red Ball&games=-Red Ball 5`). Players and countries narrow the result; series, games and
-platforms combine.
+Every box accepts a name or the speedrun.com abbreviation (`redball1`, `fpa`, `us`, `england`); a leading `!`
+excludes (`series=Red Ball&games=!Red Ball 5`). Players and locations narrow the result; series, games and
+platforms combine. Locations take a continent (`Europe` or its code `EU`; `AF AS EU NA OC SA`), a country
+(`United States`, `us`) or any speedrun.com area under one (`Colorado`, `us/co`, `England`), matched by the
+player's profile location. Where a continent code is also a country code (`af`, `as`, `na`, `sa`) the continent
+wins; use the country's name. `countries=` is an alias of `locations=` so older links keep working. Picking a
+suggestion in the form puts the speedrun.com abbreviation in the URL (`games=fpa1`); full names still resolve. Run-level tables (runs, records) report the run's points as
+`Points`, rounded to two decimals.
 
 `/api/query` returns JSON (`format=csv` for CSV), `/api/suggest` powers autocomplete, `/api/meta` and `/health`
 report the data version. OpenAPI docs at `/api/docs`.
