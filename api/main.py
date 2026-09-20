@@ -381,6 +381,7 @@ def _shell(request: Request) -> Response:
             "<p>SpeedStats API is running. The web app is not built; run <code>npm run dev</code> and open "
             "<a href='http://localhost:5173'>localhost:5173</a>, or <code>npm run build</code>.</p>",
             status_code=200,
+            headers={"Cache-Control": SHELL_CACHE_CONTROL},
         )
     spec = parse_query(request.query_params.multi_items())
     title = describe(spec)
