@@ -29,6 +29,8 @@ const result: QueryOut = {
     Alpha: { flag: "us", flag_name: "United States", color1: "#EE4444", color2: "#6666EE" },
     Beta: { flag: null, flag_name: null, color1: "#09B876", color2: null },
   },
+  slugs: { Player: { Beta: "beta_srdc" } },
+  term_info: {},
   meta,
 };
 
@@ -38,6 +40,8 @@ describe("ResultsTable", () => {
     const alpha = screen.getByRole("link", { name: "Alpha" });
     expect(alpha).toHaveAttribute("href", "?players=Alpha&request-type=runs&v=2");
     expect(alpha).toHaveClass("username", "username-gradient");
+    // a player with a distinct speedrun.com abbreviation links by it
+    expect(screen.getByRole("link", { name: "Beta" })).toHaveAttribute("href", "?players=beta_srdc&request-type=runs&v=2");
     expect(screen.getByAltText("United States")).toHaveAttribute("src", "/api/flags/us.png");
     const beta = screen.getByRole("link", { name: "Beta" });
     expect(beta).not.toHaveClass("username-gradient");
@@ -58,9 +62,10 @@ describe("ResultsTable", () => {
     expect(names()).toEqual(["Alpha", "Beta", "Gamma"]);
   });
 
-  it("formats points with two decimals", () => {
-    render(<ResultsTable result={result} />);
+  it("formats points with exactly two decimals", () => {
+    render(<ResultsTable result={{ ...result, rows: [[1, "Alpha", 300.5], [2, "Beta", 200], [3, "Gamma", 12.345]] }} />);
     expect(screen.getByText("300.50")).toBeInTheDocument();
     expect(screen.getByText("200.00")).toBeInTheDocument();
+    expect(screen.getByText("12.35")).toBeInTheDocument();
   });
 });

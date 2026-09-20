@@ -6,7 +6,7 @@ Two URL formats are accepted:
   ``explode(", ", ...)`` did, so links shared before the rewrite keep working.
 * v=2: one term per param occurrence (``games=A&games=B``); never split, so names containing ", " work.
 
-A term starting with ``-`` excludes instead of includes.
+A term starting with ``!`` excludes instead of includes (no speedrun.com name starts with ``!``).
 """
 
 from __future__ import annotations
@@ -14,7 +14,8 @@ from __future__ import annotations
 from collections.abc import Iterable
 from dataclasses import dataclass, field
 
-BOXES = ("series", "games", "platforms", "players", "countries")
+BOXES = ("series", "games", "platforms", "players", "locations")
+BOX_ALIASES = {"countries": "locations"}  # the box was called Countries for a while; old links keep working
 REQUEST_TYPES = ("pr", "runs", "records", "leaderboards", "games", "series", "dates")
 DEFAULT_REQUEST_TYPE = "pr"
 DEFAULT_LIMIT = 1000
@@ -27,6 +28,18 @@ FORMAT_VERSION = "2"
 class BoxTerms:
     include: tuple[str, ...] = ()
     exclude: tuple[str, ...] = ()
+    # every term as given (with its "!"), in the order given: what the URL, the title and the chips keep.
+    # Derived from include + exclude when a BoxTerms is built by hand.
+    signed: tuple[str, ...] = field(default=(), compare=False)
+
+    def __post_init__(self) -> None:
+        if not self.signed and (self.include or self.exclude):
+            object.__setattr__(self, "signed", self.include + tuple(f"!{t}" for t in self.exclude))
+
+
+def split_term(term: str) -> tuple[str, str]:
+    """("!" or "", the term without its sign)."""
+    return ("!", term[1:].strip()) if term.startswith("!") else ("", term)
 
 
 @dataclass(frozen=True)
@@ -35,7 +48,7 @@ class FilterSpec:
     games: BoxTerms = BoxTerms()
     platforms: BoxTerms = BoxTerms()
     players: BoxTerms = BoxTerms()
-    countries: BoxTerms = BoxTerms()
+    locations: BoxTerms = BoxTerms()
     request_type: str = DEFAULT_REQUEST_TYPE
     limit: int = DEFAULT_LIMIT
     warnings: tuple[str, ...] = field(default=())
@@ -60,14 +73,14 @@ def split_terms(values: Iterable[str], new_format: bool) -> list[str]:
 def split_sign(terms: Iterable[str]) -> BoxTerms:
     include: list[str] = []
     exclude: list[str] = []
+    signed: list[str] = []
     for term in terms:
-        if term.startswith("-"):
-            stripped = term[1:].strip()
-            if stripped:
-                exclude.append(stripped)
-        else:
-            include.append(term)
-    return BoxTerms(tuple(_dedupe(include)), tuple(_dedupe(exclude)))
+        sign, bare = split_term(term)
+        if not bare:
+            continue  # a lone "!"
+        (exclude if sign else include).append(bare)
+        signed.append(sign + bare)
+    return BoxTerms(tuple(_dedupe(include)), tuple(_dedupe(exclude)), tuple(_dedupe(signed)))
 
 
 def _dedupe(terms: list[str]) -> list[str]:
@@ -85,7 +98,7 @@ def parse_query(params: Iterable[tuple[str, str]]) -> FilterSpec:
     """Parse ``(key, value)`` pairs (in order, repeats allowed) into a FilterSpec."""
     grouped: dict[str, list[str]] = {}
     for key, value in params:
-        grouped.setdefault(key, []).append(value)
+        grouped.setdefault(BOX_ALIASES.get(key, key), []).append(value)
 
     new_format = FORMAT_VERSION in grouped.get("v", [])
     warnings: list[str] = []
@@ -111,9 +124,7 @@ def to_params(spec: FilterSpec) -> list[tuple[str, str]]:
     """Canonical v=2 query params for a spec (the form the UI emits)."""
     params: list[tuple[str, str]] = []
     for name in BOXES:
-        box = spec.box(name)
-        params.extend((name, term) for term in box.include)
-        params.extend((name, f"-{term}") for term in box.exclude)
+        params.extend((name, term) for term in spec.box(name).signed)
     params.append(("request-type", spec.request_type))
     if spec.limit != DEFAULT_LIMIT:
         params.append(("limit", str(spec.limit)))

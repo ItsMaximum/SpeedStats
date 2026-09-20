@@ -8,7 +8,9 @@ import duckdb
 
 from api.resolve import ResolvedFilter
 
-# One scope for every query: (series ∪ games ∪ platforms) minus exclusions, restricted by players and countries.
+# One scope for every query: (series ∪ games ∪ platforms) minus exclusions, restricted by players and locations.
+# Locations filter through the players table (its area_id is the full speedrun.com area path), so the runs table
+# needs no extra column and files published before this change keep working.
 SCOPE_CTE = """
 WITH scope AS (
     SELECT r.* FROM runs r
@@ -19,24 +21,22 @@ WITH scope AS (
       AND (r.platform_id IS NULL OR r.platform_id NOT IN (SELECT unnest($exc_platforms::VARCHAR[])))
       AND ($all_players OR r.player_id IN (SELECT unnest($inc_players::VARCHAR[])))
       AND r.player_id NOT IN (SELECT unnest($exc_players::VARCHAR[]))
-      AND ($all_countries OR r.country IN (SELECT unnest($inc_countries::VARCHAR[]))
-                             OR r.flag IN (SELECT unnest($inc_countries::VARCHAR[])))
-      AND (r.country IS NULL OR r.country NOT IN (SELECT unnest($exc_countries::VARCHAR[])))
-      AND (r.flag IS NULL OR r.flag NOT IN (SELECT unnest($exc_countries::VARCHAR[])))
+      AND ($all_locations
+           OR r.player_id IN (SELECT id FROM players WHERE area_id IN (SELECT unnest($inc_areas::VARCHAR[]))))
+      AND r.player_id NOT IN (SELECT id FROM players WHERE area_id IN (SELECT unnest($exc_areas::VARCHAR[])))
 )
 """
 
 # Player Rankings over all games come straight from the precomputed table. Global rank is kept when only
-# players are named (a "where do these players stand" lookup); a country filter re-numbers ("US rankings").
+# players are named (a "where do these players stand" lookup); a location filter re-numbers ("US rankings").
 PR_PRECOMPUTED = """
 SELECT {rank} AS "Rank", player AS "Player", round(points, 2) AS "Points"
 FROM player_ranks p
 WHERE ($all_players OR p.player_id IN (SELECT unnest($inc_players::VARCHAR[])))
   AND p.player_id NOT IN (SELECT unnest($exc_players::VARCHAR[]))
-  AND ($all_countries OR p.country IN (SELECT unnest($inc_countries::VARCHAR[]))
-                       OR p.flag IN (SELECT unnest($inc_countries::VARCHAR[])))
-  AND (p.country IS NULL OR p.country NOT IN (SELECT unnest($exc_countries::VARCHAR[])))
-  AND (p.flag IS NULL OR p.flag NOT IN (SELECT unnest($exc_countries::VARCHAR[])))
+  AND ($all_locations
+       OR p.player_id IN (SELECT id FROM players WHERE area_id IN (SELECT unnest($inc_areas::VARCHAR[]))))
+  AND p.player_id NOT IN (SELECT id FROM players WHERE area_id IN (SELECT unnest($exc_areas::VARCHAR[])))
 ORDER BY rank LIMIT $limit
 """
 
@@ -62,8 +62,8 @@ FROM pts ORDER BY points DESC, player LIMIT $limit
 RUNS = (
     SCOPE_CTE
     + """
-SELECT ROW_NUMBER() OVER (ORDER BY value DESC, leaderboard, player) AS "Rank", {player_cols}
-       leaderboard AS "Leaderboard", place AS "Place", value AS "Value"
+SELECT ROW_NUMBER() OVER (ORDER BY value DESC, leaderboard, player) AS "Rank", leaderboard AS "Leaderboard",
+       {player_cols} place AS "Place", round(value, 2) AS "Points"
 FROM scope ORDER BY value DESC, leaderboard, player LIMIT $limit
 """
 )
@@ -77,7 +77,7 @@ best AS (
     QUALIFY ROW_NUMBER() OVER (PARTITION BY leaderboard_id ORDER BY value DESC, place, player) = 1
 )
 SELECT ROW_NUMBER() OVER (ORDER BY value DESC, leaderboard) AS "Rank", leaderboard AS "Leaderboard", {player_cols}
-       value AS "Value"
+       round(value, 2) AS "Points"
 FROM best ORDER BY value DESC, leaderboard LIMIT $limit
 """
 )
@@ -128,7 +128,7 @@ def build_sql(request_type: str, filt: ResolvedFilter) -> str:
     match request_type:
         case "pr":
             if filt.unfiltered_ranking:
-                rank = "rank" if filt.all_countries else "ROW_NUMBER() OVER (ORDER BY rank)"
+                rank = "rank" if filt.all_locations else "ROW_NUMBER() OVER (ORDER BY rank)"
                 return PR_PRECOMPUTED.format(rank=rank)
             return PR_SCOPED
         case "runs":

@@ -1,7 +1,7 @@
 # SpeedStats architecture
 
 SpeedStats turns every verified run on speedrun.com into a point value and lets you rank players, games,
-series, platforms and countries by those values. It has two halves that never talk to each other directly:
+series, platforms and locations by those values. It has two halves that never talk to each other directly:
 a **weekly pipeline** that produces one database file, and a **web service** that serves queries from it.
 
 ```mermaid
@@ -70,12 +70,14 @@ sequenceDiagram
 ```
 
 - **`speedstats/filters.py`** parses the query string. Legacy links (`", "`-separated, no `v`) and new links
-  (`v=2`, one param per term) both work; a leading `-` excludes a term. `web/src/query.ts` is the same logic
+  (`v=2`, one param per term) both work; a leading `!` excludes a term. `web/src/query.ts` is the same logic
   in TypeScript so the app can build identical URLs.
 - **`api/resolve.py`** turns each term into ids: name or speedrun.com slug for games/series/platforms/players,
-  ISO code or name for countries (including sub-areas that have their own flag, like England).
+  continent name (`speedstats/continents.py`, our own table since speedrun.com has none) or any speedrun.com
+  area at any depth by id, name or full name for locations (`us`, `Colorado`, `England`); a matched area covers
+  everything under it, filtered through `players.area_id` so the published schema is unchanged.
 - **`api/queries.py`** holds the seven request types. All share one `scope` CTE:
-  `(series ∪ games ∪ platforms) − exclusions`, restricted by players and countries.
+  `(series ∪ games ∪ platforms) − exclusions`, restricted by players and locations.
 - **`api/db.py`** keeps a read-only connection to the current file and hot-swaps it within 10 s of
   `data/CURRENT` changing - a publish never restarts the API.
 - **`web/`** is a Vite + React app. All state lives in the URL, so every view is a shareable link. The API

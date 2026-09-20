@@ -16,7 +16,7 @@ CASES = [
         {"games": BoxTerms(("Red Ball", "Red Ball 2")), "request_type": "runs"},
     ),
     (
-        "players=Maximum%2C+-Someone&request-type=records",
+        "players=Maximum%2C+!Someone&request-type=records",
         {"players": BoxTerms(("Maximum",), ("Someone",)), "request_type": "records"},
     ),
     # legacy: a comma without a following space is NOT a separator (matches PHP explode(", "))
@@ -24,15 +24,16 @@ CASES = [
     # v=2: never split
     ("games=Sonic%2C+Redux&v=2", {"games": BoxTerms(("Sonic, Redux",))}),
     (
-        "series=Red+Ball&games=-Red+Ball+5&v=2&request-type=pr",
+        "series=Red+Ball&games=!Red+Ball+5&v=2&request-type=pr",
         {"series": BoxTerms(("Red Ball",)), "games": BoxTerms((), ("Red Ball 5",))},
     ),
-    ("games=A&games=B&games=-C&v=2", {"games": BoxTerms(("A", "B"), ("C",))}),
-    # countries box
-    ("countries=us&countries=-ca&v=2", {"countries": BoxTerms(("us",), ("ca",))}),
+    ("games=A&games=B&games=!C&v=2", {"games": BoxTerms(("A", "B"), ("C",))}),
+    # locations box, and its former name as an alias
+    ("locations=us&locations=!ca&v=2", {"locations": BoxTerms(("us",), ("ca",))}),
+    ("countries=England&locations=!us&v=2", {"locations": BoxTerms(("England",), ("us",))}),
     # defaults & oddities
     ("", {"request_type": "pr", "limit": 1000}),
-    ("games=-&v=2", {"games": BoxTerms()}),
+    ("games=!&v=2", {"games": BoxTerms()}),
     ("games=+Red+Ball+&v=2", {"games": BoxTerms(("Red Ball",))}),
     ("games=Red+Ball&games=red+ball&v=2", {"games": BoxTerms(("Red Ball",))}),
     ("limit=99999", {"limit": 5000}),
@@ -60,17 +61,24 @@ def test_invalid_limit_warns():
 
 
 def test_has_scope_terms():
-    assert not parse_query([("games", "-X"), ("v", "2")]).has_scope_terms
+    assert not parse_query([("games", "!X"), ("v", "2")]).has_scope_terms
     assert parse_query([("platforms", "PC")]).has_scope_terms
 
 
+def test_terms_keep_the_order_given():
+    spec = parse_query(parse_qsl("games=!A&games=B&games=!C&games=b&v=2"))
+    assert spec.games.signed == ("!A", "B", "!C")  # duplicates dropped, includes and excludes interleaved as typed
+    assert to_params(spec)[:3] == [("games", "!A"), ("games", "B"), ("games", "!C")]
+    assert BoxTerms(("A",), ("B",)).signed == ("A", "!B")  # built by hand: includes first, then excludes
+
+
 def test_to_params_round_trip():
-    spec = parse_query(parse_qsl("series=Red+Ball&games=-Red+Ball+5&countries=us&request-type=runs&limit=50&v=2"))
+    spec = parse_query(parse_qsl("series=Red+Ball&games=!Red+Ball+5&locations=us&request-type=runs&limit=50&v=2"))
     params = to_params(spec)
     assert params == [
         ("series", "Red Ball"),
-        ("games", "-Red Ball 5"),
-        ("countries", "us"),
+        ("games", "!Red Ball 5"),
+        ("locations", "us"),
         ("request-type", "runs"),
         ("limit", "50"),
         ("v", "2"),

@@ -42,6 +42,10 @@ export function fetchQuery(spec: QuerySpec, signal?: AbortSignal): Promise<Query
   return getJson<QueryOut>(queryUrl(spec), signal);
 }
 
+export function fetchMeta(signal?: AbortSignal): Promise<MetaOut> {
+  return getJson<MetaOut>("/api/meta", signal);
+}
+
 export function fetchSuggestions(box: BoxName, q: string, signal?: AbortSignal): Promise<Suggestion[]> {
   const params = new URLSearchParams({ box, q });
   return getJson<SuggestOut>("/api/suggest?" + params.toString(), signal).then((r) => r.items);

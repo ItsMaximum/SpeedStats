@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState, type KeyboardEvent, type ClipboardEvent } from "react";
 import { fetchSuggestions, type Suggestion } from "../api";
-import { normalizeTerms, type BoxName } from "../query";
+import { normalizeTerms, splitTerm, type BoxName } from "../query";
 
 interface Props {
   box: BoxName;
@@ -12,6 +12,10 @@ interface Props {
   onTextChange: (text: string) => void;
   onSubmit: () => void;
   placeholder?: string;
+  /** Full names by lowercased term, from the API; a chip shows its name, or the term itself until known. */
+  names?: Record<string, string>;
+  /** Lowercased terms that the query on screen could not match; shown as yellow chips. */
+  invalid?: string[];
 }
 
 const DEBOUNCE_MS = 120;
@@ -22,18 +26,34 @@ function splitPasted(text: string): string[] {
 }
 
 /**
- * A chips input: each term is a chip (exclusions, typed with a leading "-", are shown in red). Typing shows
- * autocomplete suggestions from the API; Enter or Tab commits the typed text (or the highlighted suggestion).
- * Commas do not split, because game names can contain them.
+ * A chips input: each term is a chip (exclusions, typed with a leading "!", are shown in red; terms that
+ * matched nothing in yellow). Typing shows autocomplete suggestions from the API; Enter or Tab takes the
+ * highlighted suggestion, and Enter on plain text submits the form with that text, so a chip only ever appears
+ * with its full name (from the suggestion, or from the query result). Commas do not split, because game names
+ * can contain them. Terms are kept in their URL form (abbreviations) while chips display the full name.
  */
-export function TermBox({ box, label, terms, onChange, text, onTextChange: setText, onSubmit, placeholder }: Props) {
+export function TermBox({
+  box,
+  label,
+  terms,
+  onChange,
+  text,
+  onTextChange: setText,
+  onSubmit,
+  placeholder,
+  names,
+  invalid,
+}: Props) {
   const [items, setItems] = useState<Suggestion[]>([]);
   const [active, setActive] = useState(-1);
   const [open, setOpen] = useState(false);
+  // names of suggestions picked here, so a chip added as "fpa1" can say "The Fancy Pants Adventures: World 1"
+  // before the query has run
+  const [picked, setPicked] = useState<Record<string, string>>({});
   const inputRef = useRef<HTMLInputElement>(null);
   const listId = useId();
 
-  const exclude = text.startsWith("-");
+  const exclude = text.startsWith("!");
   const needle = (exclude ? text.slice(1) : text).trim();
 
   useEffect(() => {
@@ -64,8 +84,17 @@ export function TermBox({ box, label, terms, onChange, text, onTextChange: setTe
     setActive(-1);
   }
 
+  /** A chosen suggestion goes into the URL as its abbreviation when it has one, as on speedrun.com. */
   function choose(item: Suggestion) {
-    commit((exclude ? "-" : "") + item.name);
+    if (item.slug) setPicked((p) => ({ ...p, [item.slug!.toLowerCase()]: item.name }));
+    commit((exclude ? "!" : "") + (item.slug ?? item.name));
+  }
+
+  /** What the chip shows: the full name when known, with the "!" of an exclusion kept in front. */
+  function display(term: string): string {
+    const { sign, bare } = splitTerm(term);
+    const key = bare.toLowerCase();
+    return sign + (names?.[key] ?? picked[key] ?? bare);
   }
 
   function remove(index: number) {
@@ -83,18 +112,17 @@ export function TermBox({ box, label, terms, onChange, text, onTextChange: setTe
     } else if (e.key === "Enter") {
       e.preventDefault();
       if (active >= 0 && items[active]) choose(items[active]);
-      else if (text.trim()) commit(text);
-      else onSubmit();
-    } else if (e.key === "Tab" && text.trim()) {
+      else onSubmit(); // typed text goes with the submit and becomes a chip once resolved
+    } else if (e.key === "Tab" && active >= 0 && items[active]) {
       e.preventDefault();
-      if (active >= 0 && items[active]) choose(items[active]);
-      else commit(text);
+      choose(items[active]);
     } else if (e.key === "Escape") {
       setItems([]);
       setActive(-1);
     } else if (e.key === "Backspace" && !text && terms.length) {
       e.preventDefault();
-      const last = terms[terms.length - 1];
+      // the name the user sees is what they get to edit; submitting turns it back into the abbreviation
+      const last = display(terms[terms.length - 1]);
       onChange(terms.slice(0, -1));
       setText(last);
     }
@@ -119,11 +147,14 @@ export function TermBox({ box, label, terms, onChange, text, onTextChange: setTe
       </label>
       <div className="chips" onClick={() => inputRef.current?.focus()}>
         {terms.map((term, i) => {
-          const isExclude = term.startsWith("-");
+          const { sign, bare } = splitTerm(term);
+          const isInvalid = invalid?.includes(bare.toLowerCase()) ?? false;
+          const label = display(term);
+          const cls = "chip" + (isInvalid ? " chip-invalid" : sign ? " chip-exclude" : "");
           return (
-            <span key={term} className={"chip" + (isExclude ? " chip-exclude" : "")} title={isExclude ? "excluded" : undefined}>
-              {isExclude ? "− " + term.slice(1) : term}
-              <button type="button" className="chip-remove" aria-label={`Remove ${term}`} onClick={() => remove(i)}>
+            <span key={term} className={cls} title={isInvalid ? "Nothing matched this" : undefined}>
+              {label}
+              <button type="button" className="chip-remove" aria-label={`Remove ${label}`} onClick={() => remove(i)}>
                 ×
               </button>
             </span>
@@ -169,7 +200,7 @@ export function TermBox({ box, label, terms, onChange, text, onTextChange: setTe
               onMouseEnter={() => setActive(i)}
             >
               <span>
-                {exclude && <span className="suggest-exclude">− </span>}
+                {exclude && <span className="suggest-exclude">!</span>}
                 {item.name}
               </span>
               {item.slug && <span className="suggest-slug">{item.slug}</span>}

@@ -57,7 +57,7 @@
       "required": true,
       "schema": {
        "type": "string",
-       "pattern": "^(series|games|platforms|players|countries)$",
+       "pattern": "^(series|games|platforms|players|locations)$",
        "title": "Box"
       }
      },
@@ -354,6 +354,28 @@
       "type": "object",
       "title": "Players"
      },
+     "slugs": {
+      "additionalProperties": {
+       "additionalProperties": {
+        "type": "string"
+       },
+       "type": "object"
+      },
+      "type": "object",
+      "title": "Slugs",
+      "default": {}
+     },
+     "term_info": {
+      "additionalProperties": {
+       "additionalProperties": {
+        "$ref": "#/components/schemas/TermInfo"
+       },
+       "type": "object"
+      },
+      "type": "object",
+      "title": "Term Info",
+      "default": {}
+     },
      "meta": {
       "$ref": "#/components/schemas/MetaOut"
      }
@@ -420,6 +442,30 @@
      "name"
     ],
     "title": "Suggestion"
+   },
+   "TermInfo": {
+    "properties": {
+     "name": {
+      "type": "string",
+      "title": "Name"
+     },
+     "slug": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Slug"
+     }
+    },
+    "type": "object",
+    "required": [
+     "name"
+    ],
+    "title": "TermInfo"
    },
    "ValidationError": {
     "properties": {
