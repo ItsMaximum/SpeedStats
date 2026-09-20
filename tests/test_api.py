@@ -190,6 +190,15 @@ def test_cache_headers(client):
     assert r.headers["cache-control"].startswith("public") and r.headers["etag"].startswith('"test-')
 
 
+def test_shell_is_never_cached_at_the_edge(client):
+    r = client.get("/?request-type=pr")
+    assert r.status_code == 200 and r.headers["cache-control"] == "no-cache"
+    from api.main import BUILD_ID
+
+    if "etag" in r.headers:  # only when the web app is built
+        assert BUILD_ID != "dev"
+
+
 def test_suggest(client):
     items = client.get("/api/suggest?box=games&q=world 1").json()["items"]
     assert items[0]["name"] == WORLD1 and items[0]["slug"] == "fpa1"

@@ -42,6 +42,7 @@ log = logging.getLogger("speedstats.api")
 DIST = Path(__file__).resolve().parent.parent / "web" / "dist"
 CACHE_CONTROL = "public, max-age=300, s-maxage=604800"
 IMMUTABLE = "public, max-age=31536000, immutable"
+SHELL_CACHE_CONTROL = "no-cache"
 CACHE_ENTRIES = 2000
 FLAG_SOURCE = "https://www.speedrun.com/images/flags/"
 FLAG_ID = re.compile(r"^[a-z0-9_-]+(?:/[a-z0-9_-]+)*$")
@@ -350,8 +351,27 @@ def health():
 
 # -- SPA shell -------------------------------------------------------------------------------------------------------
 
+
+class _ImmutableFiles(StaticFiles):
+    """Vite's hashed bundles never change under one name, so browsers and the edge may keep them for a year."""
+
+    def file_response(self, *args, **kwargs):  # type: ignore[override]
+        response = super().file_response(*args, **kwargs)
+        response.headers["Cache-Control"] = IMMUTABLE
+        return response
+
+
 if (DIST / "assets").is_dir():
-    app.mount("/assets", StaticFiles(directory=DIST / "assets"), name="assets")
+    app.mount("/assets", _ImmutableFiles(directory=DIST / "assets"), name="assets")
+
+
+def _build_id() -> str:
+    """Identifies the built web app (hash of index.html, which embeds the hashed asset names)."""
+    index = DIST / "index.html"
+    return hashlib.sha1(index.read_bytes()).hexdigest()[:12] if index.exists() else "dev"
+
+
+BUILD_ID = _build_id()
 
 
 def _shell(request: Request) -> Response:
@@ -361,6 +381,7 @@ def _shell(request: Request) -> Response:
             "<p>SpeedStats API is running. The web app is not built; run <code>npm run dev</code> and open "
             "<a href='http://localhost:5173'>localhost:5173</a>, or <code>npm run build</code>.</p>",
             status_code=200,
+            headers={"Cache-Control": SHELL_CACHE_CONTROL},
         )
     spec = parse_query(request.query_params.multi_items())
     title = describe(spec)
@@ -368,9 +389,10 @@ def _shell(request: Request) -> Response:
     page = page.replace("__TITLE__", html.escape(f"SpeedStats - {title}" if request.query_params else "SpeedStats"))
     page = page.replace("__DESCRIPTION__", html.escape(f"{title} on SpeedStats, speedrun.com rankings by run value."))
     page = page.replace("__URL__", html.escape(f"{settings.public_url}/?{canonical_query(spec)}"))
-    headers = {"Cache-Control": CACHE_CONTROL}
+    headers = {"Cache-Control": SHELL_CACHE_CONTROL}
     if holder.ready:
-        headers.update(cache_headers(holder.meta, f"shell:{canonical_query(spec)}"))
+        headers.update(cache_headers(holder.meta, f"shell:{BUILD_ID}:{canonical_query(spec)}"))
+        headers["Cache-Control"] = SHELL_CACHE_CONTROL
     return HTMLResponse(page, headers=headers)
 
 
@@ -386,7 +408,7 @@ def shell_fallback(path: str, request: Request) -> Response:
         raise HTTPException(404)
     file = DIST / path
     if file.is_file() and DIST in file.resolve().parents:
-        return Response(file.read_bytes(), media_type=_media_type(file))
+        return Response(file.read_bytes(), media_type=_media_type(file), headers={"Cache-Control": CACHE_CONTROL})
     return _shell(request)
 
 
