@@ -1,4 +1,4 @@
-"""A small real crawl (the Fancy Pants series) checked in as one JSON file, for tests and local development."""
+"""A small real crawl checked in as one JSON file, for tests and local development"""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ import pyarrow as pa
 from scraper.score import score_crawl, sql_text
 from speedstats import paths
 
-FIXTURE = Path(__file__).resolve().parent.parent / "tests" / "fixtures" / "crawl-fpa.json"
+FIXTURE = Path(__file__).resolve().parent.parent / "tests" / "fixtures" / "crawl.json"
 
 
 def import_crawl(target: Path, fixture: Path = FIXTURE) -> Path:

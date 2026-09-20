@@ -27,7 +27,7 @@ def test_healthz_is_liveness_only(client):
 def test_health_and_meta(client):
     assert client.get("/health").json()["data_version"] == "test"
     meta = client.get("/api/meta").json()
-    assert meta["row_count"] == 1077 and meta["game_count"] == 13
+    assert meta["row_count"] == 1109 and meta["game_count"] == 14
 
 
 def test_legacy_link_player_rankings(client):
@@ -83,7 +83,7 @@ def test_exclusion_across_boxes(client):
 def test_only_exclusions_means_everything_else(client):
     out = query(client, f"games=-{WORLD1}&request-type=games&v=2")
     names = [r[1] for r in out["rows"]]
-    assert WORLD1 not in names and len(names) == 12
+    assert WORLD1 not in names and len(names) == 13
 
 
 def test_unmatched_include_term_gives_empty_result_and_warning(client):
@@ -119,8 +119,8 @@ def test_other_request_types(client, request_type, second_column):
 def test_records_one_row_per_leaderboard_with_dense_ranks(client):
     out = query(client, "request-type=records&limit=5000")
     boards = [r[1] for r in out["rows"]]
-    assert len(boards) == len(set(boards)) == 136
-    assert [r[0] for r in out["rows"]] == list(range(1, 137))
+    assert len(boards) == len(set(boards)) == 146
+    assert [r[0] for r in out["rows"]] == list(range(1, 147))
 
 
 def test_platform_scope_and_limit(client):

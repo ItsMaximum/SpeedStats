@@ -114,7 +114,7 @@ speedstats/   settings and query-string parsing shared by scraper and API
 scraper/      crawl.py, src_client.py, proxy_pool.py, writer.py, score.py, validate.py, publish.py, sql/
 api/          main.py (routes), db.py, resolve.py, queries.py, schemas.py
 web/          React app (src/query.ts mirrors speedstats/filters.py)
-tests/        pytest; tests/fixtures/crawl-fpa.json is a real small crawl, expected-*.csv its golden scoring
+tests/        pytest; tests/fixtures/crawl.json is a real small crawl, expected-*.csv its golden scoring
 tools/        regression.py (compare with the live site), update_golden.py
 ops/          vm-setup.sh
 .github/      ci.yml, deploy.yml, scrape.yml
