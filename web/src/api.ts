@@ -1,6 +1,6 @@
 import type { components } from "./api-types";
 import type { BoxName, QuerySpec } from "./query";
-import { toSearchParams } from "./query";
+import { toSearch } from "./query";
 
 export type QueryOut = components["schemas"]["QueryOut"];
 export type MetaOut = components["schemas"]["MetaOut"];
@@ -33,9 +33,8 @@ async function getJson<T>(url: string, signal?: AbortSignal): Promise<T> {
 }
 
 export function queryUrl(spec: QuerySpec, format?: "csv" | "json"): string {
-  const params = toSearchParams(spec);
-  if (format) params.append("format", format);
-  return "/api/query?" + params.toString();
+  const search = toSearch(spec) + (format ? `&format=${format}` : "");
+  return "/api/query" + search;
 }
 
 export function fetchQuery(spec: QuerySpec, signal?: AbortSignal): Promise<QueryOut> {

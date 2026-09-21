@@ -3,6 +3,7 @@ import {
   BOXES,
   BOX_LABELS,
   REQUEST_TYPES,
+  emptySpec,
   REQUEST_TYPE_LABELS,
   normalizeTerms,
   toSearch,
@@ -28,6 +29,10 @@ interface Props {
   /** The URL (toSearch form) that the names and results on screen answer; the form only adopts `spec` once
    *  this catches up with it, so typed text becomes a chip together with its full name. */
   resolvedFor?: string;
+  /** Bump to clear every box (chips and typed text); the request type is kept. */
+  clearCount?: number;
+  /** Reports whether any box holds a chip or typed text, for enabling the Clear button. */
+  onHasValues?: (hasValues: boolean) => void;
 }
 
 const PLACEHOLDERS: Record<BoxName, string> = {
@@ -43,7 +48,17 @@ const GRID_BOXES = BOXES.filter((box) => box !== "locations");
 
 const NO_TEXT: Record<BoxName, string> = { series: "", games: "", platforms: "", players: "", locations: "" };
 
-export function QueryForm({ spec, onSubmit, meta, loading = false, names, invalid, resolvedFor }: Props) {
+export function QueryForm({
+  spec,
+  onSubmit,
+  meta,
+  loading = false,
+  names,
+  invalid,
+  resolvedFor,
+  clearCount = 0,
+  onHasValues,
+}: Props) {
   const [draft, setDraft] = useState<QuerySpec>(spec);
   const [pending, setPending] = useState<Record<BoxName, string>>(NO_TEXT);
 
@@ -55,6 +70,15 @@ export function QueryForm({ spec, onSubmit, meta, loading = false, names, invali
     setDraft(spec);
     setPending(NO_TEXT);
   }, [spec, resolvedFor]);
+
+  useEffect(() => {
+    if (!clearCount) return;
+    setDraft((d) => ({ ...d, terms: emptySpec().terms }));
+    setPending(NO_TEXT);
+  }, [clearCount]);
+
+  const hasValues = BOXES.some((box) => draft.terms[box].length > 0 || pending[box].trim() !== "");
+  useEffect(() => onHasValues?.(hasValues), [hasValues, onHasValues]);
 
   function setTerms(box: BoxName, terms: string[]) {
     setDraft((d) => ({ ...d, terms: { ...d.terms, [box]: terms } }));

@@ -2,13 +2,29 @@
  * URL <-> query state. Mirrors speedstats/filters.py (keep the two in sync; both are covered by the same
  * test table).
  *
- * Legacy links (no `v` param) separate terms with ", ". New links (`v=2`) repeat the param once per term, so
- * names containing ", " work. A leading "!" on a term excludes it (no speedrun.com name starts with "!").
+ * A query is `?s=<series>&g=<games>&p=<platforms>&u=<players>&l=<locations>&r=<request type>&m=<limit>`, every
+ * box a comma-separated list of terms (`g=redball,redball2`); whitespace around a term is ignored. The long
+ * names the original site used (`series`, `games`, `platforms`, `players`, `request-type`, `limit`; `locations`)
+ * are accepted too, so its `games=Red+Ball%2C+Red+Ball+2` links keep working. A leading "!" on a term excludes
+ * it (no speedrun.com name starts with "!"); terms cannot contain a comma.
  */
 
 export const BOXES = ["series", "games", "platforms", "players", "locations"] as const;
 export type BoxName = (typeof BOXES)[number];
-const BOX_ALIASES: Record<string, BoxName> = { countries: "locations" };
+
+/** The one-letter query keys links are written with. */
+const SHORT_KEY: Record<BoxName, string> = { series: "s", games: "g", platforms: "p", players: "u", locations: "l" };
+const REQUEST_TYPE_KEY = "r";
+const LIMIT_KEY = "m";
+/** Every accepted key (short and the original site's long form) -> what it means. */
+const PARAM_ALIASES: Record<string, BoxName | "request-type" | "limit"> = {
+  ...Object.fromEntries(BOXES.map((box) => [SHORT_KEY[box], box])),
+  ...Object.fromEntries(BOXES.map((box) => [box, box])),
+  [REQUEST_TYPE_KEY]: "request-type",
+  "request-type": "request-type",
+  [LIMIT_KEY]: "limit",
+  limit: "limit",
+};
 
 export const REQUEST_TYPES = ["pr", "runs", "records", "leaderboards", "games", "series", "dates"] as const;
 export type RequestType = (typeof REQUEST_TYPES)[number];
@@ -33,8 +49,7 @@ export const BOX_LABELS: Record<BoxName, string> = {
 
 export const DEFAULT_LIMIT = 1000;
 export const MAX_LIMIT = 5000;
-const LEGACY_SEPARATOR = ", ";
-const FORMAT_VERSION = "2";
+const SEPARATOR = ",";
 
 /** Terms keep their leading "!" (exclusions) as typed. */
 export interface QuerySpec {
@@ -60,11 +75,11 @@ function isRequestType(value: string): value is RequestType {
   return (REQUEST_TYPES as readonly string[]).includes(value);
 }
 
-export function splitTerms(values: string[], newFormat: boolean): string[] {
+/** Every value is a comma-separated list; the pieces are trimmed and empty ones dropped. */
+export function splitTerms(values: string[]): string[] {
   const out: string[] = [];
   for (const value of values) {
-    const parts = newFormat ? [value] : value.split(LEGACY_SEPARATOR);
-    for (const part of parts) {
+    for (const part of value.split(SEPARATOR)) {
       const term = part.trim();
       if (term) out.push(term);
     }
@@ -105,16 +120,17 @@ export function splitSign(terms: string[]): BoxTerms {
 
 export function parseQuery(search: string | URLSearchParams): QuerySpec {
   const params = typeof search === "string" ? new URLSearchParams(search) : search;
-  const newFormat = params.getAll("v").includes(FORMAT_VERSION);
-  const spec = emptySpec();
-  for (const box of BOXES) {
-    const aliases = Object.entries(BOX_ALIASES).filter(([, target]) => target === box).map(([alias]) => alias);
-    const values = [...params.getAll(box), ...aliases.flatMap((alias) => params.getAll(alias))];
-    spec.terms[box] = normalizeTerms(splitTerms(values, newFormat));
+  // group by meaning, in the order given, whichever spelling of the key was used
+  const grouped: Record<string, string[]> = {};
+  for (const [key, value] of params.entries()) {
+    const meaning = PARAM_ALIASES[key];
+    if (meaning) (grouped[meaning] ??= []).push(value);
   }
-  const requestType = (params.getAll("request-type").at(-1) ?? "").trim();
+  const spec = emptySpec();
+  for (const box of BOXES) spec.terms[box] = normalizeTerms(splitTerms(grouped[box] ?? []));
+  const requestType = (grouped["request-type"]?.at(-1) ?? "").trim();
   spec.requestType = isRequestType(requestType) ? requestType : "pr";
-  const rawLimit = (params.getAll("limit").at(-1) ?? "").trim();
+  const rawLimit = (grouped.limit?.at(-1) ?? "").trim();
   if (rawLimit) {
     const n = Number.parseInt(rawLimit, 10);
     if (Number.isFinite(n)) spec.limit = Math.max(1, Math.min(MAX_LIMIT, n));
@@ -122,21 +138,21 @@ export function parseQuery(search: string | URLSearchParams): QuerySpec {
   return spec;
 }
 
-/** Canonical v=2 params: terms in the order given, as filters.to_params does, so both sides agree. */
+/** Canonical params, as filters.to_params writes them: short keys, comma-joined terms in the order given. */
 export function toSearchParams(spec: QuerySpec): URLSearchParams {
   const params = new URLSearchParams();
   for (const box of BOXES) {
-    for (const term of normalizeTerms(spec.terms[box])) params.append(box, term);
+    const terms = normalizeTerms(spec.terms[box]);
+    if (terms.length) params.append(SHORT_KEY[box], terms.join(SEPARATOR));
   }
-  params.append("request-type", spec.requestType);
-  if (spec.limit !== DEFAULT_LIMIT) params.append("limit", String(spec.limit));
-  params.append("v", FORMAT_VERSION);
+  params.append(REQUEST_TYPE_KEY, spec.requestType);
+  if (spec.limit !== DEFAULT_LIMIT) params.append(LIMIT_KEY, String(spec.limit));
   return params;
 }
 
 export function toSearch(spec: QuerySpec): string {
-  // "!" is safe unescaped in a query string and reads better in the address bar than %21
-  return "?" + toSearchParams(spec).toString().replace(/%21/g, "!");
+  // "," and "!" are safe unescaped in a query string and read better in the address bar than %2C and %21
+  return "?" + toSearchParams(spec).toString().replace(/%2C/g, ",").replace(/%21/g, "!");
 }
 
 /** What the API said each term resolved to: box -> term as given -> name and (unambiguous) abbreviation. */

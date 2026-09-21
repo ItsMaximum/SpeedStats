@@ -1,12 +1,10 @@
 """Query-string parsing shared by the API (and mirrored in web/src/query.ts).
 
-Two URL formats are accepted:
-
-* legacy (no ``v`` param): every occurrence of a box param is split on ", " exactly like the old PHP
-  ``explode(", ", ...)`` did, so links shared before the rewrite keep working.
-* v=2: one term per param occurrence (``games=A&games=B``); never split, so names containing ", " work.
-
-A term starting with ``!`` excludes instead of includes (no speedrun.com name starts with ``!``).
+A query is ``?s=<series>&g=<games>&p=<platforms>&u=<players>&l=<locations>&r=<request type>&m=<limit>``, every
+box a comma-separated list of terms (``g=redball,redball2``); whitespace around a term is ignored. The long
+names the original site used (``series``, ``games``, ``platforms``, ``players``, ``request-type``, ``limit``;
+``locations``) are accepted too, so its ``games=Red+Ball%2C+Red+Ball+2`` links keep working. A term starting
+with ``!`` excludes instead of includes (no speedrun.com name starts with ``!``); terms cannot contain a comma.
 """
 
 from __future__ import annotations
@@ -15,13 +13,24 @@ from collections.abc import Iterable
 from dataclasses import dataclass, field
 
 BOXES = ("series", "games", "platforms", "players", "locations")
-BOX_ALIASES = {"countries": "locations"}  # the box was called Countries for a while; old links keep working
 REQUEST_TYPES = ("pr", "runs", "records", "leaderboards", "games", "series", "dates")
 DEFAULT_REQUEST_TYPE = "pr"
 DEFAULT_LIMIT = 1000
 MAX_LIMIT = 5000
-LEGACY_SEPARATOR = ", "
-FORMAT_VERSION = "2"
+SEPARATOR = ","
+
+# The one-letter query keys links are written with, and the long forms the original site used.
+SHORT_KEY = {"series": "s", "games": "g", "platforms": "p", "players": "u", "locations": "l"}
+REQUEST_TYPE_KEY = "r"
+LIMIT_KEY = "m"
+PARAM_ALIASES: dict[str, str] = {
+    **{short: box for box, short in SHORT_KEY.items()},
+    **{box: box for box in BOXES},
+    REQUEST_TYPE_KEY: "request-type",
+    "request-type": "request-type",
+    LIMIT_KEY: "limit",
+    "limit": "limit",
+}
 
 
 @dataclass(frozen=True)
@@ -62,11 +71,11 @@ class FilterSpec:
         return bool(self.series.include or self.games.include or self.platforms.include)
 
 
-def split_terms(values: Iterable[str], new_format: bool) -> list[str]:
+def split_terms(values: Iterable[str]) -> list[str]:
+    """Every value is a comma-separated list; the pieces are trimmed and empty ones dropped."""
     terms: list[str] = []
     for value in values:
-        parts = [value] if new_format else value.split(LEGACY_SEPARATOR)
-        terms.extend(part.strip() for part in parts)
+        terms.extend(part.strip() for part in value.split(SEPARATOR))
     return [term for term in terms if term]
 
 
@@ -98,12 +107,11 @@ def parse_query(params: Iterable[tuple[str, str]]) -> FilterSpec:
     """Parse ``(key, value)`` pairs (in order, repeats allowed) into a FilterSpec."""
     grouped: dict[str, list[str]] = {}
     for key, value in params:
-        grouped.setdefault(BOX_ALIASES.get(key, key), []).append(value)
+        if canonical := PARAM_ALIASES.get(key):
+            grouped.setdefault(canonical, []).append(value)
 
-    new_format = FORMAT_VERSION in grouped.get("v", [])
     warnings: list[str] = []
-
-    boxes = {name: split_sign(split_terms(grouped.get(name, []), new_format)) for name in BOXES}
+    boxes = {name: split_sign(split_terms(grouped.get(name, []))) for name in BOXES}
 
     request_type = (grouped.get("request-type") or [DEFAULT_REQUEST_TYPE])[-1].strip() or DEFAULT_REQUEST_TYPE
     if request_type not in REQUEST_TYPES:
@@ -121,12 +129,12 @@ def parse_query(params: Iterable[tuple[str, str]]) -> FilterSpec:
 
 
 def to_params(spec: FilterSpec) -> list[tuple[str, str]]:
-    """Canonical v=2 query params for a spec (the form the UI emits)."""
+    """Canonical query params for a spec (the form the UI emits): short keys, comma-joined terms."""
     params: list[tuple[str, str]] = []
     for name in BOXES:
-        params.extend((name, term) for term in spec.box(name).signed)
-    params.append(("request-type", spec.request_type))
+        if signed := spec.box(name).signed:
+            params.append((SHORT_KEY[name], SEPARATOR.join(signed)))
+    params.append((REQUEST_TYPE_KEY, spec.request_type))
     if spec.limit != DEFAULT_LIMIT:
-        params.append(("limit", str(spec.limit)))
-    params.append(("v", FORMAT_VERSION))
+        params.append((LIMIT_KEY, str(spec.limit)))
     return params

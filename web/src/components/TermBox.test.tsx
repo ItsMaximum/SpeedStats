@@ -65,6 +65,8 @@ describe("TermBox", () => {
     const { onChange, input } = setup([]);
     fireEvent.paste(input, { clipboardData: { getData: () => "Red Ball, Red Ball 2\nRed Ball 3" } });
     expect(onChange).toHaveBeenCalledWith(["Red Ball", "Red Ball 2", "Red Ball 3"]);
+    fireEvent.paste(input, { clipboardData: { getData: () => "a,b,c" } }); // as in the URL
+    expect(onChange).toHaveBeenLastCalledWith(["a", "b", "c"]);
   });
 
   it("shows the full name on a chip while the term stays abbreviated", () => {

@@ -20,9 +20,8 @@ interface Props {
 
 const DEBOUNCE_MS = 120;
 
-/** Splits pasted text the way people write lists: newlines, or ", " like the old site. */
 function splitPasted(text: string): string[] {
-  return text.split(/\r?\n|, /).map((t) => t.trim()).filter(Boolean);
+  return text.split(/\r?\n|,/).map((t) => t.trim()).filter(Boolean);
 }
 
 /**

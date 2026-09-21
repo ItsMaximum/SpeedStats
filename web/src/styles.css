@@ -401,6 +401,23 @@ select {
   font: inherit;
   cursor: pointer;
 }
+.clear-button {
+  padding: 8px 14px;
+  border: 1px solid var(--exclude);
+  border-radius: 10px;
+  background: var(--exclude-bg);
+  color: var(--exclude);
+  font: inherit;
+  cursor: pointer;
+}
+.clear-button:hover:not(:disabled) {
+  background: var(--exclude);
+  color: #fff;
+}
+.clear-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
 .menu-button:hover,
 .menu-button[aria-expanded="true"] {
   border-color: var(--accent);
@@ -504,7 +521,6 @@ td.num {
   font-variant-numeric: tabular-nums;
 }
 td.player {
-  /* a name is never broken across lines; the Leaderboard/Game column is the one that wraps on a phone */
   white-space: nowrap;
 }
 td.wide {
@@ -554,6 +570,12 @@ td a:hover {
 .username {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 700;
+  display: inline-block;
+  width: max-content;
+  max-width: min(14rem, 100vw - 13.5rem);
+  white-space: normal;
+  overflow-wrap: anywhere;
+  vertical-align: top;
 }
 .username-gradient {
   background: linear-gradient(to right, var(--c1), var(--c2));

@@ -95,6 +95,21 @@ describe("QueryForm submit button", () => {
     expect(onSubmit.mock.calls[0][0].terms.games).toEqual(["Red Ball"]);
   });
 
+  it("reports whether there is anything to clear, and clears every box when asked", () => {
+    const onHasValues = vi.fn();
+    const onSubmit = vi.fn();
+    const spec = emptySpec();
+    spec.terms.games = ["Red Ball"];
+    const { rerender } = render(<QueryForm spec={spec} onSubmit={onSubmit} meta={null} onHasValues={onHasValues} />);
+    expect(onHasValues).toHaveBeenLastCalledWith(true);
+    fireEvent.change(screen.getByRole("combobox", { name: "Players" }), { target: { value: "Max" } });
+    rerender(<QueryForm spec={spec} onSubmit={onSubmit} meta={null} onHasValues={onHasValues} clearCount={1} />);
+    expect(screen.queryByText("Red Ball")).not.toBeInTheDocument();
+    expect(screen.getByRole("combobox", { name: "Players" })).toHaveValue("");
+    expect(onHasValues).toHaveBeenLastCalledWith(false);
+    expect(screen.getByRole("button", { name: "Submit" })).toBeEnabled(); // the empty form differs from the query
+  });
+
   it("does not submit a clean form on Enter even with the box focused", () => {
     const spec = emptySpec();
     spec.terms.games = ["Red Ball"];

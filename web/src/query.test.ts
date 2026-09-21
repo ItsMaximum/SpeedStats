@@ -3,22 +3,26 @@ import { canonicalize, emptySpec, linkTo, parseQuery, splitSign, toSearch, toSea
 
 // Shared with tests/test_filters.py - keep the two tables in sync.
 const CASES: Array<[string, Record<string, unknown>]> = [
+  // links from the original site: long keys, ", " separated
   ["series=&games=Red+Ball&platforms=&players=&request-type=pr", { games: { include: ["Red Ball"], exclude: [] }, requestType: "pr" }],
   ["games=Red+Ball%2C+Red+Ball+2&request-type=runs", { games: { include: ["Red Ball", "Red Ball 2"], exclude: [] }, requestType: "runs" }],
   ["players=Maximum%2C+!Someone&request-type=records", { players: { include: ["Maximum"], exclude: ["Someone"] }, requestType: "records" }],
-  ["games=A,B", { games: { include: ["A,B"], exclude: [] } }],
-  ["games=Sonic%2C+Redux&v=2", { games: { include: ["Sonic, Redux"], exclude: [] } }],
-  [
-    "series=Red+Ball&games=!Red+Ball+5&v=2&request-type=pr",
-    { series: { include: ["Red Ball"], exclude: [] }, games: { include: [], exclude: ["Red Ball 5"] } },
-  ],
-  ["games=A&games=B&games=!C&v=2", { games: { include: ["A", "B"], exclude: ["C"] } }],
-  ["locations=us&locations=!ca&v=2", { locations: { include: ["us"], exclude: ["ca"] } }],
-  ["countries=England&locations=!us&v=2", { locations: { include: ["England"], exclude: ["us"] } }],
+  // the form the site writes: short keys, comma separated
+  ["g=redball,redball2&r=pr", { games: { include: ["redball", "redball2"], exclude: [] }, requestType: "pr" }],
+  ["s=a,+b+,c", { series: { include: ["a", "b", "c"], exclude: [] } }], // whitespace around a term is ignored
+  ["g=!a,b,!c", { games: { include: ["b"], exclude: ["a", "c"] } }],
+  ["g=a,,b,", { games: { include: ["a", "b"], exclude: [] } }], // empty pieces are dropped
+  ["g=a&games=b", { games: { include: ["a", "b"], exclude: [] } }], // repeats merge, whichever spelling
+  ["l=us,!ca", { locations: { include: ["us"], exclude: ["ca"] } }],
+  ["u=Maximum&p=PC", { players: { include: ["Maximum"], exclude: [] }, platforms: { include: ["PC"], exclude: [] } }],
+  ["r=runs", { requestType: "runs" }],
+  ["m=50", { limit: 50 }],
+  ["countries=us", { locations: { include: [], exclude: [] } }], // not a parameter (the original site had no such box)
+  // defaults & oddities
   ["", { requestType: "pr", limit: 1000 }],
-  ["games=!&v=2", { games: { include: [], exclude: [] } }],
-  ["games=+Red+Ball+&v=2", { games: { include: ["Red Ball"], exclude: [] } }],
-  ["games=Red+Ball&games=red+ball&v=2", { games: { include: ["Red Ball"], exclude: [] } }],
+  ["g=!", { games: { include: [], exclude: [] } }],
+  ["g=+Red+Ball+", { games: { include: ["Red Ball"], exclude: [] } }],
+  ["g=Red+Ball,red+ball", { games: { include: ["Red Ball"], exclude: [] } }],
   ["limit=99999", { limit: 5000 }],
   ["limit=10", { limit: 10 }],
 ];
@@ -33,40 +37,44 @@ describe("parseQuery", () => {
   });
 
   it("falls back to pr for unknown request types", () => {
-    expect(parseQuery("request-type=bogus").requestType).toBe("pr");
+    expect(parseQuery("r=bogus").requestType).toBe("pr");
+  });
+
+  it("keeps the order of terms across spellings of a key", () => {
+    expect(parseQuery("games=a&g=b&games=c").terms.games).toEqual(["a", "b", "c"]);
   });
 });
 
 describe("toSearchParams", () => {
-  it("emits the canonical v=2 form and round-trips", () => {
-    const spec = parseQuery("series=Red+Ball&games=!Red+Ball+5&locations=us&request-type=runs&limit=50&v=2");
+  it("emits short keys with comma-joined terms and round-trips", () => {
+    const spec = parseQuery("series=Red+Ball&games=!Red+Ball+5&locations=us&request-type=runs&limit=50");
     const params = toSearchParams(spec);
     expect([...params.entries()]).toEqual([
-      ["series", "Red Ball"],
-      ["games", "!Red Ball 5"],
-      ["locations", "us"],
-      ["request-type", "runs"],
-      ["limit", "50"],
-      ["v", "2"],
+      ["s", "Red Ball"],
+      ["g", "!Red Ball 5"],
+      ["l", "us"],
+      ["r", "runs"],
+      ["m", "50"],
     ]);
     expect(parseQuery(params)).toEqual(spec);
+    expect(toSearch(emptySpec())).toBe("?r=pr"); // empty boxes are left out, the default limit too
   });
 
-  it("re-encodes a legacy link so commas survive", () => {
+  it("re-encodes a legacy link in the short form", () => {
     const search = toSearch(parseQuery("games=Red+Ball%2C+Red+Ball+2&request-type=pr"));
-    expect(search).toBe("?games=Red+Ball&games=Red+Ball+2&request-type=pr&v=2");
+    expect(search).toBe("?g=Red+Ball,Red+Ball+2&r=pr");
   });
 
   it("builds cell links", () => {
-    expect(linkTo("players", "Max, Imum", "runs")).toBe("?players=Max%2C+Imum&request-type=runs&v=2");
+    expect(linkTo("players", "Maximum", "runs")).toBe("?u=Maximum&r=runs");
   });
 });
 
 describe("term order", () => {
   it("keeps includes and exclusions in the order given", () => {
-    const spec = parseQuery("games=!A&games=B&games=!C&games=b&v=2");
+    const spec = parseQuery("g=!A,B&g=!C,b");
     expect(spec.terms.games).toEqual(["!A", "B", "!C"]);
-    expect(toSearch(spec)).toBe("?games=!A&games=B&games=!C&request-type=pr&v=2");
+    expect(toSearch(spec)).toBe("?g=!A,B,!C&r=pr");
   });
 });
 
@@ -102,7 +110,7 @@ describe("canonicalize", () => {
   it("keeps the exclusion sign readable in the address bar", () => {
     const spec = emptySpec();
     spec.terms.games = ["!Red Ball 4"];
-    expect(toSearch(spec)).toBe("?games=!Red+Ball+4&request-type=pr&v=2");
+    expect(toSearch(spec)).toBe("?g=!Red+Ball+4&r=pr");
     expect(parseQuery(toSearch(spec)).terms.games).toEqual(["!Red Ball 4"]);
   });
 

@@ -66,6 +66,8 @@ export default function App() {
   const [names, setNames] = useState<Names>(NO_NAMES);
   const [invalid, setInvalid] = useState<Record<BoxName, string[]>>();
   const [resolvedFor, setResolvedFor] = useState<string>(); // the URL the result on screen answers
+  const [clearCount, setClearCount] = useState(0);
+  const [formHasValues, setFormHasValues] = useState(false);
   // the URL a result was just rewritten to (typed names -> abbreviations); that result already answers it
   const skipFetch = useRef<string | null>(null);
 
@@ -81,7 +83,7 @@ export default function App() {
       .then((out) => {
         document.title = `SpeedStats - ${out.title}`;
         const canonical = toSearch(canonicalize(spec, out.term_info));
-        if (canonical !== toSearch(spec)) {
+        if (window.location.pathname + search !== "/" + canonical) {
           skipFetch.current = canonical;
           replace(canonical);
         }
@@ -140,6 +142,8 @@ export default function App() {
           names={names}
           invalid={invalid}
           resolvedFor={resolvedFor}
+          clearCount={clearCount}
+          onHasValues={setFormHasValues}
         />
       )}
 
@@ -147,6 +151,14 @@ export default function App() {
         {result && (
           <div className="results-header">
             <div className="actions">
+              <button
+                type="button"
+                className="clear-button"
+                disabled={!formHasValues}
+                onClick={() => setClearCount((n) => n + 1)}
+              >
+                Clear
+              </button>
               <MenuButton label={copied ? "Copied!" : "Share"}>
                 <button type="button" role="menuitem" onClick={copyLink}>
                   Copy link
