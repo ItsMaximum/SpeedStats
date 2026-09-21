@@ -56,7 +56,7 @@ sequenceDiagram
     participant CF as Cloudflare edge
     participant A as FastAPI
     participant D as DuckDB file
-    B->>CF: GET /api/query?games=Red+Ball&request-type=pr&v=2
+    B->>CF: GET /api/query?g=redball&r=pr
     alt cached this week
         CF-->>B: JSON (edge cache)
     else
@@ -69,9 +69,10 @@ sequenceDiagram
     end
 ```
 
-- **`speedstats/filters.py`** parses the query string. Legacy links (`", "`-separated, no `v`) and new links
-  (`v=2`, one param per term) both work; a leading `!` excludes a term. `web/src/query.ts` is the same logic
-  in TypeScript so the app can build identical URLs.
+- **`speedstats/filters.py`** parses the query string: one-letter keys (`s`, `g`, `p`, `u`, `l`, `r`, `m`) with
+  comma-separated terms, plus the original site's long keys (`games=Red+Ball%2C+Red+Ball+2&request-type=pr`)
+  so its links keep working; a leading `!` excludes a term. `web/src/query.ts` is the same logic in TypeScript
+  so the app can build identical URLs.
 - **`api/resolve.py`** turns each term into ids: name or speedrun.com slug for games/series/platforms/players,
   continent name (`speedstats/continents.py`, our own table since speedrun.com has none) or any speedrun.com
   area at any depth by id, name or full name for locations (`us`, `Colorado`, `England`); a matched area covers

@@ -38,10 +38,10 @@ describe("ResultsTable", () => {
   it("links player names, shows flags and speedrun.com colours", () => {
     render(<ResultsTable result={result} />);
     const alpha = screen.getByRole("link", { name: "Alpha" });
-    expect(alpha).toHaveAttribute("href", "?players=Alpha&request-type=runs&v=2");
+    expect(alpha).toHaveAttribute("href", "?u=Alpha&r=runs");
     expect(alpha).toHaveClass("username", "username-gradient");
     // a player with a distinct speedrun.com abbreviation links by it
-    expect(screen.getByRole("link", { name: "Beta" })).toHaveAttribute("href", "?players=beta_srdc&request-type=runs&v=2");
+    expect(screen.getByRole("link", { name: "Beta" })).toHaveAttribute("href", "?u=beta_srdc&r=runs");
     expect(screen.getByAltText("United States")).toHaveAttribute("src", "/api/flags/us.png");
     const beta = screen.getByRole("link", { name: "Beta" });
     expect(beta).not.toHaveClass("username-gradient");

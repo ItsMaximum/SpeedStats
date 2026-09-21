@@ -6,7 +6,7 @@ from speedstats.filters import BoxTerms, parse_query, to_params
 
 # Shared with web/src/query.test.ts - keep the two tables in sync.
 CASES = [
-    # legacy links: ", " separated, no v param
+    # links from the original site: long keys, ", " separated
     (
         "series=&games=Red+Ball&platforms=&players=&request-type=pr",
         {"games": BoxTerms(("Red Ball",)), "request_type": "pr"},
@@ -19,23 +19,22 @@ CASES = [
         "players=Maximum%2C+!Someone&request-type=records",
         {"players": BoxTerms(("Maximum",), ("Someone",)), "request_type": "records"},
     ),
-    # legacy: a comma without a following space is NOT a separator (matches PHP explode(", "))
-    ("games=A,B", {"games": BoxTerms(("A,B",))}),
-    # v=2: never split
-    ("games=Sonic%2C+Redux&v=2", {"games": BoxTerms(("Sonic, Redux",))}),
-    (
-        "series=Red+Ball&games=!Red+Ball+5&v=2&request-type=pr",
-        {"series": BoxTerms(("Red Ball",)), "games": BoxTerms((), ("Red Ball 5",))},
-    ),
-    ("games=A&games=B&games=!C&v=2", {"games": BoxTerms(("A", "B"), ("C",))}),
-    # locations box, and its former name as an alias
-    ("locations=us&locations=!ca&v=2", {"locations": BoxTerms(("us",), ("ca",))}),
-    ("countries=England&locations=!us&v=2", {"locations": BoxTerms(("England",), ("us",))}),
+    # the form the site writes: short keys, comma separated
+    ("g=redball,redball2&r=pr", {"games": BoxTerms(("redball", "redball2")), "request_type": "pr"}),
+    ("s=a,+b+,c", {"series": BoxTerms(("a", "b", "c"))}),  # whitespace around a term is ignored
+    ("g=!a,b,!c", {"games": BoxTerms(("b",), ("a", "c"))}),
+    ("g=a,,b,", {"games": BoxTerms(("a", "b"))}),  # empty pieces are dropped
+    ("g=a&games=b", {"games": BoxTerms(("a", "b"))}),  # repeats merge, whichever spelling
+    ("l=us,!ca", {"locations": BoxTerms(("us",), ("ca",))}),
+    ("u=Maximum&p=PC", {"players": BoxTerms(("Maximum",)), "platforms": BoxTerms(("PC",))}),
+    ("r=runs", {"request_type": "runs"}),
+    ("m=50", {"limit": 50}),
+    ("countries=us", {"locations": BoxTerms()}),  # not a parameter (the original site had no such box)
     # defaults & oddities
     ("", {"request_type": "pr", "limit": 1000}),
-    ("games=!&v=2", {"games": BoxTerms()}),
-    ("games=+Red+Ball+&v=2", {"games": BoxTerms(("Red Ball",))}),
-    ("games=Red+Ball&games=red+ball&v=2", {"games": BoxTerms(("Red Ball",))}),
+    ("g=!", {"games": BoxTerms()}),
+    ("g=+Red+Ball+", {"games": BoxTerms(("Red Ball",))}),
+    ("g=Red+Ball,red+ball", {"games": BoxTerms(("Red Ball",))}),
     ("limit=99999", {"limit": 5000}),
     ("limit=10", {"limit": 10}),
 ]
@@ -49,38 +48,32 @@ def test_parse_query(query, expected):
 
 
 def test_unknown_request_type_warns_and_defaults():
-    spec = parse_query([("request-type", "bogus")])
+    spec = parse_query([("r", "bogus")])
     assert spec.request_type == "pr"
     assert spec.warnings and "bogus" in spec.warnings[0]
 
 
 def test_invalid_limit_warns():
-    spec = parse_query([("limit", "abc")])
+    spec = parse_query([("m", "abc")])
     assert spec.limit == 1000
     assert spec.warnings
 
 
 def test_has_scope_terms():
-    assert not parse_query([("games", "!X"), ("v", "2")]).has_scope_terms
-    assert parse_query([("platforms", "PC")]).has_scope_terms
+    assert not parse_query([("g", "!X")]).has_scope_terms
+    assert parse_query([("p", "PC")]).has_scope_terms
 
 
 def test_terms_keep_the_order_given():
-    spec = parse_query(parse_qsl("games=!A&games=B&games=!C&games=b&v=2"))
+    spec = parse_query(parse_qsl("g=!A,B&g=!C,b"))
     assert spec.games.signed == ("!A", "B", "!C")  # duplicates dropped, includes and excludes interleaved as typed
-    assert to_params(spec)[:3] == [("games", "!A"), ("games", "B"), ("games", "!C")]
+    assert to_params(spec)[0] == ("g", "!A,B,!C")
     assert BoxTerms(("A",), ("B",)).signed == ("A", "!B")  # built by hand: includes first, then excludes
 
 
 def test_to_params_round_trip():
-    spec = parse_query(parse_qsl("series=Red+Ball&games=!Red+Ball+5&locations=us&request-type=runs&limit=50&v=2"))
+    spec = parse_query(parse_qsl("series=Red+Ball&games=!Red+Ball+5&locations=us&request-type=runs&limit=50"))
     params = to_params(spec)
-    assert params == [
-        ("series", "Red Ball"),
-        ("games", "!Red Ball 5"),
-        ("locations", "us"),
-        ("request-type", "runs"),
-        ("limit", "50"),
-        ("v", "2"),
-    ]
+    assert params == [("s", "Red Ball"), ("g", "!Red Ball 5"), ("l", "us"), ("r", "runs"), ("m", "50")]
     assert parse_query(params) == spec
+    assert to_params(parse_query([])) == [("r", "pr")]  # empty boxes are left out, the default limit too

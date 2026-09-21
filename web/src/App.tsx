@@ -81,7 +81,7 @@ export default function App() {
       .then((out) => {
         document.title = `SpeedStats - ${out.title}`;
         const canonical = toSearch(canonicalize(spec, out.term_info));
-        if (canonical !== toSearch(spec)) {
+        if (window.location.pathname + search !== "/" + canonical) {
           skipFetch.current = canonical;
           replace(canonical);
         }

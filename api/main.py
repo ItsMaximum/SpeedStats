@@ -126,7 +126,7 @@ def describe(spec: FilterSpec, filt: ResolvedFilter | None = None) -> str:
 
 
 def canonical_query(spec: FilterSpec) -> str:
-    return urlencode(to_params(spec))
+    return urlencode(to_params(spec), safe=",!")  # readable: u=a,b and g=!redball5
 
 
 def cache_headers(meta: Meta, key: str) -> dict[str, str]:
