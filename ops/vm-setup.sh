@@ -4,13 +4,16 @@
 #   curl -fsSL https://raw.githubusercontent.com/ItsMaximum/SpeedStats/main/ops/vm-setup.sh | \
 #       GH_REPO=ItsMaximum/SpeedStats RUNNER_TOKEN=<token> bash
 #
-# RUNNER_TOKEN comes from GitHub: repo -> Settings -> Actions -> Runners -> New self-hosted runner (Linux, ARM64).
-# After this script, everything else happens through GitHub Actions (deploy.yml, scrape.yml); no more ssh needed.
+# RUNNER_TOKEN comes from GitHub: repo -> Settings -> Actions -> Runners -> New self-hosted runner (Linux, ARM64);
+# it is valid for an hour. After this script, everything else happens through GitHub Actions (deploy.yml,
+# scrape.yml); no more ssh needed.
 #
 # What it does:
 #   1. installs Docker (if missing) and lets this user run it
 #   2. creates /opt/speedstats with data/ (the .env is written by the Deploy workflow from GitHub secrets)
-#   3. installs the GitHub Actions self-hosted runner as a systemd service (label: speedstats)
+#   3. installs RUNNERS (default 2) GitHub Actions self-hosted runners as systemd services (label: speedstats).
+#      A runner takes one job at a time, so with two a Deploy does not wait for the weekly scrape. Re-run the
+#      script with a fresh RUNNER_TOKEN to add a runner to an existing host.
 #   4. starts the api + dozzle containers
 # The existing cloudflared systemd service is left alone; add tunnel routes in the Zero Trust dashboard:
 #   new.speedstats.app  -> http://localhost:8000
@@ -20,7 +23,7 @@ set -euo pipefail
 
 GH_REPO="${GH_REPO:-ItsMaximum/SpeedStats}"
 BASE=/opt/speedstats
-RUNNER_DIR="$BASE/runner"
+RUNNERS="${RUNNERS:-2}"
 RUNNER_VERSION="${RUNNER_VERSION:-2.327.1}"
 ARCH=$(uname -m)
 case "$ARCH" in
@@ -65,25 +68,29 @@ if [ ! -f "$BASE/.env" ]; then
   chmod 600 "$BASE/.env"
 fi
 
-# 3. GitHub Actions runner ---------------------------------------------------------------------------------------
-if [ ! -f "$RUNNER_DIR/.runner" ]; then
+# 3. GitHub Actions runners --------------------------------------------------------------------------------------
+# the first lives in runner/ (named after the host), the others in runner-N/ (named host-N)
+for n in $(seq 1 "$RUNNERS"); do
+  if [ "$n" = 1 ]; then RUNNER_DIR="$BASE/runner"; NAME="$(hostname)"; else RUNNER_DIR="$BASE/runner-$n"; NAME="$(hostname)-$n"; fi
+  if [ -f "$RUNNER_DIR/.runner" ]; then
+    log "runner $NAME already configured in $RUNNER_DIR"
+    continue
+  fi
   if [ -z "${RUNNER_TOKEN:-}" ]; then
-    echo "RUNNER_TOKEN is required to register the runner (GitHub -> Settings -> Actions -> Runners -> New)" >&2
+    echo "RUNNER_TOKEN is required to register runner $NAME (GitHub -> Settings -> Actions -> Runners -> New)" >&2
     exit 1
   fi
-  log "installing GitHub Actions runner $RUNNER_VERSION ($RUNNER_ARCH)"
+  log "installing GitHub Actions runner $NAME ($RUNNER_VERSION, $RUNNER_ARCH)"
   mkdir -p "$RUNNER_DIR" && cd "$RUNNER_DIR"
   curl -fsSL -o runner.tar.gz \
     "https://github.com/actions/runner/releases/download/v${RUNNER_VERSION}/actions-runner-linux-${RUNNER_ARCH}-${RUNNER_VERSION}.tar.gz"
   tar xzf runner.tar.gz && rm runner.tar.gz
   ./config.sh --unattended --url "https://github.com/$GH_REPO" --token "$RUNNER_TOKEN" \
-    --name "$(hostname)" --labels speedstats --work _work --replace
+    --name "$NAME" --labels speedstats --work _work --replace
   sudo ./svc.sh install "$USER"
   sudo ./svc.sh start
   cd - >/dev/null
-else
-  log "runner already configured in $RUNNER_DIR"
-fi
+done
 
 # 4. Containers -------------------------------------------------------------------------------------------------
 log "starting api + dozzle"
