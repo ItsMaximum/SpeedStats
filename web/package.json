@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:live": "cross-env VITE_API_TARGET=https://new.speedstats.app vite",
+    "dev:live": "cross-env VITE_API_TARGET=https://speedstats.app vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest",

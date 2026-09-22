@@ -50,19 +50,13 @@ Then:
 
 ```bash
 npm run dev          # API on :8000 (auto-reload) + web on :5173 (HMR); open http://localhost:5173
-npm run dev:live     # web only, talking to the deployed API at new.speedstats.app
+npm run dev:live     # web only, talking to the deployed API at speedstats.app
 npm run check        # ruff + pytest + tsc + vitest + vite build, same as CI
 npm run gen-types    # regenerate web/src/api-types.d.ts after changing the API models
 uv run python tools/update_golden.py   # after an intentional scoring change: refresh tests/fixtures/expected-*.csv
 ```
 
 Local crawls use direct requests (no `SRC_PROXIES` in `.env`); keep them to a series or a game.
-
-To compare against the live site for a set of real URLs (`tests/regression/urls.txt`):
-
-```bash
-uv run python tools/regression.py capture && uv run python tools/regression.py check --db data/<file>.duckdb
-```
 
 ## URLs
 
@@ -100,15 +94,6 @@ workflow writes them to `/opt/speedstats/.env` on the VM. Non-secret settings (`
 repository variables. Change one, re-run Deploy. See `.env.example` for the full list.
 
 speedrun.com's API limit is 500 requests per 20-minute window per IP (measured, see `scraper/proxy_pool.py`);
-with 26 proxies a full crawl of ~100k requests takes about 3 hours.
-
-### Cut-over plan
-
-1. `new.speedstats.app` points at the new API while `speedstats.app` keeps serving the PHP site.
-2. The first scrape runs Sunday 2 AM ET; compare both sites (`tools/regression.py` against the same crawl).
-3. When happy: change the tunnel route for `speedstats.app` to `http://localhost:8000` and set
-   `PUBLIC_URL=https://speedstats.app`. Rollback is switching the route back.
-4. After a clean week: stop Apache/PHP and MariaDB, retire the old repos.
 
 ## License
 
