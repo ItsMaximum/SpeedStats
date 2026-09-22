@@ -102,7 +102,7 @@ flowchart TB
         API --- DATA
     end
     GH --> R
-    CF -->|new.speedstats.app| API
+    CF -->|speedstats.app| API
     CF -->|logs.speedstats.app| DZ
 ```
 
@@ -118,7 +118,7 @@ scraper/      crawl.py, src_client.py, proxy_pool.py, writer.py, score.py, valid
 api/          main.py (routes), db.py, resolve.py, queries.py, schemas.py
 web/          React app (src/query.ts mirrors speedstats/filters.py)
 tests/        pytest; tests/fixtures/crawl.json is a real small crawl, expected-*.csv its golden scoring
-tools/        regression.py (compare with the live site), update_golden.py
+tools/        update_golden.py
 ops/          vm-setup.sh
 .github/      ci.yml, deploy.yml, scrape.yml
 ```

@@ -76,7 +76,7 @@ jobs:
           R2_ACCESS_KEY_ID=${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY=${{ secrets.R2_SECRET_ACCESS_KEY }}
           R2_BUCKET=${{ vars.R2_BUCKET || 'speedstats' }}
-          PUBLIC_URL=${{ vars.PUBLIC_URL || 'https://new.speedstats.app' }}
+          PUBLIC_URL=${{ vars.PUBLIC_URL || 'https://speedstats.app' }}
           SRC_PER_PROXY_CONCURRENCY=${{ vars.SRC_PER_PROXY_CONCURRENCY || '2' }}
           SRC_WINDOW_REQUESTS=${{ vars.SRC_WINDOW_REQUESTS || '500' }}
           SRC_WINDOW_SECONDS=${{ vars.SRC_WINDOW_SECONDS || '1200' }}

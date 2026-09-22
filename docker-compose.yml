@@ -1,6 +1,6 @@
 # Production layout on the VM. Everything lives under /opt/speedstats: data/ (databases), .env (secrets).
-# The cloudflared tunnel runs on the host (systemd) and routes new.speedstats.app -> localhost:8000 (later
-# speedstats.app itself) and logs.speedstats.app -> localhost:9999 (behind Cloudflare Access).
+# The cloudflared tunnel runs on the host (systemd) and routes speedstats.app -> localhost:8000 and
+# logs.speedstats.app -> localhost:9999 (behind Cloudflare Access).
 
 services:
   api:
