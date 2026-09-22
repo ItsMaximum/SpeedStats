@@ -47,7 +47,7 @@ export const BOX_LABELS: Record<BoxName, string> = {
   locations: "Locations",
 };
 
-export const DEFAULT_LIMIT = 1000;
+const DEFAULT_LIMIT = 1000;
 export const MAX_LIMIT = 5000;
 const SEPARATOR = ",";
 
@@ -76,7 +76,7 @@ function isRequestType(value: string): value is RequestType {
 }
 
 /** Every value is a comma-separated list; the pieces are trimmed and empty ones dropped. */
-export function splitTerms(values: string[]): string[] {
+function splitTerms(values: string[]): string[] {
   const out: string[] = [];
   for (const value of values) {
     for (const part of value.split(SEPARATOR)) {
