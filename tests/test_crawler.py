@@ -256,3 +256,105 @@ async def test_proxy_names_never_appear_in_logs_or_errors(caplog, monkeypatch):
     assert "secret-app-name" not in pool.stats()
     assert pool.redact("ConnectError: https://secret-app-name.herokuapp.com/x") == "ConnectError: https://proxy-1/x"
     await client.aclose()
+
+
+def test_v2_value_formats_are_converted():
+    from scraper.src_client import as_epoch, as_int, as_seconds
+
+    assert as_int("22") == 22 and as_int(3) == 3 and as_int(None) == 0
+    assert as_seconds("198.030s") == 198.03 and as_seconds(12.5) == 12.5 and as_seconds(None) is None
+    assert as_epoch("2026-04-18T05:03:31Z") == 1776488611 and as_epoch(1776488611) == 1776488611
+    assert as_epoch(None) is None
+
+
+async def test_crawls_a_game_in_the_current_v2_format(tmp_path):
+    from scraper.crawl import CrawlConfig, Crawler
+
+    sent: dict[str, dict] = {}
+
+    def handler(request):
+        endpoint = request.url.path.rsplit("/", 1)[-1]
+        params = json.loads(__import__("base64").urlsafe_b64decode(request.url.params["_r"] + "=="))
+        sent[endpoint] = params
+        if endpoint == "GetGameData":
+            # proto3 JSON: 64-bit ints as strings, empty lists and default values (defaultTimer 0) omitted
+            body = {
+                "game": {"id": "g", "name": "Game", "url": "game"},
+                "categories": [{"id": "c", "name": "Any%", "position": "0", "numPlayers": "1"}],
+                "platforms": [{"id": "pc", "name": "PC", "url": "pc", "year": "2000"}],
+            }
+        elif endpoint == "GetGameLeaderboard":
+            page = params["page"]
+            runs = [
+                {
+                    "id": f"r{page}",
+                    "gameId": "g",
+                    "categoryId": "c",
+                    "time": "61.500s",
+                    "performedAt": "2026-04-18T05:03:31Z",
+                    "submittedAt": "2026-04-18T05:09:57Z",
+                    "place": "1",
+                    "playerIds": ["p"],
+                }
+            ]
+            body = {"leaderboard": {"pagination": {"count": "2", "page": str(page), "pages": "2", "per": "200"}}}
+            if page == 1:
+                body["leaderboard"] |= {"runs": runs, "players": [{"id": "p", "name": "Runner", "areaId": "us"}]}
+        else:
+            return httpx.Response(404)
+        return httpx.Response(200, json=body)
+
+    client, _ = make_client(handler, [])
+    writer = DbWriter(tmp_path / "crawl.duckdb")
+    writer.start()
+    await Crawler(client, writer, CrawlConfig()).crawl_game("g")
+    await writer.drain()
+    con = writer.con
+    assert con.execute("SELECT default_timer FROM raw_games").fetchone() == (0,)
+    assert con.execute("SELECT run_id, time, date, date_submitted FROM raw_runs").fetchall() == [
+        ("r1", 61.5, 1776488611, 1776488997)
+    ]
+    assert con.execute("SELECT status, pages, runs FROM crawl_checkpoint").fetchone() == ("done", 2, 1)
+    await writer.close()
+    await client.aclose()
+
+
+async def test_list_endpoints_send_the_required_order_type():
+    def handler(request):
+        params = json.loads(__import__("base64").urlsafe_b64decode(request.url.params["_r"] + "=="))
+        assert params["orderType"] == 1
+        return httpx.Response(200, json={"pagination": {"pages": "1"}})
+
+    client, _ = make_client(handler, [])
+    await client.get_series_list(1)
+    await client.get_game_list(1, "s")
+    await client.aclose()
+
+
+async def test_list_budget_is_separate_from_the_main_budget(monkeypatch):
+    from scraper import proxy_pool
+    from scraper.proxy_pool import LIST, ProxyPool
+
+    clock = [1000.0]
+    monkeypatch.setattr(proxy_pool.time, "monotonic", lambda: clock[0])
+    pool = ProxyPool.build([], 1, direct_limit=10, list_requests=2, list_seconds=60)
+    proxy = pool.proxies[0]
+    for _ in range(2):
+        await pool.release(await pool.acquire(LIST))
+    assert not proxy.ready(clock[0], LIST) and proxy.ready(clock[0])  # lists wait, games and leaderboards do not
+    clock[0] += 62
+    assert proxy.ready(clock[0], LIST)
+
+
+async def test_list_429_pauses_only_list_requests(monkeypatch):
+    from scraper import proxy_pool
+    from scraper.proxy_pool import LIST, ProxyPool
+
+    clock = [1000.0]
+    monkeypatch.setattr(proxy_pool.time, "monotonic", lambda: clock[0])
+    pool = ProxyPool.build([], 1, direct_limit=10)
+    proxy = pool.proxies[0]
+    await pool.rate_limited(proxy, 43.0, LIST)
+    assert not proxy.ready(clock[0], LIST) and proxy.ready(clock[0])
+    clock[0] += 45
+    assert proxy.ready(clock[0], LIST)

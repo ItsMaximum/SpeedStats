@@ -11,11 +11,12 @@ import json
 import logging
 import random
 from dataclasses import dataclass
+from datetime import datetime
 from typing import Any
 
 import httpx
 
-from scraper.proxy_pool import ProxyPool
+from scraper.proxy_pool import LIST, ProxyPool
 
 log = logging.getLogger("speedstats.src")
 
@@ -28,6 +29,8 @@ HEADERS = {
     "X-Requested-With": "SpeedStats",  # cors-anywhere requires an origin-ish header
 }
 TRANSIENT_STATUSES = {408, 500, 502, 503, 504, 520, 521, 522, 523, 524}
+ORDER_BY_NAME = 1  # GetSeriesList/GetGameList require an orderType; name order is stable while paging
+LIST_ENDPOINTS = {"GetSeriesList", "GetGameList"}  # rate limited separately, see proxy_pool.py
 
 
 class CrawlError(Exception):
@@ -49,6 +52,27 @@ class LeaderboardPage:
     players: list[dict[str, Any]]
     runs: list[dict[str, Any]]
     pages: int
+
+
+def as_int(value: Any) -> int:
+    """v2 sends 64-bit integers as JSON strings ("22"); older payloads and the fixture use numbers."""
+    return int(value or 0)
+
+
+def as_seconds(value: Any) -> float | None:
+    """Durations arrive as "198.030s"; older payloads and the fixture use plain seconds."""
+    if value is None or value == "":
+        return None
+    return float(value.removesuffix("s")) if isinstance(value, str) else float(value)
+
+
+def as_epoch(value: Any) -> int | None:
+    """Timestamps arrive as RFC 3339 ("2026-04-18T05:03:31Z"); older payloads and the fixture use unix seconds."""
+    if value is None or value == "":
+        return None
+    if isinstance(value, str):
+        return int(datetime.fromisoformat(value).timestamp())
+    return int(value)
 
 
 def encode_params(params: dict[str, Any]) -> str:
@@ -84,16 +108,19 @@ class SrcClient:
         await self._client.aclose()
 
     async def request(self, endpoint: str, params: dict[str, Any] | None = None) -> dict[str, Any]:
-        return await self._request(API_URI + endpoint, {"_r": encode_params(params or {})}, f"{endpoint} {params}")
+        kind = LIST if endpoint in LIST_ENDPOINTS else ""
+        return await self._request(
+            API_URI + endpoint, {"_r": encode_params(params or {})}, f"{endpoint} {params}", kind
+        )
 
     async def request_v1(self, path: str, params: dict[str, Any] | None = None) -> dict[str, Any]:
         """The older v1 REST API; some data (series membership) is more complete there."""
         return await self._request(API_V1_URI + path, params or {}, f"v1 {path} {params}")
 
-    async def _request(self, url: str, query: dict[str, Any], label: str) -> dict[str, Any]:
+    async def _request(self, url: str, query: dict[str, Any], label: str, kind: str = "") -> dict[str, Any]:
         last = "no attempts"
         for _attempt in range(self.max_attempts):
-            proxy = await self.pool.acquire()
+            proxy = await self.pool.acquire(kind)
             try:
                 resp = await self._client.get(f"{proxy.base_url}{url}", params=query)
             except (httpx.TimeoutException, httpx.TransportError) as e:
@@ -105,7 +132,7 @@ class SrcClient:
 
             status = resp.status_code
             if status == 429:
-                await self.pool.rate_limited(proxy, _retry_after(resp))
+                await self.pool.rate_limited(proxy, _retry_after(resp), kind)
                 last = "HTTP 429"
                 continue
             if status in TRANSIENT_STATUSES:
@@ -133,10 +160,10 @@ class SrcClient:
         return await self.request("GetStaticData")
 
     async def get_series_list(self, page: int) -> dict[str, Any]:
-        return await self.request("GetSeriesList", {"page": page})
+        return await self.request("GetSeriesList", {"page": page, "orderType": ORDER_BY_NAME})
 
     async def get_game_list(self, page: int, series_id: str | None = None) -> dict[str, Any]:
-        params: dict[str, Any] = {"page": page}
+        params: dict[str, Any] = {"page": page, "orderType": ORDER_BY_NAME}
         if series_id:
             params["seriesId"] = series_id
         return await self.request("GetGameList", params)
@@ -156,9 +183,9 @@ class SrcClient:
         }
         if lb_type == 1:
             data = (await self.request("GetGameLeaderboard", params))["leaderboard"]
-            return LeaderboardPage(data["players"], data["runs"], data["pagination"]["pages"])
+            return LeaderboardPage(data.get("players", []), data.get("runs", []), as_int(data["pagination"]["pages"]))
         data = await self.request("GetGameLeaderboard2", params)
-        return LeaderboardPage(data["playerList"], data["runList"], data["pagination"]["pages"])
+        return LeaderboardPage(data.get("playerList", []), data.get("runList", []), as_int(data["pagination"]["pages"]))
 
 
 def _retry_after(resp: httpx.Response) -> float | None:
