@@ -14,6 +14,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Any
 
+import h2.exceptions
 import httpx
 
 from scraper.proxy_pool import LIST, ProxyPool
@@ -123,7 +124,7 @@ class SrcClient:
             proxy = await self.pool.acquire(kind)
             try:
                 resp = await self._client.get(f"{proxy.base_url}{url}", params=query)
-            except (httpx.TimeoutException, httpx.TransportError) as e:
+            except (httpx.TimeoutException, httpx.TransportError, h2.exceptions.H2Error) as e:
                 last = self.pool.redact(f"{type(e).__name__}: {e}")
                 await self.pool.penalize(proxy, 2 * self.transient_delay)
                 continue
