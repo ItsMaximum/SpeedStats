@@ -6,6 +6,10 @@ window expired (not on clock boundaries); 429s do not consume budget and do not 
 count, not a rate, so concurrency does not matter. The pool therefore gives each proxy a window budget and,
 once it is spent, parks the proxy until its window ends. A 429 (e.g. a proxy sharing an IP with something
 else) is handled the same way: wait for the window to end, not an exponential backoff.
+
+The list endpoints (GetSeriesList, GetGameList) have a second, much smaller limit of their own: about 10
+requests per minute per IP, shared by both (measured 2026-10-04; Cloudflare error 1015 with Retry-After).
+Each proxy has a separate list budget for those, and a list 429 only pauses list requests on that proxy.
 """
 
 from __future__ import annotations
@@ -19,6 +23,7 @@ log = logging.getLogger("speedstats.proxies")
 
 WINDOW_MARGIN = 5.0  # seconds added after a window's end before using the proxy again
 UNKNOWN_WINDOW_BACKOFF = 60.0  # a 429 before the window start is known (should not happen)
+LIST = "list"
 
 
 @dataclass
@@ -28,6 +33,11 @@ class ProxyState:
     window_requests: int = 500
     window_seconds: float = 1200.0
     label: str = "direct"  # what logs call this proxy; never the app name
+    list_requests: int = 9
+    list_seconds: float = 60.0
+    list_start: float | None = None
+    list_used: int = 0
+    list_blocked_until: float = 0.0
     inflight: int = 0
     window_start: float | None = None  # monotonic time of the first request of the current window
     window_used: int = 0
@@ -44,30 +54,47 @@ class ProxyState:
     def window_end(self) -> float | None:
         return None if self.window_start is None else self.window_start + self.window_seconds + WINDOW_MARGIN
 
+    def list_end(self) -> float | None:
+        return None if self.list_start is None else self.list_start + self.list_seconds + 1.0
+
     def refresh(self, now: float) -> None:
         """Start a new window once the current one has expired."""
         end = self.window_end()
         if end is not None and now >= end:
             self.window_start = None
             self.window_used = 0
+        end = self.list_end()
+        if end is not None and now >= end:
+            self.list_start = None
+            self.list_used = 0
 
-    def ready(self, now: float) -> bool:
+    def ready(self, now: float, kind: str = "") -> bool:
         self.refresh(now)
+        if kind == LIST and (self.list_used >= self.list_requests or self.list_blocked_until > now):
+            return False
         return self.inflight < self.limit and self.available_at <= now and self.window_used < self.window_requests
 
-    def next_ready_at(self, now: float) -> float | None:
+    def next_ready_at(self, now: float, kind: str = "") -> float | None:
         """When this proxy could next accept a request, ignoring concurrency."""
         self.refresh(now)
         candidates = [self.available_at]
         if self.window_used >= self.window_requests and (end := self.window_end()) is not None:
             candidates.append(end)
+        if kind == LIST:
+            candidates.append(self.list_blocked_until)
+            if self.list_used >= self.list_requests and (end := self.list_end()) is not None:
+                candidates.append(end)
         return max(candidates)
 
-    def take(self, now: float) -> None:
+    def take(self, now: float, kind: str = "") -> None:
         if self.window_start is None:
             self.window_start = now
             self.windows += 1
         self.window_used += 1
+        if kind == LIST:
+            if self.list_start is None:
+                self.list_start = now
+            self.list_used += 1
         self.inflight += 1
         self.requests += 1
 
@@ -85,12 +112,16 @@ class ProxyPool:
         window_requests: int = 500,
         window_seconds: float = 1200.0,
         direct_limit: int = 4,
+        list_requests: int = 9,
+        list_seconds: float = 60.0,
     ) -> ProxyPool:
         if not apps:
-            return cls([ProxyState("", direct_limit, window_requests, window_seconds)])
+            return cls(
+                [ProxyState("", direct_limit, window_requests, window_seconds, "direct", list_requests, list_seconds)]
+            )
         return cls(
             [
-                ProxyState(app, per_proxy, window_requests, window_seconds, f"proxy-{i}")
+                ProxyState(app, per_proxy, window_requests, window_seconds, f"proxy-{i}", list_requests, list_seconds)
                 for i, app in enumerate(apps, start=1)
             ]
         )
@@ -110,17 +141,18 @@ class ProxyPool:
     def budget_per_window(self) -> int:
         return sum(p.window_requests for p in self.proxies)
 
-    async def acquire(self) -> ProxyState:
-        """A proxy with budget left in its window, least loaded first; waits until one has."""
+    async def acquire(self, kind: str = "") -> ProxyState:
+        """A proxy with budget left in its window (and its list budget, for list requests), least loaded first;
+        waits until one has."""
         async with self._cond:
             while True:
                 now = time.monotonic()
-                ready = [p for p in self.proxies if p.ready(now)]
+                ready = [p for p in self.proxies if p.ready(now, kind)]
                 if ready:
-                    chosen = min(ready, key=lambda p: (p.inflight, p.window_used))
-                    chosen.take(now)
+                    chosen = min(ready, key=lambda p: (p.inflight, p.list_used if kind == LIST else 0, p.window_used))
+                    chosen.take(now, kind)
                     return chosen
-                waits = [t - now for p in self.proxies if (t := p.next_ready_at(now)) is not None and t > now]
+                waits = [t - now for p in self.proxies if (t := p.next_ready_at(now, kind)) is not None and t > now]
                 timeout = max(0.05, min(waits)) if waits else None
                 try:
                     await asyncio.wait_for(self._cond.wait(), timeout)
@@ -135,9 +167,16 @@ class ProxyPool:
     async def success(self, proxy: ProxyState) -> None:
         pass
 
-    async def rate_limited(self, proxy: ProxyState, retry_after: float | None = None) -> None:
-        """The server says the budget is gone: park the proxy until its window ends (rejections cost nothing)."""
+    async def rate_limited(self, proxy: ProxyState, retry_after: float | None = None, kind: str = "") -> None:
+        """The server says the budget is gone: park the proxy until its window ends (rejections cost nothing).
+        A list 429 only pauses that proxy's list requests."""
         now = time.monotonic()
+        if kind == LIST:
+            proxy.rate_limited += 1
+            if proxy.list_blocked_until <= now:
+                proxy.list_blocked_until = now + (retry_after or proxy.list_seconds) + 1.0
+                log.info("%s list requests paused for %.0fs", proxy.label, proxy.list_blocked_until - now)
+            return
         proxy.rate_limited += 1
         proxy.window_used = max(proxy.window_used, proxy.window_requests)
         if proxy.available_at > now:

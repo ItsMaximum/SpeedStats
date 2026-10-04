@@ -43,7 +43,12 @@ async def _run_crawl(path: Path, cfg, resume: bool) -> None:
 
     apps = await dedupe_proxies_by_ip(settings.src_proxies) if settings.use_proxy else []
     pool = ProxyPool.build(
-        apps, settings.src_per_proxy_concurrency, settings.src_window_requests, settings.src_window_seconds
+        apps,
+        settings.src_per_proxy_concurrency,
+        settings.src_window_requests,
+        settings.src_window_seconds,
+        list_requests=settings.src_list_window_requests,
+        list_seconds=settings.src_list_window_seconds,
     )
     logging.info(
         "crawling via %s: %d concurrent requests, %d requests per %.0f-minute window",

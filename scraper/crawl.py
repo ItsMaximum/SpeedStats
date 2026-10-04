@@ -12,7 +12,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Any
 
-from scraper.src_client import CrawlError, LeaderboardPage, NotFound, SrcClient
+from scraper.src_client import CrawlError, LeaderboardPage, NotFound, SrcClient, as_epoch, as_int, as_seconds
 from scraper.writer import DbWriter, now
 
 log = logging.getLogger("speedstats.crawl")
@@ -121,11 +121,11 @@ class Crawler:
 
     async def stage_series(self) -> None:
         first = await self.client.get_series_list(1)
-        pages = first["pagination"]["pages"]
-        await self._put_series(first["seriesList"])
+        pages = as_int(first["pagination"]["pages"])
+        await self._put_series(first.get("seriesList", []))
         rest = await asyncio.gather(*(self.client.get_series_list(p) for p in range(2, pages + 1)))
         for page in rest:
-            await self._put_series(page["seriesList"])
+            await self._put_series(page.get("seriesList", []))
         log.info("series list: %d pages", pages)
 
     async def _put_series(self, series: list[dict]) -> None:
@@ -156,8 +156,8 @@ class Crawler:
                 page = 1
                 while True:
                     data = await self.client.get_game_list(page, series_id)
-                    await self._put_game_list(data["gameList"], series_id)
-                    if page >= data["pagination"]["pages"]:
+                    await self._put_game_list(data.get("gameList", []), series_id)
+                    if page >= as_int(data["pagination"]["pages"]):
                         break
                     page += 1
             self._progress("series")
@@ -178,14 +178,14 @@ class Crawler:
 
     async def stage_all_games(self) -> None:
         first = await self.client.get_game_list(1)
-        pages = first["pagination"]["pages"]
-        await self._put_game_list(first["gameList"])
+        pages = as_int(first["pagination"]["pages"])
+        await self._put_game_list(first.get("gameList", []))
         self.total, self.done = pages, 1
 
         async def fetch(p: int) -> None:
             async with self.game_sem:
                 data = await self.client.get_game_list(p)
-                await self._put_game_list(data["gameList"])
+                await self._put_game_list(data.get("gameList", []))
                 self._progress("game list pages")
 
         await asyncio.gather(*(fetch(p) for p in range(2, pages + 1)))
@@ -254,7 +254,7 @@ class Crawler:
                 return
             try:
                 await self._put_game_data(game_id, data)
-                categories = [c for c in data["categories"] if c["id"] not in self.cfg.excluded_categories]
+                categories = [c for c in data.get("categories", []) if c["id"] not in self.cfg.excluded_categories]
                 result.categories = len(categories)
                 outcomes = await asyncio.gather(
                     *(self.crawl_category(game_id, c["id"]) for c in categories), return_exceptions=True
@@ -285,7 +285,7 @@ class Crawler:
                     "id": game_id,
                     "name": game["name"].strip(),
                     "url": game.get("url"),
-                    "default_timer": game.get("defaultTimer"),
+                    "default_timer": as_int(game.get("defaultTimer")),
                     "seen_at": seen,
                 }
             ],
@@ -297,18 +297,18 @@ class Crawler:
                     "id": c["id"],
                     "game_id": game_id,
                     "name": c["name"].strip(),
-                    "time_direction": c.get("timeDirection", 0),
+                    "time_direction": as_int(c.get("timeDirection")),
                     "archived": bool(c.get("archived")),
                     "seen_at": seen,
                 }
-                for c in data["categories"]
+                for c in data.get("categories", [])
             ],
         )
         await w.put(
             "raw_levels",
             [
                 {"id": lv["id"], "game_id": game_id, "name": lv["name"].strip(), "seen_at": seen}
-                for lv in data["levels"]
+                for lv in data.get("levels", [])
             ],
         )
         await w.put(
@@ -322,7 +322,7 @@ class Crawler:
                     "archived": bool(v.get("archived")),
                     "seen_at": seen,
                 }
-                for v in data["variables"]
+                for v in data.get("variables", [])
             ],
         )
         await w.put(
@@ -335,14 +335,14 @@ class Crawler:
                     "name": v["name"].strip(),
                     "seen_at": seen,
                 }
-                for v in data["values"]
+                for v in data.get("values", [])
             ],
         )
         await w.put(
             "raw_platforms",
             [
                 {"id": p["id"], "name": p["name"].strip(), "url": p.get("url"), "seen_at": seen}
-                for p in data["platforms"]
+                for p in data.get("platforms", [])
             ],
         )
 
@@ -384,11 +384,11 @@ class Crawler:
                 "value_ids": r.get("valueIds") or [],
                 "player_ids": r.get("playerIds") or [],
                 "platform_id": r.get("platformId"),
-                "time": r.get("time"),
-                "time_with_loads": r.get("timeWithLoads"),
-                "igt": r.get("igt"),
-                "date": r.get("date"),
-                "date_submitted": r.get("dateSubmitted"),
+                "time": as_seconds(r.get("time")),
+                "time_with_loads": as_seconds(r.get("timeWithLoads")),
+                "igt": as_seconds(r.get("igt")),
+                "date": as_epoch(r.get("performedAt")),
+                "date_submitted": as_epoch(r.get("submittedAt")),
                 "lb_type": lb_type,
                 "page": page_no,
             }
