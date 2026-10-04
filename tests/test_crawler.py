@@ -59,6 +59,23 @@ async def test_transient_errors_retry_then_give_up():
     await client.aclose()
 
 
+async def test_a_dropped_http2_connection_is_retried():
+    import h2.exceptions
+
+    calls = []
+
+    def handler(request):
+        calls.append(1)
+        if len(calls) == 1:
+            raise h2.exceptions.ProtocolError("Invalid input in state ConnectionState.CLOSED")
+        return httpx.Response(200, json={"ok": True})
+
+    client, _ = make_client(handler, [])
+    assert await client.request("GetGameData", {"gameId": "g"}) == {"ok": True}
+    assert len(calls) == 2
+    await client.aclose()
+
+
 async def test_404_is_not_retried():
     calls = 0
 
